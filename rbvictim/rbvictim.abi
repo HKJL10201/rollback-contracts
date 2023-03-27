@@ -4,16 +4,6 @@
     "types": [],
     "structs": [
         {
-            "name": "lose",
-            "base": "",
-            "fields": [
-                {
-                    "name": "from",
-                    "type": "name"
-                }
-            ]
-        },
-        {
             "name": "playing",
             "base": "",
             "fields": [
@@ -26,52 +16,12 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "name": "test",
-            "base": "",
-            "fields": []
-        },
-        {
-            "name": "test1",
-            "base": "",
-            "fields": []
-        },
-        {
-            "name": "win",
-            "base": "",
-            "fields": [
-                {
-                    "name": "from",
-                    "type": "name"
-                }
-            ]
         }
     ],
     "actions": [
         {
-            "name": "lose",
-            "type": "lose",
-            "ricardian_contract": ""
-        },
-        {
             "name": "playing",
             "type": "playing",
-            "ricardian_contract": ""
-        },
-        {
-            "name": "test",
-            "type": "test",
-            "ricardian_contract": ""
-        },
-        {
-            "name": "test1",
-            "type": "test1",
-            "ricardian_contract": ""
-        },
-        {
-            "name": "win",
-            "type": "win",
             "ricardian_contract": ""
         }
     ],

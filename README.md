@@ -134,7 +134,7 @@
   - Yao Guo, *Peking University;* 
   - Xiangqun Chen, *Peking University.* 
 
-- Year: 2022 Jul
+- Year: 2022 Jul.
 - Source: arXiv
 - Link: [https://arxiv.org/abs/2207.09227](https://arxiv.org/abs/2207.09227)
 
