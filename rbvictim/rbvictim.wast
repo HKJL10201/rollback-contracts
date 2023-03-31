@@ -1,0 +1,21348 @@
+(module
+  (type (;0;) (func))
+  (type (;1;) (func (param i32 i32 i32) (result i32)))
+  (type (;2;) (func (param i32 i64 i32) (result i64)))
+  (type (;3;) (func (param i32 i32 i32 i32)))
+  (type (;4;) (func (param i32 i64 i32)))
+  (type (;5;) (func (param i32 i32)))
+  (type (;6;) (func (param i64)))
+  (type (;7;) (func (param i32)))
+  (type (;8;) (func (param i32 f32)))
+  (type (;9;) (func (param i32 i64 i64 i64 i64)))
+  (type (;10;) (func (param i32 f64)))
+  (type (;11;) (func (param i64 i64 i64 i64) (result i32)))
+  (type (;12;) (func (param i64 i64) (result f64)))
+  (type (;13;) (func (param i64 i64) (result f32)))
+  (type (;14;) (func (param i32 i32) (result i32)))
+  (type (;15;) (func (param i32 i32) (result i64)))
+  (type (;16;) (func (result i64)))
+  (type (;17;) (func (result i32)))
+  (type (;18;) (func (param i32 i64)))
+  (type (;19;) (func (param i32) (result i32)))
+  (type (;20;) (func (param i32 i32 i32 i64) (result i64)))
+  (type (;21;) (func (param i32 i32 i32) (result i64)))
+  (type (;22;) (func (param f64 i32) (result f64)))
+  (type (;23;) (func (param i64 i64) (result i32)))
+  (type (;24;) (func (param f64) (result f64)))
+  (type (;25;) (func (param i32 i64 i64 i32)))
+  (type (;26;) (func (param i32 i32) (result f32)))
+  (type (;27;) (func (param i32 i32) (result f64)))
+  (type (;28;) (func (param i32 i32 i32)))
+  (type (;29;) (func (param i64 i32) (result i32)))
+  (type (;30;) (func (param i32 i32 i32 i32 i32) (result i32)))
+  (type (;31;) (func (param i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32) (result i32)))
+  (type (;32;) (func (param i32 i32 i32 i32) (result i32)))
+  (type (;33;) (func (param i32 i32 i32 i64 i32 i32) (result i32)))
+  (type (;34;) (func (param f64 f64) (result f64)))
+  (type (;35;) (func (param i64 i64 i64)))
+  (type (;36;) (func (param i64 i64 i32) (result i32)))
+  (type (;37;) (func (param i64 i64)))
+  (import "env" "abort" (func (;0;) (type 0)))
+  (import "env" "eosio_assert" (func (;1;) (type 5)))
+  (import "env" "memset" (func (;2;) (type 1)))
+  (import "env" "memmove" (func (;3;) (type 1)))
+  (import "env" "printn" (func (;4;) (type 6)))
+  (import "env" "prints" (func (;5;) (type 7)))
+  (import "env" "prints_l" (func (;6;) (type 5)))
+  (import "env" "memcpy" (func (;7;) (type 1)))
+  (import "env" "__extendsftf2" (func (;8;) (type 8)))
+  (import "env" "__multf3" (func (;9;) (type 9)))
+  (import "env" "__floatsitf" (func (;10;) (type 5)))
+  (import "env" "__addtf3" (func (;11;) (type 9)))
+  (import "env" "__extenddftf2" (func (;12;) (type 10)))
+  (import "env" "__getf2" (func (;13;) (type 11)))
+  (import "env" "__floatunsitf" (func (;14;) (type 5)))
+  (import "env" "__divtf3" (func (;15;) (type 9)))
+  (import "env" "__eqtf2" (func (;16;) (type 11)))
+  (import "env" "__letf2" (func (;17;) (type 11)))
+  (import "env" "__netf2" (func (;18;) (type 11)))
+  (import "env" "__subtf3" (func (;19;) (type 9)))
+  (import "env" "__trunctfdf2" (func (;20;) (type 12)))
+  (import "env" "__trunctfsf2" (func (;21;) (type 13)))
+  (import "env" "send_inline" (func (;22;) (type 5)))
+  (import "env" "set_blockchain_parameters_packed" (func (;23;) (type 5)))
+  (import "env" "get_blockchain_parameters_packed" (func (;24;) (type 14)))
+  (import "env" "set_proposed_producers" (func (;25;) (type 15)))
+  (import "env" "current_time" (func (;26;) (type 16)))
+  (import "env" "get_active_producers" (func (;27;) (type 14)))
+  (import "env" "action_data_size" (func (;28;) (type 17)))
+  (import "env" "read_action_data" (func (;29;) (type 14)))
+  (import "env" "eosio_assert_code" (func (;30;) (type 18)))
+  (func (;31;) (type 0)
+    call 35)
+  (func (;32;) (type 19) (param i32) (result i32)
+    (local i32 i32 i32)
+    block  ;; label = @1
+      get_local 0
+      br_if 0 (;@1;)
+      i32.const 0
+      return
+    end
+    i32.const 0
+    i32.const 0
+    i32.load offset=8204
+    get_local 0
+    i32.const 16
+    i32.shr_u
+    tee_local 1
+    i32.add
+    tee_local 2
+    i32.store offset=8204
+    i32.const 0
+    i32.const 0
+    i32.load offset=8196
+    tee_local 3
+    get_local 0
+    i32.add
+    i32.const 15
+    i32.add
+    i32.const -16
+    i32.and
+    tee_local 0
+    i32.store offset=8196
+    block  ;; label = @1
+      get_local 2
+      i32.const 16
+      i32.shl
+      get_local 0
+      i32.gt_u
+      br_if 0 (;@1;)
+      i32.const 0
+      get_local 2
+      i32.const 1
+      i32.add
+      i32.store offset=8204
+      get_local 1
+      i32.const 1
+      i32.add
+      set_local 1
+    end
+    block  ;; label = @1
+      get_local 1
+      memory.grow
+      i32.const -1
+      i32.ne
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 8208
+      call 1
+    end
+    get_local 3)
+  (func (;33;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32 i32)
+    block  ;; label = @1
+      get_local 1
+      get_local 0
+      i32.mul
+      tee_local 1
+      br_if 0 (;@1;)
+      i32.const 0
+      return
+    end
+    i32.const 0
+    i32.const 0
+    i32.load offset=8204
+    get_local 1
+    i32.const 16
+    i32.shr_u
+    tee_local 2
+    i32.add
+    tee_local 3
+    i32.store offset=8204
+    i32.const 0
+    i32.const 0
+    i32.load offset=8196
+    tee_local 0
+    get_local 1
+    i32.add
+    i32.const 15
+    i32.add
+    i32.const -16
+    i32.and
+    tee_local 4
+    i32.store offset=8196
+    block  ;; label = @1
+      get_local 3
+      i32.const 16
+      i32.shl
+      get_local 4
+      i32.gt_u
+      br_if 0 (;@1;)
+      i32.const 0
+      get_local 3
+      i32.const 1
+      i32.add
+      i32.store offset=8204
+      get_local 2
+      i32.const 1
+      i32.add
+      set_local 2
+    end
+    block  ;; label = @1
+      get_local 2
+      memory.grow
+      i32.const -1
+      i32.ne
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 8208
+      call 1
+    end
+    block  ;; label = @1
+      get_local 0
+      br_if 0 (;@1;)
+      i32.const 0
+      return
+    end
+    get_local 0
+    i32.const 0
+    get_local 1
+    call 2
+    drop
+    get_local 0)
+  (func (;34;) (type 7) (param i32))
+  (func (;35;) (type 0)
+    (local i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 0
+    i32.const 0
+    i32.store offset=12
+    i32.const 0
+    get_local 0
+    i32.load offset=12
+    i32.load
+    i32.const 15
+    i32.add
+    i32.const -16
+    i32.and
+    tee_local 0
+    i32.store offset=8192
+    i32.const 0
+    get_local 0
+    i32.store offset=8196
+    i32.const 0
+    memory.size
+    i32.store offset=8204)
+  (func (;36;) (type 17) (result i32)
+    i32.const 8276)
+  (func (;37;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32 i32 i32 i32 i32)
+    block  ;; label = @1
+      get_local 0
+      get_local 0
+      i32.const -1
+      i32.add
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      call 36
+      i32.const 22
+      i32.store
+      i32.const 0
+      return
+    end
+    block  ;; label = @1
+      get_local 0
+      i32.const -1
+      i32.xor
+      get_local 1
+      i32.ge_u
+      br_if 0 (;@1;)
+      call 36
+      i32.const 12
+      i32.store
+      i32.const 0
+      return
+    end
+    block  ;; label = @1
+      get_local 0
+      i32.const 16
+      i32.gt_u
+      br_if 0 (;@1;)
+      get_local 1
+      call 32
+      return
+    end
+    block  ;; label = @1
+      get_local 0
+      i32.const -1
+      i32.add
+      tee_local 2
+      get_local 1
+      i32.add
+      call 32
+      tee_local 1
+      br_if 0 (;@1;)
+      i32.const 0
+      return
+    end
+    block  ;; label = @1
+      get_local 1
+      get_local 2
+      get_local 1
+      i32.add
+      i32.const 0
+      get_local 0
+      i32.sub
+      i32.and
+      tee_local 0
+      i32.ne
+      br_if 0 (;@1;)
+      get_local 1
+      return
+    end
+    block  ;; label = @1
+      get_local 1
+      i32.const -4
+      i32.add
+      tee_local 3
+      i32.load
+      tee_local 4
+      i32.const 7
+      i32.and
+      tee_local 2
+      br_if 0 (;@1;)
+      get_local 0
+      i32.const -8
+      i32.add
+      get_local 1
+      i32.const -8
+      i32.add
+      i32.load
+      get_local 0
+      get_local 1
+      i32.sub
+      tee_local 1
+      i32.add
+      i32.store
+      get_local 0
+      i32.const -4
+      i32.add
+      get_local 3
+      i32.load
+      get_local 1
+      i32.sub
+      i32.store
+      get_local 0
+      return
+    end
+    get_local 1
+    get_local 4
+    i32.const -8
+    i32.and
+    i32.add
+    tee_local 4
+    i32.const -8
+    i32.add
+    tee_local 5
+    i32.load
+    set_local 6
+    get_local 3
+    get_local 2
+    get_local 0
+    get_local 1
+    i32.sub
+    tee_local 7
+    i32.or
+    i32.store
+    get_local 0
+    i32.const -4
+    i32.add
+    get_local 4
+    get_local 0
+    i32.sub
+    tee_local 3
+    get_local 2
+    i32.or
+    i32.store
+    get_local 0
+    i32.const -8
+    i32.add
+    get_local 6
+    i32.const 7
+    i32.and
+    tee_local 2
+    get_local 7
+    i32.or
+    i32.store
+    get_local 5
+    get_local 2
+    get_local 3
+    i32.or
+    i32.store
+    get_local 1
+    call 34
+    get_local 0)
+  (func (;38;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32)
+    i32.const 22
+    set_local 3
+    block  ;; label = @1
+      get_local 1
+      i32.const 4
+      i32.lt_u
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        get_local 1
+        get_local 2
+        call 37
+        tee_local 1
+        br_if 0 (;@2;)
+        call 36
+        i32.load
+        return
+      end
+      get_local 0
+      get_local 1
+      i32.store
+      i32.const 0
+      set_local 3
+    end
+    get_local 3)
+  (func (;39;) (type 19) (param i32) (result i32)
+    (local i32 i32)
+    get_local 0
+    i32.const 1
+    get_local 0
+    select
+    set_local 1
+    block  ;; label = @1
+      loop  ;; label = @2
+        get_local 1
+        call 32
+        tee_local 0
+        br_if 1 (;@1;)
+        i32.const 0
+        set_local 0
+        i32.const 0
+        i32.load offset=8292
+        tee_local 2
+        i32.eqz
+        br_if 1 (;@1;)
+        get_local 2
+        call_indirect (type 0)
+        br 0 (;@2;)
+      end
+    end
+    get_local 0)
+  (func (;40;) (type 7) (param i32)
+    get_local 0
+    call 34)
+  (func (;41;) (type 19) (param i32) (result i32)
+    (local i32 i32 i32)
+    get_local 0
+    set_local 1
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 0
+          i32.const 3
+          i32.and
+          i32.eqz
+          br_if 0 (;@3;)
+          block  ;; label = @4
+            get_local 0
+            i32.load8_u
+            br_if 0 (;@4;)
+            get_local 0
+            get_local 0
+            i32.sub
+            return
+          end
+          get_local 0
+          i32.const 1
+          i32.add
+          set_local 1
+          loop  ;; label = @4
+            get_local 1
+            i32.const 3
+            i32.and
+            i32.eqz
+            br_if 1 (;@3;)
+            get_local 1
+            i32.load8_u
+            set_local 2
+            get_local 1
+            i32.const 1
+            i32.add
+            tee_local 3
+            set_local 1
+            get_local 2
+            i32.eqz
+            br_if 2 (;@2;)
+            br 0 (;@4;)
+          end
+        end
+        get_local 1
+        i32.const -4
+        i32.add
+        set_local 1
+        loop  ;; label = @3
+          get_local 1
+          i32.const 4
+          i32.add
+          tee_local 1
+          i32.load
+          tee_local 2
+          i32.const -1
+          i32.xor
+          get_local 2
+          i32.const -16843009
+          i32.add
+          i32.and
+          i32.const -2139062144
+          i32.and
+          i32.eqz
+          br_if 0 (;@3;)
+        end
+        block  ;; label = @3
+          get_local 2
+          i32.const 255
+          i32.and
+          br_if 0 (;@3;)
+          get_local 1
+          get_local 0
+          i32.sub
+          return
+        end
+        loop  ;; label = @3
+          get_local 1
+          i32.load8_u offset=1
+          set_local 2
+          get_local 1
+          i32.const 1
+          i32.add
+          tee_local 3
+          set_local 1
+          get_local 2
+          br_if 0 (;@3;)
+          br 2 (;@1;)
+        end
+      end
+      get_local 3
+      i32.const -1
+      i32.add
+      set_local 3
+    end
+    get_local 3
+    get_local 0
+    i32.sub)
+  (func (;42;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32)
+    get_local 2
+    i32.const 0
+    i32.ne
+    set_local 3
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 2
+            br_if 0 (;@4;)
+            get_local 2
+            set_local 4
+            br 1 (;@3;)
+          end
+          block  ;; label = @4
+            get_local 0
+            i32.const 3
+            i32.and
+            br_if 0 (;@4;)
+            get_local 2
+            set_local 4
+            br 1 (;@3;)
+          end
+          get_local 1
+          i32.const 255
+          i32.and
+          set_local 5
+          loop  ;; label = @4
+            block  ;; label = @5
+              get_local 0
+              i32.load8_u
+              get_local 5
+              i32.ne
+              br_if 0 (;@5;)
+              get_local 2
+              set_local 4
+              br 3 (;@2;)
+            end
+            get_local 2
+            i32.const 1
+            i32.ne
+            set_local 3
+            get_local 2
+            i32.const -1
+            i32.add
+            set_local 4
+            get_local 0
+            i32.const 1
+            i32.add
+            set_local 0
+            get_local 2
+            i32.const 1
+            i32.eq
+            br_if 1 (;@3;)
+            get_local 4
+            set_local 2
+            get_local 0
+            i32.const 3
+            i32.and
+            br_if 0 (;@4;)
+          end
+        end
+        get_local 3
+        i32.eqz
+        br_if 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 0
+        i32.load8_u
+        get_local 1
+        i32.const 255
+        i32.and
+        i32.ne
+        br_if 0 (;@2;)
+        get_local 0
+        return
+      end
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 4
+          i32.const 4
+          i32.lt_u
+          br_if 0 (;@3;)
+          get_local 1
+          i32.const 255
+          i32.and
+          i32.const 16843009
+          i32.mul
+          set_local 3
+          loop  ;; label = @4
+            get_local 0
+            i32.load
+            get_local 3
+            i32.xor
+            tee_local 2
+            i32.const -1
+            i32.xor
+            get_local 2
+            i32.const -16843009
+            i32.add
+            i32.and
+            i32.const -2139062144
+            i32.and
+            br_if 2 (;@2;)
+            get_local 0
+            i32.const 4
+            i32.add
+            set_local 0
+            get_local 4
+            i32.const -4
+            i32.add
+            tee_local 4
+            i32.const 3
+            i32.gt_u
+            br_if 0 (;@4;)
+          end
+        end
+        get_local 4
+        i32.eqz
+        br_if 1 (;@1;)
+      end
+      get_local 1
+      i32.const 255
+      i32.and
+      set_local 2
+      loop  ;; label = @2
+        block  ;; label = @3
+          get_local 0
+          i32.load8_u
+          get_local 2
+          i32.ne
+          br_if 0 (;@3;)
+          get_local 0
+          return
+        end
+        get_local 0
+        i32.const 1
+        i32.add
+        set_local 0
+        get_local 4
+        i32.const -1
+        i32.add
+        tee_local 4
+        br_if 0 (;@2;)
+      end
+    end
+    i32.const 0)
+  (func (;43;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32)
+    i32.const 0
+    set_local 3
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        loop  ;; label = @3
+          get_local 0
+          i32.load8_u
+          tee_local 4
+          get_local 1
+          i32.load8_u
+          tee_local 5
+          i32.ne
+          br_if 1 (;@2;)
+          get_local 1
+          i32.const 1
+          i32.add
+          set_local 1
+          get_local 0
+          i32.const 1
+          i32.add
+          set_local 0
+          get_local 2
+          i32.const -1
+          i32.add
+          tee_local 2
+          br_if 0 (;@3;)
+          br 2 (;@1;)
+        end
+      end
+      get_local 4
+      get_local 5
+      i32.sub
+      set_local 3
+    end
+    get_local 3)
+  (func (;44;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32)
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      set_local 3
+      loop  ;; label = @2
+        get_local 3
+        get_local 1
+        i32.load
+        i32.store
+        get_local 3
+        i32.const 4
+        i32.add
+        set_local 3
+        get_local 1
+        i32.const 4
+        i32.add
+        set_local 1
+        get_local 2
+        i32.const -1
+        i32.add
+        tee_local 2
+        br_if 0 (;@2;)
+      end
+    end
+    get_local 0)
+  (func (;45;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32)
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 0
+        get_local 1
+        i32.sub
+        i32.const 2
+        i32.shr_s
+        get_local 2
+        i32.ge_u
+        br_if 0 (;@2;)
+        get_local 1
+        get_local 2
+        i32.const 2
+        i32.shl
+        i32.const -4
+        i32.add
+        tee_local 3
+        i32.add
+        set_local 1
+        get_local 0
+        get_local 3
+        i32.add
+        set_local 3
+        loop  ;; label = @3
+          get_local 3
+          get_local 1
+          i32.load
+          i32.store
+          get_local 1
+          i32.const -4
+          i32.add
+          set_local 1
+          get_local 3
+          i32.const -4
+          i32.add
+          set_local 3
+          get_local 2
+          i32.const -1
+          i32.add
+          tee_local 2
+          br_if 0 (;@3;)
+          br 2 (;@1;)
+        end
+      end
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      set_local 3
+      loop  ;; label = @2
+        get_local 3
+        get_local 1
+        i32.load
+        i32.store
+        get_local 3
+        i32.const 4
+        i32.add
+        set_local 3
+        get_local 1
+        i32.const 4
+        i32.add
+        set_local 1
+        get_local 2
+        i32.const -1
+        i32.add
+        tee_local 2
+        br_if 0 (;@2;)
+      end
+    end
+    get_local 0)
+  (func (;46;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32)
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      set_local 3
+      loop  ;; label = @2
+        get_local 3
+        get_local 1
+        i32.store
+        get_local 3
+        i32.const 4
+        i32.add
+        set_local 3
+        get_local 2
+        i32.const -1
+        i32.add
+        tee_local 2
+        br_if 0 (;@2;)
+      end
+    end
+    get_local 0)
+  (func (;47;) (type 19) (param i32) (result i32)
+    (local i32)
+    get_local 0
+    i32.const -4
+    i32.add
+    set_local 1
+    loop  ;; label = @1
+      get_local 1
+      i32.const 4
+      i32.add
+      tee_local 1
+      i32.load
+      br_if 0 (;@1;)
+    end
+    get_local 1
+    get_local 0
+    i32.sub
+    i32.const 2
+    i32.shr_s)
+  (func (;48;) (type 1) (param i32 i32 i32) (result i32)
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      loop  ;; label = @2
+        block  ;; label = @3
+          get_local 0
+          i32.load
+          get_local 1
+          i32.ne
+          br_if 0 (;@3;)
+          get_local 0
+          return
+        end
+        get_local 0
+        i32.const 4
+        i32.add
+        set_local 0
+        get_local 2
+        i32.const -1
+        i32.add
+        tee_local 2
+        br_if 0 (;@2;)
+      end
+    end
+    i32.const 0)
+  (func (;49;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32)
+    i32.const 0
+    set_local 3
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        loop  ;; label = @3
+          get_local 0
+          i32.load
+          tee_local 4
+          get_local 1
+          i32.load
+          tee_local 5
+          i32.ne
+          br_if 1 (;@2;)
+          get_local 1
+          i32.const 4
+          i32.add
+          set_local 1
+          get_local 0
+          i32.const 4
+          i32.add
+          set_local 0
+          get_local 2
+          i32.const -1
+          i32.add
+          tee_local 2
+          br_if 0 (;@3;)
+          br 2 (;@1;)
+        end
+      end
+      get_local 4
+      get_local 5
+      i32.sub
+      set_local 3
+    end
+    get_local 3)
+  (func (;50;) (type 7) (param i32)
+    get_local 0
+    i32.const 1
+    i32.store)
+  (func (;51;) (type 7) (param i32)
+    get_local 0
+    i32.const 0
+    i32.store)
+  (func (;52;) (type 17) (result i32)
+    i32.const 8296
+    call 50
+    i32.const 8304)
+  (func (;53;) (type 19) (param i32) (result i32)
+    (local i32)
+    get_local 1)
+  (func (;54;) (type 7) (param i32))
+  (func (;55;) (type 0)
+    (local i32 i32 i32)
+    block  ;; label = @1
+      call 52
+      i32.load
+      tee_local 0
+      i32.eqz
+      br_if 0 (;@1;)
+      loop  ;; label = @2
+        block  ;; label = @3
+          get_local 0
+          i32.load offset=76
+          i32.const 0
+          i32.lt_s
+          br_if 0 (;@3;)
+          get_local 0
+          call 53
+          drop
+        end
+        block  ;; label = @3
+          get_local 0
+          i32.load offset=20
+          get_local 0
+          i32.load offset=28
+          i32.le_u
+          br_if 0 (;@3;)
+          get_local 0
+          i32.const 0
+          i32.const 0
+          get_local 0
+          i32.load offset=36
+          call_indirect (type 1)
+          drop
+        end
+        block  ;; label = @3
+          get_local 0
+          i32.load offset=4
+          tee_local 1
+          get_local 0
+          i32.load offset=8
+          tee_local 2
+          i32.ge_u
+          br_if 0 (;@3;)
+          get_local 0
+          get_local 1
+          get_local 2
+          i32.sub
+          i64.extend_s/i32
+          i32.const 1
+          get_local 0
+          i32.load offset=40
+          call_indirect (type 2)
+          drop
+        end
+        get_local 0
+        i32.load offset=56
+        tee_local 0
+        br_if 0 (;@2;)
+      end
+    end
+    block  ;; label = @1
+      i32.const 0
+      i32.load offset=8308
+      tee_local 0
+      i32.eqz
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=76
+        i32.const 0
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 0
+        call 53
+        drop
+      end
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=20
+        get_local 0
+        i32.load offset=28
+        i32.le_u
+        br_if 0 (;@2;)
+        get_local 0
+        i32.const 0
+        i32.const 0
+        get_local 0
+        i32.load offset=36
+        call_indirect (type 1)
+        drop
+      end
+      get_local 0
+      i32.load offset=4
+      tee_local 1
+      get_local 0
+      i32.load offset=8
+      tee_local 2
+      i32.ge_u
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 1
+      get_local 2
+      i32.sub
+      i64.extend_s/i32
+      i32.const 1
+      get_local 0
+      i32.load offset=40
+      call_indirect (type 2)
+      drop
+    end
+    block  ;; label = @1
+      i32.const 0
+      i32.load offset=8308
+      tee_local 0
+      i32.eqz
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=76
+        i32.const 0
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 0
+        call 53
+        drop
+      end
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=20
+        get_local 0
+        i32.load offset=28
+        i32.le_u
+        br_if 0 (;@2;)
+        get_local 0
+        i32.const 0
+        i32.const 0
+        get_local 0
+        i32.load offset=36
+        call_indirect (type 1)
+        drop
+      end
+      get_local 0
+      i32.load offset=4
+      tee_local 1
+      get_local 0
+      i32.load offset=8
+      tee_local 2
+      i32.ge_u
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 1
+      get_local 2
+      i32.sub
+      i64.extend_s/i32
+      i32.const 1
+      get_local 0
+      i32.load offset=40
+      call_indirect (type 2)
+      drop
+    end)
+  (func (;56;) (type 19) (param i32) (result i32)
+    (local i32 i32)
+    get_local 0
+    get_local 0
+    i32.load8_u offset=74
+    tee_local 1
+    i32.const -1
+    i32.add
+    get_local 1
+    i32.or
+    i32.store8 offset=74
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=20
+      get_local 0
+      i32.load offset=28
+      i32.le_u
+      br_if 0 (;@1;)
+      get_local 0
+      i32.const 0
+      i32.const 0
+      get_local 0
+      i32.load offset=36
+      call_indirect (type 1)
+      drop
+    end
+    get_local 0
+    i32.const 0
+    i32.store offset=28
+    get_local 0
+    i64.const 0
+    i64.store offset=16
+    block  ;; label = @1
+      get_local 0
+      i32.load
+      tee_local 1
+      i32.const 4
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 1
+      i32.const 32
+      i32.or
+      i32.store
+      i32.const -1
+      return
+    end
+    get_local 0
+    get_local 0
+    i32.load offset=44
+    get_local 0
+    i32.load offset=48
+    i32.add
+    tee_local 2
+    i32.store offset=8
+    get_local 0
+    get_local 2
+    i32.store offset=4
+    get_local 1
+    i32.const 27
+    i32.shl
+    i32.const 31
+    i32.shr_s)
+  (func (;57;) (type 19) (param i32) (result i32)
+    (local i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 1
+    set_global 0
+    i32.const -1
+    set_local 2
+    block  ;; label = @1
+      get_local 0
+      call 56
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 1
+      i32.const 15
+      i32.add
+      i32.const 1
+      get_local 0
+      i32.load offset=32
+      call_indirect (type 1)
+      i32.const 1
+      i32.ne
+      br_if 0 (;@1;)
+      get_local 1
+      i32.load8_u offset=15
+      set_local 2
+    end
+    get_local 1
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 2)
+  (func (;58;) (type 18) (param i32 i64)
+    (local i32 i32 i64)
+    get_local 0
+    get_local 1
+    i64.store offset=112
+    get_local 0
+    get_local 0
+    i32.load offset=8
+    tee_local 2
+    get_local 0
+    i32.load offset=4
+    tee_local 3
+    i32.sub
+    i64.extend_s/i32
+    tee_local 4
+    i64.store offset=120
+    block  ;; label = @1
+      get_local 1
+      i64.eqz
+      br_if 0 (;@1;)
+      get_local 4
+      get_local 1
+      i64.le_s
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 3
+      get_local 1
+      i32.wrap/i64
+      i32.add
+      i32.store offset=104
+      return
+    end
+    get_local 0
+    get_local 2
+    i32.store offset=104)
+  (func (;59;) (type 19) (param i32) (result i32)
+    (local i64 i32 i32 i32)
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 0
+          i64.load offset=112
+          tee_local 1
+          i64.eqz
+          br_if 0 (;@3;)
+          get_local 0
+          i64.load offset=120
+          get_local 1
+          i64.ge_s
+          br_if 1 (;@2;)
+        end
+        get_local 0
+        call 57
+        tee_local 2
+        i32.const -1
+        i32.gt_s
+        br_if 1 (;@1;)
+      end
+      get_local 0
+      i32.const 0
+      i32.store offset=104
+      i32.const -1
+      return
+    end
+    get_local 0
+    i32.load offset=8
+    set_local 3
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 0
+        i64.load offset=112
+        tee_local 1
+        i64.const 0
+        i64.eq
+        br_if 0 (;@2;)
+        get_local 1
+        get_local 0
+        i64.load offset=120
+        i64.const -1
+        i64.xor
+        i64.add
+        tee_local 1
+        get_local 3
+        get_local 0
+        i32.load offset=4
+        tee_local 4
+        i32.sub
+        i64.extend_s/i32
+        i64.ge_s
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 4
+        get_local 1
+        i32.wrap/i64
+        i32.add
+        i32.store offset=104
+        br 1 (;@1;)
+      end
+      get_local 0
+      get_local 3
+      i32.store offset=104
+    end
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 3
+        br_if 0 (;@2;)
+        get_local 0
+        i32.load offset=4
+        set_local 4
+        br 1 (;@1;)
+      end
+      get_local 0
+      get_local 0
+      i64.load offset=120
+      get_local 3
+      get_local 0
+      i32.load offset=4
+      tee_local 4
+      i32.sub
+      i32.const 1
+      i32.add
+      i64.extend_s/i32
+      i64.add
+      i64.store offset=120
+    end
+    block  ;; label = @1
+      get_local 2
+      get_local 4
+      i32.const -1
+      i32.add
+      tee_local 0
+      i32.load8_u
+      i32.eq
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 2
+      i32.store8
+    end
+    get_local 2)
+  (func (;60;) (type 20) (param i32 i32 i32 i64) (result i64)
+    (local i32 i32 i32 i64 i64 i64 i64 i64 i32)
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 1
+              i32.const 36
+              i32.gt_u
+              br_if 0 (;@5;)
+              get_local 1
+              i32.const 1
+              i32.eq
+              br_if 0 (;@5;)
+              loop  ;; label = @6
+                block  ;; label = @7
+                  block  ;; label = @8
+                    get_local 0
+                    i32.load offset=4
+                    tee_local 4
+                    get_local 0
+                    i32.load offset=104
+                    i32.ge_u
+                    br_if 0 (;@8;)
+                    get_local 0
+                    get_local 4
+                    i32.const 1
+                    i32.add
+                    i32.store offset=4
+                    get_local 4
+                    i32.load8_u
+                    set_local 4
+                    br 1 (;@7;)
+                  end
+                  get_local 0
+                  call 59
+                  set_local 4
+                end
+                i32.const 1
+                set_local 5
+                block  ;; label = @7
+                  get_local 4
+                  i32.const 32
+                  i32.eq
+                  br_if 0 (;@7;)
+                  get_local 4
+                  i32.const -9
+                  i32.add
+                  i32.const 5
+                  i32.lt_u
+                  set_local 5
+                end
+                get_local 5
+                br_if 0 (;@6;)
+              end
+              i32.const 0
+              set_local 6
+              block  ;; label = @6
+                get_local 4
+                i32.const -43
+                i32.add
+                tee_local 5
+                i32.const 2
+                i32.gt_u
+                br_if 0 (;@6;)
+                block  ;; label = @7
+                  get_local 5
+                  br_table 0 (;@7;) 1 (;@6;) 0 (;@7;) 0 (;@7;)
+                end
+                i32.const -1
+                i32.const 0
+                get_local 4
+                i32.const 45
+                i32.eq
+                select
+                set_local 6
+                block  ;; label = @7
+                  get_local 0
+                  i32.load offset=4
+                  tee_local 4
+                  get_local 0
+                  i32.load offset=104
+                  i32.ge_u
+                  br_if 0 (;@7;)
+                  get_local 0
+                  get_local 4
+                  i32.const 1
+                  i32.add
+                  i32.store offset=4
+                  get_local 4
+                  i32.load8_u
+                  set_local 4
+                  br 1 (;@6;)
+                end
+                get_local 0
+                call 59
+                set_local 4
+              end
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 1
+                  i32.const -17
+                  i32.and
+                  br_if 0 (;@7;)
+                  get_local 4
+                  i32.const 48
+                  i32.ne
+                  br_if 0 (;@7;)
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      get_local 0
+                      i32.load offset=4
+                      tee_local 4
+                      get_local 0
+                      i32.load offset=104
+                      i32.ge_u
+                      br_if 0 (;@9;)
+                      get_local 0
+                      get_local 4
+                      i32.const 1
+                      i32.add
+                      i32.store offset=4
+                      get_local 4
+                      i32.load8_u
+                      set_local 4
+                      br 1 (;@8;)
+                    end
+                    get_local 0
+                    call 59
+                    set_local 4
+                  end
+                  block  ;; label = @8
+                    get_local 4
+                    i32.const 32
+                    i32.or
+                    i32.const 120
+                    i32.ne
+                    br_if 0 (;@8;)
+                    block  ;; label = @9
+                      block  ;; label = @10
+                        get_local 0
+                        i32.load offset=4
+                        tee_local 4
+                        get_local 0
+                        i32.load offset=104
+                        i32.ge_u
+                        br_if 0 (;@10;)
+                        get_local 0
+                        get_local 4
+                        i32.const 1
+                        i32.add
+                        i32.store offset=4
+                        get_local 4
+                        i32.load8_u
+                        set_local 4
+                        br 1 (;@9;)
+                      end
+                      get_local 0
+                      call 59
+                      set_local 4
+                    end
+                    i32.const 16
+                    set_local 1
+                    get_local 4
+                    i32.const 8321
+                    i32.add
+                    i32.load8_u
+                    i32.const 16
+                    i32.lt_u
+                    br_if 4 (;@4;)
+                    block  ;; label = @9
+                      get_local 0
+                      i32.load offset=104
+                      tee_local 4
+                      i32.eqz
+                      br_if 0 (;@9;)
+                      get_local 0
+                      get_local 0
+                      i32.load offset=4
+                      i32.const -1
+                      i32.add
+                      i32.store offset=4
+                    end
+                    block  ;; label = @9
+                      get_local 2
+                      i32.eqz
+                      br_if 0 (;@9;)
+                      i64.const 0
+                      set_local 7
+                      get_local 4
+                      i32.eqz
+                      br_if 8 (;@1;)
+                      get_local 0
+                      get_local 0
+                      i32.load offset=4
+                      i32.const -1
+                      i32.add
+                      i32.store offset=4
+                      i64.const 0
+                      return
+                    end
+                    get_local 0
+                    i64.const 0
+                    call 58
+                    i64.const 0
+                    return
+                  end
+                  get_local 1
+                  br_if 1 (;@6;)
+                  i32.const 8
+                  set_local 1
+                  br 3 (;@4;)
+                end
+                get_local 1
+                i32.const 10
+                get_local 1
+                select
+                tee_local 1
+                get_local 4
+                i32.const 8321
+                i32.add
+                i32.load8_u
+                i32.gt_u
+                br_if 0 (;@6;)
+                block  ;; label = @7
+                  get_local 0
+                  i32.load offset=104
+                  i32.eqz
+                  br_if 0 (;@7;)
+                  get_local 0
+                  get_local 0
+                  i32.load offset=4
+                  i32.const -1
+                  i32.add
+                  i32.store offset=4
+                end
+                get_local 0
+                i64.const 0
+                call 58
+                call 36
+                i32.const 22
+                i32.store
+                i64.const 0
+                return
+              end
+              get_local 1
+              i32.const 10
+              i32.ne
+              br_if 1 (;@4;)
+              i64.const 0
+              set_local 7
+              get_local 4
+              i32.const -48
+              i32.add
+              tee_local 2
+              i32.const 9
+              i32.gt_u
+              br_if 3 (;@2;)
+              i32.const 0
+              set_local 5
+              loop  ;; label = @6
+                get_local 5
+                i32.const 10
+                i32.mul
+                set_local 5
+                block  ;; label = @7
+                  block  ;; label = @8
+                    get_local 0
+                    i32.load offset=4
+                    tee_local 4
+                    get_local 0
+                    i32.load offset=104
+                    i32.ge_u
+                    br_if 0 (;@8;)
+                    get_local 0
+                    get_local 4
+                    i32.const 1
+                    i32.add
+                    i32.store offset=4
+                    get_local 4
+                    i32.load8_u
+                    set_local 4
+                    br 1 (;@7;)
+                  end
+                  get_local 0
+                  call 59
+                  set_local 4
+                end
+                get_local 5
+                get_local 2
+                i32.add
+                set_local 5
+                block  ;; label = @7
+                  get_local 4
+                  i32.const -48
+                  i32.add
+                  tee_local 2
+                  i32.const 9
+                  i32.gt_u
+                  br_if 0 (;@7;)
+                  get_local 5
+                  i32.const 429496729
+                  i32.lt_u
+                  br_if 1 (;@6;)
+                end
+              end
+              get_local 5
+              i64.extend_u/i32
+              set_local 7
+              get_local 2
+              i32.const 9
+              i32.gt_u
+              br_if 3 (;@2;)
+              i32.const 10
+              set_local 1
+              get_local 7
+              i64.const 10
+              i64.mul
+              tee_local 8
+              get_local 2
+              i64.extend_s/i32
+              tee_local 9
+              i64.const -1
+              i64.xor
+              i64.gt_u
+              br_if 2 (;@3;)
+              loop  ;; label = @6
+                block  ;; label = @7
+                  block  ;; label = @8
+                    get_local 0
+                    i32.load offset=4
+                    tee_local 4
+                    get_local 0
+                    i32.load offset=104
+                    i32.ge_u
+                    br_if 0 (;@8;)
+                    get_local 0
+                    get_local 4
+                    i32.const 1
+                    i32.add
+                    i32.store offset=4
+                    get_local 4
+                    i32.load8_u
+                    set_local 4
+                    br 1 (;@7;)
+                  end
+                  get_local 0
+                  call 59
+                  set_local 4
+                end
+                get_local 8
+                get_local 9
+                i64.add
+                set_local 7
+                block  ;; label = @7
+                  get_local 4
+                  i32.const -48
+                  i32.add
+                  tee_local 5
+                  i32.const 9
+                  i32.gt_u
+                  br_if 0 (;@7;)
+                  get_local 7
+                  i64.const 1844674407370955162
+                  i64.ge_u
+                  br_if 0 (;@7;)
+                  get_local 7
+                  i64.const 10
+                  i64.mul
+                  tee_local 8
+                  get_local 5
+                  i64.extend_s/i32
+                  tee_local 9
+                  i64.const -1
+                  i64.xor
+                  i64.gt_u
+                  br_if 4 (;@3;)
+                  br 1 (;@6;)
+                end
+              end
+              get_local 5
+              i32.const 9
+              i32.le_u
+              br_if 2 (;@3;)
+              br 3 (;@2;)
+            end
+            call 36
+            i32.const 22
+            i32.store
+            i64.const 0
+            return
+          end
+          block  ;; label = @4
+            get_local 1
+            get_local 1
+            i32.const -1
+            i32.add
+            i32.and
+            i32.eqz
+            br_if 0 (;@4;)
+            i64.const 0
+            set_local 7
+            block  ;; label = @5
+              get_local 1
+              get_local 4
+              i32.const 8321
+              i32.add
+              i32.load8_u
+              tee_local 5
+              i32.le_u
+              br_if 0 (;@5;)
+              i32.const 0
+              set_local 2
+              loop  ;; label = @6
+                get_local 5
+                get_local 2
+                get_local 1
+                i32.mul
+                i32.add
+                set_local 2
+                block  ;; label = @7
+                  block  ;; label = @8
+                    get_local 0
+                    i32.load offset=4
+                    tee_local 4
+                    get_local 0
+                    i32.load offset=104
+                    i32.ge_u
+                    br_if 0 (;@8;)
+                    get_local 0
+                    get_local 4
+                    i32.const 1
+                    i32.add
+                    i32.store offset=4
+                    get_local 4
+                    i32.load8_u
+                    set_local 4
+                    br 1 (;@7;)
+                  end
+                  get_local 0
+                  call 59
+                  set_local 4
+                end
+                get_local 4
+                i32.const 8321
+                i32.add
+                i32.load8_u
+                set_local 5
+                block  ;; label = @7
+                  get_local 2
+                  i32.const 119304646
+                  i32.gt_u
+                  br_if 0 (;@7;)
+                  get_local 1
+                  get_local 5
+                  i32.gt_u
+                  br_if 1 (;@6;)
+                end
+              end
+              get_local 2
+              i64.extend_u/i32
+              set_local 7
+            end
+            get_local 1
+            get_local 5
+            i32.le_u
+            br_if 1 (;@3;)
+            get_local 7
+            i64.const -1
+            get_local 1
+            i64.extend_u/i32
+            tee_local 10
+            i64.div_u
+            tee_local 11
+            i64.gt_u
+            br_if 1 (;@3;)
+            loop  ;; label = @5
+              get_local 7
+              get_local 10
+              i64.mul
+              tee_local 8
+              get_local 5
+              i64.extend_u/i32
+              i64.const 255
+              i64.and
+              tee_local 9
+              i64.const -1
+              i64.xor
+              i64.gt_u
+              br_if 2 (;@3;)
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 0
+                  i32.load offset=4
+                  tee_local 4
+                  get_local 0
+                  i32.load offset=104
+                  i32.ge_u
+                  br_if 0 (;@7;)
+                  get_local 0
+                  get_local 4
+                  i32.const 1
+                  i32.add
+                  i32.store offset=4
+                  get_local 4
+                  i32.load8_u
+                  set_local 4
+                  br 1 (;@6;)
+                end
+                get_local 0
+                call 59
+                set_local 4
+              end
+              get_local 8
+              get_local 9
+              i64.add
+              set_local 7
+              get_local 1
+              get_local 4
+              i32.const 8321
+              i32.add
+              i32.load8_u
+              tee_local 5
+              i32.le_u
+              br_if 2 (;@3;)
+              get_local 7
+              get_local 11
+              i64.le_u
+              br_if 0 (;@5;)
+              br 2 (;@3;)
+            end
+          end
+          get_local 1
+          i32.const 23
+          i32.mul
+          i32.const 5
+          i32.shr_u
+          i32.const 7
+          i32.and
+          i32.const 8233
+          i32.add
+          i32.load8_s
+          set_local 12
+          i64.const 0
+          set_local 7
+          block  ;; label = @4
+            get_local 1
+            get_local 4
+            i32.const 8321
+            i32.add
+            i32.load8_u
+            tee_local 5
+            i32.le_u
+            br_if 0 (;@4;)
+            i32.const 0
+            set_local 2
+            loop  ;; label = @5
+              get_local 5
+              get_local 2
+              get_local 12
+              i32.shl
+              i32.or
+              set_local 2
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 0
+                  i32.load offset=4
+                  tee_local 4
+                  get_local 0
+                  i32.load offset=104
+                  i32.ge_u
+                  br_if 0 (;@7;)
+                  get_local 0
+                  get_local 4
+                  i32.const 1
+                  i32.add
+                  i32.store offset=4
+                  get_local 4
+                  i32.load8_u
+                  set_local 4
+                  br 1 (;@6;)
+                end
+                get_local 0
+                call 59
+                set_local 4
+              end
+              get_local 4
+              i32.const 8321
+              i32.add
+              i32.load8_u
+              set_local 5
+              block  ;; label = @6
+                get_local 2
+                i32.const 134217727
+                i32.gt_u
+                br_if 0 (;@6;)
+                get_local 1
+                get_local 5
+                i32.gt_u
+                br_if 1 (;@5;)
+              end
+            end
+            get_local 2
+            i64.extend_u/i32
+            set_local 7
+          end
+          get_local 1
+          get_local 5
+          i32.le_u
+          br_if 0 (;@3;)
+          i64.const -1
+          get_local 12
+          i64.extend_u/i32
+          tee_local 9
+          i64.shr_u
+          tee_local 10
+          get_local 7
+          i64.lt_u
+          br_if 0 (;@3;)
+          loop  ;; label = @4
+            get_local 7
+            get_local 9
+            i64.shl
+            set_local 7
+            get_local 5
+            i64.extend_u/i32
+            i64.const 255
+            i64.and
+            set_local 8
+            block  ;; label = @5
+              block  ;; label = @6
+                get_local 0
+                i32.load offset=4
+                tee_local 4
+                get_local 0
+                i32.load offset=104
+                i32.ge_u
+                br_if 0 (;@6;)
+                get_local 0
+                get_local 4
+                i32.const 1
+                i32.add
+                i32.store offset=4
+                get_local 4
+                i32.load8_u
+                set_local 4
+                br 1 (;@5;)
+              end
+              get_local 0
+              call 59
+              set_local 4
+            end
+            get_local 7
+            get_local 8
+            i64.or
+            set_local 7
+            get_local 1
+            get_local 4
+            i32.const 8321
+            i32.add
+            i32.load8_u
+            tee_local 5
+            i32.le_u
+            br_if 1 (;@3;)
+            get_local 7
+            get_local 10
+            i64.le_u
+            br_if 0 (;@4;)
+          end
+        end
+        get_local 1
+        get_local 4
+        i32.const 8321
+        i32.add
+        i32.load8_u
+        i32.le_u
+        br_if 0 (;@2;)
+        loop  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 0
+              i32.load offset=4
+              tee_local 4
+              get_local 0
+              i32.load offset=104
+              i32.ge_u
+              br_if 0 (;@5;)
+              get_local 0
+              get_local 4
+              i32.const 1
+              i32.add
+              i32.store offset=4
+              get_local 4
+              i32.load8_u
+              set_local 4
+              br 1 (;@4;)
+            end
+            get_local 0
+            call 59
+            set_local 4
+          end
+          get_local 1
+          get_local 4
+          i32.const 8321
+          i32.add
+          i32.load8_u
+          i32.gt_u
+          br_if 0 (;@3;)
+        end
+        call 36
+        i32.const 34
+        i32.store
+        get_local 6
+        i32.const 0
+        get_local 3
+        i64.const 1
+        i64.and
+        i64.eqz
+        select
+        set_local 6
+        get_local 3
+        set_local 7
+      end
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=104
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 0
+        i32.load offset=4
+        i32.const -1
+        i32.add
+        i32.store offset=4
+      end
+      block  ;; label = @2
+        get_local 7
+        get_local 3
+        i64.lt_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 3
+          i32.wrap/i64
+          i32.const 1
+          i32.and
+          br_if 0 (;@3;)
+          get_local 6
+          br_if 0 (;@3;)
+          call 36
+          i32.const 34
+          i32.store
+          get_local 3
+          i64.const -1
+          i64.add
+          return
+        end
+        get_local 7
+        get_local 3
+        i64.le_u
+        br_if 0 (;@2;)
+        call 36
+        i32.const 34
+        i32.store
+        get_local 3
+        return
+      end
+      get_local 7
+      get_local 6
+      i64.extend_s/i32
+      tee_local 8
+      i64.xor
+      get_local 8
+      i64.sub
+      set_local 7
+    end
+    get_local 7)
+  (func (;61;) (type 21) (param i32 i32 i32) (result i64)
+    (local i32 i64)
+    get_global 0
+    i32.const 144
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    get_local 0
+    i32.store offset=44
+    get_local 3
+    get_local 0
+    i32.store offset=4
+    get_local 3
+    i32.const 0
+    i32.store
+    get_local 3
+    i32.const -1
+    i32.store offset=76
+    get_local 3
+    i32.const -1
+    get_local 0
+    i32.const 2147483647
+    i32.add
+    get_local 0
+    i32.const 0
+    i32.lt_s
+    select
+    i32.store offset=8
+    get_local 3
+    i64.const 0
+    call 58
+    get_local 3
+    get_local 2
+    i32.const 1
+    i64.const -1
+    call 60
+    set_local 4
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      get_local 3
+      i32.load offset=4
+      get_local 3
+      i32.load offset=120
+      i32.add
+      get_local 3
+      i32.load offset=8
+      i32.sub
+      i32.add
+      i32.store
+    end
+    get_local 3
+    i32.const 144
+    i32.add
+    set_global 0
+    get_local 4)
+  (func (;62;) (type 21) (param i32 i32 i32) (result i64)
+    (local i32 i64)
+    get_global 0
+    i32.const 144
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    get_local 0
+    i32.store offset=44
+    get_local 3
+    get_local 0
+    i32.store offset=4
+    get_local 3
+    i32.const 0
+    i32.store
+    get_local 3
+    i32.const -1
+    i32.store offset=76
+    get_local 3
+    i32.const -1
+    get_local 0
+    i32.const 2147483647
+    i32.add
+    get_local 0
+    i32.const 0
+    i32.lt_s
+    select
+    i32.store offset=8
+    get_local 3
+    i64.const 0
+    call 58
+    get_local 3
+    get_local 2
+    i32.const 1
+    i64.const -9223372036854775808
+    call 60
+    set_local 4
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      get_local 3
+      i32.load offset=4
+      get_local 3
+      i32.load offset=120
+      i32.add
+      get_local 3
+      i32.load offset=8
+      i32.sub
+      i32.add
+      i32.store
+    end
+    get_local 3
+    i32.const 144
+    i32.add
+    set_global 0
+    get_local 4)
+  (func (;63;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i64)
+    get_global 0
+    i32.const 144
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    get_local 0
+    i32.store offset=44
+    get_local 3
+    get_local 0
+    i32.store offset=4
+    get_local 3
+    i32.const 0
+    i32.store
+    get_local 3
+    i32.const -1
+    i32.store offset=76
+    get_local 3
+    i32.const -1
+    get_local 0
+    i32.const 2147483647
+    i32.add
+    get_local 0
+    i32.const 0
+    i32.lt_s
+    select
+    i32.store offset=8
+    get_local 3
+    i64.const 0
+    call 58
+    get_local 3
+    get_local 2
+    i32.const 1
+    i64.const 4294967295
+    call 60
+    set_local 4
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      get_local 3
+      i32.load offset=4
+      get_local 3
+      i32.load offset=120
+      i32.add
+      get_local 3
+      i32.load offset=8
+      i32.sub
+      i32.add
+      i32.store
+    end
+    get_local 3
+    i32.const 144
+    i32.add
+    set_global 0
+    get_local 4
+    i32.wrap/i64)
+  (func (;64;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i64)
+    get_global 0
+    i32.const 144
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    get_local 0
+    i32.store offset=44
+    get_local 3
+    get_local 0
+    i32.store offset=4
+    get_local 3
+    i32.const 0
+    i32.store
+    get_local 3
+    i32.const -1
+    i32.store offset=76
+    get_local 3
+    i32.const -1
+    get_local 0
+    i32.const 2147483647
+    i32.add
+    get_local 0
+    i32.const 0
+    i32.lt_s
+    select
+    i32.store offset=8
+    get_local 3
+    i64.const 0
+    call 58
+    get_local 3
+    get_local 2
+    i32.const 1
+    i64.const 2147483648
+    call 60
+    set_local 4
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      get_local 3
+      i32.load offset=4
+      get_local 3
+      i32.load offset=120
+      i32.add
+      get_local 3
+      i32.load offset=8
+      i32.sub
+      i32.add
+      i32.store
+    end
+    get_local 3
+    i32.const 144
+    i32.add
+    set_global 0
+    get_local 4
+    i32.wrap/i64)
+  (func (;65;) (type 14) (param i32 i32) (result i32)
+    (local i32)
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      i32.const -4
+      i32.add
+      set_local 0
+      block  ;; label = @2
+        loop  ;; label = @3
+          get_local 0
+          i32.const 4
+          i32.add
+          tee_local 0
+          i32.load
+          tee_local 2
+          i32.eqz
+          br_if 1 (;@2;)
+          get_local 2
+          get_local 1
+          i32.ne
+          br_if 0 (;@3;)
+        end
+      end
+      get_local 0
+      i32.const 0
+      get_local 2
+      select
+      return
+    end
+    get_local 0
+    get_local 0
+    call 47
+    i32.const 2
+    i32.shl
+    i32.add)
+  (func (;66;) (type 19) (param i32) (result i32)
+    block  ;; label = @1
+      get_local 0
+      br_if 0 (;@1;)
+      i32.const 0
+      return
+    end
+    i32.const 8592
+    get_local 0
+    call 65
+    i32.const 0
+    i32.ne)
+  (func (;67;) (type 21) (param i32 i32 i32) (result i64)
+    (local i32 i32 i64)
+    get_global 0
+    i32.const 208
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    i32.const 0
+    i32.const 144
+    call 2
+    tee_local 4
+    i32.const 0
+    i32.store offset=8
+    get_local 4
+    i64.const 0
+    i64.store
+    get_local 4
+    i32.const -1
+    i32.store offset=76
+    get_local 4
+    i32.const 60
+    i32.store offset=48
+    get_local 4
+    get_local 4
+    i32.const 144
+    i32.add
+    i32.const 4
+    i32.or
+    i32.store offset=44
+    get_local 4
+    i32.const 1
+    i32.store offset=32
+    get_local 0
+    i32.const -4
+    i32.add
+    set_local 3
+    loop  ;; label = @1
+      get_local 3
+      i32.const 4
+      i32.add
+      tee_local 3
+      i32.load
+      call 66
+      br_if 0 (;@1;)
+    end
+    get_local 4
+    get_local 3
+    i32.store offset=84
+    get_local 4
+    i64.const 0
+    call 58
+    get_local 4
+    get_local 2
+    i32.const 1
+    i64.const -1
+    call 60
+    set_local 5
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 3
+      get_local 4
+      i32.load offset=4
+      get_local 4
+      i32.load offset=8
+      i32.sub
+      get_local 4
+      i32.load offset=120
+      i32.add
+      tee_local 2
+      i32.const 2
+      i32.shl
+      i32.add
+      get_local 0
+      get_local 2
+      select
+      i32.store
+    end
+    get_local 4
+    i32.const 208
+    i32.add
+    set_global 0
+    get_local 5)
+  (func (;68;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32 i32 i32)
+    get_local 0
+    i32.load offset=84
+    tee_local 3
+    i32.const 8244
+    get_local 3
+    i32.load
+    select
+    set_local 4
+    i32.const 0
+    set_local 5
+    i32.const 0
+    set_local 3
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=48
+      i32.eqz
+      br_if 0 (;@1;)
+      i32.const 0
+      set_local 3
+      get_local 4
+      set_local 6
+      loop  ;; label = @2
+        get_local 6
+        i32.load
+        tee_local 7
+        i32.eqz
+        br_if 1 (;@1;)
+        get_local 0
+        i32.load offset=44
+        get_local 3
+        i32.add
+        get_local 7
+        i32.const 64
+        get_local 7
+        i32.const 128
+        i32.lt_u
+        select
+        i32.store8
+        get_local 6
+        i32.const 4
+        i32.add
+        set_local 6
+        get_local 3
+        i32.const 1
+        i32.add
+        tee_local 3
+        get_local 0
+        i32.load offset=48
+        i32.lt_u
+        br_if 0 (;@2;)
+      end
+    end
+    get_local 0
+    get_local 0
+    i32.load offset=44
+    tee_local 6
+    i32.store offset=4
+    get_local 0
+    get_local 4
+    get_local 3
+    i32.const 2
+    i32.shl
+    i32.add
+    i32.store offset=84
+    get_local 0
+    get_local 6
+    get_local 3
+    i32.add
+    i32.store offset=8
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 3
+      i32.eqz
+      br_if 0 (;@1;)
+      i32.const 1
+      set_local 5
+      get_local 0
+      get_local 6
+      i32.const 1
+      i32.add
+      i32.store offset=4
+      get_local 1
+      get_local 6
+      i32.load8_u
+      i32.store8
+    end
+    get_local 5)
+  (func (;69;) (type 21) (param i32 i32 i32) (result i64)
+    (local i32 i32 i64)
+    get_global 0
+    i32.const 208
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    i32.const 0
+    i32.const 144
+    call 2
+    tee_local 4
+    i32.const 0
+    i32.store offset=8
+    get_local 4
+    i64.const 0
+    i64.store
+    get_local 4
+    i32.const -1
+    i32.store offset=76
+    get_local 4
+    i32.const 60
+    i32.store offset=48
+    get_local 4
+    get_local 4
+    i32.const 144
+    i32.add
+    i32.const 4
+    i32.or
+    i32.store offset=44
+    get_local 4
+    i32.const 1
+    i32.store offset=32
+    get_local 0
+    i32.const -4
+    i32.add
+    set_local 3
+    loop  ;; label = @1
+      get_local 3
+      i32.const 4
+      i32.add
+      tee_local 3
+      i32.load
+      call 66
+      br_if 0 (;@1;)
+    end
+    get_local 4
+    get_local 3
+    i32.store offset=84
+    get_local 4
+    i64.const 0
+    call 58
+    get_local 4
+    get_local 2
+    i32.const 1
+    i64.const -9223372036854775808
+    call 60
+    set_local 5
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 3
+      get_local 4
+      i32.load offset=4
+      get_local 4
+      i32.load offset=8
+      i32.sub
+      get_local 4
+      i32.load offset=120
+      i32.add
+      tee_local 2
+      i32.const 2
+      i32.shl
+      i32.add
+      get_local 0
+      get_local 2
+      select
+      i32.store
+    end
+    get_local 4
+    i32.const 208
+    i32.add
+    set_global 0
+    get_local 5)
+  (func (;70;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i64)
+    get_global 0
+    i32.const 208
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    i32.const 0
+    i32.const 144
+    call 2
+    tee_local 4
+    i32.const 0
+    i32.store offset=8
+    get_local 4
+    i64.const 0
+    i64.store
+    get_local 4
+    i32.const -1
+    i32.store offset=76
+    get_local 4
+    i32.const 60
+    i32.store offset=48
+    get_local 4
+    get_local 4
+    i32.const 144
+    i32.add
+    i32.const 4
+    i32.or
+    i32.store offset=44
+    get_local 4
+    i32.const 1
+    i32.store offset=32
+    get_local 0
+    i32.const -4
+    i32.add
+    set_local 3
+    loop  ;; label = @1
+      get_local 3
+      i32.const 4
+      i32.add
+      tee_local 3
+      i32.load
+      call 66
+      br_if 0 (;@1;)
+    end
+    get_local 4
+    get_local 3
+    i32.store offset=84
+    get_local 4
+    i64.const 0
+    call 58
+    get_local 4
+    get_local 2
+    i32.const 1
+    i64.const 4294967295
+    call 60
+    set_local 5
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 3
+      get_local 4
+      i32.load offset=4
+      get_local 4
+      i32.load offset=8
+      i32.sub
+      get_local 4
+      i32.load offset=120
+      i32.add
+      tee_local 2
+      i32.const 2
+      i32.shl
+      i32.add
+      get_local 0
+      get_local 2
+      select
+      i32.store
+    end
+    get_local 4
+    i32.const 208
+    i32.add
+    set_global 0
+    get_local 5
+    i32.wrap/i64)
+  (func (;71;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i64)
+    get_global 0
+    i32.const 208
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    i32.const 0
+    i32.const 144
+    call 2
+    tee_local 4
+    i32.const 0
+    i32.store offset=8
+    get_local 4
+    i64.const 0
+    i64.store
+    get_local 4
+    i32.const -1
+    i32.store offset=76
+    get_local 4
+    i32.const 60
+    i32.store offset=48
+    get_local 4
+    get_local 4
+    i32.const 144
+    i32.add
+    i32.const 4
+    i32.or
+    i32.store offset=44
+    get_local 4
+    i32.const 1
+    i32.store offset=32
+    get_local 0
+    i32.const -4
+    i32.add
+    set_local 3
+    loop  ;; label = @1
+      get_local 3
+      i32.const 4
+      i32.add
+      tee_local 3
+      i32.load
+      call 66
+      br_if 0 (;@1;)
+    end
+    get_local 4
+    get_local 3
+    i32.store offset=84
+    get_local 4
+    i64.const 0
+    call 58
+    get_local 4
+    get_local 2
+    i32.const 1
+    i64.const 2147483648
+    call 60
+    set_local 5
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 3
+      get_local 4
+      i32.load offset=4
+      get_local 4
+      i32.load offset=8
+      i32.sub
+      get_local 4
+      i32.load offset=120
+      i32.add
+      tee_local 2
+      i32.const 2
+      i32.shl
+      i32.add
+      get_local 0
+      get_local 2
+      select
+      i32.store
+    end
+    get_local 4
+    i32.const 208
+    i32.add
+    set_global 0
+    get_local 5
+    i32.wrap/i64)
+  (func (;72;) (type 22) (param f64 i32) (result f64)
+    (local i32)
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 1
+        i32.const 1024
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 0
+        f64.const 0x1p+1023 (;=8.98847e+307;)
+        f64.mul
+        set_local 0
+        block  ;; label = @3
+          get_local 1
+          i32.const -1023
+          i32.add
+          tee_local 2
+          i32.const 1024
+          i32.ge_s
+          br_if 0 (;@3;)
+          get_local 2
+          set_local 1
+          br 2 (;@1;)
+        end
+        get_local 0
+        f64.const 0x1p+1023 (;=8.98847e+307;)
+        f64.mul
+        set_local 0
+        get_local 1
+        i32.const 3069
+        get_local 1
+        i32.const 3069
+        i32.lt_s
+        select
+        i32.const -2046
+        i32.add
+        set_local 1
+        br 1 (;@1;)
+      end
+      get_local 1
+      i32.const -1023
+      i32.gt_s
+      br_if 0 (;@1;)
+      get_local 0
+      f64.const 0x1p-969 (;=2.00417e-292;)
+      f64.mul
+      set_local 0
+      block  ;; label = @2
+        get_local 1
+        i32.const 969
+        i32.add
+        tee_local 2
+        i32.const -1023
+        i32.le_s
+        br_if 0 (;@2;)
+        get_local 2
+        set_local 1
+        br 1 (;@1;)
+      end
+      get_local 0
+      f64.const 0x1p-969 (;=2.00417e-292;)
+      f64.mul
+      set_local 0
+      get_local 1
+      i32.const -2960
+      get_local 1
+      i32.const -2960
+      i32.gt_s
+      select
+      i32.const 1938
+      i32.add
+      set_local 1
+    end
+    get_local 0
+    get_local 1
+    i32.const 1023
+    i32.add
+    i64.extend_u/i32
+    i64.const 52
+    i64.shl
+    f64.reinterpret/i64
+    f64.mul)
+  (func (;73;) (type 9) (param i32 i64 i64 i64 i64)
+    get_local 0
+    get_local 1
+    i64.store
+    get_local 0
+    get_local 4
+    i64.const 48
+    i64.shr_u
+    i32.wrap/i64
+    i32.const 32768
+    i32.and
+    get_local 2
+    i64.const 48
+    i64.shr_u
+    i32.wrap/i64
+    i32.const 32767
+    i32.and
+    i32.or
+    i64.extend_u/i32
+    i64.const 48
+    i64.shl
+    get_local 2
+    i64.const 281474976710655
+    i64.and
+    i64.or
+    i64.store offset=8)
+  (func (;74;) (type 23) (param i64 i64) (result i32)
+    (local i64 i32 i32)
+    get_local 1
+    i64.const 281474976710655
+    i64.and
+    set_local 2
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 1
+        i64.const 48
+        i64.shr_u
+        i32.wrap/i64
+        i32.const 32767
+        i32.and
+        tee_local 3
+        i32.const 32767
+        i32.eq
+        br_if 0 (;@2;)
+        i32.const 4
+        set_local 4
+        get_local 3
+        br_if 1 (;@1;)
+        i32.const 2
+        i32.const 3
+        get_local 2
+        get_local 0
+        i64.or
+        i64.eqz
+        select
+        return
+      end
+      get_local 2
+      get_local 0
+      i64.or
+      i64.eqz
+      set_local 4
+    end
+    get_local 4)
+  (func (;75;) (type 9) (param i32 i64 i64 i64 i64)
+    (local i32 i32 i32 i32 i64 i32 i64 i64 i64)
+    get_global 0
+    i32.const 128
+    i32.sub
+    tee_local 5
+    set_global 0
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 3
+          get_local 4
+          i64.const 0
+          i64.const 0
+          call 16
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 3
+          get_local 4
+          call 74
+          set_local 6
+          get_local 2
+          i64.const 48
+          i64.shr_u
+          i32.wrap/i64
+          tee_local 7
+          i32.const 32767
+          i32.and
+          tee_local 8
+          i32.const 32767
+          i32.eq
+          br_if 0 (;@3;)
+          get_local 6
+          br_if 1 (;@2;)
+        end
+        get_local 5
+        i32.const 16
+        i32.add
+        get_local 1
+        get_local 2
+        get_local 3
+        get_local 4
+        call 9
+        get_local 5
+        get_local 5
+        i64.load offset=16
+        tee_local 4
+        get_local 5
+        i32.const 16
+        i32.add
+        i32.const 8
+        i32.add
+        i64.load
+        tee_local 3
+        get_local 4
+        get_local 3
+        call 15
+        get_local 5
+        i32.const 8
+        i32.add
+        i64.load
+        set_local 2
+        get_local 5
+        i64.load
+        set_local 4
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 1
+        get_local 8
+        i64.extend_u/i32
+        i64.const 48
+        i64.shl
+        get_local 2
+        i64.const 281474976710655
+        i64.and
+        i64.or
+        tee_local 9
+        get_local 3
+        get_local 4
+        i64.const 48
+        i64.shr_u
+        i32.wrap/i64
+        i32.const 32767
+        i32.and
+        tee_local 10
+        i64.extend_u/i32
+        i64.const 48
+        i64.shl
+        get_local 4
+        i64.const 281474976710655
+        i64.and
+        i64.or
+        tee_local 11
+        call 17
+        i32.const 0
+        i32.gt_s
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 1
+          get_local 9
+          get_local 3
+          get_local 11
+          call 18
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 1
+          set_local 4
+          br 2 (;@1;)
+        end
+        get_local 5
+        i32.const 112
+        i32.add
+        get_local 1
+        get_local 2
+        i64.const 0
+        i64.const 0
+        call 9
+        get_local 5
+        i32.const 120
+        i32.add
+        i64.load
+        set_local 2
+        get_local 5
+        i64.load offset=112
+        set_local 4
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 8
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 1
+          set_local 4
+          br 1 (;@2;)
+        end
+        get_local 5
+        i32.const 96
+        i32.add
+        get_local 1
+        get_local 9
+        i64.const 0
+        i64.const 4645181540655955968
+        call 9
+        get_local 5
+        i32.const 104
+        i32.add
+        i64.load
+        tee_local 9
+        i64.const 48
+        i64.shr_u
+        i32.wrap/i64
+        i32.const -120
+        i32.add
+        set_local 8
+        get_local 5
+        i64.load offset=96
+        set_local 4
+      end
+      block  ;; label = @2
+        get_local 10
+        br_if 0 (;@2;)
+        get_local 5
+        i32.const 80
+        i32.add
+        get_local 3
+        get_local 11
+        i64.const 0
+        i64.const 4645181540655955968
+        call 9
+        get_local 5
+        i32.const 88
+        i32.add
+        i64.load
+        tee_local 11
+        i64.const 48
+        i64.shr_u
+        i32.wrap/i64
+        i32.const -120
+        i32.add
+        set_local 10
+        get_local 5
+        i64.load offset=80
+        set_local 3
+      end
+      get_local 9
+      i64.const 281474976710655
+      i64.and
+      i64.const 281474976710656
+      i64.or
+      tee_local 9
+      get_local 11
+      i64.const 281474976710655
+      i64.and
+      i64.const 281474976710656
+      i64.or
+      tee_local 12
+      i64.sub
+      get_local 4
+      get_local 3
+      i64.lt_u
+      i64.extend_u/i32
+      i64.sub
+      tee_local 13
+      i64.const -1
+      i64.gt_s
+      set_local 6
+      get_local 4
+      get_local 3
+      i64.sub
+      set_local 11
+      block  ;; label = @2
+        get_local 8
+        get_local 10
+        i32.le_s
+        br_if 0 (;@2;)
+        loop  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 6
+              i32.const 1
+              i32.and
+              i32.eqz
+              br_if 0 (;@5;)
+              block  ;; label = @6
+                get_local 13
+                get_local 11
+                i64.or
+                i64.const 0
+                i64.ne
+                br_if 0 (;@6;)
+                get_local 5
+                i32.const 32
+                i32.add
+                get_local 1
+                get_local 2
+                i64.const 0
+                i64.const 0
+                call 9
+                get_local 5
+                i32.const 40
+                i32.add
+                i64.load
+                set_local 2
+                get_local 5
+                i64.load offset=32
+                set_local 4
+                br 5 (;@1;)
+              end
+              get_local 11
+              i64.const 63
+              i64.shr_u
+              set_local 9
+              get_local 13
+              i64.const 1
+              i64.shl
+              set_local 13
+              br 1 (;@4;)
+            end
+            get_local 4
+            i64.const 63
+            i64.shr_u
+            set_local 13
+            get_local 9
+            i64.const 1
+            i64.shl
+            set_local 9
+            get_local 4
+            set_local 11
+          end
+          get_local 13
+          get_local 9
+          i64.or
+          tee_local 9
+          get_local 12
+          i64.sub
+          get_local 11
+          i64.const 1
+          i64.shl
+          tee_local 4
+          get_local 3
+          i64.lt_u
+          i64.extend_u/i32
+          i64.sub
+          tee_local 13
+          i64.const -1
+          i64.gt_s
+          set_local 6
+          get_local 4
+          get_local 3
+          i64.sub
+          set_local 11
+          get_local 8
+          i32.const -1
+          i32.add
+          tee_local 8
+          get_local 10
+          i32.gt_s
+          br_if 0 (;@3;)
+        end
+      end
+      block  ;; label = @2
+        get_local 6
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 13
+        set_local 9
+        get_local 11
+        set_local 4
+        get_local 13
+        get_local 11
+        i64.or
+        i64.const 0
+        i64.ne
+        br_if 0 (;@2;)
+        get_local 5
+        i32.const 48
+        i32.add
+        get_local 1
+        get_local 2
+        i64.const 0
+        i64.const 0
+        call 9
+        get_local 5
+        i32.const 56
+        i32.add
+        i64.load
+        set_local 2
+        get_local 5
+        i64.load offset=48
+        set_local 4
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 9
+        i64.const 281474976710655
+        i64.gt_u
+        br_if 0 (;@2;)
+        loop  ;; label = @3
+          get_local 4
+          i64.const 63
+          i64.shr_u
+          set_local 3
+          get_local 8
+          i32.const -1
+          i32.add
+          set_local 8
+          get_local 4
+          i64.const 1
+          i64.shl
+          set_local 4
+          get_local 3
+          get_local 9
+          i64.const 1
+          i64.shl
+          i64.or
+          tee_local 9
+          i64.const 281474976710656
+          i64.lt_u
+          br_if 0 (;@3;)
+        end
+      end
+      get_local 7
+      i32.const 32768
+      i32.and
+      set_local 6
+      block  ;; label = @2
+        get_local 8
+        i32.const 0
+        i32.gt_s
+        br_if 0 (;@2;)
+        get_local 5
+        i32.const 64
+        i32.add
+        get_local 4
+        get_local 9
+        i64.const 281474976710655
+        i64.and
+        get_local 8
+        i32.const 120
+        i32.add
+        get_local 6
+        i32.or
+        i64.extend_u/i32
+        i64.const 48
+        i64.shl
+        i64.or
+        i64.const 0
+        i64.const 4577627546245398528
+        call 9
+        get_local 5
+        i32.const 72
+        i32.add
+        i64.load
+        set_local 2
+        get_local 5
+        i64.load offset=64
+        set_local 4
+        br 1 (;@1;)
+      end
+      get_local 9
+      i64.const 281474976710655
+      i64.and
+      get_local 8
+      get_local 6
+      i32.or
+      i64.extend_u/i32
+      i64.const 48
+      i64.shl
+      i64.or
+      set_local 2
+    end
+    get_local 0
+    get_local 4
+    i64.store
+    get_local 0
+    get_local 2
+    i64.store offset=8
+    get_local 5
+    i32.const 128
+    i32.add
+    set_global 0)
+  (func (;76;) (type 24) (param f64) (result f64)
+    get_local 0
+    i64.reinterpret/f64
+    i64.const 9223372036854775807
+    i64.and
+    f64.reinterpret/i64)
+  (func (;77;) (type 25) (param i32 i64 i64 i32)
+    (local i32 i32)
+    get_global 0
+    i32.const 80
+    i32.sub
+    tee_local 4
+    set_global 0
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 3
+        i32.const 16384
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 4
+        i32.const 32
+        i32.add
+        get_local 1
+        get_local 2
+        i64.const 0
+        i64.const 9222809086901354496
+        call 9
+        get_local 4
+        i32.const 32
+        i32.add
+        i32.const 8
+        i32.add
+        i64.load
+        set_local 2
+        get_local 4
+        i64.load offset=32
+        set_local 1
+        block  ;; label = @3
+          get_local 3
+          i32.const -16383
+          i32.add
+          tee_local 5
+          i32.const 16384
+          i32.ge_s
+          br_if 0 (;@3;)
+          get_local 5
+          set_local 3
+          br 2 (;@1;)
+        end
+        get_local 4
+        i32.const 16
+        i32.add
+        get_local 1
+        get_local 2
+        i64.const 0
+        i64.const 9222809086901354496
+        call 9
+        get_local 3
+        i32.const 49149
+        get_local 3
+        i32.const 49149
+        i32.lt_s
+        select
+        i32.const -32766
+        i32.add
+        set_local 3
+        get_local 4
+        i32.const 16
+        i32.add
+        i32.const 8
+        i32.add
+        i64.load
+        set_local 2
+        get_local 4
+        i64.load offset=16
+        set_local 1
+        br 1 (;@1;)
+      end
+      get_local 3
+      i32.const -16383
+      i32.gt_s
+      br_if 0 (;@1;)
+      get_local 4
+      i32.const 64
+      i32.add
+      get_local 1
+      get_local 2
+      i64.const 0
+      i64.const 32088147345014784
+      call 9
+      get_local 4
+      i32.const 64
+      i32.add
+      i32.const 8
+      i32.add
+      i64.load
+      set_local 2
+      get_local 4
+      i64.load offset=64
+      set_local 1
+      block  ;; label = @2
+        get_local 3
+        i32.const 16269
+        i32.add
+        tee_local 5
+        i32.const -16383
+        i32.le_s
+        br_if 0 (;@2;)
+        get_local 5
+        set_local 3
+        br 1 (;@1;)
+      end
+      get_local 4
+      i32.const 48
+      i32.add
+      get_local 1
+      get_local 2
+      i64.const 0
+      i64.const 32088147345014784
+      call 9
+      get_local 3
+      i32.const -48920
+      get_local 3
+      i32.const -48920
+      i32.gt_s
+      select
+      i32.const 32538
+      i32.add
+      set_local 3
+      get_local 4
+      i32.const 48
+      i32.add
+      i32.const 8
+      i32.add
+      i64.load
+      set_local 2
+      get_local 4
+      i64.load offset=48
+      set_local 1
+    end
+    get_local 4
+    get_local 1
+    get_local 2
+    i64.const 0
+    get_local 3
+    i32.const 16383
+    i32.add
+    i64.extend_u/i32
+    i64.const 48
+    i64.shl
+    call 9
+    get_local 0
+    get_local 4
+    i32.const 8
+    i32.add
+    i64.load
+    i64.store offset=8
+    get_local 0
+    get_local 4
+    i64.load
+    i64.store
+    get_local 4
+    i32.const 80
+    i32.add
+    set_global 0)
+  (func (;78;) (type 3) (param i32 i32 i32 i32)
+    (local i32 i64 i64 i32 i32 i32 i32 i32 i32 i32 i32 i32 i64 i64 i32 i64 i64 i32 i64 i32 i32 i32 i32 i32 i32 f64)
+    get_global 0
+    i32.const 1328
+    i32.sub
+    tee_local 4
+    set_global 0
+    i64.const 0
+    set_local 5
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 2
+        i32.const 2
+        i32.le_u
+        br_if 0 (;@2;)
+        i64.const 0
+        set_local 6
+        br 1 (;@1;)
+      end
+      get_local 1
+      i32.const 104
+      i32.add
+      set_local 7
+      get_local 1
+      i32.const 4
+      i32.add
+      set_local 8
+      get_local 2
+      i32.const 2
+      i32.shl
+      tee_local 9
+      i32.const 8732
+      i32.add
+      i32.load
+      set_local 10
+      get_local 9
+      i32.const 8720
+      i32.add
+      i32.load
+      set_local 11
+      loop  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 8
+            i32.load
+            tee_local 9
+            get_local 7
+            i32.load
+            i32.ge_u
+            br_if 0 (;@4;)
+            get_local 8
+            get_local 9
+            i32.const 1
+            i32.add
+            i32.store
+            get_local 9
+            i32.load8_u
+            set_local 9
+            br 1 (;@3;)
+          end
+          get_local 1
+          call 59
+          set_local 9
+        end
+        i32.const 1
+        set_local 12
+        block  ;; label = @3
+          get_local 9
+          i32.const 32
+          i32.eq
+          br_if 0 (;@3;)
+          get_local 9
+          i32.const -9
+          i32.add
+          i32.const 5
+          i32.lt_u
+          set_local 12
+        end
+        get_local 12
+        br_if 0 (;@2;)
+      end
+      i32.const 1
+      set_local 13
+      block  ;; label = @2
+        get_local 9
+        i32.const -43
+        i32.add
+        tee_local 12
+        i32.const 2
+        i32.gt_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 12
+          br_table 0 (;@3;) 1 (;@2;) 0 (;@3;) 0 (;@3;)
+        end
+        i32.const 1
+        get_local 9
+        i32.const 45
+        i32.eq
+        i32.const 1
+        i32.shl
+        i32.sub
+        set_local 13
+        block  ;; label = @3
+          get_local 8
+          i32.load
+          tee_local 9
+          get_local 7
+          i32.load
+          i32.ge_u
+          br_if 0 (;@3;)
+          get_local 8
+          get_local 9
+          i32.const 1
+          i32.add
+          i32.store
+          get_local 9
+          i32.load8_u
+          set_local 9
+          br 1 (;@2;)
+        end
+        get_local 1
+        call 59
+        set_local 9
+      end
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              block  ;; label = @6
+                block  ;; label = @7
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              block  ;; label = @14
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      block  ;; label = @18
+                                        block  ;; label = @19
+                                          get_local 9
+                                          i32.const 32
+                                          i32.or
+                                          tee_local 12
+                                          i32.const 105
+                                          i32.ne
+                                          br_if 0 (;@19;)
+                                          block  ;; label = @20
+                                            block  ;; label = @21
+                                              get_local 8
+                                              i32.load
+                                              tee_local 9
+                                              get_local 7
+                                              i32.load
+                                              i32.ge_u
+                                              br_if 0 (;@21;)
+                                              get_local 8
+                                              get_local 9
+                                              i32.const 1
+                                              i32.add
+                                              i32.store
+                                              get_local 9
+                                              i32.load8_u
+                                              set_local 9
+                                              br 1 (;@20;)
+                                            end
+                                            get_local 1
+                                            call 59
+                                            set_local 9
+                                          end
+                                          i32.const 1
+                                          set_local 12
+                                          get_local 9
+                                          i32.const 32
+                                          i32.or
+                                          i32.const 110
+                                          i32.eq
+                                          br_if 1 (;@18;)
+                                          br 2 (;@17;)
+                                        end
+                                        get_local 12
+                                        i32.const 110
+                                        i32.ne
+                                        br_if 5 (;@13;)
+                                        block  ;; label = @19
+                                          block  ;; label = @20
+                                            get_local 8
+                                            i32.load
+                                            tee_local 9
+                                            get_local 7
+                                            i32.load
+                                            i32.ge_u
+                                            br_if 0 (;@20;)
+                                            get_local 8
+                                            get_local 9
+                                            i32.const 1
+                                            i32.add
+                                            i32.store
+                                            get_local 9
+                                            i32.load8_u
+                                            set_local 9
+                                            br 1 (;@19;)
+                                          end
+                                          get_local 1
+                                          call 59
+                                          set_local 9
+                                        end
+                                        get_local 9
+                                        i32.const 32
+                                        i32.or
+                                        i32.const 97
+                                        i32.ne
+                                        br_if 3 (;@15;)
+                                        block  ;; label = @19
+                                          block  ;; label = @20
+                                            get_local 8
+                                            i32.load
+                                            tee_local 9
+                                            get_local 7
+                                            i32.load
+                                            i32.lt_u
+                                            br_if 0 (;@20;)
+                                            get_local 1
+                                            call 59
+                                            set_local 9
+                                            br 1 (;@19;)
+                                          end
+                                          get_local 8
+                                          get_local 9
+                                          i32.const 1
+                                          i32.add
+                                          i32.store
+                                          get_local 9
+                                          i32.load8_u
+                                          set_local 9
+                                        end
+                                        get_local 9
+                                        i32.const 32
+                                        i32.or
+                                        i32.const 110
+                                        i32.ne
+                                        br_if 3 (;@15;)
+                                        get_local 3
+                                        i32.const 0
+                                        i32.ne
+                                        set_local 14
+                                        br 4 (;@14;)
+                                      end
+                                      block  ;; label = @18
+                                        block  ;; label = @19
+                                          get_local 8
+                                          i32.load
+                                          tee_local 9
+                                          get_local 7
+                                          i32.load
+                                          i32.lt_u
+                                          br_if 0 (;@19;)
+                                          get_local 1
+                                          call 59
+                                          set_local 9
+                                          br 1 (;@18;)
+                                        end
+                                        get_local 8
+                                        get_local 9
+                                        i32.const 1
+                                        i32.add
+                                        i32.store
+                                        get_local 9
+                                        i32.load8_u
+                                        set_local 9
+                                      end
+                                      i32.const 2
+                                      set_local 12
+                                      get_local 9
+                                      i32.const 32
+                                      i32.or
+                                      i32.const 102
+                                      i32.ne
+                                      br_if 0 (;@17;)
+                                      block  ;; label = @18
+                                        block  ;; label = @19
+                                          get_local 8
+                                          i32.load
+                                          tee_local 9
+                                          get_local 7
+                                          i32.load
+                                          i32.lt_u
+                                          br_if 0 (;@19;)
+                                          get_local 1
+                                          call 59
+                                          set_local 9
+                                          br 1 (;@18;)
+                                        end
+                                        get_local 8
+                                        get_local 9
+                                        i32.const 1
+                                        i32.add
+                                        i32.store
+                                        get_local 9
+                                        i32.load8_u
+                                        set_local 9
+                                      end
+                                      i32.const 3
+                                      set_local 12
+                                      block  ;; label = @18
+                                        block  ;; label = @19
+                                          get_local 9
+                                          i32.const 32
+                                          i32.or
+                                          i32.const 105
+                                          i32.ne
+                                          br_if 0 (;@19;)
+                                          block  ;; label = @20
+                                            block  ;; label = @21
+                                              get_local 8
+                                              i32.load
+                                              tee_local 9
+                                              get_local 7
+                                              i32.load
+                                              i32.lt_u
+                                              br_if 0 (;@21;)
+                                              get_local 1
+                                              call 59
+                                              set_local 9
+                                              br 1 (;@20;)
+                                            end
+                                            get_local 8
+                                            get_local 9
+                                            i32.const 1
+                                            i32.add
+                                            i32.store
+                                            get_local 9
+                                            i32.load8_u
+                                            set_local 9
+                                          end
+                                          i32.const 4
+                                          set_local 12
+                                          block  ;; label = @20
+                                            get_local 9
+                                            i32.const 32
+                                            i32.or
+                                            i32.const 110
+                                            i32.ne
+                                            br_if 0 (;@20;)
+                                            block  ;; label = @21
+                                              block  ;; label = @22
+                                                get_local 8
+                                                i32.load
+                                                tee_local 9
+                                                get_local 7
+                                                i32.load
+                                                i32.lt_u
+                                                br_if 0 (;@22;)
+                                                get_local 1
+                                                call 59
+                                                set_local 9
+                                                br 1 (;@21;)
+                                              end
+                                              get_local 8
+                                              get_local 9
+                                              i32.const 1
+                                              i32.add
+                                              i32.store
+                                              get_local 9
+                                              i32.load8_u
+                                              set_local 9
+                                            end
+                                            i32.const 5
+                                            set_local 12
+                                            get_local 9
+                                            i32.const 32
+                                            i32.or
+                                            i32.const 105
+                                            i32.ne
+                                            br_if 0 (;@20;)
+                                            block  ;; label = @21
+                                              block  ;; label = @22
+                                                get_local 8
+                                                i32.load
+                                                tee_local 9
+                                                get_local 7
+                                                i32.load
+                                                i32.lt_u
+                                                br_if 0 (;@22;)
+                                                get_local 1
+                                                call 59
+                                                set_local 9
+                                                br 1 (;@21;)
+                                              end
+                                              get_local 8
+                                              get_local 9
+                                              i32.const 1
+                                              i32.add
+                                              i32.store
+                                              get_local 9
+                                              i32.load8_u
+                                              set_local 9
+                                            end
+                                            i32.const 6
+                                            set_local 12
+                                            get_local 9
+                                            i32.const 32
+                                            i32.or
+                                            i32.const 116
+                                            i32.ne
+                                            br_if 0 (;@20;)
+                                            block  ;; label = @21
+                                              block  ;; label = @22
+                                                get_local 8
+                                                i32.load
+                                                tee_local 9
+                                                get_local 7
+                                                i32.load
+                                                i32.lt_u
+                                                br_if 0 (;@22;)
+                                                get_local 1
+                                                call 59
+                                                set_local 9
+                                                br 1 (;@21;)
+                                              end
+                                              get_local 8
+                                              get_local 9
+                                              i32.const 1
+                                              i32.add
+                                              i32.store
+                                              get_local 9
+                                              i32.load8_u
+                                              set_local 9
+                                            end
+                                            i32.const 7
+                                            set_local 12
+                                            get_local 9
+                                            i32.const 32
+                                            i32.or
+                                            i32.const 121
+                                            i32.eq
+                                            br_if 2 (;@18;)
+                                          end
+                                          get_local 3
+                                          br_if 0 (;@19;)
+                                          get_local 3
+                                          i32.const 0
+                                          i32.ne
+                                          set_local 14
+                                          br 3 (;@16;)
+                                        end
+                                        block  ;; label = @19
+                                          get_local 7
+                                          i32.load
+                                          tee_local 9
+                                          i32.eqz
+                                          br_if 0 (;@19;)
+                                          get_local 8
+                                          get_local 8
+                                          i32.load
+                                          i32.const -1
+                                          i32.add
+                                          i32.store
+                                        end
+                                        get_local 12
+                                        i32.const 4
+                                        i32.lt_u
+                                        br_if 0 (;@18;)
+                                        get_local 3
+                                        i32.eqz
+                                        br_if 0 (;@18;)
+                                        get_local 9
+                                        i32.eqz
+                                        br_if 0 (;@18;)
+                                        get_local 8
+                                        i32.load
+                                        set_local 9
+                                        loop  ;; label = @19
+                                          get_local 9
+                                          i32.const -1
+                                          i32.add
+                                          set_local 9
+                                          get_local 12
+                                          i32.const -1
+                                          i32.add
+                                          tee_local 12
+                                          i32.const 3
+                                          i32.gt_u
+                                          br_if 0 (;@19;)
+                                        end
+                                        get_local 8
+                                        get_local 9
+                                        i32.store
+                                      end
+                                      get_local 4
+                                      get_local 13
+                                      f32.convert_s/i32
+                                      f32.const inf (;=inf;)
+                                      f32.mul
+                                      call 8
+                                      get_local 4
+                                      i32.const 8
+                                      i32.add
+                                      i64.load
+                                      set_local 6
+                                      get_local 4
+                                      i64.load
+                                      set_local 5
+                                      br 16 (;@1;)
+                                    end
+                                    get_local 3
+                                    i32.const 0
+                                    i32.ne
+                                    set_local 14
+                                  end
+                                  get_local 12
+                                  i32.const 3
+                                  i32.gt_u
+                                  br_if 0 (;@15;)
+                                  get_local 12
+                                  br_table 2 (;@13;) 0 (;@15;) 0 (;@15;) 1 (;@14;) 2 (;@13;)
+                                end
+                                block  ;; label = @15
+                                  get_local 7
+                                  i32.load
+                                  i32.eqz
+                                  br_if 0 (;@15;)
+                                  get_local 8
+                                  get_local 8
+                                  i32.load
+                                  i32.const -1
+                                  i32.add
+                                  i32.store
+                                end
+                                call 36
+                                i32.const 22
+                                i32.store
+                                br 3 (;@11;)
+                              end
+                              block  ;; label = @14
+                                block  ;; label = @15
+                                  get_local 8
+                                  i32.load
+                                  tee_local 9
+                                  get_local 7
+                                  i32.load
+                                  i32.ge_u
+                                  br_if 0 (;@15;)
+                                  get_local 8
+                                  get_local 9
+                                  i32.const 1
+                                  i32.add
+                                  i32.store
+                                  get_local 9
+                                  i32.load8_u
+                                  set_local 9
+                                  br 1 (;@14;)
+                                end
+                                get_local 1
+                                call 59
+                                set_local 9
+                              end
+                              block  ;; label = @14
+                                block  ;; label = @15
+                                  get_local 9
+                                  i32.const 40
+                                  i32.ne
+                                  br_if 0 (;@15;)
+                                  i32.const 1
+                                  set_local 12
+                                  br 1 (;@14;)
+                                end
+                                i64.const 9223231299366420480
+                                set_local 6
+                                get_local 7
+                                i32.load
+                                i32.eqz
+                                br_if 13 (;@1;)
+                                get_local 8
+                                get_local 8
+                                i32.load
+                                i32.const -1
+                                i32.add
+                                i32.store
+                                br 13 (;@1;)
+                              end
+                              loop  ;; label = @14
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 8
+                                    i32.load
+                                    tee_local 9
+                                    get_local 7
+                                    i32.load
+                                    i32.ge_u
+                                    br_if 0 (;@16;)
+                                    get_local 8
+                                    get_local 9
+                                    i32.const 1
+                                    i32.add
+                                    i32.store
+                                    get_local 9
+                                    i32.load8_u
+                                    set_local 9
+                                    br 1 (;@15;)
+                                  end
+                                  get_local 1
+                                  call 59
+                                  set_local 9
+                                end
+                                get_local 9
+                                i32.const -65
+                                i32.add
+                                set_local 15
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 9
+                                    i32.const -48
+                                    i32.add
+                                    i32.const 10
+                                    i32.lt_u
+                                    br_if 0 (;@16;)
+                                    get_local 15
+                                    i32.const 26
+                                    i32.lt_u
+                                    br_if 0 (;@16;)
+                                    get_local 9
+                                    i32.const -97
+                                    i32.add
+                                    set_local 15
+                                    get_local 9
+                                    i32.const 95
+                                    i32.eq
+                                    br_if 0 (;@16;)
+                                    get_local 15
+                                    i32.const 26
+                                    i32.ge_u
+                                    br_if 1 (;@15;)
+                                  end
+                                  get_local 12
+                                  i32.const 1
+                                  i32.add
+                                  set_local 12
+                                  br 1 (;@14;)
+                                end
+                              end
+                              i64.const 9223231299366420480
+                              set_local 6
+                              get_local 9
+                              i32.const 41
+                              i32.eq
+                              br_if 12 (;@1;)
+                              block  ;; label = @14
+                                get_local 7
+                                i32.load
+                                tee_local 9
+                                i32.eqz
+                                br_if 0 (;@14;)
+                                get_local 8
+                                get_local 8
+                                i32.load
+                                i32.const -1
+                                i32.add
+                                i32.store
+                              end
+                              get_local 14
+                              i32.eqz
+                              br_if 1 (;@12;)
+                              get_local 12
+                              i32.eqz
+                              br_if 12 (;@1;)
+                              get_local 9
+                              i32.eqz
+                              br_if 12 (;@1;)
+                              get_local 8
+                              i32.load
+                              set_local 7
+                              i32.const 0
+                              set_local 9
+                              loop  ;; label = @14
+                                get_local 12
+                                get_local 9
+                                i32.const 1
+                                i32.add
+                                tee_local 9
+                                i32.ne
+                                br_if 0 (;@14;)
+                              end
+                              get_local 8
+                              get_local 7
+                              get_local 9
+                              i32.sub
+                              i32.store
+                              br 12 (;@1;)
+                            end
+                            get_local 9
+                            i32.const 48
+                            i32.ne
+                            br_if 5 (;@7;)
+                            block  ;; label = @13
+                              block  ;; label = @14
+                                get_local 8
+                                i32.load
+                                tee_local 12
+                                get_local 7
+                                i32.load
+                                i32.ge_u
+                                br_if 0 (;@14;)
+                                get_local 8
+                                get_local 12
+                                i32.const 1
+                                i32.add
+                                i32.store
+                                get_local 12
+                                i32.load8_u
+                                set_local 12
+                                br 1 (;@13;)
+                              end
+                              get_local 1
+                              call 59
+                              set_local 12
+                            end
+                            get_local 12
+                            i32.const 32
+                            i32.or
+                            i32.const 120
+                            i32.ne
+                            br_if 4 (;@8;)
+                            block  ;; label = @13
+                              block  ;; label = @14
+                                get_local 8
+                                i32.load
+                                tee_local 9
+                                get_local 7
+                                i32.load
+                                i32.ge_u
+                                br_if 0 (;@14;)
+                                get_local 8
+                                get_local 9
+                                i32.const 1
+                                i32.add
+                                i32.store
+                                get_local 9
+                                i32.load8_u
+                                set_local 9
+                                br 1 (;@13;)
+                              end
+                              get_local 1
+                              call 59
+                              set_local 9
+                            end
+                            i32.const 0
+                            set_local 14
+                            block  ;; label = @13
+                              block  ;; label = @14
+                                loop  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 9
+                                    i32.const 48
+                                    i32.eq
+                                    br_if 0 (;@16;)
+                                    get_local 9
+                                    i32.const 46
+                                    i32.eq
+                                    br_if 2 (;@14;)
+                                    i64.const 0
+                                    set_local 16
+                                    i32.const 0
+                                    set_local 2
+                                    br 3 (;@13;)
+                                  end
+                                  block  ;; label = @16
+                                    get_local 8
+                                    i32.load
+                                    tee_local 9
+                                    get_local 7
+                                    i32.load
+                                    i32.ge_u
+                                    br_if 0 (;@16;)
+                                    i32.const 1
+                                    set_local 14
+                                    get_local 8
+                                    get_local 9
+                                    i32.const 1
+                                    i32.add
+                                    i32.store
+                                    get_local 9
+                                    i32.load8_u
+                                    set_local 9
+                                    br 1 (;@15;)
+                                  end
+                                  get_local 1
+                                  call 59
+                                  set_local 9
+                                  i32.const 1
+                                  set_local 14
+                                  br 0 (;@15;)
+                                end
+                              end
+                              block  ;; label = @14
+                                block  ;; label = @15
+                                  get_local 8
+                                  i32.load
+                                  tee_local 9
+                                  get_local 7
+                                  i32.load
+                                  i32.ge_u
+                                  br_if 0 (;@15;)
+                                  get_local 8
+                                  get_local 9
+                                  i32.const 1
+                                  i32.add
+                                  i32.store
+                                  get_local 9
+                                  i32.load8_u
+                                  set_local 9
+                                  br 1 (;@14;)
+                                end
+                                get_local 1
+                                call 59
+                                set_local 9
+                              end
+                              i64.const 0
+                              set_local 16
+                              block  ;; label = @14
+                                get_local 9
+                                i32.const 48
+                                i32.eq
+                                br_if 0 (;@14;)
+                                i32.const 1
+                                set_local 2
+                                br 1 (;@13;)
+                              end
+                              loop  ;; label = @14
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 8
+                                    i32.load
+                                    tee_local 9
+                                    get_local 7
+                                    i32.load
+                                    i32.ge_u
+                                    br_if 0 (;@16;)
+                                    get_local 8
+                                    get_local 9
+                                    i32.const 1
+                                    i32.add
+                                    i32.store
+                                    get_local 9
+                                    i32.load8_u
+                                    set_local 9
+                                    br 1 (;@15;)
+                                  end
+                                  get_local 1
+                                  call 59
+                                  set_local 9
+                                end
+                                get_local 16
+                                i64.const -1
+                                i64.add
+                                set_local 16
+                                get_local 9
+                                i32.const 48
+                                i32.eq
+                                br_if 0 (;@14;)
+                              end
+                              i32.const 1
+                              set_local 2
+                              i32.const 1
+                              set_local 14
+                            end
+                            i64.const 4611404543450677248
+                            set_local 17
+                            i32.const 0
+                            set_local 18
+                            i64.const 0
+                            set_local 6
+                            i64.const 0
+                            set_local 19
+                            i64.const 0
+                            set_local 20
+                            i32.const 0
+                            set_local 21
+                            i64.const 0
+                            set_local 5
+                            block  ;; label = @13
+                              loop  ;; label = @14
+                                get_local 9
+                                i32.const 32
+                                i32.or
+                                set_local 12
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 9
+                                    i32.const -48
+                                    i32.add
+                                    tee_local 15
+                                    i32.const 10
+                                    i32.lt_u
+                                    br_if 0 (;@16;)
+                                    block  ;; label = @17
+                                      get_local 9
+                                      i32.const 46
+                                      i32.eq
+                                      br_if 0 (;@17;)
+                                      get_local 12
+                                      i32.const -97
+                                      i32.add
+                                      i32.const 5
+                                      i32.gt_u
+                                      br_if 4 (;@13;)
+                                    end
+                                    get_local 9
+                                    i32.const 46
+                                    i32.ne
+                                    br_if 0 (;@16;)
+                                    get_local 2
+                                    br_if 3 (;@13;)
+                                    i32.const 1
+                                    set_local 2
+                                    get_local 5
+                                    set_local 16
+                                    br 1 (;@15;)
+                                  end
+                                  get_local 12
+                                  i32.const -87
+                                  i32.add
+                                  get_local 15
+                                  get_local 9
+                                  i32.const 57
+                                  i32.gt_s
+                                  select
+                                  set_local 9
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      get_local 5
+                                      i64.const 7
+                                      i64.gt_s
+                                      br_if 0 (;@17;)
+                                      get_local 9
+                                      get_local 18
+                                      i32.const 4
+                                      i32.shl
+                                      i32.add
+                                      set_local 18
+                                      br 1 (;@16;)
+                                    end
+                                    block  ;; label = @17
+                                      get_local 5
+                                      i64.const 28
+                                      i64.gt_s
+                                      br_if 0 (;@17;)
+                                      get_local 4
+                                      i32.const 48
+                                      i32.add
+                                      get_local 20
+                                      get_local 17
+                                      i64.const 0
+                                      i64.const 4610278643543834624
+                                      call 9
+                                      get_local 4
+                                      i32.const 64
+                                      i32.add
+                                      get_local 9
+                                      call 10
+                                      get_local 4
+                                      i32.const 32
+                                      i32.add
+                                      get_local 4
+                                      i64.load offset=48
+                                      tee_local 20
+                                      get_local 4
+                                      i32.const 48
+                                      i32.add
+                                      i32.const 8
+                                      i32.add
+                                      i64.load
+                                      tee_local 17
+                                      get_local 4
+                                      i64.load offset=64
+                                      get_local 4
+                                      i32.const 64
+                                      i32.add
+                                      i32.const 8
+                                      i32.add
+                                      i64.load
+                                      call 9
+                                      get_local 4
+                                      i32.const 16
+                                      i32.add
+                                      get_local 6
+                                      get_local 19
+                                      get_local 4
+                                      i64.load offset=32
+                                      get_local 4
+                                      i32.const 32
+                                      i32.add
+                                      i32.const 8
+                                      i32.add
+                                      i64.load
+                                      call 11
+                                      get_local 4
+                                      i32.const 16
+                                      i32.add
+                                      i32.const 8
+                                      i32.add
+                                      i64.load
+                                      set_local 19
+                                      get_local 4
+                                      i64.load offset=16
+                                      set_local 6
+                                      br 1 (;@16;)
+                                    end
+                                    get_local 21
+                                    br_if 0 (;@16;)
+                                    get_local 9
+                                    i32.eqz
+                                    br_if 0 (;@16;)
+                                    get_local 4
+                                    i32.const 96
+                                    i32.add
+                                    get_local 20
+                                    get_local 17
+                                    i64.const 0
+                                    i64.const 4611123068473966592
+                                    call 9
+                                    get_local 4
+                                    i32.const 80
+                                    i32.add
+                                    get_local 6
+                                    get_local 19
+                                    get_local 4
+                                    i64.load offset=96
+                                    get_local 4
+                                    i32.const 96
+                                    i32.add
+                                    i32.const 8
+                                    i32.add
+                                    i64.load
+                                    call 11
+                                    get_local 4
+                                    i32.const 80
+                                    i32.add
+                                    i32.const 8
+                                    i32.add
+                                    i64.load
+                                    set_local 19
+                                    i32.const 1
+                                    set_local 21
+                                    get_local 4
+                                    i64.load offset=80
+                                    set_local 6
+                                  end
+                                  get_local 5
+                                  i64.const 1
+                                  i64.add
+                                  set_local 5
+                                  i32.const 1
+                                  set_local 14
+                                end
+                                block  ;; label = @15
+                                  get_local 8
+                                  i32.load
+                                  tee_local 9
+                                  get_local 7
+                                  i32.load
+                                  i32.ge_u
+                                  br_if 0 (;@15;)
+                                  get_local 8
+                                  get_local 9
+                                  i32.const 1
+                                  i32.add
+                                  i32.store
+                                  get_local 9
+                                  i32.load8_u
+                                  set_local 9
+                                  br 1 (;@14;)
+                                end
+                                get_local 1
+                                call 59
+                                set_local 9
+                                br 0 (;@14;)
+                              end
+                            end
+                            block  ;; label = @13
+                              get_local 14
+                              br_if 0 (;@13;)
+                              block  ;; label = @14
+                                get_local 7
+                                i32.load
+                                tee_local 9
+                                i32.eqz
+                                br_if 0 (;@14;)
+                                get_local 8
+                                get_local 8
+                                i32.load
+                                i32.const -1
+                                i32.add
+                                i32.store
+                              end
+                              block  ;; label = @14
+                                block  ;; label = @15
+                                  get_local 3
+                                  i32.eqz
+                                  br_if 0 (;@15;)
+                                  get_local 9
+                                  i32.eqz
+                                  br_if 1 (;@14;)
+                                  get_local 8
+                                  get_local 8
+                                  i32.load
+                                  tee_local 9
+                                  i32.const -1
+                                  i32.add
+                                  i32.store
+                                  get_local 2
+                                  i32.eqz
+                                  br_if 1 (;@14;)
+                                  get_local 8
+                                  get_local 9
+                                  i32.const -2
+                                  i32.add
+                                  i32.store
+                                  br 1 (;@14;)
+                                end
+                                get_local 1
+                                i64.const 0
+                                call 58
+                              end
+                              get_local 4
+                              i32.const 112
+                              i32.add
+                              get_local 13
+                              f64.convert_s/i32
+                              f64.const 0x0p+0 (;=0;)
+                              f64.mul
+                              call 12
+                              get_local 4
+                              i32.const 120
+                              i32.add
+                              i64.load
+                              set_local 6
+                              get_local 4
+                              i64.load offset=112
+                              set_local 5
+                              br 12 (;@1;)
+                            end
+                            block  ;; label = @13
+                              get_local 5
+                              i64.const 7
+                              i64.gt_s
+                              br_if 0 (;@13;)
+                              get_local 5
+                              i64.const -8
+                              i64.add
+                              set_local 17
+                              loop  ;; label = @14
+                                get_local 18
+                                i32.const 4
+                                i32.shl
+                                set_local 18
+                                get_local 17
+                                i64.const 1
+                                i64.add
+                                tee_local 20
+                                get_local 17
+                                i64.ge_u
+                                set_local 9
+                                get_local 20
+                                set_local 17
+                                get_local 9
+                                br_if 0 (;@14;)
+                              end
+                            end
+                            get_local 12
+                            i32.const 112
+                            i32.ne
+                            br_if 2 (;@10;)
+                            get_local 1
+                            get_local 3
+                            call 79
+                            tee_local 17
+                            i64.const -9223372036854775808
+                            i64.ne
+                            br_if 3 (;@9;)
+                            get_local 3
+                            i32.eqz
+                            br_if 1 (;@11;)
+                            i64.const 0
+                            set_local 17
+                            get_local 7
+                            i32.load
+                            i32.eqz
+                            br_if 3 (;@9;)
+                            get_local 8
+                            get_local 8
+                            i32.load
+                            i32.const -1
+                            i32.add
+                            i32.store
+                            br 3 (;@9;)
+                          end
+                          call 36
+                          i32.const 22
+                          i32.store
+                        end
+                        i64.const 0
+                        set_local 5
+                        get_local 1
+                        i64.const 0
+                        call 58
+                        i64.const 0
+                        set_local 6
+                        br 9 (;@1;)
+                      end
+                      i64.const 0
+                      set_local 17
+                      get_local 7
+                      i32.load
+                      i32.eqz
+                      br_if 0 (;@9;)
+                      get_local 8
+                      get_local 8
+                      i32.load
+                      i32.const -1
+                      i32.add
+                      i32.store
+                    end
+                    block  ;; label = @9
+                      get_local 18
+                      br_if 0 (;@9;)
+                      get_local 4
+                      i32.const 128
+                      i32.add
+                      get_local 13
+                      f64.convert_s/i32
+                      f64.const 0x0p+0 (;=0;)
+                      f64.mul
+                      call 12
+                      get_local 4
+                      i32.const 136
+                      i32.add
+                      i64.load
+                      set_local 6
+                      get_local 4
+                      i64.load offset=128
+                      set_local 5
+                      br 8 (;@1;)
+                    end
+                    block  ;; label = @9
+                      get_local 16
+                      get_local 5
+                      get_local 2
+                      select
+                      i64.const 2
+                      i64.shl
+                      get_local 17
+                      i64.add
+                      i64.const -32
+                      i64.add
+                      tee_local 5
+                      i32.const 0
+                      get_local 10
+                      i32.sub
+                      i64.extend_u/i32
+                      i64.le_s
+                      br_if 0 (;@9;)
+                      get_local 4
+                      i32.const 176
+                      i32.add
+                      get_local 13
+                      call 10
+                      get_local 4
+                      i32.const 160
+                      i32.add
+                      get_local 4
+                      i64.load offset=176
+                      get_local 4
+                      i32.const 176
+                      i32.add
+                      i32.const 8
+                      i32.add
+                      i64.load
+                      i64.const -1
+                      i64.const 9223090561878065151
+                      call 9
+                      get_local 4
+                      i32.const 144
+                      i32.add
+                      get_local 4
+                      i64.load offset=160
+                      get_local 4
+                      i32.const 160
+                      i32.add
+                      i32.const 8
+                      i32.add
+                      i64.load
+                      i64.const -1
+                      i64.const 9223090561878065151
+                      call 9
+                      call 36
+                      i32.const 34
+                      i32.store
+                      get_local 4
+                      i32.const 144
+                      i32.add
+                      i32.const 8
+                      i32.add
+                      i64.load
+                      set_local 6
+                      get_local 4
+                      i64.load offset=144
+                      set_local 5
+                      br 8 (;@1;)
+                    end
+                    get_local 5
+                    get_local 10
+                    i32.const -226
+                    i32.add
+                    i64.extend_s/i32
+                    i64.lt_s
+                    br_if 2 (;@6;)
+                    block  ;; label = @9
+                      get_local 18
+                      i32.const 0
+                      i32.lt_s
+                      br_if 0 (;@9;)
+                      loop  ;; label = @10
+                        get_local 4
+                        i32.const 432
+                        i32.add
+                        get_local 6
+                        get_local 19
+                        i64.const 0
+                        i64.const -4611967493404098560
+                        call 11
+                        get_local 6
+                        get_local 19
+                        i64.const 0
+                        i64.const 4611123068473966592
+                        call 13
+                        set_local 9
+                        get_local 4
+                        i32.const 416
+                        i32.add
+                        get_local 6
+                        get_local 19
+                        get_local 6
+                        get_local 4
+                        i64.load offset=432
+                        get_local 9
+                        i32.const 0
+                        i32.lt_s
+                        tee_local 8
+                        select
+                        get_local 19
+                        get_local 4
+                        i32.const 432
+                        i32.add
+                        i32.const 8
+                        i32.add
+                        i64.load
+                        get_local 8
+                        select
+                        call 11
+                        get_local 5
+                        i64.const -1
+                        i64.add
+                        set_local 5
+                        get_local 4
+                        i32.const 416
+                        i32.add
+                        i32.const 8
+                        i32.add
+                        i64.load
+                        set_local 19
+                        get_local 4
+                        i64.load offset=416
+                        set_local 6
+                        get_local 18
+                        i32.const 1
+                        i32.shl
+                        get_local 9
+                        i32.const -1
+                        i32.gt_s
+                        i32.or
+                        tee_local 18
+                        i32.const -1
+                        i32.gt_s
+                        br_if 0 (;@10;)
+                      end
+                    end
+                    block  ;; label = @9
+                      get_local 5
+                      i32.const 32
+                      get_local 10
+                      i32.sub
+                      i64.extend_u/i32
+                      i64.add
+                      tee_local 17
+                      get_local 11
+                      i64.extend_u/i32
+                      i64.ge_s
+                      br_if 0 (;@9;)
+                      get_local 17
+                      i32.wrap/i64
+                      tee_local 11
+                      i32.const 1
+                      i32.ge_s
+                      br_if 0 (;@9;)
+                      i32.const 0
+                      set_local 11
+                      br 6 (;@3;)
+                    end
+                    get_local 11
+                    i32.const 113
+                    i32.lt_s
+                    br_if 5 (;@3;)
+                    get_local 4
+                    i32.const 400
+                    i32.add
+                    get_local 13
+                    call 10
+                    get_local 4
+                    i32.const 408
+                    i32.add
+                    i64.load
+                    set_local 16
+                    i64.const 0
+                    set_local 22
+                    get_local 4
+                    i64.load offset=400
+                    set_local 17
+                    i64.const 0
+                    set_local 20
+                    br 6 (;@2;)
+                  end
+                  get_local 7
+                  i32.load
+                  i32.eqz
+                  br_if 0 (;@7;)
+                  get_local 8
+                  get_local 8
+                  i32.load
+                  i32.const -1
+                  i32.add
+                  i32.store
+                end
+                i32.const 0
+                set_local 12
+                i32.const 0
+                get_local 10
+                get_local 11
+                i32.add
+                tee_local 23
+                i32.sub
+                set_local 24
+                i32.const 8192
+                call 32
+                set_local 14
+                block  ;; label = @7
+                  block  ;; label = @8
+                    loop  ;; label = @9
+                      block  ;; label = @10
+                        get_local 9
+                        i32.const 48
+                        i32.eq
+                        br_if 0 (;@10;)
+                        get_local 9
+                        i32.const 46
+                        i32.eq
+                        br_if 2 (;@8;)
+                        i32.const 0
+                        set_local 25
+                        i64.const 0
+                        set_local 5
+                        br 3 (;@7;)
+                      end
+                      block  ;; label = @10
+                        get_local 8
+                        i32.load
+                        tee_local 9
+                        get_local 7
+                        i32.load
+                        i32.ge_u
+                        br_if 0 (;@10;)
+                        i32.const 1
+                        set_local 12
+                        get_local 8
+                        get_local 9
+                        i32.const 1
+                        i32.add
+                        i32.store
+                        get_local 9
+                        i32.load8_u
+                        set_local 9
+                        br 1 (;@9;)
+                      end
+                      get_local 1
+                      call 59
+                      set_local 9
+                      i32.const 1
+                      set_local 12
+                      br 0 (;@9;)
+                    end
+                  end
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      get_local 8
+                      i32.load
+                      tee_local 9
+                      get_local 7
+                      i32.load
+                      i32.ge_u
+                      br_if 0 (;@9;)
+                      get_local 8
+                      get_local 9
+                      i32.const 1
+                      i32.add
+                      i32.store
+                      get_local 9
+                      i32.load8_u
+                      set_local 9
+                      br 1 (;@8;)
+                    end
+                    get_local 1
+                    call 59
+                    set_local 9
+                  end
+                  block  ;; label = @8
+                    get_local 9
+                    i32.const 48
+                    i32.eq
+                    br_if 0 (;@8;)
+                    i32.const 1
+                    set_local 25
+                    i64.const 0
+                    set_local 5
+                    br 1 (;@7;)
+                  end
+                  i64.const 0
+                  set_local 5
+                  loop  ;; label = @8
+                    block  ;; label = @9
+                      block  ;; label = @10
+                        get_local 8
+                        i32.load
+                        tee_local 9
+                        get_local 7
+                        i32.load
+                        i32.ge_u
+                        br_if 0 (;@10;)
+                        get_local 8
+                        get_local 9
+                        i32.const 1
+                        i32.add
+                        i32.store
+                        get_local 9
+                        i32.load8_u
+                        set_local 9
+                        br 1 (;@9;)
+                      end
+                      get_local 1
+                      call 59
+                      set_local 9
+                    end
+                    get_local 5
+                    i64.const -1
+                    i64.add
+                    set_local 5
+                    get_local 9
+                    i32.const 48
+                    i32.eq
+                    br_if 0 (;@8;)
+                  end
+                  i32.const 1
+                  set_local 12
+                  i32.const 1
+                  set_local 25
+                end
+                i32.const 0
+                set_local 26
+                get_local 14
+                i32.const 0
+                i32.store
+                get_local 9
+                i32.const -48
+                i32.add
+                set_local 18
+                block  ;; label = @7
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          get_local 9
+                          i32.const 46
+                          i32.eq
+                          tee_local 15
+                          br_if 0 (;@11;)
+                          i64.const 0
+                          set_local 6
+                          get_local 18
+                          i32.const 9
+                          i32.le_u
+                          br_if 0 (;@11;)
+                          i32.const 0
+                          set_local 21
+                          i32.const 0
+                          set_local 27
+                          br 1 (;@10;)
+                        end
+                        i64.const 0
+                        set_local 6
+                        i32.const 0
+                        set_local 27
+                        i32.const 0
+                        set_local 21
+                        i32.const 0
+                        set_local 26
+                        loop  ;; label = @11
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              get_local 15
+                              i32.const 1
+                              i32.and
+                              i32.eqz
+                              br_if 0 (;@13;)
+                              block  ;; label = @14
+                                get_local 25
+                                br_if 0 (;@14;)
+                                get_local 6
+                                set_local 5
+                                i32.const 1
+                                set_local 25
+                                br 2 (;@12;)
+                              end
+                              get_local 12
+                              i32.const 0
+                              i32.ne
+                              set_local 12
+                              br 4 (;@9;)
+                            end
+                            get_local 6
+                            i64.const 1
+                            i64.add
+                            set_local 6
+                            block  ;; label = @13
+                              get_local 21
+                              i32.const 2044
+                              i32.gt_s
+                              br_if 0 (;@13;)
+                              get_local 9
+                              i32.const 48
+                              i32.ne
+                              set_local 15
+                              get_local 6
+                              i32.wrap/i64
+                              set_local 28
+                              get_local 14
+                              get_local 21
+                              i32.const 2
+                              i32.shl
+                              i32.add
+                              set_local 12
+                              block  ;; label = @14
+                                get_local 27
+                                i32.eqz
+                                br_if 0 (;@14;)
+                                get_local 9
+                                get_local 12
+                                i32.load
+                                i32.const 10
+                                i32.mul
+                                i32.add
+                                i32.const -48
+                                i32.add
+                                set_local 18
+                              end
+                              get_local 28
+                              get_local 26
+                              get_local 15
+                              select
+                              set_local 26
+                              get_local 12
+                              get_local 18
+                              i32.store
+                              i32.const 1
+                              set_local 12
+                              i32.const 0
+                              get_local 27
+                              i32.const 1
+                              i32.add
+                              tee_local 9
+                              get_local 9
+                              i32.const 9
+                              i32.eq
+                              tee_local 9
+                              select
+                              set_local 27
+                              get_local 21
+                              get_local 9
+                              i32.add
+                              set_local 21
+                              br 1 (;@12;)
+                            end
+                            get_local 9
+                            i32.const 48
+                            i32.eq
+                            br_if 0 (;@12;)
+                            get_local 14
+                            get_local 14
+                            i32.load offset=8176
+                            i32.const 1
+                            i32.or
+                            i32.store offset=8176
+                            i32.const 18396
+                            set_local 26
+                          end
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              get_local 8
+                              i32.load
+                              tee_local 9
+                              get_local 7
+                              i32.load
+                              i32.ge_u
+                              br_if 0 (;@13;)
+                              get_local 8
+                              get_local 9
+                              i32.const 1
+                              i32.add
+                              i32.store
+                              get_local 9
+                              i32.load8_u
+                              set_local 9
+                              br 1 (;@12;)
+                            end
+                            get_local 1
+                            call 59
+                            set_local 9
+                          end
+                          get_local 9
+                          i32.const -48
+                          i32.add
+                          set_local 18
+                          get_local 9
+                          i32.const 46
+                          i32.eq
+                          tee_local 15
+                          br_if 0 (;@11;)
+                          get_local 18
+                          i32.const 10
+                          i32.lt_u
+                          br_if 0 (;@11;)
+                        end
+                      end
+                      get_local 5
+                      get_local 6
+                      get_local 25
+                      select
+                      set_local 5
+                      block  ;; label = @10
+                        get_local 12
+                        i32.eqz
+                        br_if 0 (;@10;)
+                        get_local 9
+                        i32.const 32
+                        i32.or
+                        i32.const 101
+                        i32.ne
+                        br_if 0 (;@10;)
+                        block  ;; label = @11
+                          get_local 1
+                          get_local 3
+                          call 79
+                          tee_local 19
+                          i64.const -9223372036854775808
+                          i64.ne
+                          br_if 0 (;@11;)
+                          get_local 3
+                          i32.eqz
+                          br_if 4 (;@7;)
+                          i64.const 0
+                          set_local 19
+                          get_local 7
+                          i32.load
+                          i32.eqz
+                          br_if 0 (;@11;)
+                          get_local 8
+                          get_local 8
+                          i32.load
+                          i32.const -1
+                          i32.add
+                          i32.store
+                        end
+                        get_local 19
+                        get_local 5
+                        i64.add
+                        set_local 5
+                        br 5 (;@5;)
+                      end
+                      get_local 12
+                      i32.const 0
+                      i32.ne
+                      set_local 12
+                      get_local 9
+                      i32.const 0
+                      i32.lt_s
+                      br_if 1 (;@8;)
+                    end
+                    get_local 7
+                    i32.load
+                    i32.eqz
+                    br_if 0 (;@8;)
+                    get_local 8
+                    get_local 8
+                    i32.load
+                    i32.const -1
+                    i32.add
+                    i32.store
+                  end
+                  get_local 12
+                  br_if 2 (;@5;)
+                  call 36
+                  i32.const 22
+                  i32.store
+                end
+                i64.const 0
+                set_local 5
+                get_local 1
+                i64.const 0
+                call 58
+                i64.const 0
+                set_local 6
+                br 2 (;@4;)
+              end
+              get_local 4
+              i32.const 224
+              i32.add
+              get_local 13
+              call 10
+              get_local 4
+              i32.const 208
+              i32.add
+              get_local 4
+              i64.load offset=224
+              get_local 4
+              i32.const 224
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              i64.const 0
+              i64.const 281474976710656
+              call 9
+              get_local 4
+              i32.const 192
+              i32.add
+              get_local 4
+              i64.load offset=208
+              get_local 4
+              i32.const 208
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              i64.const 0
+              i64.const 281474976710656
+              call 9
+              call 36
+              i32.const 34
+              i32.store
+              get_local 4
+              i32.const 192
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              set_local 6
+              get_local 4
+              i64.load offset=192
+              set_local 5
+              br 4 (;@1;)
+            end
+            block  ;; label = @5
+              get_local 14
+              i32.load
+              tee_local 9
+              br_if 0 (;@5;)
+              get_local 4
+              i32.const 448
+              i32.add
+              get_local 13
+              f64.convert_s/i32
+              f64.const 0x0p+0 (;=0;)
+              f64.mul
+              call 12
+              get_local 4
+              i32.const 456
+              i32.add
+              i64.load
+              set_local 6
+              get_local 4
+              i64.load offset=448
+              set_local 5
+              br 1 (;@4;)
+            end
+            block  ;; label = @5
+              get_local 6
+              i64.const 9
+              i64.gt_s
+              br_if 0 (;@5;)
+              get_local 5
+              get_local 6
+              i64.ne
+              br_if 0 (;@5;)
+              block  ;; label = @6
+                get_local 2
+                i32.const -1
+                i32.add
+                i32.const 2
+                i32.lt_u
+                br_if 0 (;@6;)
+                get_local 9
+                get_local 11
+                i32.shr_u
+                br_if 1 (;@5;)
+              end
+              get_local 4
+              i32.const 480
+              i32.add
+              get_local 9
+              call 14
+              get_local 4
+              i32.const 496
+              i32.add
+              get_local 13
+              call 10
+              get_local 4
+              i32.const 464
+              i32.add
+              get_local 4
+              i64.load offset=496
+              get_local 4
+              i32.const 496
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              get_local 4
+              i64.load offset=480
+              get_local 4
+              i32.const 480
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              call 9
+              get_local 4
+              i32.const 464
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              set_local 6
+              get_local 4
+              i64.load offset=464
+              set_local 5
+              br 1 (;@4;)
+            end
+            block  ;; label = @5
+              get_local 5
+              get_local 10
+              i32.const -2
+              i32.div_s
+              i64.extend_s/i32
+              i64.le_s
+              br_if 0 (;@5;)
+              get_local 4
+              i32.const 544
+              i32.add
+              get_local 13
+              call 10
+              get_local 4
+              i32.const 528
+              i32.add
+              get_local 4
+              i64.load offset=544
+              get_local 4
+              i32.const 544
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              i64.const -1
+              i64.const 9223090561878065151
+              call 9
+              get_local 4
+              i32.const 512
+              i32.add
+              get_local 4
+              i64.load offset=528
+              get_local 4
+              i32.const 528
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              i64.const -1
+              i64.const 9223090561878065151
+              call 9
+              call 36
+              i32.const 34
+              i32.store
+              get_local 4
+              i32.const 512
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              set_local 6
+              get_local 4
+              i64.load offset=512
+              set_local 5
+              br 1 (;@4;)
+            end
+            block  ;; label = @5
+              get_local 5
+              get_local 10
+              i32.const -226
+              i32.add
+              i64.extend_s/i32
+              i64.ge_s
+              br_if 0 (;@5;)
+              get_local 4
+              i32.const 592
+              i32.add
+              get_local 13
+              call 10
+              get_local 4
+              i32.const 576
+              i32.add
+              get_local 4
+              i64.load offset=592
+              get_local 4
+              i32.const 592
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              i64.const 0
+              i64.const 281474976710656
+              call 9
+              get_local 4
+              i32.const 560
+              i32.add
+              get_local 4
+              i64.load offset=576
+              get_local 4
+              i32.const 576
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              i64.const 0
+              i64.const 281474976710656
+              call 9
+              call 36
+              i32.const 34
+              i32.store
+              get_local 4
+              i32.const 560
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              set_local 6
+              get_local 4
+              i64.load offset=560
+              set_local 5
+              br 1 (;@4;)
+            end
+            block  ;; label = @5
+              get_local 27
+              i32.eqz
+              br_if 0 (;@5;)
+              block  ;; label = @6
+                get_local 27
+                i32.const 8
+                i32.gt_s
+                br_if 0 (;@6;)
+                get_local 27
+                i32.const -9
+                i32.add
+                set_local 9
+                get_local 14
+                get_local 21
+                i32.const 2
+                i32.shl
+                i32.add
+                tee_local 1
+                i32.load
+                set_local 8
+                loop  ;; label = @7
+                  get_local 8
+                  i32.const 10
+                  i32.mul
+                  set_local 8
+                  get_local 9
+                  i32.const 1
+                  i32.add
+                  tee_local 12
+                  get_local 9
+                  i32.ge_u
+                  set_local 7
+                  get_local 12
+                  set_local 9
+                  get_local 7
+                  br_if 0 (;@7;)
+                end
+                get_local 1
+                get_local 8
+                i32.store
+              end
+              get_local 21
+              i32.const 1
+              i32.add
+              set_local 21
+            end
+            get_local 5
+            i32.wrap/i64
+            set_local 18
+            block  ;; label = @5
+              get_local 26
+              i32.const 9
+              i32.ge_s
+              br_if 0 (;@5;)
+              get_local 26
+              get_local 18
+              i32.gt_s
+              br_if 0 (;@5;)
+              get_local 18
+              i32.const 17
+              i32.gt_s
+              br_if 0 (;@5;)
+              block  ;; label = @6
+                get_local 18
+                i32.const 9
+                i32.ne
+                br_if 0 (;@6;)
+                get_local 4
+                i32.const 624
+                i32.add
+                get_local 13
+                call 10
+                get_local 4
+                i32.const 640
+                i32.add
+                get_local 14
+                i32.load
+                call 14
+                get_local 4
+                i32.const 608
+                i32.add
+                get_local 4
+                i64.load offset=624
+                get_local 4
+                i32.const 624
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                get_local 4
+                i64.load offset=640
+                get_local 4
+                i32.const 640
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                call 9
+                get_local 4
+                i32.const 608
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                set_local 6
+                get_local 4
+                i64.load offset=608
+                set_local 5
+                br 2 (;@4;)
+              end
+              block  ;; label = @6
+                get_local 18
+                i32.const 8
+                i32.gt_s
+                br_if 0 (;@6;)
+                get_local 4
+                i32.const 704
+                i32.add
+                get_local 13
+                call 10
+                get_local 4
+                i32.const 720
+                i32.add
+                get_local 14
+                i32.load
+                call 14
+                get_local 4
+                i32.const 688
+                i32.add
+                get_local 4
+                i64.load offset=704
+                get_local 4
+                i32.const 704
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                get_local 4
+                i64.load offset=720
+                get_local 4
+                i32.const 720
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                call 9
+                get_local 4
+                i32.const 672
+                i32.add
+                i32.const 8
+                get_local 18
+                i32.sub
+                i32.const 2
+                i32.shl
+                i32.const 8688
+                i32.add
+                i32.load
+                call 10
+                get_local 4
+                i32.const 656
+                i32.add
+                get_local 4
+                i64.load offset=688
+                get_local 4
+                i32.const 688
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                get_local 4
+                i64.load offset=672
+                get_local 4
+                i32.const 672
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                call 15
+                get_local 4
+                i32.const 656
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                set_local 6
+                get_local 4
+                i64.load offset=656
+                set_local 5
+                br 2 (;@4;)
+              end
+              get_local 14
+              i32.load
+              set_local 9
+              block  ;; label = @6
+                get_local 11
+                get_local 18
+                i32.const -3
+                i32.mul
+                i32.add
+                i32.const 27
+                i32.add
+                tee_local 8
+                i32.const 30
+                i32.gt_s
+                br_if 0 (;@6;)
+                get_local 9
+                get_local 8
+                i32.shr_u
+                br_if 1 (;@5;)
+              end
+              get_local 4
+              i32.const 784
+              i32.add
+              get_local 9
+              call 14
+              get_local 4
+              i32.const 800
+              i32.add
+              get_local 13
+              call 10
+              get_local 4
+              i32.const 768
+              i32.add
+              get_local 4
+              i64.load offset=800
+              get_local 4
+              i32.const 800
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              get_local 4
+              i64.load offset=784
+              get_local 4
+              i32.const 784
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              call 9
+              get_local 4
+              i32.const 752
+              i32.add
+              get_local 18
+              i32.const 2
+              i32.shl
+              i32.const 8648
+              i32.add
+              i32.load
+              call 10
+              get_local 4
+              i32.const 736
+              i32.add
+              get_local 4
+              i64.load offset=768
+              get_local 4
+              i32.const 768
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              get_local 4
+              i64.load offset=752
+              get_local 4
+              i32.const 752
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              call 9
+              get_local 4
+              i32.const 736
+              i32.add
+              i32.const 8
+              i32.add
+              i64.load
+              set_local 6
+              get_local 4
+              i64.load offset=736
+              set_local 5
+              br 1 (;@4;)
+            end
+            get_local 21
+            i32.const 1
+            i32.add
+            set_local 8
+            get_local 21
+            i32.const 2
+            i32.shl
+            get_local 14
+            i32.add
+            i32.const 4
+            i32.add
+            set_local 9
+            loop  ;; label = @5
+              get_local 8
+              i32.const -1
+              i32.add
+              set_local 8
+              get_local 9
+              i32.const -8
+              i32.add
+              set_local 12
+              get_local 9
+              i32.const -4
+              i32.add
+              tee_local 1
+              set_local 9
+              get_local 12
+              i32.load
+              i32.eqz
+              br_if 0 (;@5;)
+            end
+            i32.const 0
+            set_local 2
+            block  ;; label = @5
+              block  ;; label = @6
+                get_local 18
+                i32.const 9
+                i32.rem_s
+                tee_local 9
+                br_if 0 (;@6;)
+                i32.const 0
+                set_local 12
+                br 1 (;@5;)
+              end
+              get_local 9
+              get_local 9
+              i32.const 9
+              i32.add
+              get_local 18
+              i32.const -1
+              i32.gt_s
+              select
+              set_local 28
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 8
+                  br_if 0 (;@7;)
+                  i32.const 0
+                  set_local 12
+                  i32.const 0
+                  set_local 8
+                  br 1 (;@6;)
+                end
+                i32.const 1000000000
+                i32.const 8
+                get_local 28
+                i32.sub
+                i32.const 2
+                i32.shl
+                i32.const 8688
+                i32.add
+                i32.load
+                tee_local 21
+                i32.div_s
+                set_local 26
+                i32.const 0
+                set_local 15
+                get_local 14
+                set_local 9
+                i32.const 0
+                set_local 7
+                i32.const 0
+                set_local 12
+                loop  ;; label = @7
+                  get_local 9
+                  get_local 9
+                  i32.load
+                  tee_local 25
+                  get_local 21
+                  i32.div_u
+                  tee_local 3
+                  get_local 15
+                  i32.add
+                  tee_local 15
+                  i32.store
+                  get_local 7
+                  get_local 12
+                  i32.eq
+                  set_local 27
+                  get_local 7
+                  i32.const 1
+                  i32.add
+                  tee_local 7
+                  i32.const 2047
+                  i32.and
+                  get_local 12
+                  get_local 27
+                  get_local 15
+                  i32.eqz
+                  i32.and
+                  tee_local 15
+                  select
+                  set_local 12
+                  get_local 18
+                  i32.const -9
+                  i32.add
+                  get_local 18
+                  get_local 15
+                  select
+                  set_local 18
+                  get_local 9
+                  i32.const 4
+                  i32.add
+                  set_local 9
+                  get_local 25
+                  get_local 3
+                  get_local 21
+                  i32.mul
+                  i32.sub
+                  get_local 26
+                  i32.mul
+                  set_local 15
+                  get_local 8
+                  get_local 7
+                  i32.ne
+                  br_if 0 (;@7;)
+                end
+                get_local 15
+                i32.eqz
+                br_if 0 (;@6;)
+                get_local 1
+                get_local 15
+                i32.store
+                get_local 8
+                i32.const 1
+                i32.add
+                set_local 8
+              end
+              get_local 18
+              get_local 28
+              i32.sub
+              i32.const 9
+              i32.add
+              set_local 18
+            end
+            loop  ;; label = @5
+              get_local 14
+              get_local 12
+              i32.const 2
+              i32.shl
+              i32.add
+              set_local 21
+              block  ;; label = @6
+                loop  ;; label = @7
+                  block  ;; label = @8
+                    get_local 18
+                    i32.const 36
+                    i32.lt_s
+                    br_if 0 (;@8;)
+                    get_local 18
+                    i32.const 36
+                    i32.ne
+                    br_if 2 (;@6;)
+                    get_local 21
+                    i32.load
+                    i32.const 10384592
+                    i32.gt_u
+                    br_if 2 (;@6;)
+                  end
+                  get_local 8
+                  i32.const 2047
+                  i32.add
+                  set_local 15
+                  i32.const 0
+                  set_local 7
+                  get_local 8
+                  set_local 1
+                  loop  ;; label = @8
+                    get_local 1
+                    set_local 8
+                    block  ;; label = @9
+                      block  ;; label = @10
+                        get_local 14
+                        get_local 15
+                        i32.const 2047
+                        i32.and
+                        tee_local 9
+                        i32.const 2
+                        i32.shl
+                        i32.add
+                        tee_local 1
+                        i64.load32_u
+                        i64.const 29
+                        i64.shl
+                        get_local 7
+                        i64.extend_u/i32
+                        i64.add
+                        tee_local 5
+                        i64.const 1000000001
+                        i64.ge_u
+                        br_if 0 (;@10;)
+                        i32.const 0
+                        set_local 7
+                        br 1 (;@9;)
+                      end
+                      get_local 5
+                      get_local 5
+                      i64.const 1000000000
+                      i64.div_u
+                      tee_local 6
+                      i64.const 1000000000
+                      i64.mul
+                      i64.sub
+                      set_local 5
+                      get_local 6
+                      i32.wrap/i64
+                      set_local 7
+                    end
+                    get_local 1
+                    get_local 5
+                    i32.wrap/i64
+                    tee_local 15
+                    i32.store
+                    get_local 8
+                    get_local 8
+                    get_local 8
+                    get_local 9
+                    get_local 15
+                    select
+                    get_local 9
+                    get_local 12
+                    i32.eq
+                    select
+                    get_local 9
+                    get_local 8
+                    i32.const -1
+                    i32.add
+                    i32.const 2047
+                    i32.and
+                    i32.ne
+                    select
+                    set_local 1
+                    get_local 9
+                    i32.const -1
+                    i32.add
+                    set_local 15
+                    get_local 9
+                    get_local 12
+                    i32.ne
+                    br_if 0 (;@8;)
+                  end
+                  get_local 2
+                  i32.const -29
+                  i32.add
+                  set_local 2
+                  get_local 7
+                  i32.eqz
+                  br_if 0 (;@7;)
+                end
+                block  ;; label = @7
+                  get_local 12
+                  i32.const -1
+                  i32.add
+                  i32.const 2047
+                  i32.and
+                  tee_local 12
+                  get_local 1
+                  i32.ne
+                  br_if 0 (;@7;)
+                  get_local 14
+                  get_local 1
+                  i32.const 2046
+                  i32.add
+                  i32.const 2047
+                  i32.and
+                  i32.const 2
+                  i32.shl
+                  i32.add
+                  tee_local 9
+                  get_local 9
+                  i32.load
+                  get_local 14
+                  get_local 1
+                  i32.const -1
+                  i32.add
+                  i32.const 2047
+                  i32.and
+                  tee_local 8
+                  i32.const 2
+                  i32.shl
+                  i32.add
+                  i32.load
+                  i32.or
+                  i32.store
+                end
+                get_local 18
+                i32.const 9
+                i32.add
+                set_local 18
+                get_local 14
+                get_local 12
+                i32.const 2
+                i32.shl
+                i32.add
+                get_local 7
+                i32.store
+                br 1 (;@5;)
+              end
+            end
+            block  ;; label = @5
+              loop  ;; label = @6
+                get_local 8
+                i32.const 1
+                i32.add
+                i32.const 2047
+                i32.and
+                set_local 27
+                get_local 14
+                get_local 8
+                i32.const -1
+                i32.add
+                i32.const 2047
+                i32.and
+                i32.const 2
+                i32.shl
+                i32.add
+                set_local 26
+                loop  ;; label = @7
+                  i32.const 9
+                  i32.const 1
+                  get_local 18
+                  i32.const 45
+                  i32.gt_s
+                  select
+                  set_local 7
+                  block  ;; label = @8
+                    loop  ;; label = @9
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          get_local 12
+                          tee_local 9
+                          i32.const 2047
+                          i32.and
+                          tee_local 12
+                          get_local 8
+                          i32.eq
+                          br_if 0 (;@11;)
+                          get_local 14
+                          get_local 12
+                          i32.const 2
+                          i32.shl
+                          i32.add
+                          i32.load
+                          tee_local 1
+                          i32.const 10384593
+                          i32.lt_u
+                          br_if 0 (;@11;)
+                          get_local 1
+                          i32.const 10384593
+                          i32.ne
+                          br_if 1 (;@10;)
+                          get_local 9
+                          i32.const 1
+                          i32.add
+                          i32.const 2047
+                          i32.and
+                          tee_local 1
+                          get_local 8
+                          i32.eq
+                          br_if 0 (;@11;)
+                          get_local 14
+                          get_local 1
+                          i32.const 2
+                          i32.shl
+                          i32.add
+                          i32.load
+                          tee_local 1
+                          i32.const 717069655
+                          i32.lt_u
+                          br_if 0 (;@11;)
+                          get_local 1
+                          i32.const 717069655
+                          i32.ne
+                          br_if 1 (;@10;)
+                          get_local 9
+                          i32.const 2
+                          i32.add
+                          i32.const 2047
+                          i32.and
+                          tee_local 1
+                          get_local 8
+                          i32.eq
+                          br_if 0 (;@11;)
+                          get_local 14
+                          get_local 1
+                          i32.const 2
+                          i32.shl
+                          i32.add
+                          i32.load
+                          tee_local 1
+                          i32.const 257060992
+                          i32.lt_u
+                          br_if 0 (;@11;)
+                          get_local 1
+                          i32.const 257060992
+                          i32.ne
+                          br_if 1 (;@10;)
+                          get_local 9
+                          i32.const 3
+                          i32.add
+                          i32.const 2047
+                          i32.and
+                          tee_local 1
+                          get_local 8
+                          i32.eq
+                          br_if 0 (;@11;)
+                          get_local 14
+                          get_local 1
+                          i32.const 2
+                          i32.shl
+                          i32.add
+                          i32.load
+                          tee_local 1
+                          i32.const 658440191
+                          i32.lt_u
+                          br_if 0 (;@11;)
+                          get_local 18
+                          i32.const 36
+                          i32.ne
+                          br_if 1 (;@10;)
+                          get_local 1
+                          i32.const 658440191
+                          i32.ne
+                          br_if 1 (;@10;)
+                          get_local 8
+                          set_local 27
+                          br 6 (;@5;)
+                        end
+                        get_local 18
+                        i32.const 36
+                        i32.eq
+                        br_if 2 (;@8;)
+                      end
+                      get_local 2
+                      get_local 7
+                      i32.add
+                      set_local 2
+                      get_local 8
+                      set_local 12
+                      get_local 9
+                      get_local 8
+                      i32.eq
+                      br_if 0 (;@9;)
+                    end
+                    i32.const 1000000000
+                    get_local 7
+                    i32.shr_u
+                    set_local 25
+                    i32.const -1
+                    get_local 7
+                    i32.shl
+                    i32.const -1
+                    i32.xor
+                    set_local 3
+                    i32.const 0
+                    set_local 1
+                    get_local 9
+                    set_local 12
+                    loop  ;; label = @9
+                      get_local 14
+                      get_local 9
+                      i32.const 2
+                      i32.shl
+                      i32.add
+                      tee_local 15
+                      get_local 15
+                      i32.load
+                      tee_local 15
+                      get_local 7
+                      i32.shr_u
+                      get_local 1
+                      i32.add
+                      tee_local 1
+                      i32.store
+                      get_local 9
+                      get_local 12
+                      i32.eq
+                      set_local 21
+                      get_local 9
+                      i32.const 1
+                      i32.add
+                      i32.const 2047
+                      i32.and
+                      tee_local 9
+                      get_local 12
+                      get_local 21
+                      get_local 1
+                      i32.eqz
+                      i32.and
+                      tee_local 1
+                      select
+                      set_local 12
+                      get_local 18
+                      i32.const -9
+                      i32.add
+                      get_local 18
+                      get_local 1
+                      select
+                      set_local 18
+                      get_local 15
+                      get_local 3
+                      i32.and
+                      get_local 25
+                      i32.mul
+                      set_local 1
+                      get_local 9
+                      get_local 8
+                      i32.ne
+                      br_if 0 (;@9;)
+                    end
+                    get_local 1
+                    i32.eqz
+                    br_if 1 (;@7;)
+                    block  ;; label = @9
+                      get_local 27
+                      get_local 12
+                      i32.eq
+                      br_if 0 (;@9;)
+                      get_local 14
+                      get_local 8
+                      i32.const 2
+                      i32.shl
+                      i32.add
+                      get_local 1
+                      i32.store
+                      get_local 27
+                      set_local 8
+                      br 3 (;@6;)
+                    end
+                    get_local 26
+                    get_local 26
+                    i32.load
+                    i32.const 1
+                    i32.or
+                    i32.store
+                    get_local 27
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                end
+              end
+              block  ;; label = @6
+                get_local 12
+                get_local 8
+                i32.eq
+                br_if 0 (;@6;)
+                get_local 8
+                set_local 27
+                br 1 (;@5;)
+              end
+              get_local 27
+              i32.const 2
+              i32.shl
+              get_local 14
+              i32.add
+              i32.const -4
+              i32.add
+              i32.const 0
+              i32.store
+              get_local 8
+              set_local 12
+            end
+            get_local 4
+            i32.const 1312
+            i32.add
+            get_local 14
+            get_local 12
+            i32.const 2
+            i32.shl
+            i32.add
+            i32.load
+            call 14
+            get_local 4
+            i32.const 1312
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            set_local 5
+            get_local 4
+            i64.load offset=1312
+            set_local 6
+            block  ;; label = @5
+              get_local 9
+              i32.const 1
+              i32.add
+              i32.const 2047
+              i32.and
+              tee_local 8
+              get_local 27
+              i32.ne
+              br_if 0 (;@5;)
+              get_local 9
+              i32.const 2
+              i32.add
+              i32.const 2047
+              i32.and
+              tee_local 27
+              i32.const 2
+              i32.shl
+              get_local 14
+              i32.add
+              i32.const -4
+              i32.add
+              i32.const 0
+              i32.store
+            end
+            get_local 4
+            i32.const 1296
+            i32.add
+            get_local 6
+            get_local 5
+            i64.const 0
+            i64.const 4619810130798575616
+            call 9
+            get_local 4
+            i32.const 1280
+            i32.add
+            get_local 14
+            get_local 8
+            i32.const 2
+            i32.shl
+            i32.add
+            i32.load
+            call 14
+            get_local 4
+            i32.const 1264
+            i32.add
+            get_local 4
+            i64.load offset=1296
+            get_local 4
+            i32.const 1296
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            get_local 4
+            i64.load offset=1280
+            get_local 4
+            i32.const 1280
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            call 11
+            get_local 4
+            i32.const 1264
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            set_local 5
+            get_local 4
+            i64.load offset=1264
+            set_local 6
+            block  ;; label = @5
+              get_local 9
+              i32.const 2
+              i32.add
+              i32.const 2047
+              i32.and
+              tee_local 8
+              get_local 27
+              i32.ne
+              br_if 0 (;@5;)
+              get_local 9
+              i32.const 3
+              i32.add
+              i32.const 2047
+              i32.and
+              tee_local 27
+              i32.const 2
+              i32.shl
+              get_local 14
+              i32.add
+              i32.const -4
+              i32.add
+              i32.const 0
+              i32.store
+            end
+            get_local 4
+            i32.const 1248
+            i32.add
+            get_local 6
+            get_local 5
+            i64.const 0
+            i64.const 4619810130798575616
+            call 9
+            get_local 4
+            i32.const 1232
+            i32.add
+            get_local 14
+            get_local 8
+            i32.const 2
+            i32.shl
+            i32.add
+            i32.load
+            call 14
+            get_local 4
+            i32.const 1216
+            i32.add
+            get_local 4
+            i64.load offset=1248
+            get_local 4
+            i32.const 1248
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            get_local 4
+            i64.load offset=1232
+            get_local 4
+            i32.const 1232
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            call 11
+            get_local 4
+            i32.const 1216
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            set_local 6
+            get_local 4
+            i64.load offset=1216
+            set_local 19
+            block  ;; label = @5
+              get_local 9
+              i32.const 3
+              i32.add
+              i32.const 2047
+              i32.and
+              tee_local 8
+              get_local 27
+              i32.ne
+              br_if 0 (;@5;)
+              get_local 9
+              i32.const 4
+              i32.add
+              i32.const 2047
+              i32.and
+              tee_local 27
+              i32.const 2
+              i32.shl
+              get_local 14
+              i32.add
+              i32.const -4
+              i32.add
+              i32.const 0
+              i32.store
+            end
+            i64.const 0
+            set_local 5
+            get_local 4
+            i32.const 1200
+            i32.add
+            get_local 19
+            get_local 6
+            i64.const 0
+            i64.const 4619810130798575616
+            call 9
+            get_local 4
+            i32.const 1184
+            i32.add
+            get_local 14
+            get_local 8
+            i32.const 2
+            i32.shl
+            i32.add
+            i32.load
+            call 14
+            get_local 4
+            i32.const 1168
+            i32.add
+            get_local 4
+            i64.load offset=1200
+            get_local 4
+            i32.const 1200
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            get_local 4
+            i64.load offset=1184
+            get_local 4
+            i32.const 1184
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            call 11
+            get_local 4
+            i32.const 1152
+            i32.add
+            get_local 13
+            call 10
+            get_local 4
+            i32.const 1136
+            i32.add
+            get_local 4
+            i64.load offset=1168
+            get_local 4
+            i32.const 1168
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            get_local 4
+            i64.load offset=1152
+            get_local 4
+            i32.const 1152
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            call 9
+            get_local 4
+            i32.const 1136
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            set_local 6
+            get_local 4
+            i64.load offset=1136
+            set_local 19
+            block  ;; label = @5
+              block  ;; label = @6
+                get_local 2
+                get_local 10
+                i32.sub
+                i32.const 113
+                i32.add
+                tee_local 8
+                i32.const 0
+                get_local 8
+                i32.const 0
+                i32.gt_s
+                select
+                get_local 11
+                get_local 8
+                get_local 11
+                i32.lt_s
+                tee_local 1
+                select
+                tee_local 12
+                i32.const 113
+                i32.ge_s
+                br_if 0 (;@6;)
+                get_local 4
+                i32.const 1088
+                i32.add
+                f64.const 0x1p+0 (;=1;)
+                i32.const 225
+                get_local 12
+                i32.sub
+                call 72
+                call 12
+                get_local 4
+                i32.const 1120
+                i32.add
+                get_local 4
+                i64.load offset=1088
+                get_local 4
+                i32.const 1088
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                get_local 19
+                get_local 6
+                call 73
+                get_local 4
+                i64.load offset=1128
+                set_local 16
+                get_local 4
+                i64.load offset=1120
+                set_local 20
+                get_local 4
+                i32.const 1072
+                i32.add
+                f64.const 0x1p+0 (;=1;)
+                i32.const 113
+                get_local 12
+                i32.sub
+                call 72
+                call 12
+                get_local 4
+                i32.const 1104
+                i32.add
+                get_local 19
+                get_local 6
+                get_local 4
+                i64.load offset=1072
+                get_local 4
+                i32.const 1072
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                call 75
+                get_local 4
+                i32.const 1056
+                i32.add
+                get_local 19
+                get_local 6
+                get_local 4
+                i64.load offset=1104
+                tee_local 5
+                get_local 4
+                i64.load offset=1112
+                tee_local 17
+                call 19
+                get_local 4
+                i32.const 1040
+                i32.add
+                get_local 20
+                get_local 16
+                get_local 4
+                i64.load offset=1056
+                get_local 4
+                i32.const 1056
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                call 11
+                get_local 4
+                i32.const 1040
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                set_local 6
+                get_local 4
+                i64.load offset=1040
+                set_local 19
+                br 1 (;@5;)
+              end
+              i64.const 0
+              set_local 17
+              i64.const 0
+              set_local 20
+              i64.const 0
+              set_local 16
+            end
+            get_local 2
+            i32.const 113
+            i32.add
+            set_local 7
+            block  ;; label = @5
+              get_local 9
+              i32.const 4
+              i32.add
+              i32.const 2047
+              i32.and
+              tee_local 15
+              get_local 27
+              i32.eq
+              br_if 0 (;@5;)
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 14
+                  get_local 15
+                  i32.const 2
+                  i32.shl
+                  i32.add
+                  i32.load
+                  tee_local 15
+                  i32.const 499999999
+                  i32.gt_u
+                  br_if 0 (;@7;)
+                  block  ;; label = @8
+                    get_local 15
+                    br_if 0 (;@8;)
+                    get_local 9
+                    i32.const 5
+                    i32.add
+                    i32.const 2047
+                    i32.and
+                    get_local 27
+                    i32.eq
+                    br_if 2 (;@6;)
+                  end
+                  get_local 4
+                  i32.const 928
+                  i32.add
+                  get_local 13
+                  f64.convert_s/i32
+                  f64.const 0x1p-2 (;=0.25;)
+                  f64.mul
+                  call 12
+                  get_local 4
+                  i32.const 912
+                  i32.add
+                  get_local 5
+                  get_local 17
+                  get_local 4
+                  i64.load offset=928
+                  get_local 4
+                  i32.const 928
+                  i32.add
+                  i32.const 8
+                  i32.add
+                  i64.load
+                  call 11
+                  get_local 4
+                  i32.const 912
+                  i32.add
+                  i32.const 8
+                  i32.add
+                  i64.load
+                  set_local 17
+                  get_local 4
+                  i64.load offset=912
+                  set_local 5
+                  br 1 (;@6;)
+                end
+                block  ;; label = @7
+                  get_local 15
+                  i32.const 500000000
+                  i32.eq
+                  br_if 0 (;@7;)
+                  get_local 4
+                  i32.const 1024
+                  i32.add
+                  get_local 13
+                  f64.convert_s/i32
+                  f64.const 0x1.8p-1 (;=0.75;)
+                  f64.mul
+                  call 12
+                  get_local 4
+                  i32.const 1008
+                  i32.add
+                  get_local 5
+                  get_local 17
+                  get_local 4
+                  i64.load offset=1024
+                  get_local 4
+                  i32.const 1024
+                  i32.add
+                  i32.const 8
+                  i32.add
+                  i64.load
+                  call 11
+                  get_local 4
+                  i32.const 1008
+                  i32.add
+                  i32.const 8
+                  i32.add
+                  i64.load
+                  set_local 17
+                  get_local 4
+                  i64.load offset=1008
+                  set_local 5
+                  br 1 (;@6;)
+                end
+                get_local 13
+                f64.convert_s/i32
+                set_local 29
+                block  ;; label = @7
+                  get_local 9
+                  i32.const 5
+                  i32.add
+                  i32.const 2047
+                  i32.and
+                  get_local 27
+                  i32.ne
+                  br_if 0 (;@7;)
+                  get_local 4
+                  i32.const 960
+                  i32.add
+                  get_local 29
+                  f64.const 0x1p-1 (;=0.5;)
+                  f64.mul
+                  call 12
+                  get_local 4
+                  i32.const 944
+                  i32.add
+                  get_local 5
+                  get_local 17
+                  get_local 4
+                  i64.load offset=960
+                  get_local 4
+                  i32.const 960
+                  i32.add
+                  i32.const 8
+                  i32.add
+                  i64.load
+                  call 11
+                  get_local 4
+                  i32.const 944
+                  i32.add
+                  i32.const 8
+                  i32.add
+                  i64.load
+                  set_local 17
+                  get_local 4
+                  i64.load offset=944
+                  set_local 5
+                  br 1 (;@6;)
+                end
+                get_local 4
+                i32.const 992
+                i32.add
+                get_local 29
+                f64.const 0x1.8p-1 (;=0.75;)
+                f64.mul
+                call 12
+                get_local 4
+                i32.const 976
+                i32.add
+                get_local 5
+                get_local 17
+                get_local 4
+                i64.load offset=992
+                get_local 4
+                i32.const 992
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                call 11
+                get_local 4
+                i32.const 976
+                i32.add
+                i32.const 8
+                i32.add
+                i64.load
+                set_local 17
+                get_local 4
+                i64.load offset=976
+                set_local 5
+              end
+              get_local 12
+              i32.const 111
+              i32.gt_s
+              br_if 0 (;@5;)
+              get_local 4
+              i32.const 896
+              i32.add
+              get_local 5
+              get_local 17
+              i64.const 0
+              i64.const 4611404543450677248
+              call 75
+              get_local 4
+              i64.load offset=896
+              get_local 4
+              i64.load offset=904
+              i64.const 0
+              i64.const 0
+              call 18
+              br_if 0 (;@5;)
+              get_local 4
+              i32.const 880
+              i32.add
+              get_local 5
+              get_local 17
+              i64.const 0
+              i64.const 4611404543450677248
+              call 11
+              get_local 4
+              i32.const 888
+              i32.add
+              i64.load
+              set_local 17
+              get_local 4
+              i64.load offset=880
+              set_local 5
+            end
+            get_local 4
+            i32.const 864
+            i32.add
+            get_local 19
+            get_local 6
+            get_local 5
+            get_local 17
+            call 11
+            get_local 4
+            i32.const 848
+            i32.add
+            get_local 4
+            i64.load offset=864
+            get_local 4
+            i32.const 864
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            get_local 20
+            get_local 16
+            call 19
+            get_local 4
+            i32.const 848
+            i32.add
+            i32.const 8
+            i32.add
+            i64.load
+            set_local 6
+            get_local 4
+            i64.load offset=848
+            set_local 19
+            block  ;; label = @5
+              get_local 7
+              i32.const 2147483647
+              i32.and
+              i32.const -2
+              get_local 23
+              i32.sub
+              i32.le_s
+              br_if 0 (;@5;)
+              block  ;; label = @6
+                get_local 19
+                get_local 6
+                call 20
+                call 76
+                f64.const 0x1p+113 (;=1.03846e+34;)
+                f64.ge
+                i32.const 1
+                i32.xor
+                br_if 0 (;@6;)
+                get_local 4
+                i32.const 832
+                i32.add
+                get_local 19
+                get_local 6
+                i64.const 0
+                i64.const 4611123068473966592
+                call 9
+                get_local 8
+                get_local 11
+                i32.lt_s
+                get_local 10
+                get_local 12
+                i32.add
+                i32.const -113
+                i32.add
+                get_local 2
+                i32.ne
+                i32.and
+                set_local 1
+                get_local 2
+                i32.const 1
+                i32.add
+                set_local 2
+                get_local 4
+                i32.const 840
+                i32.add
+                i64.load
+                set_local 6
+                get_local 4
+                i64.load offset=832
+                set_local 19
+              end
+              get_local 5
+              get_local 17
+              i64.const 0
+              i64.const 0
+              call 18
+              set_local 9
+              block  ;; label = @6
+                get_local 2
+                i32.const 110
+                i32.add
+                get_local 24
+                i32.gt_s
+                br_if 0 (;@6;)
+                get_local 9
+                i32.const 0
+                i32.ne
+                get_local 1
+                i32.and
+                i32.eqz
+                br_if 1 (;@5;)
+              end
+              call 36
+              i32.const 34
+              i32.store
+            end
+            get_local 4
+            i32.const 816
+            i32.add
+            get_local 19
+            get_local 6
+            get_local 2
+            call 77
+            get_local 4
+            i64.load offset=824
+            set_local 6
+            get_local 4
+            i64.load offset=816
+            set_local 5
+          end
+          get_local 14
+          call 34
+          br 2 (;@1;)
+        end
+        get_local 4
+        i32.const 352
+        i32.add
+        get_local 13
+        call 10
+        get_local 4
+        i32.const 368
+        i32.add
+        f64.const 0x1p+0 (;=1;)
+        i32.const 144
+        get_local 11
+        i32.sub
+        call 72
+        call 12
+        get_local 4
+        i32.const 384
+        i32.add
+        get_local 4
+        i64.load offset=368
+        get_local 4
+        i32.const 368
+        i32.add
+        i32.const 8
+        i32.add
+        i64.load
+        get_local 4
+        i64.load offset=352
+        tee_local 17
+        get_local 4
+        i32.const 352
+        i32.add
+        i32.const 8
+        i32.add
+        i64.load
+        tee_local 16
+        call 73
+        get_local 4
+        i64.load offset=392
+        set_local 20
+        get_local 4
+        i64.load offset=384
+        set_local 22
+      end
+      get_local 4
+      i32.const 336
+      i32.add
+      get_local 18
+      get_local 18
+      i32.const 1
+      i32.and
+      i32.eqz
+      get_local 6
+      get_local 19
+      i64.const 0
+      i64.const 0
+      call 18
+      i32.const 0
+      i32.ne
+      get_local 11
+      i32.const 32
+      i32.lt_s
+      i32.and
+      i32.and
+      tee_local 9
+      i32.add
+      call 14
+      get_local 4
+      i32.const 320
+      i32.add
+      get_local 17
+      get_local 16
+      get_local 4
+      i64.load offset=336
+      get_local 4
+      i32.const 336
+      i32.add
+      i32.const 8
+      i32.add
+      i64.load
+      call 9
+      get_local 4
+      i32.const 304
+      i32.add
+      get_local 17
+      get_local 16
+      i64.const 0
+      get_local 6
+      get_local 9
+      select
+      i64.const 0
+      get_local 19
+      get_local 9
+      select
+      call 9
+      get_local 4
+      i32.const 288
+      i32.add
+      get_local 22
+      get_local 20
+      get_local 4
+      i64.load offset=320
+      get_local 4
+      i32.const 320
+      i32.add
+      i32.const 8
+      i32.add
+      i64.load
+      call 11
+      get_local 4
+      i32.const 272
+      i32.add
+      get_local 4
+      i64.load offset=304
+      get_local 4
+      i32.const 304
+      i32.add
+      i32.const 8
+      i32.add
+      i64.load
+      get_local 4
+      i64.load offset=288
+      get_local 4
+      i32.const 288
+      i32.add
+      i32.const 8
+      i32.add
+      i64.load
+      call 11
+      get_local 4
+      i32.const 256
+      i32.add
+      get_local 4
+      i64.load offset=272
+      get_local 4
+      i32.const 272
+      i32.add
+      i32.const 8
+      i32.add
+      i64.load
+      get_local 22
+      get_local 20
+      call 19
+      block  ;; label = @2
+        get_local 4
+        i64.load offset=256
+        tee_local 6
+        get_local 4
+        i32.const 256
+        i32.add
+        i32.const 8
+        i32.add
+        i64.load
+        tee_local 19
+        i64.const 0
+        i64.const 0
+        call 18
+        br_if 0 (;@2;)
+        call 36
+        i32.const 34
+        i32.store
+      end
+      get_local 4
+      i32.const 240
+      i32.add
+      get_local 6
+      get_local 19
+      get_local 5
+      i32.wrap/i64
+      call 77
+      get_local 4
+      i64.load offset=248
+      set_local 6
+      get_local 4
+      i64.load offset=240
+      set_local 5
+    end
+    get_local 0
+    get_local 5
+    i64.store
+    get_local 0
+    get_local 6
+    i64.store offset=8
+    get_local 4
+    i32.const 1328
+    i32.add
+    set_global 0)
+  (func (;79;) (type 15) (param i32 i32) (result i64)
+    (local i32 i32 i32 i32 i64)
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=4
+        tee_local 2
+        get_local 0
+        i32.load offset=104
+        i32.ge_u
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 2
+        i32.const 1
+        i32.add
+        i32.store offset=4
+        get_local 2
+        i32.load8_u
+        set_local 2
+        br 1 (;@1;)
+      end
+      get_local 0
+      call 59
+      set_local 2
+    end
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 2
+              i32.const -43
+              i32.add
+              tee_local 3
+              i32.const 2
+              i32.gt_u
+              br_if 0 (;@5;)
+              block  ;; label = @6
+                get_local 3
+                br_table 0 (;@6;) 1 (;@5;) 0 (;@6;) 0 (;@6;)
+              end
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 0
+                  i32.load offset=4
+                  tee_local 3
+                  get_local 0
+                  i32.load offset=104
+                  i32.ge_u
+                  br_if 0 (;@7;)
+                  get_local 0
+                  get_local 3
+                  i32.const 1
+                  i32.add
+                  i32.store offset=4
+                  get_local 3
+                  i32.load8_u
+                  set_local 4
+                  br 1 (;@6;)
+                end
+                get_local 0
+                call 59
+                set_local 4
+              end
+              get_local 2
+              i32.const 45
+              i32.eq
+              set_local 5
+              get_local 4
+              i32.const -48
+              i32.add
+              set_local 3
+              block  ;; label = @6
+                get_local 1
+                br_if 0 (;@6;)
+                get_local 4
+                set_local 2
+                br 2 (;@4;)
+              end
+              get_local 4
+              set_local 2
+              get_local 3
+              i32.const 10
+              i32.lt_u
+              br_if 1 (;@4;)
+              get_local 0
+              i32.load offset=104
+              br_if 2 (;@3;)
+              i64.const -9223372036854775808
+              return
+            end
+            get_local 2
+            i32.const -48
+            i32.add
+            set_local 3
+            i32.const 0
+            set_local 5
+          end
+          get_local 3
+          i32.const 9
+          i32.gt_u
+          br_if 1 (;@2;)
+          i32.const 0
+          set_local 3
+          loop  ;; label = @4
+            get_local 2
+            get_local 3
+            i32.const 10
+            i32.mul
+            i32.add
+            set_local 3
+            block  ;; label = @5
+              block  ;; label = @6
+                get_local 0
+                i32.load offset=4
+                tee_local 2
+                get_local 0
+                i32.load offset=104
+                i32.ge_u
+                br_if 0 (;@6;)
+                get_local 0
+                get_local 2
+                i32.const 1
+                i32.add
+                i32.store offset=4
+                get_local 2
+                i32.load8_u
+                set_local 2
+                br 1 (;@5;)
+              end
+              get_local 0
+              call 59
+              set_local 2
+            end
+            get_local 3
+            i32.const -48
+            i32.add
+            set_local 3
+            block  ;; label = @5
+              get_local 2
+              i32.const -48
+              i32.add
+              tee_local 4
+              i32.const 9
+              i32.gt_u
+              br_if 0 (;@5;)
+              get_local 3
+              i32.const 214748364
+              i32.lt_s
+              br_if 1 (;@4;)
+            end
+          end
+          get_local 3
+          i64.extend_s/i32
+          set_local 6
+          block  ;; label = @4
+            get_local 4
+            i32.const 9
+            i32.gt_u
+            br_if 0 (;@4;)
+            loop  ;; label = @5
+              get_local 2
+              i64.extend_s/i32
+              get_local 6
+              i64.const 10
+              i64.mul
+              i64.add
+              set_local 6
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 0
+                  i32.load offset=4
+                  tee_local 2
+                  get_local 0
+                  i32.load offset=104
+                  i32.ge_u
+                  br_if 0 (;@7;)
+                  get_local 0
+                  get_local 2
+                  i32.const 1
+                  i32.add
+                  i32.store offset=4
+                  get_local 2
+                  i32.load8_u
+                  set_local 2
+                  br 1 (;@6;)
+                end
+                get_local 0
+                call 59
+                set_local 2
+              end
+              get_local 6
+              i64.const -48
+              i64.add
+              set_local 6
+              block  ;; label = @6
+                get_local 2
+                i32.const -48
+                i32.add
+                tee_local 3
+                i32.const 9
+                i32.gt_u
+                br_if 0 (;@6;)
+                get_local 6
+                i64.const 92233720368547758
+                i64.lt_s
+                br_if 1 (;@5;)
+              end
+            end
+            get_local 3
+            i32.const 9
+            i32.gt_u
+            br_if 0 (;@4;)
+            loop  ;; label = @5
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 0
+                  i32.load offset=4
+                  tee_local 2
+                  get_local 0
+                  i32.load offset=104
+                  i32.ge_u
+                  br_if 0 (;@7;)
+                  get_local 0
+                  get_local 2
+                  i32.const 1
+                  i32.add
+                  i32.store offset=4
+                  get_local 2
+                  i32.load8_u
+                  set_local 2
+                  br 1 (;@6;)
+                end
+                get_local 0
+                call 59
+                set_local 2
+              end
+              get_local 2
+              i32.const -48
+              i32.add
+              i32.const 10
+              i32.lt_u
+              br_if 0 (;@5;)
+            end
+          end
+          block  ;; label = @4
+            get_local 0
+            i32.load offset=104
+            i32.eqz
+            br_if 0 (;@4;)
+            get_local 0
+            get_local 0
+            i32.load offset=4
+            i32.const -1
+            i32.add
+            i32.store offset=4
+          end
+          i64.const 0
+          get_local 6
+          i64.sub
+          get_local 6
+          get_local 5
+          select
+          set_local 6
+          br 2 (;@1;)
+        end
+        get_local 0
+        get_local 0
+        i32.load offset=4
+        i32.const -1
+        i32.add
+        i32.store offset=4
+      end
+      i64.const -9223372036854775808
+      set_local 6
+      get_local 0
+      i32.load offset=104
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 0
+      i32.load offset=4
+      i32.const -1
+      i32.add
+      i32.store offset=4
+      i64.const -9223372036854775808
+      return
+    end
+    get_local 6)
+  (func (;80;) (type 26) (param i32 i32) (result f32)
+    (local i32 i64 i64 i64 f32)
+    get_global 0
+    i32.const 160
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 2
+    i32.const 16
+    i32.add
+    i32.const 0
+    i32.const 144
+    call 2
+    drop
+    get_local 2
+    i32.const -1
+    i32.store offset=92
+    get_local 2
+    get_local 0
+    i32.store offset=60
+    get_local 2
+    i32.const -1
+    i32.store offset=24
+    get_local 2
+    get_local 0
+    i32.store offset=20
+    get_local 2
+    i32.const 16
+    i32.add
+    i64.const 0
+    call 58
+    get_local 2
+    get_local 2
+    i32.const 16
+    i32.add
+    i32.const 0
+    i32.const 1
+    call 78
+    get_local 2
+    i64.load offset=8
+    set_local 3
+    get_local 2
+    i64.load
+    set_local 4
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      get_local 0
+      get_local 2
+      i64.load offset=136
+      get_local 2
+      i32.load offset=20
+      get_local 2
+      i32.load offset=24
+      i32.sub
+      i64.extend_s/i32
+      i64.add
+      tee_local 5
+      i32.wrap/i64
+      i32.add
+      get_local 5
+      i64.eqz
+      select
+      i32.store
+    end
+    get_local 4
+    get_local 3
+    call 21
+    set_local 6
+    get_local 2
+    i32.const 160
+    i32.add
+    set_global 0
+    get_local 6)
+  (func (;81;) (type 27) (param i32 i32) (result f64)
+    (local i32 i64 i64 i64 f64)
+    get_global 0
+    i32.const 160
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 2
+    i32.const 16
+    i32.add
+    i32.const 0
+    i32.const 144
+    call 2
+    drop
+    get_local 2
+    i32.const -1
+    i32.store offset=92
+    get_local 2
+    get_local 0
+    i32.store offset=60
+    get_local 2
+    i32.const -1
+    i32.store offset=24
+    get_local 2
+    get_local 0
+    i32.store offset=20
+    get_local 2
+    i32.const 16
+    i32.add
+    i64.const 0
+    call 58
+    get_local 2
+    get_local 2
+    i32.const 16
+    i32.add
+    i32.const 1
+    i32.const 1
+    call 78
+    get_local 2
+    i64.load offset=8
+    set_local 3
+    get_local 2
+    i64.load
+    set_local 4
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      get_local 0
+      get_local 2
+      i64.load offset=136
+      get_local 2
+      i32.load offset=20
+      get_local 2
+      i32.load offset=24
+      i32.sub
+      i64.extend_s/i32
+      i64.add
+      tee_local 5
+      i32.wrap/i64
+      i32.add
+      get_local 5
+      i64.eqz
+      select
+      i32.store
+    end
+    get_local 4
+    get_local 3
+    call 20
+    set_local 6
+    get_local 2
+    i32.const 160
+    i32.add
+    set_global 0
+    get_local 6)
+  (func (;82;) (type 28) (param i32 i32 i32)
+    (local i32 i64 i64 i64)
+    get_global 0
+    i32.const 160
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    i32.const 16
+    i32.add
+    i32.const 0
+    i32.const 144
+    call 2
+    drop
+    get_local 3
+    i32.const -1
+    i32.store offset=92
+    get_local 3
+    get_local 1
+    i32.store offset=60
+    get_local 3
+    i32.const -1
+    i32.store offset=24
+    get_local 3
+    get_local 1
+    i32.store offset=20
+    get_local 3
+    i32.const 16
+    i32.add
+    i64.const 0
+    call 58
+    get_local 3
+    get_local 3
+    i32.const 16
+    i32.add
+    i32.const 2
+    i32.const 1
+    call 78
+    get_local 3
+    i64.load offset=8
+    set_local 4
+    get_local 3
+    i64.load
+    set_local 5
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 2
+      get_local 1
+      get_local 1
+      get_local 3
+      i64.load offset=136
+      get_local 3
+      i32.load offset=20
+      get_local 3
+      i32.load offset=24
+      i32.sub
+      i64.extend_s/i32
+      i64.add
+      tee_local 6
+      i32.wrap/i64
+      i32.add
+      get_local 6
+      i64.eqz
+      select
+      i32.store
+    end
+    get_local 0
+    get_local 5
+    i64.store
+    get_local 0
+    get_local 4
+    i64.store offset=8
+    get_local 3
+    i32.const 160
+    i32.add
+    set_global 0)
+  (func (;83;) (type 26) (param i32 i32) (result f32)
+    (local i32 i32 i64 i64 i32 f32)
+    get_global 0
+    i32.const 224
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 2
+    i32.const 16
+    i32.add
+    i32.const 0
+    i32.const 144
+    call 2
+    drop
+    get_local 2
+    i32.const 0
+    i32.store offset=24
+    get_local 2
+    i64.const 0
+    i64.store offset=16
+    get_local 2
+    i32.const -1
+    i32.store offset=92
+    get_local 2
+    i32.const 60
+    i32.store offset=64
+    get_local 2
+    get_local 2
+    i32.const 160
+    i32.add
+    i32.const 4
+    i32.or
+    i32.store offset=60
+    get_local 2
+    i32.const 2
+    i32.store offset=48
+    get_local 0
+    i32.const -4
+    i32.add
+    set_local 3
+    loop  ;; label = @1
+      get_local 3
+      i32.const 4
+      i32.add
+      tee_local 3
+      i32.load
+      call 66
+      br_if 0 (;@1;)
+    end
+    get_local 2
+    get_local 3
+    i32.store offset=100
+    get_local 2
+    i32.const 16
+    i32.add
+    i64.const 0
+    call 58
+    get_local 2
+    get_local 2
+    i32.const 16
+    i32.add
+    i32.const 0
+    i32.const 1
+    call 78
+    get_local 2
+    i64.load offset=8
+    set_local 4
+    get_local 2
+    i64.load
+    set_local 5
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 3
+      get_local 2
+      i32.load offset=20
+      get_local 2
+      i32.load offset=24
+      i32.sub
+      get_local 2
+      i32.load offset=136
+      i32.add
+      tee_local 6
+      i32.const 2
+      i32.shl
+      i32.add
+      get_local 0
+      get_local 6
+      select
+      i32.store
+    end
+    get_local 5
+    get_local 4
+    call 21
+    set_local 7
+    get_local 2
+    i32.const 224
+    i32.add
+    set_global 0
+    get_local 7)
+  (func (;84;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32 i32 i32)
+    get_local 0
+    i32.load offset=84
+    tee_local 3
+    i32.const 8252
+    get_local 3
+    i32.load
+    select
+    set_local 4
+    i32.const 0
+    set_local 5
+    i32.const 0
+    set_local 3
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=48
+      i32.eqz
+      br_if 0 (;@1;)
+      i32.const 0
+      set_local 3
+      get_local 4
+      set_local 6
+      loop  ;; label = @2
+        get_local 6
+        i32.load
+        tee_local 7
+        i32.eqz
+        br_if 1 (;@1;)
+        get_local 0
+        i32.load offset=44
+        get_local 3
+        i32.add
+        get_local 7
+        i32.const 64
+        get_local 7
+        i32.const 128
+        i32.lt_u
+        select
+        i32.store8
+        get_local 6
+        i32.const 4
+        i32.add
+        set_local 6
+        get_local 3
+        i32.const 1
+        i32.add
+        tee_local 3
+        get_local 0
+        i32.load offset=48
+        i32.lt_u
+        br_if 0 (;@2;)
+      end
+    end
+    get_local 0
+    get_local 0
+    i32.load offset=44
+    tee_local 6
+    i32.store offset=4
+    get_local 0
+    get_local 4
+    get_local 3
+    i32.const 2
+    i32.shl
+    i32.add
+    i32.store offset=84
+    get_local 0
+    get_local 6
+    get_local 3
+    i32.add
+    i32.store offset=8
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 3
+      i32.eqz
+      br_if 0 (;@1;)
+      i32.const 1
+      set_local 5
+      get_local 0
+      get_local 6
+      i32.const 1
+      i32.add
+      i32.store offset=4
+      get_local 1
+      get_local 6
+      i32.load8_u
+      i32.store8
+    end
+    get_local 5)
+  (func (;85;) (type 27) (param i32 i32) (result f64)
+    (local i32 i32 i64 i64 i32 f64)
+    get_global 0
+    i32.const 224
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 2
+    i32.const 16
+    i32.add
+    i32.const 0
+    i32.const 144
+    call 2
+    drop
+    get_local 2
+    i32.const 0
+    i32.store offset=24
+    get_local 2
+    i64.const 0
+    i64.store offset=16
+    get_local 2
+    i32.const -1
+    i32.store offset=92
+    get_local 2
+    i32.const 60
+    i32.store offset=64
+    get_local 2
+    get_local 2
+    i32.const 160
+    i32.add
+    i32.const 4
+    i32.or
+    i32.store offset=60
+    get_local 2
+    i32.const 2
+    i32.store offset=48
+    get_local 0
+    i32.const -4
+    i32.add
+    set_local 3
+    loop  ;; label = @1
+      get_local 3
+      i32.const 4
+      i32.add
+      tee_local 3
+      i32.load
+      call 66
+      br_if 0 (;@1;)
+    end
+    get_local 2
+    get_local 3
+    i32.store offset=100
+    get_local 2
+    i32.const 16
+    i32.add
+    i64.const 0
+    call 58
+    get_local 2
+    get_local 2
+    i32.const 16
+    i32.add
+    i32.const 1
+    i32.const 1
+    call 78
+    get_local 2
+    i64.load offset=8
+    set_local 4
+    get_local 2
+    i64.load
+    set_local 5
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 3
+      get_local 2
+      i32.load offset=20
+      get_local 2
+      i32.load offset=24
+      i32.sub
+      get_local 2
+      i32.load offset=136
+      i32.add
+      tee_local 6
+      i32.const 2
+      i32.shl
+      i32.add
+      get_local 0
+      get_local 6
+      select
+      i32.store
+    end
+    get_local 5
+    get_local 4
+    call 20
+    set_local 7
+    get_local 2
+    i32.const 224
+    i32.add
+    set_global 0
+    get_local 7)
+  (func (;86;) (type 28) (param i32 i32 i32)
+    (local i32 i32 i64 i64 i32)
+    get_global 0
+    i32.const 224
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    i32.const 16
+    i32.add
+    i32.const 0
+    i32.const 144
+    call 2
+    drop
+    get_local 3
+    i32.const 0
+    i32.store offset=24
+    get_local 3
+    i64.const 0
+    i64.store offset=16
+    get_local 3
+    i32.const -1
+    i32.store offset=92
+    get_local 3
+    i32.const 60
+    i32.store offset=64
+    get_local 3
+    get_local 3
+    i32.const 160
+    i32.add
+    i32.const 4
+    i32.or
+    i32.store offset=60
+    get_local 3
+    i32.const 2
+    i32.store offset=48
+    get_local 1
+    i32.const -4
+    i32.add
+    set_local 4
+    loop  ;; label = @1
+      get_local 4
+      i32.const 4
+      i32.add
+      tee_local 4
+      i32.load
+      call 66
+      br_if 0 (;@1;)
+    end
+    get_local 3
+    get_local 4
+    i32.store offset=100
+    get_local 3
+    i32.const 16
+    i32.add
+    i64.const 0
+    call 58
+    get_local 3
+    get_local 3
+    i32.const 16
+    i32.add
+    i32.const 2
+    i32.const 1
+    call 78
+    get_local 3
+    i64.load offset=8
+    set_local 5
+    get_local 3
+    i64.load
+    set_local 6
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 2
+      get_local 4
+      get_local 3
+      i32.load offset=20
+      get_local 3
+      i32.load offset=24
+      i32.sub
+      get_local 3
+      i32.load offset=136
+      i32.add
+      tee_local 7
+      i32.const 2
+      i32.shl
+      i32.add
+      get_local 1
+      get_local 7
+      select
+      i32.store
+    end
+    get_local 0
+    get_local 5
+    i64.store offset=8
+    get_local 0
+    get_local 6
+    i64.store
+    get_local 3
+    i32.const 224
+    i32.add
+    set_global 0)
+  (func (;87;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32)
+    block  ;; label = @1
+      get_local 0
+      i32.const 99999999
+      i32.gt_u
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      call 88
+      return
+    end
+    get_local 0
+    get_local 0
+    i32.const 100000000
+    i32.div_u
+    tee_local 2
+    i32.const 100000000
+    i32.mul
+    i32.sub
+    set_local 3
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 0
+        i32.const 999999999
+        i32.gt_u
+        br_if 0 (;@2;)
+        get_local 1
+        get_local 2
+        i32.const 48
+        i32.add
+        i32.store8
+        i32.const 1
+        set_local 0
+        br 1 (;@1;)
+      end
+      i32.const 2
+      set_local 0
+      get_local 1
+      get_local 2
+      i32.const 1
+      i32.shl
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+    end
+    get_local 1
+    get_local 0
+    i32.add
+    tee_local 0
+    get_local 3
+    i32.const 10000
+    i32.div_u
+    tee_local 1
+    i32.const 65535
+    i32.and
+    i32.const 100
+    i32.div_u
+    tee_local 2
+    i32.const 1
+    i32.shl
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 0
+    i32.const 2
+    i32.add
+    get_local 1
+    get_local 2
+    i32.const 100
+    i32.mul
+    i32.sub
+    i32.const 1
+    i32.shl
+    i32.const 65534
+    i32.and
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 0
+    i32.const 4
+    i32.add
+    get_local 3
+    get_local 1
+    i32.const 10000
+    i32.mul
+    i32.sub
+    tee_local 1
+    i32.const 65535
+    i32.and
+    i32.const 100
+    i32.div_u
+    tee_local 3
+    i32.const 1
+    i32.shl
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 0
+    i32.const 6
+    i32.add
+    get_local 1
+    get_local 3
+    i32.const 100
+    i32.mul
+    i32.sub
+    i32.const 1
+    i32.shl
+    i32.const 65534
+    i32.and
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 0
+    i32.const 8
+    i32.add)
+  (func (;88;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32)
+    block  ;; label = @1
+      get_local 1
+      i32.const 9999
+      i32.gt_u
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        get_local 1
+        i32.const 99
+        i32.gt_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 1
+          i32.const 9
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 0
+          get_local 1
+          i32.const 48
+          i32.add
+          i32.store8
+          get_local 0
+          i32.const 1
+          i32.add
+          return
+        end
+        get_local 0
+        get_local 1
+        i32.const 1
+        i32.shl
+        i32.const 8752
+        i32.add
+        i32.const 2
+        call 7
+        drop
+        get_local 0
+        i32.const 2
+        i32.add
+        return
+      end
+      get_local 1
+      i32.const 65535
+      i32.and
+      tee_local 2
+      i32.const 100
+      i32.div_u
+      set_local 3
+      block  ;; label = @2
+        get_local 1
+        i32.const 999
+        i32.gt_u
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 3
+        i32.const 48
+        i32.add
+        i32.store8
+        get_local 0
+        i32.const 1
+        i32.add
+        get_local 2
+        i32.const 100
+        i32.rem_u
+        i32.const 1
+        i32.shl
+        i32.const 8752
+        i32.add
+        i32.const 2
+        call 7
+        drop
+        get_local 0
+        i32.const 3
+        i32.add
+        return
+      end
+      get_local 0
+      get_local 3
+      i32.const 1
+      i32.shl
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      get_local 0
+      i32.const 2
+      i32.add
+      get_local 1
+      get_local 3
+      i32.const 100
+      i32.mul
+      i32.sub
+      i32.const 1
+      i32.shl
+      i32.const 65534
+      i32.and
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      get_local 0
+      i32.const 4
+      i32.add
+      return
+    end
+    get_local 1
+    i32.const 10000
+    i32.div_u
+    set_local 3
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 1
+        i32.const 999999
+        i32.gt_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 1
+          i32.const 99999
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 0
+          get_local 3
+          i32.const 48
+          i32.add
+          i32.store8
+          i32.const 1
+          set_local 2
+          br 2 (;@1;)
+        end
+        i32.const 2
+        set_local 2
+        get_local 0
+        get_local 3
+        i32.const 1
+        i32.shl
+        i32.const 8752
+        i32.add
+        i32.const 2
+        call 7
+        drop
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 1
+        i32.const 9999999
+        i32.gt_u
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 3
+        i32.const 65535
+        i32.and
+        i32.const 100
+        i32.div_u
+        tee_local 2
+        i32.const 48
+        i32.add
+        i32.store8
+        get_local 0
+        i32.const 1
+        i32.add
+        get_local 3
+        get_local 2
+        i32.const 100
+        i32.mul
+        i32.sub
+        i32.const 1
+        i32.shl
+        i32.const 65534
+        i32.and
+        i32.const 8752
+        i32.add
+        i32.const 2
+        call 7
+        drop
+        i32.const 3
+        set_local 2
+        br 1 (;@1;)
+      end
+      get_local 0
+      get_local 1
+      i32.const 1000000
+      i32.div_u
+      i32.const 1
+      i32.shl
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      get_local 0
+      i32.const 2
+      i32.add
+      get_local 3
+      i32.const 100
+      i32.rem_u
+      i32.const 1
+      i32.shl
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      i32.const 4
+      set_local 2
+    end
+    get_local 0
+    get_local 2
+    i32.add
+    tee_local 0
+    get_local 1
+    get_local 3
+    i32.const 10000
+    i32.mul
+    i32.sub
+    tee_local 1
+    i32.const 65535
+    i32.and
+    i32.const 100
+    i32.div_u
+    tee_local 3
+    i32.const 1
+    i32.shl
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 0
+    i32.const 2
+    i32.add
+    get_local 1
+    get_local 3
+    i32.const 100
+    i32.mul
+    i32.sub
+    i32.const 1
+    i32.shl
+    i32.const 65534
+    i32.and
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 0
+    i32.const 4
+    i32.add)
+  (func (;89;) (type 29) (param i64 i32) (result i32)
+    (local i64 i32 i32 i32)
+    block  ;; label = @1
+      get_local 0
+      i64.const 99999999
+      i64.gt_u
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      i32.wrap/i64
+      call 88
+      return
+    end
+    block  ;; label = @1
+      get_local 0
+      i64.const 9999999999999999
+      i64.gt_u
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      i64.const 100000000
+      i64.div_u
+      tee_local 2
+      i32.wrap/i64
+      call 88
+      tee_local 1
+      get_local 0
+      get_local 2
+      i64.const 100000000
+      i64.mul
+      i64.sub
+      i32.wrap/i64
+      tee_local 3
+      i32.const 10000
+      i32.div_u
+      tee_local 4
+      i32.const 65535
+      i32.and
+      i32.const 100
+      i32.div_u
+      tee_local 5
+      i32.const 1
+      i32.shl
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      get_local 1
+      i32.const 2
+      i32.add
+      get_local 4
+      get_local 5
+      i32.const 100
+      i32.mul
+      i32.sub
+      i32.const 1
+      i32.shl
+      i32.const 65534
+      i32.and
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      get_local 1
+      i32.const 4
+      i32.add
+      get_local 3
+      get_local 4
+      i32.const 10000
+      i32.mul
+      i32.sub
+      tee_local 4
+      i32.const 65535
+      i32.and
+      i32.const 100
+      i32.div_u
+      tee_local 3
+      i32.const 1
+      i32.shl
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      get_local 1
+      i32.const 6
+      i32.add
+      get_local 4
+      get_local 3
+      i32.const 100
+      i32.mul
+      i32.sub
+      i32.const 1
+      i32.shl
+      i32.const 65534
+      i32.and
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      get_local 1
+      i32.const 8
+      i32.add
+      return
+    end
+    get_local 0
+    get_local 0
+    i64.const 10000000000000000
+    i64.div_u
+    tee_local 2
+    i64.const 10000000000000000
+    i64.mul
+    i64.sub
+    set_local 0
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 2
+        i32.wrap/i64
+        tee_local 4
+        i32.const 99
+        i32.gt_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 4
+          i32.const 9
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 1
+          get_local 4
+          i32.const 48
+          i32.add
+          i32.store8
+          i32.const 1
+          set_local 3
+          br 2 (;@1;)
+        end
+        i32.const 2
+        set_local 3
+        get_local 1
+        get_local 4
+        i32.const 1
+        i32.shl
+        i32.const 8752
+        i32.add
+        i32.const 2
+        call 7
+        drop
+        br 1 (;@1;)
+      end
+      get_local 4
+      i32.const 100
+      i32.div_u
+      set_local 3
+      block  ;; label = @2
+        get_local 4
+        i32.const 999
+        i32.gt_u
+        br_if 0 (;@2;)
+        get_local 1
+        get_local 3
+        i32.const 48
+        i32.add
+        i32.store8
+        get_local 1
+        i32.const 1
+        i32.add
+        get_local 4
+        i32.const 100
+        i32.rem_u
+        i32.const 1
+        i32.shl
+        i32.const 8752
+        i32.add
+        i32.const 2
+        call 7
+        drop
+        i32.const 3
+        set_local 3
+        br 1 (;@1;)
+      end
+      get_local 1
+      get_local 3
+      i32.const 1
+      i32.shl
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      get_local 1
+      i32.const 2
+      i32.add
+      get_local 4
+      get_local 3
+      i32.const 100
+      i32.mul
+      i32.sub
+      i32.const 1
+      i32.shl
+      i32.const 65534
+      i32.and
+      i32.const 8752
+      i32.add
+      i32.const 2
+      call 7
+      drop
+      i32.const 4
+      set_local 3
+    end
+    get_local 1
+    get_local 3
+    i32.add
+    tee_local 1
+    get_local 0
+    i64.const 100000000
+    i64.div_u
+    tee_local 2
+    i32.wrap/i64
+    tee_local 3
+    i32.const 10000
+    i32.div_u
+    tee_local 4
+    i32.const 65535
+    i32.and
+    i32.const 100
+    i32.div_u
+    tee_local 5
+    i32.const 1
+    i32.shl
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 1
+    i32.const 2
+    i32.add
+    get_local 4
+    get_local 5
+    i32.const 100
+    i32.mul
+    i32.sub
+    i32.const 1
+    i32.shl
+    i32.const 65534
+    i32.and
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 1
+    i32.const 4
+    i32.add
+    get_local 3
+    get_local 4
+    i32.const 10000
+    i32.mul
+    i32.sub
+    tee_local 4
+    i32.const 65535
+    i32.and
+    i32.const 100
+    i32.div_u
+    tee_local 3
+    i32.const 1
+    i32.shl
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 1
+    i32.const 6
+    i32.add
+    get_local 4
+    get_local 3
+    i32.const 100
+    i32.mul
+    i32.sub
+    i32.const 1
+    i32.shl
+    i32.const 65534
+    i32.and
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 1
+    i32.const 8
+    i32.add
+    get_local 0
+    get_local 2
+    i64.const 100000000
+    i64.mul
+    i64.sub
+    i32.wrap/i64
+    tee_local 3
+    i32.const 10000
+    i32.div_u
+    tee_local 4
+    i32.const 65535
+    i32.and
+    i32.const 100
+    i32.div_u
+    tee_local 5
+    i32.const 1
+    i32.shl
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 1
+    i32.const 10
+    i32.add
+    get_local 4
+    get_local 5
+    i32.const 100
+    i32.mul
+    i32.sub
+    i32.const 1
+    i32.shl
+    i32.const 65534
+    i32.and
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 1
+    i32.const 12
+    i32.add
+    get_local 3
+    get_local 4
+    i32.const 10000
+    i32.mul
+    i32.sub
+    tee_local 4
+    i32.const 65535
+    i32.and
+    i32.const 100
+    i32.div_u
+    tee_local 3
+    i32.const 1
+    i32.shl
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 1
+    i32.const 14
+    i32.add
+    get_local 4
+    get_local 3
+    i32.const 100
+    i32.mul
+    i32.sub
+    i32.const 1
+    i32.shl
+    i32.const 65534
+    i32.and
+    i32.const 8752
+    i32.add
+    i32.const 2
+    call 7
+    drop
+    get_local 1
+    i32.const 16
+    i32.add)
+  (func (;90;) (type 3) (param i32 i32 i32 i32)
+    (local i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 4
+    set_global 0
+    block  ;; label = @1
+      get_local 0
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 4
+      get_local 0
+      i32.store8 offset=15
+      get_local 4
+      i32.const 15
+      i32.add
+      i32.const 1
+      call 6
+    end
+    get_local 4
+    i32.const 16
+    i32.add
+    set_global 0)
+  (func (;91;) (type 30) (param i32 i32 i32 i32 i32) (result i32)
+    (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i64 i64 i64 i64 i32 i32 i32 f64 i32 f64 f64)
+    get_global 0
+    i32.const 32
+    i32.sub
+    tee_local 5
+    set_global 0
+    get_local 0
+    i32.const 3
+    get_local 1
+    select
+    set_local 6
+    get_local 5
+    i32.const -1
+    i32.add
+    set_local 7
+    i32.const 0
+    set_local 8
+    loop (result i32)  ;; label = @1
+      i32.const 0
+      get_local 8
+      i32.sub
+      set_local 9
+      get_local 3
+      i32.const 2
+      i32.add
+      set_local 0
+      get_local 8
+      set_local 10
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            loop  ;; label = @5
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 3
+                  i32.load8_u
+                  tee_local 11
+                  i32.eqz
+                  br_if 0 (;@7;)
+                  get_local 11
+                  i32.const 37
+                  i32.ne
+                  br_if 1 (;@6;)
+                  i32.const 0
+                  set_local 12
+                  block  ;; label = @8
+                    loop  ;; label = @9
+                      get_local 0
+                      i32.const -1
+                      i32.add
+                      tee_local 13
+                      i32.load8_s
+                      tee_local 3
+                      i32.const -32
+                      i32.add
+                      tee_local 8
+                      i32.const 16
+                      i32.gt_u
+                      br_if 1 (;@8;)
+                      i32.const 1
+                      set_local 11
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              block  ;; label = @14
+                                get_local 8
+                                br_table 2 (;@12;) 6 (;@8;) 6 (;@8;) 3 (;@11;) 6 (;@8;) 6 (;@8;) 6 (;@8;) 6 (;@8;) 6 (;@8;) 6 (;@8;) 6 (;@8;) 1 (;@13;) 6 (;@8;) 0 (;@14;) 6 (;@8;) 6 (;@8;) 4 (;@10;) 2 (;@12;)
+                              end
+                              i32.const 2
+                              set_local 11
+                              br 3 (;@10;)
+                            end
+                            i32.const 4
+                            set_local 11
+                            br 2 (;@10;)
+                          end
+                          i32.const 8
+                          set_local 11
+                          br 1 (;@10;)
+                        end
+                        i32.const 16
+                        set_local 11
+                      end
+                      get_local 0
+                      i32.const 1
+                      i32.add
+                      set_local 0
+                      get_local 12
+                      get_local 11
+                      i32.or
+                      set_local 12
+                      br 0 (;@9;)
+                    end
+                  end
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      get_local 3
+                      i32.const -48
+                      i32.add
+                      i32.const 255
+                      i32.and
+                      i32.const 9
+                      i32.gt_u
+                      br_if 0 (;@9;)
+                      i32.const 0
+                      set_local 11
+                      loop  ;; label = @10
+                        get_local 11
+                        i32.const 10
+                        i32.mul
+                        get_local 3
+                        i32.const 24
+                        i32.shl
+                        i32.const 24
+                        i32.shr_s
+                        i32.add
+                        i32.const -48
+                        i32.add
+                        set_local 11
+                        get_local 13
+                        i32.load8_u offset=1
+                        set_local 3
+                        get_local 13
+                        i32.const 1
+                        i32.add
+                        tee_local 0
+                        set_local 13
+                        get_local 3
+                        i32.const -48
+                        i32.add
+                        i32.const 255
+                        i32.and
+                        i32.const 10
+                        i32.lt_u
+                        br_if 0 (;@10;)
+                        br 2 (;@8;)
+                      end
+                    end
+                    i32.const 0
+                    set_local 11
+                    block  ;; label = @9
+                      get_local 3
+                      i32.const 42
+                      i32.eq
+                      br_if 0 (;@9;)
+                      get_local 13
+                      set_local 0
+                      br 1 (;@8;)
+                    end
+                    get_local 12
+                    i32.const 2
+                    i32.or
+                    get_local 12
+                    get_local 4
+                    i32.load
+                    tee_local 3
+                    i32.const 0
+                    i32.lt_s
+                    select
+                    set_local 12
+                    get_local 3
+                    get_local 3
+                    i32.const 31
+                    i32.shr_s
+                    tee_local 11
+                    i32.add
+                    get_local 11
+                    i32.xor
+                    set_local 11
+                    get_local 4
+                    i32.const 4
+                    i32.add
+                    set_local 4
+                    get_local 0
+                    i32.load8_u
+                    set_local 3
+                  end
+                  i32.const 0
+                  set_local 8
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      get_local 3
+                      i32.const 255
+                      i32.and
+                      i32.const 46
+                      i32.eq
+                      br_if 0 (;@9;)
+                      get_local 0
+                      set_local 13
+                      br 1 (;@8;)
+                    end
+                    get_local 0
+                    i32.const 1
+                    i32.add
+                    set_local 13
+                    get_local 12
+                    i32.const 1024
+                    i32.or
+                    set_local 12
+                    block  ;; label = @9
+                      get_local 0
+                      i32.load8_u offset=1
+                      tee_local 3
+                      i32.const -48
+                      i32.add
+                      i32.const 255
+                      i32.and
+                      i32.const 9
+                      i32.gt_u
+                      br_if 0 (;@9;)
+                      i32.const 0
+                      set_local 8
+                      loop  ;; label = @10
+                        get_local 8
+                        i32.const 10
+                        i32.mul
+                        get_local 3
+                        i32.const 24
+                        i32.shl
+                        i32.const 24
+                        i32.shr_s
+                        i32.add
+                        i32.const -48
+                        i32.add
+                        set_local 8
+                        get_local 13
+                        i32.load8_u offset=1
+                        set_local 3
+                        get_local 13
+                        i32.const 1
+                        i32.add
+                        tee_local 0
+                        set_local 13
+                        get_local 3
+                        i32.const -48
+                        i32.add
+                        i32.const 255
+                        i32.and
+                        i32.const 10
+                        i32.lt_u
+                        br_if 0 (;@10;)
+                      end
+                      get_local 0
+                      set_local 13
+                      br 1 (;@8;)
+                    end
+                    get_local 3
+                    i32.const 255
+                    i32.and
+                    i32.const 42
+                    i32.ne
+                    br_if 0 (;@8;)
+                    get_local 4
+                    i32.load
+                    tee_local 3
+                    i32.const 0
+                    get_local 3
+                    i32.const 0
+                    i32.gt_s
+                    select
+                    set_local 8
+                    get_local 0
+                    i32.const 2
+                    i32.add
+                    set_local 13
+                    get_local 4
+                    i32.const 4
+                    i32.add
+                    set_local 4
+                    get_local 0
+                    i32.load8_u offset=2
+                    set_local 3
+                  end
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      get_local 3
+                      i32.const 24
+                      i32.shl
+                      i32.const 24
+                      i32.shr_s
+                      i32.const -104
+                      i32.add
+                      i32.const 31
+                      i32.rotl
+                      tee_local 0
+                      i32.const 9
+                      i32.gt_u
+                      br_if 0 (;@9;)
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              get_local 0
+                              br_table 1 (;@12;) 2 (;@11;) 0 (;@13;) 4 (;@9;) 4 (;@9;) 4 (;@9;) 3 (;@10;) 4 (;@9;) 4 (;@9;) 3 (;@10;) 1 (;@12;)
+                            end
+                            block  ;; label = @13
+                              get_local 13
+                              i32.load8_u offset=1
+                              tee_local 0
+                              i32.const 108
+                              i32.eq
+                              br_if 0 (;@13;)
+                              get_local 13
+                              i32.const 1
+                              i32.add
+                              set_local 13
+                              get_local 12
+                              i32.const 256
+                              i32.or
+                              set_local 12
+                              br 5 (;@8;)
+                            end
+                            get_local 13
+                            i32.const 2
+                            i32.add
+                            set_local 13
+                            get_local 12
+                            i32.const 768
+                            i32.or
+                            set_local 12
+                            br 3 (;@9;)
+                          end
+                          block  ;; label = @12
+                            get_local 13
+                            i32.load8_u offset=1
+                            tee_local 0
+                            i32.const 104
+                            i32.eq
+                            br_if 0 (;@12;)
+                            get_local 13
+                            i32.const 1
+                            i32.add
+                            set_local 13
+                            get_local 12
+                            i32.const 128
+                            i32.or
+                            set_local 12
+                            br 4 (;@8;)
+                          end
+                          get_local 13
+                          i32.const 2
+                          i32.add
+                          set_local 13
+                          get_local 12
+                          i32.const 192
+                          i32.or
+                          set_local 12
+                          br 2 (;@9;)
+                        end
+                        get_local 13
+                        i32.const 1
+                        i32.add
+                        set_local 13
+                        get_local 12
+                        i32.const 512
+                        i32.or
+                        set_local 12
+                        br 1 (;@9;)
+                      end
+                      get_local 13
+                      i32.const 1
+                      i32.add
+                      set_local 13
+                      get_local 12
+                      i32.const 256
+                      i32.or
+                      set_local 12
+                    end
+                    get_local 13
+                    i32.load8_u
+                    set_local 0
+                  end
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      block  ;; label = @10
+                        get_local 0
+                        i32.const 24
+                        i32.shl
+                        i32.const 24
+                        i32.shr_s
+                        tee_local 14
+                        i32.const -37
+                        i32.add
+                        tee_local 3
+                        i32.const 83
+                        i32.gt_u
+                        br_if 0 (;@10;)
+                        block  ;; label = @11
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              block  ;; label = @14
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 3
+                                    br_table 5 (;@11;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 1 (;@15;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 0 (;@16;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 0 (;@16;) 2 (;@14;) 0 (;@16;) 6 (;@10;) 1 (;@15;) 6 (;@10;) 6 (;@10;) 0 (;@16;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 6 (;@10;) 0 (;@16;) 4 (;@12;) 6 (;@10;) 6 (;@10;) 3 (;@13;) 6 (;@10;) 0 (;@16;) 6 (;@10;) 6 (;@10;) 0 (;@16;) 5 (;@11;)
+                                  end
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      block  ;; label = @18
+                                        block  ;; label = @19
+                                          block  ;; label = @20
+                                            get_local 0
+                                            i32.const 255
+                                            i32.and
+                                            tee_local 3
+                                            i32.const -88
+                                            i32.add
+                                            tee_local 9
+                                            i32.const 32
+                                            i32.gt_u
+                                            br_if 0 (;@20;)
+                                            i32.const 8
+                                            set_local 0
+                                            i32.const 16
+                                            set_local 14
+                                            get_local 9
+                                            br_table 1 (;@19;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 2 (;@18;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 3 (;@17;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 0 (;@20;) 1 (;@19;) 1 (;@19;)
+                                          end
+                                          get_local 12
+                                          i32.const -17
+                                          i32.and
+                                          set_local 12
+                                          i32.const 10
+                                          set_local 14
+                                        end
+                                        get_local 12
+                                        i32.const 32
+                                        i32.or
+                                        get_local 12
+                                        get_local 3
+                                        i32.const 88
+                                        i32.eq
+                                        select
+                                        set_local 12
+                                        block  ;; label = @19
+                                          get_local 3
+                                          i32.const -100
+                                          i32.add
+                                          tee_local 9
+                                          i32.const 5
+                                          i32.le_u
+                                          br_if 0 (;@19;)
+                                          get_local 14
+                                          set_local 0
+                                          br 2 (;@17;)
+                                        end
+                                        get_local 14
+                                        set_local 0
+                                        get_local 9
+                                        br_table 2 (;@16;) 1 (;@17;) 1 (;@17;) 1 (;@17;) 1 (;@17;) 2 (;@16;) 2 (;@16;)
+                                      end
+                                      i32.const 2
+                                      set_local 0
+                                    end
+                                    get_local 12
+                                    i32.const -13
+                                    i32.and
+                                    set_local 12
+                                  end
+                                  get_local 12
+                                  i32.const -2
+                                  i32.and
+                                  get_local 12
+                                  get_local 12
+                                  i32.const 1024
+                                  i32.and
+                                  select
+                                  set_local 9
+                                  block  ;; label = @16
+                                    get_local 3
+                                    i32.const -100
+                                    i32.add
+                                    tee_local 3
+                                    i32.const 5
+                                    i32.gt_u
+                                    br_if 0 (;@16;)
+                                    block  ;; label = @17
+                                      get_local 3
+                                      br_table 0 (;@17;) 1 (;@16;) 1 (;@16;) 1 (;@16;) 1 (;@16;) 0 (;@17;) 0 (;@17;)
+                                    end
+                                    block  ;; label = @17
+                                      get_local 9
+                                      i32.const 512
+                                      i32.and
+                                      i32.eqz
+                                      br_if 0 (;@17;)
+                                      get_local 9
+                                      get_local 9
+                                      i32.const -17
+                                      i32.and
+                                      get_local 4
+                                      i32.const 7
+                                      i32.add
+                                      i32.const -8
+                                      i32.and
+                                      tee_local 4
+                                      i64.load
+                                      tee_local 15
+                                      i64.const 0
+                                      i64.ne
+                                      tee_local 3
+                                      select
+                                      set_local 14
+                                      block  ;; label = @18
+                                        block  ;; label = @19
+                                          get_local 3
+                                          br_if 0 (;@19;)
+                                          i32.const 0
+                                          set_local 3
+                                          get_local 14
+                                          i32.const 1024
+                                          i32.and
+                                          br_if 1 (;@18;)
+                                        end
+                                        get_local 0
+                                        i64.extend_u/i32
+                                        set_local 16
+                                        get_local 15
+                                        get_local 15
+                                        i64.const 63
+                                        i64.shr_s
+                                        tee_local 17
+                                        i64.add
+                                        get_local 17
+                                        i64.xor
+                                        set_local 17
+                                        get_local 14
+                                        i32.const 32
+                                        i32.and
+                                        i32.const 97
+                                        i32.xor
+                                        i32.const 246
+                                        i32.add
+                                        set_local 12
+                                        i32.const 0
+                                        set_local 3
+                                        loop  ;; label = @19
+                                          get_local 5
+                                          get_local 3
+                                          i32.add
+                                          i32.const 48
+                                          get_local 12
+                                          get_local 17
+                                          get_local 17
+                                          get_local 16
+                                          i64.div_u
+                                          tee_local 18
+                                          get_local 16
+                                          i64.mul
+                                          i64.sub
+                                          i32.wrap/i64
+                                          tee_local 9
+                                          i32.const 24
+                                          i32.shl
+                                          i32.const 167772160
+                                          i32.lt_s
+                                          select
+                                          get_local 9
+                                          i32.add
+                                          i32.store8
+                                          get_local 3
+                                          i32.const 1
+                                          i32.add
+                                          tee_local 3
+                                          i32.const 31
+                                          i32.gt_u
+                                          br_if 1 (;@18;)
+                                          get_local 17
+                                          get_local 16
+                                          i64.ge_u
+                                          set_local 9
+                                          get_local 18
+                                          set_local 17
+                                          get_local 9
+                                          br_if 0 (;@19;)
+                                        end
+                                      end
+                                      get_local 4
+                                      i32.const 8
+                                      i32.add
+                                      set_local 4
+                                      get_local 6
+                                      get_local 1
+                                      get_local 10
+                                      get_local 2
+                                      get_local 5
+                                      get_local 3
+                                      get_local 15
+                                      i64.const 63
+                                      i64.shr_u
+                                      i32.wrap/i64
+                                      get_local 0
+                                      get_local 8
+                                      get_local 11
+                                      get_local 14
+                                      call 93
+                                      set_local 8
+                                      get_local 13
+                                      i32.const 1
+                                      i32.add
+                                      set_local 3
+                                      br 16 (;@1;)
+                                    end
+                                    block  ;; label = @17
+                                      get_local 9
+                                      i32.const 256
+                                      i32.and
+                                      i32.eqz
+                                      br_if 0 (;@17;)
+                                      get_local 9
+                                      get_local 9
+                                      i32.const -17
+                                      i32.and
+                                      get_local 4
+                                      i32.load
+                                      tee_local 19
+                                      select
+                                      set_local 20
+                                      block  ;; label = @18
+                                        block  ;; label = @19
+                                          get_local 19
+                                          br_if 0 (;@19;)
+                                          i32.const 0
+                                          set_local 9
+                                          get_local 20
+                                          i32.const 1024
+                                          i32.and
+                                          br_if 1 (;@18;)
+                                        end
+                                        get_local 19
+                                        get_local 19
+                                        i32.const 31
+                                        i32.shr_s
+                                        tee_local 3
+                                        i32.add
+                                        get_local 3
+                                        i32.xor
+                                        set_local 3
+                                        get_local 20
+                                        i32.const 32
+                                        i32.and
+                                        i32.const 97
+                                        i32.xor
+                                        i32.const 246
+                                        i32.add
+                                        set_local 21
+                                        i32.const 0
+                                        set_local 9
+                                        loop  ;; label = @19
+                                          get_local 5
+                                          get_local 9
+                                          i32.add
+                                          i32.const 48
+                                          get_local 21
+                                          get_local 3
+                                          get_local 3
+                                          get_local 0
+                                          i32.div_u
+                                          tee_local 14
+                                          get_local 0
+                                          i32.mul
+                                          i32.sub
+                                          tee_local 12
+                                          i32.const 24
+                                          i32.shl
+                                          i32.const 167772160
+                                          i32.lt_s
+                                          select
+                                          get_local 12
+                                          i32.add
+                                          i32.store8
+                                          get_local 9
+                                          i32.const 1
+                                          i32.add
+                                          tee_local 9
+                                          i32.const 31
+                                          i32.gt_u
+                                          br_if 1 (;@18;)
+                                          get_local 3
+                                          get_local 0
+                                          i32.ge_u
+                                          set_local 12
+                                          get_local 14
+                                          set_local 3
+                                          get_local 12
+                                          br_if 0 (;@19;)
+                                        end
+                                      end
+                                      get_local 4
+                                      i32.const 4
+                                      i32.add
+                                      set_local 4
+                                      get_local 6
+                                      get_local 1
+                                      get_local 10
+                                      get_local 2
+                                      get_local 5
+                                      get_local 9
+                                      get_local 19
+                                      i32.const 31
+                                      i32.shr_u
+                                      get_local 0
+                                      get_local 8
+                                      get_local 11
+                                      get_local 20
+                                      call 93
+                                      set_local 8
+                                      get_local 13
+                                      i32.const 1
+                                      i32.add
+                                      set_local 3
+                                      br 16 (;@1;)
+                                    end
+                                    block  ;; label = @17
+                                      block  ;; label = @18
+                                        get_local 9
+                                        i32.const 64
+                                        i32.and
+                                        i32.eqz
+                                        br_if 0 (;@18;)
+                                        get_local 4
+                                        i32.load8_s
+                                        set_local 19
+                                        br 1 (;@17;)
+                                      end
+                                      get_local 4
+                                      i32.load
+                                      tee_local 3
+                                      i32.const 16
+                                      i32.shl
+                                      i32.const 16
+                                      i32.shr_s
+                                      get_local 3
+                                      get_local 9
+                                      i32.const 128
+                                      i32.and
+                                      select
+                                      set_local 19
+                                    end
+                                    get_local 9
+                                    get_local 9
+                                    i32.const -17
+                                    i32.and
+                                    get_local 19
+                                    select
+                                    set_local 20
+                                    block  ;; label = @17
+                                      block  ;; label = @18
+                                        get_local 19
+                                        br_if 0 (;@18;)
+                                        i32.const 0
+                                        set_local 9
+                                        get_local 20
+                                        i32.const 1024
+                                        i32.and
+                                        br_if 1 (;@17;)
+                                      end
+                                      get_local 19
+                                      get_local 19
+                                      i32.const 31
+                                      i32.shr_s
+                                      tee_local 3
+                                      i32.add
+                                      get_local 3
+                                      i32.xor
+                                      set_local 3
+                                      get_local 20
+                                      i32.const 32
+                                      i32.and
+                                      i32.const 97
+                                      i32.xor
+                                      i32.const 246
+                                      i32.add
+                                      set_local 21
+                                      i32.const 0
+                                      set_local 9
+                                      loop  ;; label = @18
+                                        get_local 5
+                                        get_local 9
+                                        i32.add
+                                        i32.const 48
+                                        get_local 21
+                                        get_local 3
+                                        get_local 3
+                                        get_local 0
+                                        i32.div_u
+                                        tee_local 14
+                                        get_local 0
+                                        i32.mul
+                                        i32.sub
+                                        tee_local 12
+                                        i32.const 24
+                                        i32.shl
+                                        i32.const 167772160
+                                        i32.lt_s
+                                        select
+                                        get_local 12
+                                        i32.add
+                                        i32.store8
+                                        get_local 9
+                                        i32.const 1
+                                        i32.add
+                                        tee_local 9
+                                        i32.const 31
+                                        i32.gt_u
+                                        br_if 1 (;@17;)
+                                        get_local 3
+                                        get_local 0
+                                        i32.ge_u
+                                        set_local 12
+                                        get_local 14
+                                        set_local 3
+                                        get_local 12
+                                        br_if 0 (;@18;)
+                                      end
+                                    end
+                                    get_local 4
+                                    i32.const 4
+                                    i32.add
+                                    set_local 4
+                                    get_local 6
+                                    get_local 1
+                                    get_local 10
+                                    get_local 2
+                                    get_local 5
+                                    get_local 9
+                                    get_local 19
+                                    i32.const 31
+                                    i32.shr_u
+                                    get_local 0
+                                    get_local 8
+                                    get_local 11
+                                    get_local 20
+                                    call 93
+                                    set_local 8
+                                    get_local 13
+                                    i32.const 1
+                                    i32.add
+                                    set_local 3
+                                    br 15 (;@1;)
+                                  end
+                                  block  ;; label = @16
+                                    get_local 9
+                                    i32.const 512
+                                    i32.and
+                                    i32.eqz
+                                    br_if 0 (;@16;)
+                                    get_local 9
+                                    get_local 9
+                                    i32.const -17
+                                    i32.and
+                                    get_local 4
+                                    i32.const 7
+                                    i32.add
+                                    i32.const -8
+                                    i32.and
+                                    tee_local 4
+                                    i64.load
+                                    tee_local 17
+                                    i64.const 0
+                                    i64.ne
+                                    tee_local 3
+                                    select
+                                    set_local 14
+                                    block  ;; label = @17
+                                      block  ;; label = @18
+                                        get_local 3
+                                        br_if 0 (;@18;)
+                                        i32.const 0
+                                        set_local 3
+                                        get_local 14
+                                        i32.const 1024
+                                        i32.and
+                                        br_if 1 (;@17;)
+                                      end
+                                      get_local 0
+                                      i64.extend_u/i32
+                                      set_local 16
+                                      get_local 14
+                                      i32.const 32
+                                      i32.and
+                                      i32.const 97
+                                      i32.xor
+                                      i32.const 246
+                                      i32.add
+                                      set_local 12
+                                      i32.const 0
+                                      set_local 3
+                                      loop  ;; label = @18
+                                        get_local 5
+                                        get_local 3
+                                        i32.add
+                                        i32.const 48
+                                        get_local 12
+                                        get_local 17
+                                        get_local 17
+                                        get_local 16
+                                        i64.div_u
+                                        tee_local 18
+                                        get_local 16
+                                        i64.mul
+                                        i64.sub
+                                        i32.wrap/i64
+                                        tee_local 9
+                                        i32.const 24
+                                        i32.shl
+                                        i32.const 167772160
+                                        i32.lt_s
+                                        select
+                                        get_local 9
+                                        i32.add
+                                        i32.store8
+                                        get_local 3
+                                        i32.const 1
+                                        i32.add
+                                        tee_local 3
+                                        i32.const 31
+                                        i32.gt_u
+                                        br_if 1 (;@17;)
+                                        get_local 17
+                                        get_local 16
+                                        i64.ge_u
+                                        set_local 9
+                                        get_local 18
+                                        set_local 17
+                                        get_local 9
+                                        br_if 0 (;@18;)
+                                      end
+                                    end
+                                    get_local 4
+                                    i32.const 8
+                                    i32.add
+                                    set_local 4
+                                    get_local 6
+                                    get_local 1
+                                    get_local 10
+                                    get_local 2
+                                    get_local 5
+                                    get_local 3
+                                    i32.const 0
+                                    get_local 0
+                                    get_local 8
+                                    get_local 11
+                                    get_local 14
+                                    call 93
+                                    set_local 8
+                                    get_local 13
+                                    i32.const 1
+                                    i32.add
+                                    set_local 3
+                                    br 15 (;@1;)
+                                  end
+                                  block  ;; label = @16
+                                    get_local 9
+                                    i32.const 256
+                                    i32.and
+                                    i32.eqz
+                                    br_if 0 (;@16;)
+                                    get_local 9
+                                    get_local 9
+                                    i32.const -17
+                                    i32.and
+                                    get_local 4
+                                    i32.load
+                                    tee_local 3
+                                    select
+                                    set_local 19
+                                    block  ;; label = @17
+                                      block  ;; label = @18
+                                        get_local 3
+                                        br_if 0 (;@18;)
+                                        i32.const 0
+                                        set_local 9
+                                        get_local 19
+                                        i32.const 1024
+                                        i32.and
+                                        br_if 1 (;@17;)
+                                      end
+                                      get_local 19
+                                      i32.const 32
+                                      i32.and
+                                      i32.const 97
+                                      i32.xor
+                                      i32.const 246
+                                      i32.add
+                                      set_local 21
+                                      i32.const 0
+                                      set_local 9
+                                      loop  ;; label = @18
+                                        get_local 5
+                                        get_local 9
+                                        i32.add
+                                        i32.const 48
+                                        get_local 21
+                                        get_local 3
+                                        get_local 3
+                                        get_local 0
+                                        i32.div_u
+                                        tee_local 14
+                                        get_local 0
+                                        i32.mul
+                                        i32.sub
+                                        tee_local 12
+                                        i32.const 24
+                                        i32.shl
+                                        i32.const 167772160
+                                        i32.lt_s
+                                        select
+                                        get_local 12
+                                        i32.add
+                                        i32.store8
+                                        get_local 9
+                                        i32.const 1
+                                        i32.add
+                                        tee_local 9
+                                        i32.const 31
+                                        i32.gt_u
+                                        br_if 1 (;@17;)
+                                        get_local 3
+                                        get_local 0
+                                        i32.ge_u
+                                        set_local 12
+                                        get_local 14
+                                        set_local 3
+                                        get_local 12
+                                        br_if 0 (;@18;)
+                                      end
+                                    end
+                                    get_local 4
+                                    i32.const 4
+                                    i32.add
+                                    set_local 4
+                                    get_local 6
+                                    get_local 1
+                                    get_local 10
+                                    get_local 2
+                                    get_local 5
+                                    get_local 9
+                                    i32.const 0
+                                    get_local 0
+                                    get_local 8
+                                    get_local 11
+                                    get_local 19
+                                    call 93
+                                    set_local 8
+                                    get_local 13
+                                    i32.const 1
+                                    i32.add
+                                    set_local 3
+                                    br 15 (;@1;)
+                                  end
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      get_local 9
+                                      i32.const 64
+                                      i32.and
+                                      i32.eqz
+                                      br_if 0 (;@17;)
+                                      get_local 4
+                                      i32.load8_u
+                                      set_local 3
+                                      br 1 (;@16;)
+                                    end
+                                    get_local 4
+                                    i32.load
+                                    tee_local 3
+                                    i32.const 65535
+                                    i32.and
+                                    get_local 3
+                                    get_local 9
+                                    i32.const 128
+                                    i32.and
+                                    select
+                                    set_local 3
+                                  end
+                                  get_local 9
+                                  get_local 9
+                                  i32.const -17
+                                  i32.and
+                                  get_local 3
+                                  select
+                                  set_local 19
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      get_local 3
+                                      br_if 0 (;@17;)
+                                      i32.const 0
+                                      set_local 9
+                                      get_local 19
+                                      i32.const 1024
+                                      i32.and
+                                      br_if 1 (;@16;)
+                                    end
+                                    get_local 19
+                                    i32.const 32
+                                    i32.and
+                                    i32.const 97
+                                    i32.xor
+                                    i32.const 246
+                                    i32.add
+                                    set_local 21
+                                    i32.const 0
+                                    set_local 9
+                                    loop  ;; label = @17
+                                      get_local 5
+                                      get_local 9
+                                      i32.add
+                                      i32.const 48
+                                      get_local 21
+                                      get_local 3
+                                      get_local 3
+                                      get_local 0
+                                      i32.div_u
+                                      tee_local 14
+                                      get_local 0
+                                      i32.mul
+                                      i32.sub
+                                      tee_local 12
+                                      i32.const 24
+                                      i32.shl
+                                      i32.const 167772160
+                                      i32.lt_s
+                                      select
+                                      get_local 12
+                                      i32.add
+                                      i32.store8
+                                      get_local 9
+                                      i32.const 1
+                                      i32.add
+                                      tee_local 9
+                                      i32.const 31
+                                      i32.gt_u
+                                      br_if 1 (;@16;)
+                                      get_local 3
+                                      get_local 0
+                                      i32.ge_u
+                                      set_local 12
+                                      get_local 14
+                                      set_local 3
+                                      get_local 12
+                                      br_if 0 (;@17;)
+                                    end
+                                  end
+                                  get_local 4
+                                  i32.const 4
+                                  i32.add
+                                  set_local 4
+                                  get_local 6
+                                  get_local 1
+                                  get_local 10
+                                  get_local 2
+                                  get_local 5
+                                  get_local 9
+                                  i32.const 0
+                                  get_local 0
+                                  get_local 8
+                                  get_local 11
+                                  get_local 19
+                                  call 93
+                                  set_local 8
+                                  get_local 13
+                                  i32.const 1
+                                  i32.add
+                                  set_local 3
+                                  br 14 (;@1;)
+                                end
+                                f64.const 0x0p+0 (;=0;)
+                                get_local 4
+                                i32.const 7
+                                i32.add
+                                i32.const -8
+                                i32.and
+                                tee_local 20
+                                f64.load
+                                tee_local 22
+                                f64.sub
+                                get_local 22
+                                get_local 22
+                                f64.const 0x0p+0 (;=0;)
+                                f64.lt
+                                tee_local 23
+                                select
+                                set_local 22
+                                i32.const 0
+                                set_local 0
+                                block  ;; label = @15
+                                  get_local 8
+                                  i32.const 6
+                                  get_local 12
+                                  i32.const 1024
+                                  i32.and
+                                  select
+                                  tee_local 3
+                                  i32.const 10
+                                  i32.lt_u
+                                  br_if 0 (;@15;)
+                                  i32.const 1
+                                  set_local 0
+                                  block  ;; label = @16
+                                    loop  ;; label = @17
+                                      get_local 5
+                                      get_local 0
+                                      i32.add
+                                      i32.const -1
+                                      i32.add
+                                      i32.const 48
+                                      i32.store8
+                                      get_local 0
+                                      i32.const 1
+                                      i32.add
+                                      set_local 8
+                                      get_local 3
+                                      i32.const -1
+                                      i32.add
+                                      set_local 3
+                                      get_local 0
+                                      i32.const 31
+                                      i32.gt_u
+                                      br_if 1 (;@16;)
+                                      get_local 8
+                                      set_local 0
+                                      get_local 3
+                                      i32.const 9
+                                      i32.gt_u
+                                      br_if 0 (;@17;)
+                                    end
+                                  end
+                                  get_local 8
+                                  i32.const -1
+                                  i32.add
+                                  set_local 0
+                                end
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 22
+                                    f64.abs
+                                    f64.const 0x1p+31 (;=2.14748e+09;)
+                                    f64.lt
+                                    i32.eqz
+                                    br_if 0 (;@16;)
+                                    get_local 22
+                                    i32.trunc_s/f64
+                                    set_local 4
+                                    br 1 (;@15;)
+                                  end
+                                  i32.const -2147483648
+                                  set_local 4
+                                end
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 22
+                                    get_local 4
+                                    f64.convert_s/i32
+                                    f64.sub
+                                    get_local 3
+                                    i32.const 3
+                                    i32.shl
+                                    i32.const 8960
+                                    i32.add
+                                    f64.load
+                                    tee_local 24
+                                    f64.mul
+                                    tee_local 25
+                                    f64.const 0x1p+32 (;=4.29497e+09;)
+                                    f64.lt
+                                    get_local 25
+                                    f64.const 0x0p+0 (;=0;)
+                                    f64.ge
+                                    i32.and
+                                    i32.eqz
+                                    br_if 0 (;@16;)
+                                    get_local 25
+                                    i32.trunc_u/f64
+                                    set_local 14
+                                    br 1 (;@15;)
+                                  end
+                                  i32.const 0
+                                  set_local 14
+                                end
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 25
+                                    get_local 14
+                                    f64.convert_u/i32
+                                    f64.sub
+                                    tee_local 25
+                                    f64.const 0x1p-1 (;=0.5;)
+                                    f64.gt
+                                    i32.const 1
+                                    i32.xor
+                                    br_if 0 (;@16;)
+                                    get_local 24
+                                    get_local 14
+                                    i32.const 1
+                                    i32.add
+                                    tee_local 14
+                                    f64.convert_u/i32
+                                    f64.le
+                                    i32.const 1
+                                    i32.xor
+                                    br_if 1 (;@15;)
+                                    get_local 4
+                                    i32.const 1
+                                    i32.add
+                                    set_local 4
+                                    i32.const 0
+                                    set_local 14
+                                    br 1 (;@15;)
+                                  end
+                                  get_local 25
+                                  f64.const 0x1p-1 (;=0.5;)
+                                  f64.ne
+                                  br_if 0 (;@15;)
+                                  get_local 14
+                                  i32.const 1
+                                  i32.and
+                                  get_local 14
+                                  i32.eqz
+                                  i32.or
+                                  get_local 14
+                                  i32.add
+                                  set_local 14
+                                end
+                                i32.const 0
+                                set_local 8
+                                get_local 22
+                                f64.const 0x1.fffffffcp+30 (;=2.14748e+09;)
+                                f64.gt
+                                br_if 12 (;@2;)
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 3
+                                    br_if 0 (;@16;)
+                                    block  ;; label = @17
+                                      get_local 22
+                                      get_local 4
+                                      f64.convert_s/i32
+                                      f64.sub
+                                      tee_local 22
+                                      f64.const 0x1p-1 (;=0.5;)
+                                      f64.gt
+                                      i32.const 1
+                                      i32.xor
+                                      br_if 0 (;@17;)
+                                      get_local 4
+                                      i32.const 1
+                                      i32.add
+                                      set_local 4
+                                      br 2 (;@15;)
+                                    end
+                                    get_local 4
+                                    get_local 4
+                                    get_local 22
+                                    f64.const 0x1p-1 (;=0.5;)
+                                    f64.eq
+                                    i32.and
+                                    i32.add
+                                    set_local 4
+                                    br 1 (;@15;)
+                                  end
+                                  loop  ;; label = @16
+                                    block  ;; label = @17
+                                      get_local 0
+                                      i32.const 32
+                                      i32.ne
+                                      br_if 0 (;@17;)
+                                      i32.const 32
+                                      set_local 0
+                                      br 2 (;@15;)
+                                    end
+                                    get_local 5
+                                    get_local 0
+                                    i32.add
+                                    get_local 14
+                                    get_local 14
+                                    i32.const 10
+                                    i32.div_u
+                                    tee_local 8
+                                    i32.const 10
+                                    i32.mul
+                                    i32.sub
+                                    i32.const 48
+                                    i32.or
+                                    i32.store8
+                                    get_local 0
+                                    i32.const 1
+                                    i32.add
+                                    set_local 0
+                                    get_local 3
+                                    i32.const -1
+                                    i32.add
+                                    set_local 3
+                                    get_local 14
+                                    i32.const 9
+                                    i32.gt_u
+                                    set_local 21
+                                    get_local 8
+                                    set_local 14
+                                    get_local 21
+                                    br_if 0 (;@16;)
+                                  end
+                                  get_local 0
+                                  i32.const 32
+                                  i32.lt_u
+                                  set_local 14
+                                  block  ;; label = @16
+                                    get_local 0
+                                    i32.const 31
+                                    i32.gt_u
+                                    br_if 0 (;@16;)
+                                    get_local 3
+                                    i32.eqz
+                                    br_if 0 (;@16;)
+                                    get_local 3
+                                    i32.const -1
+                                    i32.add
+                                    set_local 21
+                                    get_local 5
+                                    get_local 0
+                                    i32.add
+                                    set_local 19
+                                    i32.const 0
+                                    set_local 3
+                                    block  ;; label = @17
+                                      loop  ;; label = @18
+                                        get_local 19
+                                        get_local 3
+                                        i32.add
+                                        i32.const 48
+                                        i32.store8
+                                        get_local 3
+                                        i32.const 1
+                                        i32.add
+                                        set_local 8
+                                        get_local 0
+                                        get_local 3
+                                        i32.add
+                                        i32.const 1
+                                        i32.add
+                                        set_local 14
+                                        get_local 21
+                                        get_local 3
+                                        i32.eq
+                                        br_if 1 (;@17;)
+                                        get_local 8
+                                        set_local 3
+                                        get_local 14
+                                        i32.const 32
+                                        i32.lt_u
+                                        br_if 0 (;@18;)
+                                      end
+                                    end
+                                    get_local 14
+                                    i32.const 32
+                                    i32.lt_u
+                                    set_local 14
+                                    get_local 0
+                                    get_local 8
+                                    i32.add
+                                    set_local 0
+                                  end
+                                  get_local 14
+                                  i32.eqz
+                                  br_if 0 (;@15;)
+                                  get_local 5
+                                  get_local 0
+                                  i32.add
+                                  i32.const 46
+                                  i32.store8
+                                  get_local 0
+                                  i32.const 1
+                                  i32.add
+                                  set_local 0
+                                end
+                                block  ;; label = @15
+                                  loop  ;; label = @16
+                                    get_local 0
+                                    i32.const 31
+                                    i32.gt_u
+                                    br_if 1 (;@15;)
+                                    get_local 5
+                                    get_local 0
+                                    i32.add
+                                    get_local 4
+                                    get_local 4
+                                    i32.const 10
+                                    i32.div_s
+                                    tee_local 3
+                                    i32.const 10
+                                    i32.mul
+                                    i32.sub
+                                    i32.const 48
+                                    i32.add
+                                    i32.store8
+                                    get_local 0
+                                    i32.const 1
+                                    i32.add
+                                    set_local 0
+                                    get_local 4
+                                    i32.const 9
+                                    i32.add
+                                    set_local 8
+                                    get_local 3
+                                    set_local 4
+                                    get_local 8
+                                    i32.const 18
+                                    i32.gt_u
+                                    br_if 0 (;@16;)
+                                  end
+                                end
+                                block  ;; label = @15
+                                  get_local 0
+                                  i32.const 31
+                                  i32.gt_u
+                                  br_if 0 (;@15;)
+                                  get_local 12
+                                  i32.const 3
+                                  i32.and
+                                  i32.const 1
+                                  i32.ne
+                                  br_if 0 (;@15;)
+                                  get_local 0
+                                  get_local 11
+                                  i32.ge_u
+                                  br_if 0 (;@15;)
+                                  loop  ;; label = @16
+                                    get_local 5
+                                    get_local 0
+                                    i32.add
+                                    i32.const 48
+                                    i32.store8
+                                    get_local 0
+                                    i32.const 1
+                                    i32.add
+                                    tee_local 0
+                                    i32.const 31
+                                    i32.gt_u
+                                    br_if 1 (;@15;)
+                                    get_local 0
+                                    get_local 11
+                                    i32.lt_u
+                                    br_if 0 (;@16;)
+                                  end
+                                end
+                                block  ;; label = @15
+                                  get_local 0
+                                  get_local 11
+                                  i32.ne
+                                  br_if 0 (;@15;)
+                                  get_local 11
+                                  get_local 12
+                                  i32.const 12
+                                  i32.and
+                                  i32.const 0
+                                  i32.ne
+                                  get_local 23
+                                  i32.or
+                                  i32.sub
+                                  set_local 0
+                                end
+                                get_local 12
+                                i32.const 1
+                                i32.and
+                                set_local 3
+                                block  ;; label = @15
+                                  get_local 0
+                                  i32.const 31
+                                  i32.gt_u
+                                  br_if 0 (;@15;)
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      get_local 23
+                                      i32.const 1
+                                      i32.xor
+                                      br_if 0 (;@17;)
+                                      get_local 5
+                                      get_local 0
+                                      i32.add
+                                      i32.const 45
+                                      i32.store8
+                                      br 1 (;@16;)
+                                    end
+                                    block  ;; label = @17
+                                      get_local 12
+                                      i32.const 4
+                                      i32.and
+                                      i32.eqz
+                                      br_if 0 (;@17;)
+                                      get_local 5
+                                      get_local 0
+                                      i32.add
+                                      i32.const 43
+                                      i32.store8
+                                      br 1 (;@16;)
+                                    end
+                                    get_local 12
+                                    i32.const 8
+                                    i32.and
+                                    i32.eqz
+                                    br_if 1 (;@15;)
+                                    get_local 5
+                                    get_local 0
+                                    i32.add
+                                    i32.const 32
+                                    i32.store8
+                                  end
+                                  get_local 0
+                                  i32.const 1
+                                  i32.add
+                                  set_local 0
+                                end
+                                get_local 12
+                                i32.const 2
+                                i32.and
+                                set_local 4
+                                get_local 10
+                                set_local 8
+                                block  ;; label = @15
+                                  get_local 3
+                                  br_if 0 (;@15;)
+                                  get_local 10
+                                  set_local 8
+                                  get_local 4
+                                  br_if 0 (;@15;)
+                                  get_local 10
+                                  set_local 8
+                                  get_local 0
+                                  get_local 11
+                                  i32.ge_u
+                                  br_if 0 (;@15;)
+                                  get_local 11
+                                  get_local 0
+                                  i32.sub
+                                  set_local 12
+                                  i32.const 0
+                                  set_local 3
+                                  loop  ;; label = @16
+                                    i32.const 32
+                                    get_local 1
+                                    get_local 10
+                                    get_local 3
+                                    i32.add
+                                    get_local 2
+                                    get_local 6
+                                    call_indirect (type 3)
+                                    get_local 12
+                                    get_local 3
+                                    i32.const 1
+                                    i32.add
+                                    tee_local 3
+                                    i32.ne
+                                    br_if 0 (;@16;)
+                                  end
+                                  get_local 10
+                                  get_local 3
+                                  i32.add
+                                  set_local 8
+                                end
+                                get_local 0
+                                br_if 10 (;@4;)
+                                br 11 (;@3;)
+                              end
+                              i32.const 1
+                              set_local 9
+                              block  ;; label = @14
+                                get_local 12
+                                i32.const 2
+                                i32.and
+                                tee_local 12
+                                br_if 0 (;@14;)
+                                i32.const 2
+                                set_local 9
+                                get_local 11
+                                i32.const 2
+                                i32.lt_u
+                                br_if 0 (;@14;)
+                                get_local 11
+                                i32.const -1
+                                i32.add
+                                set_local 3
+                                get_local 11
+                                i32.const 1
+                                i32.add
+                                set_local 9
+                                i32.const 0
+                                set_local 0
+                                loop  ;; label = @15
+                                  i32.const 32
+                                  get_local 1
+                                  get_local 10
+                                  get_local 0
+                                  i32.add
+                                  get_local 2
+                                  get_local 6
+                                  call_indirect (type 3)
+                                  get_local 3
+                                  get_local 0
+                                  i32.const 1
+                                  i32.add
+                                  tee_local 0
+                                  i32.ne
+                                  br_if 0 (;@15;)
+                                end
+                                get_local 10
+                                get_local 0
+                                i32.add
+                                set_local 10
+                              end
+                              get_local 4
+                              i32.load8_s
+                              get_local 1
+                              get_local 10
+                              get_local 2
+                              get_local 6
+                              call_indirect (type 3)
+                              get_local 10
+                              i32.const 1
+                              i32.add
+                              set_local 8
+                              get_local 4
+                              i32.const 4
+                              i32.add
+                              set_local 4
+                              get_local 12
+                              i32.eqz
+                              br_if 5 (;@8;)
+                              get_local 9
+                              get_local 11
+                              i32.ge_u
+                              br_if 5 (;@8;)
+                              get_local 11
+                              get_local 9
+                              i32.sub
+                              set_local 0
+                              loop  ;; label = @14
+                                i32.const 32
+                                get_local 1
+                                get_local 8
+                                get_local 2
+                                get_local 6
+                                call_indirect (type 3)
+                                get_local 8
+                                i32.const 1
+                                i32.add
+                                set_local 8
+                                get_local 0
+                                i32.const -1
+                                i32.add
+                                tee_local 0
+                                br_if 0 (;@14;)
+                                br 6 (;@8;)
+                              end
+                            end
+                            get_local 4
+                            i32.load
+                            tee_local 14
+                            i32.const -1
+                            i32.add
+                            set_local 0
+                            loop  ;; label = @13
+                              get_local 0
+                              i32.const 1
+                              i32.add
+                              tee_local 0
+                              i32.load8_u
+                              br_if 0 (;@13;)
+                            end
+                            get_local 0
+                            get_local 14
+                            i32.sub
+                            tee_local 0
+                            get_local 8
+                            get_local 0
+                            get_local 8
+                            i32.lt_u
+                            select
+                            get_local 0
+                            get_local 12
+                            i32.const 1024
+                            i32.and
+                            tee_local 21
+                            i32.const 10
+                            i32.shr_u
+                            select
+                            set_local 9
+                            block  ;; label = @13
+                              get_local 12
+                              i32.const 2
+                              i32.and
+                              tee_local 12
+                              br_if 0 (;@13;)
+                              block  ;; label = @14
+                                get_local 9
+                                get_local 11
+                                i32.lt_u
+                                br_if 0 (;@14;)
+                                get_local 9
+                                i32.const 1
+                                i32.add
+                                set_local 9
+                                br 1 (;@13;)
+                              end
+                              get_local 11
+                              get_local 9
+                              i32.sub
+                              set_local 3
+                              get_local 11
+                              i32.const 1
+                              i32.add
+                              set_local 9
+                              i32.const 0
+                              set_local 0
+                              loop  ;; label = @14
+                                i32.const 32
+                                get_local 1
+                                get_local 10
+                                get_local 0
+                                i32.add
+                                get_local 2
+                                get_local 6
+                                call_indirect (type 3)
+                                get_local 3
+                                get_local 0
+                                i32.const 1
+                                i32.add
+                                tee_local 0
+                                i32.ne
+                                br_if 0 (;@14;)
+                              end
+                              get_local 10
+                              get_local 0
+                              i32.add
+                              set_local 10
+                            end
+                            block  ;; label = @13
+                              get_local 14
+                              i32.load8_u
+                              tee_local 0
+                              i32.eqz
+                              br_if 0 (;@13;)
+                              block  ;; label = @14
+                                get_local 21
+                                br_if 0 (;@14;)
+                                get_local 14
+                                i32.const 1
+                                i32.add
+                                set_local 3
+                                loop  ;; label = @15
+                                  get_local 0
+                                  i32.const 24
+                                  i32.shl
+                                  i32.const 24
+                                  i32.shr_s
+                                  get_local 1
+                                  get_local 10
+                                  get_local 2
+                                  get_local 6
+                                  call_indirect (type 3)
+                                  get_local 10
+                                  i32.const 1
+                                  i32.add
+                                  set_local 10
+                                  get_local 3
+                                  i32.load8_u
+                                  set_local 0
+                                  get_local 3
+                                  i32.const 1
+                                  i32.add
+                                  set_local 3
+                                  get_local 0
+                                  br_if 0 (;@15;)
+                                  br 2 (;@13;)
+                                end
+                              end
+                              get_local 14
+                              i32.const 1
+                              i32.add
+                              set_local 3
+                              loop  ;; label = @14
+                                get_local 8
+                                i32.eqz
+                                br_if 1 (;@13;)
+                                get_local 0
+                                i32.const 24
+                                i32.shl
+                                i32.const 24
+                                i32.shr_s
+                                get_local 1
+                                get_local 10
+                                get_local 2
+                                get_local 6
+                                call_indirect (type 3)
+                                get_local 10
+                                i32.const 1
+                                i32.add
+                                set_local 10
+                                get_local 8
+                                i32.const -1
+                                i32.add
+                                set_local 8
+                                get_local 3
+                                i32.load8_u
+                                set_local 0
+                                get_local 3
+                                i32.const 1
+                                i32.add
+                                set_local 3
+                                get_local 0
+                                br_if 0 (;@14;)
+                              end
+                            end
+                            get_local 4
+                            i32.const 4
+                            i32.add
+                            set_local 4
+                            block  ;; label = @13
+                              get_local 12
+                              br_if 0 (;@13;)
+                              get_local 10
+                              set_local 8
+                              get_local 13
+                              i32.const 1
+                              i32.add
+                              set_local 3
+                              br 12 (;@1;)
+                            end
+                            block  ;; label = @13
+                              get_local 9
+                              get_local 11
+                              i32.lt_u
+                              br_if 0 (;@13;)
+                              get_local 10
+                              set_local 8
+                              get_local 13
+                              i32.const 1
+                              i32.add
+                              set_local 3
+                              br 12 (;@1;)
+                            end
+                            get_local 11
+                            get_local 9
+                            i32.sub
+                            set_local 0
+                            loop  ;; label = @13
+                              i32.const 32
+                              get_local 1
+                              get_local 10
+                              get_local 2
+                              get_local 6
+                              call_indirect (type 3)
+                              get_local 10
+                              i32.const 1
+                              i32.add
+                              set_local 10
+                              get_local 0
+                              i32.const -1
+                              i32.add
+                              tee_local 0
+                              br_if 0 (;@13;)
+                            end
+                            get_local 10
+                            set_local 8
+                            get_local 13
+                            i32.const 1
+                            i32.add
+                            set_local 3
+                            br 11 (;@1;)
+                          end
+                          get_local 12
+                          i32.const 33
+                          i32.or
+                          tee_local 0
+                          get_local 0
+                          i32.const -17
+                          i32.and
+                          get_local 4
+                          i32.load
+                          tee_local 0
+                          select
+                          set_local 9
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              get_local 0
+                              br_if 0 (;@13;)
+                              i32.const 0
+                              set_local 3
+                              get_local 9
+                              i32.const 1024
+                              i32.and
+                              br_if 1 (;@12;)
+                            end
+                            i32.const 0
+                            set_local 3
+                            loop  ;; label = @13
+                              get_local 5
+                              get_local 3
+                              i32.add
+                              i32.const 48
+                              i32.const 55
+                              get_local 0
+                              i32.const 15
+                              i32.and
+                              tee_local 11
+                              i32.const 10
+                              i32.lt_u
+                              select
+                              get_local 11
+                              i32.add
+                              i32.store8
+                              get_local 3
+                              i32.const 1
+                              i32.add
+                              tee_local 3
+                              i32.const 31
+                              i32.gt_u
+                              br_if 1 (;@12;)
+                              get_local 0
+                              i32.const 15
+                              i32.gt_u
+                              set_local 11
+                              get_local 0
+                              i32.const 4
+                              i32.shr_u
+                              set_local 0
+                              get_local 11
+                              br_if 0 (;@13;)
+                            end
+                          end
+                          get_local 4
+                          i32.const 4
+                          i32.add
+                          set_local 4
+                          get_local 6
+                          get_local 1
+                          get_local 10
+                          get_local 2
+                          get_local 5
+                          get_local 3
+                          i32.const 0
+                          i32.const 16
+                          get_local 8
+                          i32.const 8
+                          get_local 9
+                          call 93
+                          set_local 8
+                          get_local 13
+                          i32.const 1
+                          i32.add
+                          set_local 3
+                          br 10 (;@1;)
+                        end
+                        i32.const 37
+                        get_local 1
+                        get_local 10
+                        get_local 2
+                        get_local 6
+                        call_indirect (type 3)
+                        br 1 (;@9;)
+                      end
+                      get_local 14
+                      get_local 1
+                      get_local 10
+                      get_local 2
+                      get_local 6
+                      call_indirect (type 3)
+                    end
+                    get_local 10
+                    i32.const 1
+                    i32.add
+                    set_local 8
+                  end
+                  get_local 13
+                  i32.const 1
+                  i32.add
+                  set_local 3
+                  br 6 (;@1;)
+                end
+                i32.const 0
+                get_local 1
+                get_local 10
+                get_local 2
+                i32.const -1
+                i32.add
+                get_local 10
+                get_local 2
+                i32.lt_u
+                select
+                get_local 2
+                get_local 6
+                call_indirect (type 3)
+                get_local 5
+                i32.const 32
+                i32.add
+                set_global 0
+                get_local 10
+                return
+              end
+              get_local 11
+              i32.const 24
+              i32.shl
+              i32.const 24
+              i32.shr_s
+              get_local 1
+              get_local 10
+              get_local 2
+              get_local 6
+              call_indirect (type 3)
+              get_local 9
+              i32.const -1
+              i32.add
+              set_local 9
+              get_local 0
+              i32.const 1
+              i32.add
+              set_local 0
+              get_local 3
+              i32.const 1
+              i32.add
+              set_local 3
+              get_local 10
+              i32.const 1
+              i32.add
+              set_local 10
+              br 0 (;@5;)
+            end
+          end
+          loop  ;; label = @4
+            get_local 7
+            get_local 0
+            i32.add
+            i32.load8_s
+            get_local 1
+            get_local 8
+            get_local 2
+            get_local 6
+            call_indirect (type 3)
+            get_local 8
+            i32.const 1
+            i32.add
+            set_local 8
+            get_local 0
+            i32.const -1
+            i32.add
+            tee_local 0
+            br_if 0 (;@4;)
+          end
+        end
+        get_local 4
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 8
+        get_local 10
+        i32.sub
+        get_local 11
+        i32.ge_u
+        br_if 0 (;@2;)
+        get_local 8
+        get_local 9
+        i32.add
+        set_local 0
+        loop  ;; label = @3
+          i32.const 32
+          get_local 1
+          get_local 8
+          get_local 2
+          get_local 6
+          call_indirect (type 3)
+          get_local 8
+          i32.const 1
+          i32.add
+          set_local 8
+          get_local 0
+          i32.const 1
+          i32.add
+          tee_local 0
+          get_local 11
+          i32.lt_u
+          br_if 0 (;@3;)
+        end
+      end
+      get_local 20
+      i32.const 8
+      i32.add
+      set_local 4
+      get_local 13
+      i32.const 1
+      i32.add
+      set_local 3
+      br 0 (;@1;)
+    end)
+  (func (;92;) (type 3) (param i32 i32 i32 i32))
+  (func (;93;) (type 31) (param i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32) (result i32)
+    (local i32 i32)
+    block  ;; label = @1
+      get_local 10
+      i32.const 2
+      i32.and
+      tee_local 11
+      br_if 0 (;@1;)
+      get_local 5
+      get_local 8
+      i32.ge_u
+      br_if 0 (;@1;)
+      get_local 5
+      i32.const 31
+      i32.gt_u
+      br_if 0 (;@1;)
+      loop  ;; label = @2
+        get_local 4
+        get_local 5
+        i32.add
+        i32.const 48
+        i32.store8
+        get_local 5
+        i32.const 1
+        i32.add
+        tee_local 5
+        get_local 8
+        i32.ge_u
+        br_if 1 (;@1;)
+        get_local 5
+        i32.const 32
+        i32.lt_u
+        br_if 0 (;@2;)
+      end
+    end
+    block  ;; label = @1
+      get_local 10
+      i32.const 3
+      i32.and
+      i32.const 1
+      i32.ne
+      br_if 0 (;@1;)
+      get_local 5
+      get_local 9
+      i32.ge_u
+      br_if 0 (;@1;)
+      get_local 5
+      i32.const 31
+      i32.gt_u
+      br_if 0 (;@1;)
+      loop  ;; label = @2
+        get_local 4
+        get_local 5
+        i32.add
+        i32.const 48
+        i32.store8
+        get_local 5
+        i32.const 1
+        i32.add
+        tee_local 5
+        get_local 9
+        i32.ge_u
+        br_if 1 (;@1;)
+        get_local 5
+        i32.const 32
+        i32.lt_u
+        br_if 0 (;@2;)
+      end
+    end
+    get_local 10
+    i32.const 1
+    i32.and
+    set_local 12
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 10
+            i32.const 16
+            i32.and
+            i32.eqz
+            br_if 0 (;@4;)
+            block  ;; label = @5
+              get_local 10
+              i32.const 1024
+              i32.and
+              br_if 0 (;@5;)
+              get_local 5
+              i32.eqz
+              br_if 0 (;@5;)
+              block  ;; label = @6
+                get_local 5
+                get_local 8
+                i32.eq
+                br_if 0 (;@6;)
+                get_local 5
+                get_local 9
+                i32.ne
+                br_if 1 (;@5;)
+              end
+              get_local 5
+              i32.const -2
+              i32.add
+              get_local 5
+              i32.const -1
+              i32.add
+              tee_local 8
+              get_local 8
+              select
+              get_local 8
+              get_local 7
+              i32.const 16
+              i32.eq
+              select
+              set_local 5
+            end
+            block  ;; label = @5
+              block  ;; label = @6
+                get_local 7
+                i32.const 16
+                i32.ne
+                br_if 0 (;@6;)
+                block  ;; label = @7
+                  get_local 10
+                  i32.const 32
+                  i32.and
+                  tee_local 8
+                  br_if 0 (;@7;)
+                  get_local 5
+                  i32.const 31
+                  i32.gt_u
+                  br_if 0 (;@7;)
+                  get_local 4
+                  get_local 5
+                  i32.add
+                  i32.const 120
+                  i32.store8
+                  get_local 5
+                  i32.const 1
+                  i32.add
+                  set_local 5
+                  br 2 (;@5;)
+                end
+                get_local 8
+                i32.eqz
+                br_if 1 (;@5;)
+                get_local 5
+                i32.const 31
+                i32.gt_u
+                br_if 1 (;@5;)
+                get_local 4
+                get_local 5
+                i32.add
+                i32.const 88
+                i32.store8
+                get_local 5
+                i32.const 1
+                i32.add
+                set_local 5
+                br 1 (;@5;)
+              end
+              get_local 7
+              i32.const 2
+              i32.ne
+              br_if 0 (;@5;)
+              get_local 5
+              i32.const 31
+              i32.gt_u
+              br_if 0 (;@5;)
+              get_local 4
+              get_local 5
+              i32.add
+              i32.const 98
+              i32.store8
+              get_local 5
+              i32.const 1
+              i32.add
+              set_local 5
+            end
+            get_local 5
+            i32.const 31
+            i32.gt_u
+            br_if 1 (;@3;)
+            get_local 4
+            get_local 5
+            i32.add
+            i32.const 48
+            i32.store8
+            get_local 5
+            i32.const 1
+            i32.add
+            set_local 5
+            br 1 (;@3;)
+          end
+          get_local 5
+          br_if 0 (;@3;)
+          i32.const 0
+          set_local 5
+          br 1 (;@2;)
+        end
+        block  ;; label = @3
+          get_local 5
+          get_local 9
+          i32.ne
+          br_if 0 (;@3;)
+          get_local 9
+          get_local 10
+          i32.const 12
+          i32.and
+          i32.const 0
+          i32.ne
+          get_local 6
+          i32.or
+          i32.sub
+          set_local 5
+        end
+        get_local 5
+        i32.const 31
+        i32.gt_u
+        br_if 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 6
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 4
+        get_local 5
+        i32.add
+        i32.const 45
+        i32.store8
+        get_local 5
+        i32.const 1
+        i32.add
+        set_local 5
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 10
+        i32.const 4
+        i32.and
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 4
+        get_local 5
+        i32.add
+        i32.const 43
+        i32.store8
+        get_local 5
+        i32.const 1
+        i32.add
+        set_local 5
+        br 1 (;@1;)
+      end
+      get_local 10
+      i32.const 8
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 4
+      get_local 5
+      i32.add
+      i32.const 32
+      i32.store8
+      get_local 5
+      i32.const 1
+      i32.add
+      set_local 5
+    end
+    get_local 2
+    set_local 8
+    block  ;; label = @1
+      get_local 12
+      br_if 0 (;@1;)
+      get_local 2
+      set_local 8
+      get_local 11
+      br_if 0 (;@1;)
+      get_local 2
+      set_local 8
+      get_local 5
+      get_local 9
+      i32.ge_u
+      br_if 0 (;@1;)
+      get_local 9
+      get_local 5
+      i32.sub
+      set_local 10
+      get_local 2
+      set_local 8
+      loop  ;; label = @2
+        i32.const 32
+        get_local 1
+        get_local 8
+        get_local 3
+        get_local 0
+        call_indirect (type 3)
+        get_local 8
+        i32.const 1
+        i32.add
+        set_local 8
+        get_local 10
+        i32.const -1
+        i32.add
+        tee_local 10
+        br_if 0 (;@2;)
+      end
+    end
+    block  ;; label = @1
+      get_local 5
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 4
+      i32.const -1
+      i32.add
+      set_local 10
+      loop  ;; label = @2
+        get_local 10
+        get_local 5
+        i32.add
+        i32.load8_s
+        get_local 1
+        get_local 8
+        get_local 3
+        get_local 0
+        call_indirect (type 3)
+        get_local 8
+        i32.const 1
+        i32.add
+        set_local 8
+        get_local 5
+        i32.const -1
+        i32.add
+        tee_local 5
+        br_if 0 (;@2;)
+      end
+    end
+    block  ;; label = @1
+      get_local 11
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 8
+      get_local 2
+      i32.sub
+      get_local 9
+      i32.ge_u
+      br_if 0 (;@1;)
+      i32.const 0
+      get_local 2
+      i32.sub
+      set_local 5
+      loop  ;; label = @2
+        i32.const 32
+        get_local 1
+        get_local 8
+        get_local 3
+        get_local 0
+        call_indirect (type 3)
+        get_local 5
+        get_local 8
+        i32.const 1
+        i32.add
+        tee_local 8
+        i32.add
+        get_local 9
+        i32.lt_u
+        br_if 0 (;@2;)
+      end
+    end
+    get_local 8)
+  (func (;94;) (type 3) (param i32 i32 i32 i32)
+    block  ;; label = @1
+      get_local 2
+      get_local 3
+      i32.ge_u
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 2
+      i32.add
+      get_local 0
+      i32.store8
+    end)
+  (func (;95;) (type 32) (param i32 i32 i32 i32) (result i32)
+    (local i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 4
+    set_global 0
+    get_local 4
+    get_local 3
+    i32.store offset=12
+    i32.const 4
+    get_local 0
+    get_local 1
+    get_local 2
+    get_local 3
+    call 91
+    set_local 3
+    get_local 4
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 3)
+  (func (;96;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 3
+    set_global 0
+    i32.const 5
+    get_local 3
+    i32.const 15
+    i32.add
+    i32.const -1
+    get_local 1
+    get_local 2
+    call 91
+    set_local 1
+    get_local 3
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 1)
+  (func (;97;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32)
+    i32.const 0
+    set_local 2
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=76
+      i32.const 0
+      i32.lt_s
+      br_if 0 (;@1;)
+      get_local 0
+      call 53
+      set_local 2
+    end
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 1
+        br_if 0 (;@2;)
+        get_local 0
+        i32.load8_u offset=74
+        set_local 3
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=136
+        br_if 0 (;@2;)
+        get_local 0
+        i32.const 9120
+        i32.const 9096
+        i32.const 0
+        i32.load
+        select
+        i32.store offset=136
+      end
+      get_local 0
+      i32.load8_u offset=74
+      tee_local 3
+      br_if 0 (;@1;)
+      get_local 0
+      i32.const 1
+      i32.const -1
+      get_local 1
+      i32.const 0
+      i32.gt_s
+      select
+      tee_local 3
+      i32.store8 offset=74
+    end
+    get_local 3
+    i32.const 24
+    i32.shl
+    i32.const 24
+    i32.shr_s
+    set_local 1
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      call 54
+    end
+    get_local 1)
+  (func (;98;) (type 19) (param i32) (result i32)
+    (local i32)
+    get_local 0
+    get_local 0
+    i32.load8_u offset=74
+    tee_local 1
+    i32.const -1
+    i32.add
+    get_local 1
+    i32.or
+    i32.store8 offset=74
+    block  ;; label = @1
+      get_local 0
+      i32.load
+      tee_local 1
+      i32.const 8
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 1
+      i32.const 32
+      i32.or
+      i32.store
+      i32.const -1
+      return
+    end
+    get_local 0
+    i64.const 0
+    i64.store offset=4 align=4
+    get_local 0
+    get_local 0
+    i32.load offset=44
+    tee_local 1
+    i32.store offset=28
+    get_local 0
+    get_local 1
+    i32.store offset=20
+    get_local 0
+    get_local 1
+    get_local 0
+    i32.load offset=48
+    i32.add
+    i32.store offset=16
+    i32.const 0)
+  (func (;99;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 2
+    get_local 1
+    i32.store8 offset=15
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=16
+        tee_local 3
+        br_if 0 (;@2;)
+        i32.const -1
+        set_local 3
+        get_local 0
+        call 98
+        br_if 1 (;@1;)
+        get_local 0
+        i32.load offset=16
+        set_local 3
+      end
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=20
+        tee_local 4
+        get_local 3
+        i32.ge_u
+        br_if 0 (;@2;)
+        get_local 1
+        i32.const 255
+        i32.and
+        tee_local 3
+        get_local 0
+        i32.load8_s offset=75
+        i32.eq
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 4
+        i32.const 1
+        i32.add
+        i32.store offset=20
+        get_local 4
+        get_local 1
+        i32.store8
+        br 1 (;@1;)
+      end
+      i32.const -1
+      set_local 3
+      get_local 0
+      get_local 2
+      i32.const 15
+      i32.add
+      i32.const 1
+      get_local 0
+      i32.load offset=36
+      call_indirect (type 1)
+      i32.const 1
+      i32.ne
+      br_if 0 (;@1;)
+      get_local 2
+      i32.load8_u offset=15
+      set_local 3
+    end
+    get_local 2
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 3)
+  (func (;100;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32)
+    i32.const 1
+    set_local 3
+    block  ;; label = @1
+      get_local 0
+      i32.eqz
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        get_local 1
+        i32.const 127
+        i32.gt_u
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 1
+        i32.store8
+        i32.const 1
+        return
+      end
+      block  ;; label = @2
+        block  ;; label = @3
+          i32.const 0
+          i32.load
+          br_if 0 (;@3;)
+          block  ;; label = @4
+            get_local 1
+            i32.const -128
+            i32.and
+            i32.const 57216
+            i32.eq
+            br_if 0 (;@4;)
+            call 36
+            i32.const 84
+            i32.store
+            br 2 (;@2;)
+          end
+          get_local 0
+          get_local 1
+          i32.store8
+          i32.const 1
+          return
+        end
+        block  ;; label = @3
+          get_local 1
+          i32.const 2047
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 0
+          get_local 1
+          i32.const 63
+          i32.and
+          i32.const 128
+          i32.or
+          i32.store8 offset=1
+          get_local 0
+          get_local 1
+          i32.const 6
+          i32.shr_u
+          i32.const 192
+          i32.or
+          i32.store8
+          i32.const 2
+          return
+        end
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 1
+            i32.const 55296
+            i32.lt_u
+            br_if 0 (;@4;)
+            get_local 1
+            i32.const -8192
+            i32.and
+            i32.const 57344
+            i32.ne
+            br_if 1 (;@3;)
+          end
+          get_local 0
+          get_local 1
+          i32.const 63
+          i32.and
+          i32.const 128
+          i32.or
+          i32.store8 offset=2
+          get_local 0
+          get_local 1
+          i32.const 12
+          i32.shr_u
+          i32.const 224
+          i32.or
+          i32.store8
+          get_local 0
+          get_local 1
+          i32.const 6
+          i32.shr_u
+          i32.const 63
+          i32.and
+          i32.const 128
+          i32.or
+          i32.store8 offset=1
+          i32.const 3
+          return
+        end
+        block  ;; label = @3
+          get_local 1
+          i32.const -65536
+          i32.add
+          i32.const 1048575
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 0
+          get_local 1
+          i32.const 63
+          i32.and
+          i32.const 128
+          i32.or
+          i32.store8 offset=3
+          get_local 0
+          get_local 1
+          i32.const 18
+          i32.shr_u
+          i32.const 240
+          i32.or
+          i32.store8
+          get_local 0
+          get_local 1
+          i32.const 6
+          i32.shr_u
+          i32.const 63
+          i32.and
+          i32.const 128
+          i32.or
+          i32.store8 offset=2
+          get_local 0
+          get_local 1
+          i32.const 12
+          i32.shr_u
+          i32.const 63
+          i32.and
+          i32.const 128
+          i32.or
+          i32.store8 offset=1
+          i32.const 4
+          return
+        end
+        call 36
+        i32.const 84
+        i32.store
+      end
+      i32.const -1
+      set_local 3
+    end
+    get_local 3)
+  (func (;101;) (type 14) (param i32 i32) (result i32)
+    block  ;; label = @1
+      get_local 0
+      br_if 0 (;@1;)
+      i32.const 0
+      return
+    end
+    get_local 0
+    get_local 1
+    i32.const 0
+    call 100)
+  (func (;102;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32 i32 i32 i32)
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 2
+        i32.load offset=16
+        tee_local 3
+        br_if 0 (;@2;)
+        i32.const 0
+        set_local 4
+        get_local 2
+        call 98
+        br_if 1 (;@1;)
+        get_local 2
+        i32.load offset=16
+        set_local 3
+      end
+      block  ;; label = @2
+        get_local 3
+        get_local 2
+        i32.load offset=20
+        tee_local 5
+        i32.sub
+        get_local 1
+        i32.ge_u
+        br_if 0 (;@2;)
+        get_local 2
+        get_local 0
+        get_local 1
+        get_local 2
+        i32.load offset=36
+        call_indirect (type 1)
+        return
+      end
+      i32.const 0
+      set_local 6
+      block  ;; label = @2
+        get_local 2
+        i32.load8_s offset=75
+        i32.const 0
+        i32.lt_s
+        br_if 0 (;@2;)
+        i32.const 0
+        set_local 6
+        get_local 0
+        set_local 4
+        i32.const 0
+        set_local 3
+        loop  ;; label = @3
+          get_local 1
+          get_local 3
+          i32.eq
+          br_if 1 (;@2;)
+          get_local 3
+          i32.const 1
+          i32.add
+          set_local 3
+          get_local 4
+          get_local 1
+          i32.add
+          set_local 7
+          get_local 4
+          i32.const -1
+          i32.add
+          tee_local 8
+          set_local 4
+          get_local 7
+          i32.const -1
+          i32.add
+          i32.load8_u
+          i32.const 10
+          i32.ne
+          br_if 0 (;@3;)
+        end
+        get_local 2
+        get_local 0
+        get_local 1
+        get_local 3
+        i32.sub
+        i32.const 1
+        i32.add
+        tee_local 6
+        get_local 2
+        i32.load offset=36
+        call_indirect (type 1)
+        tee_local 4
+        get_local 6
+        i32.lt_u
+        br_if 1 (;@1;)
+        get_local 8
+        get_local 1
+        i32.add
+        i32.const 1
+        i32.add
+        set_local 0
+        get_local 2
+        i32.load offset=20
+        set_local 5
+        get_local 3
+        i32.const -1
+        i32.add
+        set_local 1
+      end
+      get_local 5
+      get_local 0
+      get_local 1
+      call 7
+      drop
+      get_local 2
+      get_local 2
+      i32.load offset=20
+      get_local 1
+      i32.add
+      i32.store offset=20
+      get_local 6
+      get_local 1
+      i32.add
+      set_local 4
+    end
+    get_local 4)
+  (func (;103;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 2
+    set_global 0
+    i32.const 0
+    i32.load offset=8288
+    set_local 3
+    block  ;; label = @1
+      get_local 1
+      i32.load8_s offset=74
+      i32.const 0
+      i32.gt_s
+      br_if 0 (;@1;)
+      get_local 1
+      i32.const 1
+      call 97
+      drop
+    end
+    i32.const 0
+    get_local 1
+    i32.load offset=136
+    i32.store offset=8288
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 0
+            i32.const 127
+            i32.gt_u
+            br_if 0 (;@4;)
+            block  ;; label = @5
+              get_local 0
+              i32.const 255
+              i32.and
+              tee_local 4
+              get_local 1
+              i32.load8_s offset=75
+              i32.eq
+              br_if 0 (;@5;)
+              get_local 1
+              i32.load offset=20
+              tee_local 5
+              get_local 1
+              i32.load offset=16
+              i32.ge_u
+              br_if 0 (;@5;)
+              get_local 1
+              get_local 5
+              i32.const 1
+              i32.add
+              i32.store offset=20
+              get_local 5
+              get_local 0
+              i32.store8
+              get_local 4
+              set_local 0
+              br 4 (;@1;)
+            end
+            get_local 1
+            get_local 0
+            call 99
+            set_local 0
+            br 1 (;@3;)
+          end
+          block  ;; label = @4
+            get_local 1
+            i32.load offset=20
+            tee_local 4
+            i32.const 4
+            i32.add
+            get_local 1
+            i32.load offset=16
+            i32.ge_u
+            br_if 0 (;@4;)
+            get_local 4
+            get_local 0
+            call 101
+            tee_local 4
+            i32.const 0
+            i32.lt_s
+            br_if 2 (;@2;)
+            get_local 1
+            get_local 1
+            i32.load offset=20
+            get_local 4
+            i32.add
+            i32.store offset=20
+            br 1 (;@3;)
+          end
+          get_local 2
+          i32.const 12
+          i32.add
+          get_local 0
+          call 101
+          tee_local 4
+          i32.const 0
+          i32.lt_s
+          br_if 1 (;@2;)
+          get_local 2
+          i32.const 12
+          i32.add
+          get_local 4
+          get_local 1
+          call 102
+          get_local 4
+          i32.lt_u
+          br_if 1 (;@2;)
+        end
+        get_local 0
+        i32.const -1
+        i32.ne
+        br_if 1 (;@1;)
+      end
+      get_local 1
+      get_local 1
+      i32.load
+      i32.const 32
+      i32.or
+      i32.store
+      i32.const -1
+      set_local 0
+    end
+    i32.const 0
+    get_local 3
+    i32.store offset=8288
+    get_local 2
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 0)
+  (func (;104;) (type 14) (param i32 i32) (result i32)
+    (local i32)
+    block  ;; label = @1
+      get_local 1
+      i32.load offset=76
+      i32.const -1
+      i32.gt_s
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 1
+      call 103
+      return
+    end
+    get_local 1
+    call 53
+    set_local 2
+    get_local 0
+    get_local 1
+    call 103
+    set_local 0
+    block  ;; label = @1
+      get_local 2
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      call 54
+    end
+    get_local 0)
+  (func (;105;) (type 19) (param i32) (result i32)
+    (local i32 i32)
+    block  ;; label = @1
+      get_local 0
+      i32.const 255
+      i32.and
+      tee_local 1
+      i32.const 128
+      i32.lt_u
+      br_if 0 (;@1;)
+      i32.const -1
+      set_local 1
+      i32.const 0
+      i32.load
+      set_local 2
+      get_local 0
+      i32.const -1
+      i32.eq
+      br_if 0 (;@1;)
+      get_local 2
+      br_if 0 (;@1;)
+      get_local 0
+      i32.const 24
+      i32.shl
+      i32.const 24
+      i32.shr_s
+      i32.const 57343
+      i32.and
+      set_local 1
+    end
+    get_local 1)
+  (func (;106;) (type 14) (param i32 i32) (result i32)
+    (local i32)
+    get_local 0
+    i32.const 0
+    get_local 1
+    call 48
+    tee_local 2
+    get_local 0
+    i32.sub
+    i32.const 2
+    i32.shr_s
+    get_local 1
+    get_local 2
+    select)
+  (func (;107;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    get_local 2
+    i32.store offset=12
+    get_local 0
+    get_local 1
+    get_local 2
+    call 96
+    set_local 2
+    get_local 3
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 2)
+  (func (;108;) (type 14) (param i32 i32) (result i32)
+    get_local 0)
+  (func (;109;) (type 14) (param i32 i32) (result i32)
+    get_local 0
+    get_local 1
+    call 108)
+  (func (;110;) (type 19) (param i32) (result i32)
+    (local i32 i32 i32)
+    i32.const 0
+    set_local 1
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          loop  ;; label = @4
+            get_local 1
+            i32.const 9152
+            i32.add
+            i32.load8_u
+            get_local 0
+            i32.eq
+            br_if 1 (;@3;)
+            i32.const 87
+            set_local 2
+            get_local 1
+            i32.const 1
+            i32.add
+            tee_local 1
+            i32.const 87
+            i32.ne
+            br_if 0 (;@4;)
+            br 2 (;@2;)
+          end
+        end
+        get_local 1
+        set_local 2
+        get_local 1
+        br_if 0 (;@2;)
+        i32.const 9248
+        set_local 3
+        br 1 (;@1;)
+      end
+      i32.const 9248
+      set_local 1
+      loop  ;; label = @2
+        get_local 1
+        i32.load8_u
+        set_local 0
+        get_local 1
+        i32.const 1
+        i32.add
+        tee_local 3
+        set_local 1
+        get_local 0
+        br_if 0 (;@2;)
+        get_local 3
+        set_local 1
+        get_local 2
+        i32.const -1
+        i32.add
+        tee_local 2
+        br_if 0 (;@2;)
+      end
+    end
+    get_local 3
+    i32.const 0
+    i32.load offset=20
+    call 109)
+  (func (;111;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 3
+    set_global 0
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 1
+        br_if 0 (;@2;)
+        i32.const 0
+        set_local 1
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 3
+        i32.const 12
+        i32.add
+        get_local 0
+        select
+        set_local 4
+        block  ;; label = @3
+          get_local 1
+          i32.load8_u
+          tee_local 0
+          i32.const 24
+          i32.shl
+          i32.const 24
+          i32.shr_s
+          tee_local 5
+          i32.const 0
+          i32.lt_s
+          br_if 0 (;@3;)
+          get_local 4
+          get_local 0
+          i32.store
+          get_local 5
+          i32.const 0
+          i32.ne
+          set_local 1
+          br 2 (;@1;)
+        end
+        block  ;; label = @3
+          i32.const 0
+          i32.load
+          br_if 0 (;@3;)
+          get_local 4
+          get_local 5
+          i32.const 57343
+          i32.and
+          i32.store
+          i32.const 1
+          set_local 1
+          br 2 (;@1;)
+        end
+        get_local 0
+        i32.const -194
+        i32.add
+        tee_local 0
+        i32.const 50
+        i32.gt_u
+        br_if 0 (;@2;)
+        get_local 0
+        i32.const 2
+        i32.shl
+        i32.const 11056
+        i32.add
+        i32.load
+        set_local 0
+        block  ;; label = @3
+          get_local 2
+          i32.const 3
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 0
+          get_local 2
+          i32.const 6
+          i32.mul
+          i32.const -6
+          i32.add
+          i32.shl
+          i32.const 0
+          i32.lt_s
+          br_if 1 (;@2;)
+        end
+        get_local 1
+        i32.load8_u offset=1
+        tee_local 5
+        i32.const 3
+        i32.shr_u
+        tee_local 2
+        i32.const -16
+        i32.add
+        get_local 2
+        get_local 0
+        i32.const 26
+        i32.shr_s
+        i32.add
+        i32.or
+        i32.const 7
+        i32.gt_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 5
+          i32.const -128
+          i32.add
+          get_local 0
+          i32.const 6
+          i32.shl
+          i32.or
+          tee_local 0
+          i32.const 0
+          i32.lt_s
+          br_if 0 (;@3;)
+          get_local 4
+          get_local 0
+          i32.store
+          i32.const 2
+          set_local 1
+          br 2 (;@1;)
+        end
+        get_local 1
+        i32.load8_u offset=2
+        i32.const -128
+        i32.add
+        tee_local 2
+        i32.const 63
+        i32.gt_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 2
+          get_local 0
+          i32.const 6
+          i32.shl
+          i32.or
+          tee_local 0
+          i32.const 0
+          i32.lt_s
+          br_if 0 (;@3;)
+          get_local 4
+          get_local 0
+          i32.store
+          i32.const 3
+          set_local 1
+          br 2 (;@1;)
+        end
+        get_local 1
+        i32.load8_u offset=3
+        i32.const -128
+        i32.add
+        tee_local 1
+        i32.const 63
+        i32.gt_u
+        br_if 0 (;@2;)
+        get_local 4
+        get_local 1
+        get_local 0
+        i32.const 6
+        i32.shl
+        i32.or
+        i32.store
+        i32.const 4
+        set_local 1
+        br 1 (;@1;)
+      end
+      call 36
+      i32.const 84
+      i32.store
+      i32.const -1
+      set_local 1
+    end
+    get_local 3
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 1)
+  (func (;112;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32)
+    get_global 0
+    i32.const 192
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 3
+    get_local 2
+    i32.store offset=188
+    i32.const 0
+    set_local 4
+    get_local 3
+    i32.const 176
+    i32.add
+    i32.const 0
+    i32.store
+    get_local 3
+    i32.const 168
+    i32.add
+    i64.const 0
+    i64.store
+    get_local 3
+    i32.const 160
+    i32.add
+    i64.const 0
+    i64.store
+    get_local 3
+    i64.const 0
+    i64.store offset=152
+    get_local 3
+    i64.const 0
+    i64.store offset=144
+    get_local 3
+    get_local 2
+    i32.store offset=184
+    block  ;; label = @1
+      block  ;; label = @2
+        i32.const 0
+        get_local 1
+        get_local 3
+        i32.const 184
+        i32.add
+        get_local 3
+        get_local 3
+        i32.const 144
+        i32.add
+        call 113
+        i32.const 0
+        i32.ge_s
+        br_if 0 (;@2;)
+        i32.const -1
+        set_local 2
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=76
+        i32.const 0
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 0
+        call 53
+        i32.const 0
+        i32.ne
+        set_local 4
+      end
+      get_local 0
+      i32.const 1
+      call 97
+      drop
+      get_local 0
+      get_local 0
+      i32.load
+      tee_local 2
+      i32.const -33
+      i32.and
+      i32.store
+      get_local 0
+      get_local 1
+      get_local 3
+      i32.const 184
+      i32.add
+      get_local 3
+      get_local 3
+      i32.const 144
+      i32.add
+      call 113
+      set_local 1
+      get_local 0
+      get_local 0
+      i32.load
+      tee_local 5
+      get_local 2
+      i32.const 32
+      i32.and
+      i32.or
+      i32.store
+      i32.const -1
+      get_local 1
+      get_local 5
+      i32.const 32
+      i32.and
+      select
+      set_local 2
+      get_local 4
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      call 54
+    end
+    get_local 3
+    i32.const 192
+    i32.add
+    set_global 0
+    get_local 2)
+  (func (;113;) (type 30) (param i32 i32 i32 i32 i32) (result i32)
+    (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
+    get_global 0
+    i32.const 176
+    i32.sub
+    tee_local 5
+    set_global 0
+    get_local 5
+    i32.const 48
+    i32.add
+    i32.const 24
+    i32.add
+    set_local 6
+    get_local 5
+    i32.const 68
+    i32.add
+    set_local 7
+    i32.const 0
+    set_local 8
+    i32.const 0
+    set_local 9
+    i32.const 0
+    set_local 10
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          loop  ;; label = @4
+            get_local 8
+            get_local 9
+            i32.add
+            set_local 9
+            block  ;; label = @5
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 1
+                  i32.load
+                  tee_local 11
+                  i32.eqz
+                  br_if 0 (;@7;)
+                  get_local 1
+                  set_local 12
+                  loop  ;; label = @8
+                    block  ;; label = @9
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          get_local 11
+                          i32.eqz
+                          br_if 0 (;@11;)
+                          get_local 11
+                          i32.const 37
+                          i32.ne
+                          br_if 2 (;@9;)
+                          get_local 12
+                          set_local 13
+                          get_local 12
+                          set_local 11
+                          loop  ;; label = @12
+                            block  ;; label = @13
+                              get_local 11
+                              i32.const 4
+                              i32.add
+                              i32.load
+                              i32.const 37
+                              i32.eq
+                              br_if 0 (;@13;)
+                              get_local 11
+                              set_local 12
+                              br 3 (;@10;)
+                            end
+                            get_local 13
+                            i32.const 4
+                            i32.add
+                            set_local 13
+                            get_local 11
+                            i32.load offset=8
+                            set_local 8
+                            get_local 11
+                            i32.const 8
+                            i32.add
+                            tee_local 12
+                            set_local 11
+                            get_local 8
+                            i32.const 37
+                            i32.eq
+                            br_if 0 (;@12;)
+                            br 2 (;@10;)
+                          end
+                        end
+                        get_local 12
+                        set_local 13
+                      end
+                      get_local 13
+                      get_local 1
+                      i32.sub
+                      tee_local 13
+                      i32.const 2
+                      i32.shr_s
+                      tee_local 8
+                      i32.const 2147483647
+                      get_local 9
+                      i32.sub
+                      tee_local 14
+                      i32.gt_s
+                      br_if 6 (;@3;)
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          get_local 0
+                          i32.eqz
+                          br_if 0 (;@11;)
+                          get_local 13
+                          i32.eqz
+                          br_if 1 (;@10;)
+                          get_local 8
+                          set_local 11
+                          loop  ;; label = @12
+                            get_local 0
+                            i32.load8_u
+                            i32.const 32
+                            i32.and
+                            br_if 1 (;@11;)
+                            get_local 1
+                            i32.load
+                            get_local 0
+                            call 104
+                            drop
+                            get_local 1
+                            i32.const 4
+                            i32.add
+                            set_local 1
+                            get_local 11
+                            i32.const -1
+                            i32.add
+                            tee_local 11
+                            br_if 0 (;@12;)
+                          end
+                        end
+                        get_local 13
+                        i32.eqz
+                        br_if 0 (;@10;)
+                        get_local 12
+                        set_local 1
+                        br 5 (;@5;)
+                      end
+                      get_local 12
+                      i32.const 4
+                      i32.add
+                      set_local 1
+                      i32.const -1
+                      set_local 15
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          get_local 12
+                          i32.load offset=4
+                          tee_local 16
+                          i32.const -48
+                          i32.add
+                          tee_local 13
+                          i32.const 9
+                          i32.le_u
+                          br_if 0 (;@11;)
+                          i32.const -1
+                          set_local 17
+                          br 1 (;@10;)
+                        end
+                        get_local 12
+                        i32.const 12
+                        i32.add
+                        get_local 1
+                        get_local 12
+                        i32.load offset=8
+                        i32.const 36
+                        i32.eq
+                        tee_local 11
+                        select
+                        set_local 1
+                        get_local 13
+                        i32.const -1
+                        get_local 11
+                        select
+                        set_local 17
+                        i32.const 1
+                        get_local 10
+                        get_local 11
+                        select
+                        set_local 10
+                        get_local 12
+                        i32.const 12
+                        i32.const 4
+                        get_local 11
+                        select
+                        i32.add
+                        i32.load
+                        set_local 16
+                      end
+                      i32.const 0
+                      set_local 12
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              block  ;; label = @14
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    get_local 16
+                                    i32.const -32
+                                    i32.add
+                                    tee_local 11
+                                    i32.const 31
+                                    i32.le_u
+                                    br_if 0 (;@16;)
+                                    i32.const 0
+                                    set_local 8
+                                    i32.const 0
+                                    set_local 13
+                                    i32.const 0
+                                    set_local 18
+                                    br 1 (;@15;)
+                                  end
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      i32.const 1
+                                      get_local 11
+                                      i32.shl
+                                      tee_local 11
+                                      i32.const 75913
+                                      i32.and
+                                      br_if 0 (;@17;)
+                                      i32.const 0
+                                      set_local 13
+                                      br 1 (;@16;)
+                                    end
+                                    get_local 1
+                                    i32.const 4
+                                    i32.add
+                                    set_local 1
+                                    i32.const 0
+                                    set_local 8
+                                    i32.const 0
+                                    set_local 13
+                                    block  ;; label = @17
+                                      block  ;; label = @18
+                                        loop  ;; label = @19
+                                          get_local 11
+                                          get_local 13
+                                          i32.or
+                                          set_local 13
+                                          get_local 1
+                                          i32.load
+                                          tee_local 16
+                                          i32.const -32
+                                          i32.add
+                                          tee_local 11
+                                          i32.const 32
+                                          i32.ge_u
+                                          br_if 1 (;@18;)
+                                          get_local 1
+                                          i32.const 4
+                                          i32.add
+                                          set_local 1
+                                          i32.const 1
+                                          get_local 11
+                                          i32.shl
+                                          tee_local 11
+                                          i32.const 75913
+                                          i32.and
+                                          i32.eqz
+                                          br_if 2 (;@17;)
+                                          br 0 (;@19;)
+                                        end
+                                      end
+                                      i32.const 0
+                                      set_local 18
+                                      br 2 (;@15;)
+                                    end
+                                    get_local 1
+                                    i32.const -4
+                                    i32.add
+                                    set_local 1
+                                  end
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      get_local 16
+                                      i32.const 42
+                                      i32.ne
+                                      br_if 0 (;@17;)
+                                      block  ;; label = @18
+                                        block  ;; label = @19
+                                          get_local 1
+                                          i32.load offset=4
+                                          i32.const -48
+                                          i32.add
+                                          tee_local 11
+                                          i32.const 9
+                                          i32.gt_u
+                                          br_if 0 (;@19;)
+                                          get_local 1
+                                          i32.load offset=8
+                                          i32.const 36
+                                          i32.ne
+                                          br_if 0 (;@19;)
+                                          get_local 4
+                                          get_local 11
+                                          i32.const 2
+                                          i32.shl
+                                          i32.add
+                                          i32.const 10
+                                          i32.store
+                                          get_local 1
+                                          i32.const 12
+                                          i32.add
+                                          set_local 19
+                                          get_local 1
+                                          i32.load offset=4
+                                          i32.const 4
+                                          i32.shl
+                                          get_local 3
+                                          i32.add
+                                          i32.const -768
+                                          i32.add
+                                          i32.load
+                                          set_local 8
+                                          i32.const 1
+                                          set_local 10
+                                          br 1 (;@18;)
+                                        end
+                                        get_local 10
+                                        br_if 4 (;@14;)
+                                        get_local 1
+                                        i32.const 4
+                                        i32.add
+                                        set_local 19
+                                        block  ;; label = @19
+                                          get_local 0
+                                          br_if 0 (;@19;)
+                                          i32.const 0
+                                          set_local 10
+                                          i32.const 0
+                                          set_local 8
+                                          get_local 19
+                                          i32.load
+                                          set_local 16
+                                          br 3 (;@16;)
+                                        end
+                                        get_local 2
+                                        get_local 2
+                                        i32.load
+                                        tee_local 11
+                                        i32.const 4
+                                        i32.add
+                                        i32.store
+                                        get_local 11
+                                        i32.load
+                                        set_local 8
+                                        i32.const 0
+                                        set_local 10
+                                      end
+                                      block  ;; label = @18
+                                        get_local 8
+                                        i32.const -1
+                                        i32.gt_s
+                                        br_if 0 (;@18;)
+                                        i32.const 0
+                                        get_local 8
+                                        i32.sub
+                                        set_local 8
+                                        get_local 13
+                                        i32.const 8192
+                                        i32.or
+                                        set_local 13
+                                      end
+                                      get_local 19
+                                      i32.load
+                                      set_local 16
+                                      br 1 (;@16;)
+                                    end
+                                    i32.const 0
+                                    set_local 8
+                                    block  ;; label = @17
+                                      get_local 16
+                                      i32.const -48
+                                      i32.add
+                                      tee_local 20
+                                      i32.const 9
+                                      i32.le_u
+                                      br_if 0 (;@17;)
+                                      get_local 1
+                                      tee_local 19
+                                      i32.load
+                                      set_local 16
+                                      br 1 (;@16;)
+                                    end
+                                    i32.const 0
+                                    set_local 11
+                                    loop  ;; label = @17
+                                      i32.const -1
+                                      set_local 8
+                                      block  ;; label = @18
+                                        get_local 11
+                                        i32.const 214748364
+                                        i32.gt_u
+                                        br_if 0 (;@18;)
+                                        i32.const -1
+                                        get_local 11
+                                        i32.const 10
+                                        i32.mul
+                                        tee_local 11
+                                        get_local 20
+                                        i32.add
+                                        get_local 20
+                                        i32.const 2147483647
+                                        get_local 11
+                                        i32.sub
+                                        i32.gt_u
+                                        select
+                                        set_local 8
+                                      end
+                                      get_local 1
+                                      i32.load offset=4
+                                      set_local 16
+                                      get_local 1
+                                      i32.const 4
+                                      i32.add
+                                      tee_local 19
+                                      set_local 1
+                                      get_local 8
+                                      set_local 11
+                                      get_local 16
+                                      i32.const -48
+                                      i32.add
+                                      tee_local 20
+                                      i32.const 10
+                                      i32.lt_u
+                                      br_if 0 (;@17;)
+                                    end
+                                    get_local 8
+                                    i32.const 0
+                                    i32.lt_s
+                                    br_if 13 (;@3;)
+                                  end
+                                  i32.const 0
+                                  set_local 18
+                                  block  ;; label = @16
+                                    get_local 16
+                                    i32.const 46
+                                    i32.eq
+                                    br_if 0 (;@16;)
+                                    get_local 19
+                                    set_local 1
+                                    br 1 (;@15;)
+                                  end
+                                  block  ;; label = @16
+                                    get_local 19
+                                    i32.load offset=4
+                                    tee_local 11
+                                    i32.const 42
+                                    i32.ne
+                                    br_if 0 (;@16;)
+                                    block  ;; label = @17
+                                      block  ;; label = @18
+                                        get_local 19
+                                        i32.load offset=8
+                                        i32.const -48
+                                        i32.add
+                                        tee_local 11
+                                        i32.const 9
+                                        i32.gt_u
+                                        br_if 0 (;@18;)
+                                        get_local 19
+                                        i32.load offset=12
+                                        i32.const 36
+                                        i32.ne
+                                        br_if 0 (;@18;)
+                                        get_local 4
+                                        get_local 11
+                                        i32.const 2
+                                        i32.shl
+                                        i32.add
+                                        i32.const 10
+                                        i32.store
+                                        get_local 19
+                                        i32.const 16
+                                        i32.add
+                                        set_local 1
+                                        get_local 19
+                                        i32.load offset=8
+                                        i32.const 4
+                                        i32.shl
+                                        get_local 3
+                                        i32.add
+                                        i32.const -768
+                                        i32.add
+                                        i32.load
+                                        set_local 15
+                                        br 1 (;@17;)
+                                      end
+                                      get_local 10
+                                      br_if 3 (;@14;)
+                                      get_local 19
+                                      i32.const 8
+                                      i32.add
+                                      set_local 1
+                                      block  ;; label = @18
+                                        get_local 0
+                                        br_if 0 (;@18;)
+                                        i32.const 0
+                                        set_local 15
+                                        br 1 (;@17;)
+                                      end
+                                      get_local 2
+                                      get_local 2
+                                      i32.load
+                                      tee_local 11
+                                      i32.const 4
+                                      i32.add
+                                      i32.store
+                                      get_local 11
+                                      i32.load
+                                      set_local 15
+                                    end
+                                    get_local 15
+                                    i32.const -1
+                                    i32.xor
+                                    i32.const 31
+                                    i32.shr_u
+                                    set_local 18
+                                    br 1 (;@15;)
+                                  end
+                                  get_local 19
+                                  i32.const 4
+                                  i32.add
+                                  set_local 1
+                                  i32.const 1
+                                  set_local 18
+                                  i32.const 0
+                                  set_local 15
+                                  get_local 11
+                                  i32.const -48
+                                  i32.add
+                                  tee_local 16
+                                  i32.const 9
+                                  i32.gt_u
+                                  br_if 0 (;@15;)
+                                  i32.const 0
+                                  set_local 11
+                                  loop  ;; label = @16
+                                    i32.const -1
+                                    set_local 15
+                                    block  ;; label = @17
+                                      get_local 11
+                                      i32.const 214748364
+                                      i32.gt_u
+                                      br_if 0 (;@17;)
+                                      i32.const -1
+                                      get_local 11
+                                      i32.const 10
+                                      i32.mul
+                                      tee_local 11
+                                      get_local 16
+                                      i32.add
+                                      get_local 16
+                                      i32.const 2147483647
+                                      get_local 11
+                                      i32.sub
+                                      i32.gt_u
+                                      select
+                                      set_local 15
+                                    end
+                                    get_local 1
+                                    i32.load offset=4
+                                    set_local 16
+                                    get_local 1
+                                    i32.const 4
+                                    i32.add
+                                    tee_local 20
+                                    set_local 1
+                                    get_local 15
+                                    set_local 11
+                                    get_local 16
+                                    i32.const -48
+                                    i32.add
+                                    tee_local 16
+                                    i32.const 10
+                                    i32.lt_u
+                                    br_if 0 (;@16;)
+                                  end
+                                  get_local 20
+                                  set_local 1
+                                end
+                                loop  ;; label = @15
+                                  get_local 12
+                                  set_local 11
+                                  get_local 1
+                                  i32.load
+                                  i32.const -65
+                                  i32.add
+                                  tee_local 12
+                                  i32.const 57
+                                  i32.gt_u
+                                  br_if 1 (;@14;)
+                                  get_local 1
+                                  i32.const 4
+                                  i32.add
+                                  set_local 1
+                                  get_local 11
+                                  i32.const 58
+                                  i32.mul
+                                  get_local 12
+                                  i32.add
+                                  i32.const 11424
+                                  i32.add
+                                  i32.load8_u
+                                  tee_local 12
+                                  i32.const -1
+                                  i32.add
+                                  i32.const 8
+                                  i32.lt_u
+                                  br_if 0 (;@15;)
+                                end
+                                get_local 12
+                                i32.eqz
+                                br_if 0 (;@14;)
+                                get_local 12
+                                i32.const 27
+                                i32.ne
+                                br_if 1 (;@13;)
+                                get_local 17
+                                i32.const -1
+                                i32.le_s
+                                br_if 2 (;@12;)
+                              end
+                              call 36
+                              i32.const 22
+                              i32.store
+                              i32.const -1
+                              set_local 9
+                              br 12 (;@1;)
+                            end
+                            get_local 17
+                            i32.const 0
+                            i32.lt_s
+                            br_if 1 (;@11;)
+                            get_local 4
+                            get_local 17
+                            i32.const 2
+                            i32.shl
+                            i32.add
+                            get_local 12
+                            i32.store
+                            get_local 5
+                            get_local 3
+                            get_local 17
+                            i32.const 4
+                            i32.shl
+                            i32.add
+                            tee_local 12
+                            i64.load
+                            i64.store offset=160
+                            get_local 5
+                            get_local 12
+                            i32.const 8
+                            i32.add
+                            i64.load
+                            i64.store offset=168
+                          end
+                          get_local 0
+                          br_if 1 (;@10;)
+                          br 5 (;@6;)
+                        end
+                        block  ;; label = @11
+                          get_local 0
+                          br_if 0 (;@11;)
+                          i32.const 0
+                          set_local 9
+                          br 10 (;@1;)
+                        end
+                        get_local 5
+                        i32.const 160
+                        i32.add
+                        get_local 12
+                        get_local 2
+                        call 114
+                      end
+                      block  ;; label = @10
+                        get_local 1
+                        i32.const -4
+                        i32.add
+                        i32.load
+                        tee_local 12
+                        i32.const -33
+                        i32.and
+                        get_local 12
+                        get_local 12
+                        i32.const 15
+                        i32.and
+                        i32.const 3
+                        i32.eq
+                        select
+                        get_local 12
+                        get_local 11
+                        select
+                        tee_local 16
+                        i32.const -67
+                        i32.add
+                        tee_local 12
+                        i32.const 48
+                        i32.gt_u
+                        br_if 0 (;@10;)
+                        block  ;; label = @11
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              block  ;; label = @14
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      get_local 12
+                                      br_table 3 (;@14;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 4 (;@13;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 2 (;@15;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 5 (;@12;) 1 (;@16;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 7 (;@10;) 0 (;@17;) 3 (;@14;)
+                                    end
+                                    get_local 5
+                                    i32.load offset=160
+                                    set_local 12
+                                    br 5 (;@11;)
+                                  end
+                                  get_local 11
+                                  i32.const 255
+                                  i32.and
+                                  tee_local 12
+                                  i32.const 7
+                                  i32.gt_u
+                                  br_if 9 (;@6;)
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      block  ;; label = @18
+                                        block  ;; label = @19
+                                          block  ;; label = @20
+                                            block  ;; label = @21
+                                              block  ;; label = @22
+                                                get_local 12
+                                                br_table 0 (;@22;) 1 (;@21;) 2 (;@20;) 3 (;@19;) 4 (;@18;) 16 (;@6;) 5 (;@17;) 6 (;@16;) 0 (;@22;)
+                                              end
+                                              get_local 5
+                                              i32.load offset=160
+                                              get_local 9
+                                              i32.store
+                                              br 15 (;@6;)
+                                            end
+                                            get_local 5
+                                            i32.load offset=160
+                                            get_local 9
+                                            i32.store
+                                            br 14 (;@6;)
+                                          end
+                                          get_local 5
+                                          i32.load offset=160
+                                          get_local 9
+                                          i64.extend_s/i32
+                                          i64.store
+                                          br 13 (;@6;)
+                                        end
+                                        get_local 5
+                                        i32.load offset=160
+                                        get_local 9
+                                        i32.store16
+                                        br 12 (;@6;)
+                                      end
+                                      get_local 5
+                                      i32.load offset=160
+                                      get_local 9
+                                      i32.store8
+                                      br 11 (;@6;)
+                                    end
+                                    get_local 5
+                                    i32.load offset=160
+                                    get_local 9
+                                    i32.store
+                                    br 10 (;@6;)
+                                  end
+                                  get_local 5
+                                  i32.load offset=160
+                                  get_local 9
+                                  i64.extend_s/i32
+                                  i64.store
+                                  br 9 (;@6;)
+                                end
+                                get_local 5
+                                i32.load offset=160
+                                call 105
+                                get_local 0
+                                call 104
+                                drop
+                                i32.const 1
+                                set_local 8
+                                br 9 (;@5;)
+                              end
+                              get_local 5
+                              i32.load offset=160
+                              get_local 0
+                              call 104
+                              drop
+                              i32.const 1
+                              set_local 8
+                              br 8 (;@5;)
+                            end
+                            get_local 5
+                            i32.load offset=160
+                            tee_local 12
+                            i32.const 2147483647
+                            get_local 15
+                            get_local 15
+                            i32.const 0
+                            i32.lt_s
+                            select
+                            call 106
+                            set_local 16
+                            block  ;; label = @13
+                              get_local 15
+                              i32.const -1
+                              i32.gt_s
+                              br_if 0 (;@13;)
+                              get_local 12
+                              get_local 16
+                              i32.const 2
+                              i32.shl
+                              i32.add
+                              i32.load
+                              br_if 10 (;@3;)
+                            end
+                            get_local 16
+                            i32.const 2
+                            i32.shl
+                            i32.const 2
+                            i32.shr_s
+                            tee_local 11
+                            get_local 8
+                            get_local 8
+                            get_local 11
+                            i32.lt_s
+                            select
+                            set_local 8
+                            block  ;; label = @13
+                              get_local 13
+                              i32.const 8192
+                              i32.and
+                              br_if 0 (;@13;)
+                              get_local 5
+                              i32.const 11260
+                              i32.store offset=84
+                              get_local 5
+                              get_local 8
+                              get_local 11
+                              i32.sub
+                              i32.store offset=80
+                              get_local 0
+                              i32.const 8260
+                              get_local 5
+                              i32.const 80
+                              i32.add
+                              call 107
+                              drop
+                              get_local 16
+                              i32.eqz
+                              br_if 8 (;@5;)
+                              loop  ;; label = @14
+                                get_local 0
+                                i32.load8_u
+                                i32.const 32
+                                i32.and
+                                br_if 9 (;@5;)
+                                get_local 12
+                                i32.load
+                                get_local 0
+                                call 104
+                                drop
+                                get_local 12
+                                i32.const 4
+                                i32.add
+                                set_local 12
+                                get_local 11
+                                i32.const -1
+                                i32.add
+                                tee_local 11
+                                i32.eqz
+                                br_if 9 (;@5;)
+                                br 0 (;@14;)
+                              end
+                            end
+                            block  ;; label = @13
+                              get_local 16
+                              i32.eqz
+                              br_if 0 (;@13;)
+                              get_local 11
+                              set_local 13
+                              loop  ;; label = @14
+                                get_local 0
+                                i32.load8_u
+                                i32.const 32
+                                i32.and
+                                br_if 1 (;@13;)
+                                get_local 12
+                                i32.load
+                                get_local 0
+                                call 104
+                                drop
+                                get_local 12
+                                i32.const 4
+                                i32.add
+                                set_local 12
+                                get_local 13
+                                i32.const -1
+                                i32.add
+                                tee_local 13
+                                br_if 0 (;@14;)
+                              end
+                            end
+                            get_local 5
+                            i32.const 11260
+                            i32.store offset=100
+                            get_local 5
+                            get_local 8
+                            get_local 11
+                            i32.sub
+                            i32.store offset=96
+                            get_local 0
+                            i32.const 8260
+                            get_local 5
+                            i32.const 96
+                            i32.add
+                            call 107
+                            drop
+                            br 7 (;@5;)
+                          end
+                          get_local 5
+                          call 36
+                          i32.load
+                          call 110
+                          tee_local 12
+                          i32.store offset=160
+                        end
+                        block  ;; label = @11
+                          get_local 12
+                          br_if 0 (;@11;)
+                          i32.const 11268
+                          set_local 12
+                          get_local 5
+                          i32.const 11268
+                          i32.store offset=160
+                        end
+                        i32.const 0
+                        set_local 16
+                        get_local 12
+                        set_local 11
+                        block  ;; label = @11
+                          i32.const 2147483647
+                          get_local 15
+                          get_local 15
+                          i32.const 0
+                          i32.lt_s
+                          select
+                          tee_local 19
+                          i32.const 1
+                          i32.lt_s
+                          br_if 0 (;@11;)
+                          i32.const 0
+                          set_local 16
+                          get_local 12
+                          set_local 11
+                          block  ;; label = @12
+                            loop  ;; label = @13
+                              get_local 5
+                              i32.const 140
+                              i32.add
+                              get_local 11
+                              i32.const 4
+                              call 111
+                              tee_local 20
+                              i32.const 1
+                              i32.lt_s
+                              br_if 1 (;@12;)
+                              get_local 11
+                              get_local 20
+                              i32.add
+                              set_local 11
+                              get_local 19
+                              get_local 16
+                              i32.const 1
+                              i32.add
+                              tee_local 16
+                              i32.ne
+                              br_if 0 (;@13;)
+                            end
+                            get_local 19
+                            set_local 16
+                            br 1 (;@11;)
+                          end
+                          get_local 20
+                          i32.const 0
+                          i32.lt_s
+                          br_if 9 (;@2;)
+                        end
+                        block  ;; label = @11
+                          get_local 15
+                          i32.const -1
+                          i32.gt_s
+                          br_if 0 (;@11;)
+                          get_local 11
+                          i32.load8_u
+                          br_if 8 (;@3;)
+                        end
+                        get_local 16
+                        get_local 8
+                        get_local 8
+                        get_local 16
+                        i32.lt_s
+                        select
+                        set_local 8
+                        block  ;; label = @11
+                          get_local 13
+                          i32.const 8192
+                          i32.and
+                          tee_local 20
+                          br_if 0 (;@11;)
+                          get_local 5
+                          i32.const 11260
+                          i32.store offset=132
+                          get_local 5
+                          get_local 8
+                          get_local 16
+                          i32.sub
+                          i32.store offset=128
+                          get_local 0
+                          i32.const 8260
+                          get_local 5
+                          i32.const 128
+                          i32.add
+                          call 107
+                          drop
+                        end
+                        block  ;; label = @11
+                          get_local 16
+                          i32.eqz
+                          br_if 0 (;@11;)
+                          get_local 16
+                          set_local 11
+                          loop  ;; label = @12
+                            get_local 5
+                            i32.const 140
+                            i32.add
+                            get_local 12
+                            i32.const 4
+                            call 111
+                            set_local 13
+                            get_local 5
+                            i32.load offset=140
+                            get_local 0
+                            call 104
+                            drop
+                            get_local 12
+                            get_local 13
+                            i32.add
+                            set_local 12
+                            get_local 11
+                            i32.const -1
+                            i32.add
+                            tee_local 11
+                            br_if 0 (;@12;)
+                          end
+                        end
+                        get_local 20
+                        i32.eqz
+                        br_if 5 (;@5;)
+                        get_local 5
+                        i32.const 11260
+                        i32.store offset=116
+                        get_local 5
+                        get_local 8
+                        get_local 16
+                        i32.sub
+                        i32.store offset=112
+                        get_local 0
+                        i32.const 8260
+                        get_local 5
+                        i32.const 112
+                        i32.add
+                        call 107
+                        drop
+                        br 5 (;@5;)
+                      end
+                      block  ;; label = @10
+                        get_local 15
+                        i32.const -1
+                        i32.gt_s
+                        br_if 0 (;@10;)
+                        get_local 18
+                        br_if 7 (;@3;)
+                      end
+                      get_local 6
+                      get_local 16
+                      i32.store
+                      get_local 7
+                      get_local 16
+                      i32.const 32
+                      i32.or
+                      tee_local 12
+                      i32.const 11295
+                      i32.add
+                      i32.load8_s
+                      i32.store
+                      get_local 5
+                      i32.const 48
+                      i32.add
+                      i32.const 16
+                      i32.add
+                      get_local 13
+                      i32.const 16
+                      i32.shr_u
+                      i32.const -1
+                      i32.xor
+                      i32.const 1
+                      i32.and
+                      i32.const 11359
+                      i32.add
+                      i32.store
+                      get_local 5
+                      get_local 13
+                      i32.const -1
+                      i32.xor
+                      i32.const 1
+                      i32.and
+                      i32.const 11348
+                      i32.add
+                      i32.store offset=60
+                      get_local 5
+                      get_local 13
+                      i32.const 13
+                      i32.shr_u
+                      i32.const -1
+                      i32.xor
+                      i32.const 1
+                      i32.and
+                      i32.const 11334
+                      i32.add
+                      i32.store offset=56
+                      get_local 5
+                      get_local 13
+                      i32.const 11
+                      i32.shr_u
+                      i32.const -1
+                      i32.xor
+                      i32.const 1
+                      i32.and
+                      i32.const 11317
+                      i32.add
+                      i32.store offset=52
+                      get_local 5
+                      get_local 13
+                      i32.const 3
+                      i32.shr_u
+                      i32.const -1
+                      i32.xor
+                      i32.const 1
+                      i32.and
+                      i32.const 11307
+                      i32.add
+                      i32.store offset=48
+                      get_local 5
+                      i32.const 144
+                      i32.add
+                      i32.const 16
+                      i32.const 11282
+                      get_local 5
+                      i32.const 48
+                      i32.add
+                      call 95
+                      drop
+                      get_local 12
+                      i32.const -97
+                      i32.add
+                      tee_local 12
+                      i32.const 23
+                      i32.gt_u
+                      br_if 3 (;@6;)
+                      block  ;; label = @10
+                        i32.const 1
+                        get_local 12
+                        i32.shl
+                        tee_local 12
+                        i32.const 9486600
+                        i32.and
+                        br_if 0 (;@10;)
+                        get_local 12
+                        i32.const 113
+                        i32.and
+                        i32.eqz
+                        br_if 4 (;@6;)
+                        get_local 5
+                        i32.const 16
+                        i32.add
+                        get_local 5
+                        i64.load offset=160
+                        i64.store
+                        get_local 5
+                        i32.const 24
+                        i32.add
+                        get_local 5
+                        i64.load offset=168
+                        i64.store
+                        get_local 5
+                        get_local 8
+                        i32.store
+                        get_local 5
+                        get_local 15
+                        i32.store offset=4
+                        get_local 0
+                        get_local 5
+                        i32.const 144
+                        i32.add
+                        get_local 5
+                        call 107
+                        set_local 8
+                        br 5 (;@5;)
+                      end
+                      get_local 5
+                      get_local 8
+                      i32.store offset=32
+                      get_local 5
+                      get_local 15
+                      i32.store offset=36
+                      get_local 5
+                      get_local 5
+                      i64.load offset=160
+                      i64.store offset=40
+                      get_local 0
+                      get_local 5
+                      i32.const 144
+                      i32.add
+                      get_local 5
+                      i32.const 32
+                      i32.add
+                      call 107
+                      set_local 8
+                      br 4 (;@5;)
+                    end
+                    get_local 12
+                    i32.load offset=4
+                    set_local 11
+                    get_local 12
+                    i32.const 4
+                    i32.add
+                    set_local 12
+                    br 0 (;@8;)
+                  end
+                end
+                get_local 0
+                br_if 5 (;@1;)
+                block  ;; label = @7
+                  get_local 10
+                  br_if 0 (;@7;)
+                  i32.const 0
+                  set_local 9
+                  br 6 (;@1;)
+                end
+                block  ;; label = @7
+                  block  ;; label = @8
+                    get_local 4
+                    i32.load offset=4
+                    tee_local 12
+                    br_if 0 (;@8;)
+                    i32.const 1
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  i32.const 16
+                  i32.add
+                  get_local 12
+                  get_local 2
+                  call 114
+                  block  ;; label = @8
+                    get_local 4
+                    i32.load offset=8
+                    tee_local 12
+                    br_if 0 (;@8;)
+                    i32.const 2
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  i32.const 32
+                  i32.add
+                  get_local 12
+                  get_local 2
+                  call 114
+                  block  ;; label = @8
+                    get_local 4
+                    i32.load offset=12
+                    tee_local 12
+                    br_if 0 (;@8;)
+                    i32.const 3
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  i32.const 48
+                  i32.add
+                  get_local 12
+                  get_local 2
+                  call 114
+                  block  ;; label = @8
+                    get_local 4
+                    i32.load offset=16
+                    tee_local 12
+                    br_if 0 (;@8;)
+                    i32.const 4
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  i32.const 64
+                  i32.add
+                  get_local 12
+                  get_local 2
+                  call 114
+                  block  ;; label = @8
+                    get_local 4
+                    i32.load offset=20
+                    tee_local 12
+                    br_if 0 (;@8;)
+                    i32.const 5
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  i32.const 80
+                  i32.add
+                  get_local 12
+                  get_local 2
+                  call 114
+                  block  ;; label = @8
+                    get_local 4
+                    i32.load offset=24
+                    tee_local 12
+                    br_if 0 (;@8;)
+                    i32.const 6
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  i32.const 96
+                  i32.add
+                  get_local 12
+                  get_local 2
+                  call 114
+                  block  ;; label = @8
+                    get_local 4
+                    i32.load offset=28
+                    tee_local 12
+                    br_if 0 (;@8;)
+                    i32.const 7
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  i32.const 112
+                  i32.add
+                  get_local 12
+                  get_local 2
+                  call 114
+                  block  ;; label = @8
+                    get_local 4
+                    i32.load offset=32
+                    tee_local 12
+                    br_if 0 (;@8;)
+                    i32.const 8
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  i32.const 128
+                  i32.add
+                  get_local 12
+                  get_local 2
+                  call 114
+                  block  ;; label = @8
+                    get_local 4
+                    i32.load offset=36
+                    tee_local 12
+                    br_if 0 (;@8;)
+                    i32.const 9
+                    set_local 12
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  i32.const 144
+                  i32.add
+                  get_local 12
+                  get_local 2
+                  call 114
+                  i32.const 1
+                  set_local 9
+                  br 6 (;@1;)
+                end
+                i32.const -1
+                set_local 9
+                get_local 4
+                get_local 12
+                i32.const 2
+                i32.shl
+                i32.add
+                i32.load
+                br_if 5 (;@1;)
+                get_local 4
+                get_local 12
+                i32.const 1
+                i32.add
+                tee_local 11
+                i32.const 2
+                i32.shl
+                i32.add
+                set_local 12
+                block  ;; label = @7
+                  loop  ;; label = @8
+                    get_local 11
+                    tee_local 1
+                    i32.const 10
+                    i32.eq
+                    br_if 1 (;@7;)
+                    get_local 1
+                    i32.const 1
+                    i32.add
+                    set_local 11
+                    get_local 12
+                    i32.load
+                    set_local 13
+                    get_local 12
+                    i32.const 4
+                    i32.add
+                    set_local 12
+                    get_local 13
+                    i32.eqz
+                    br_if 0 (;@8;)
+                  end
+                end
+                i32.const -1
+                i32.const 1
+                get_local 1
+                i32.const 10
+                i32.lt_u
+                select
+                set_local 9
+                br 5 (;@1;)
+              end
+              i32.const 0
+              set_local 8
+            end
+            get_local 8
+            get_local 14
+            i32.le_s
+            br_if 0 (;@4;)
+          end
+        end
+        call 36
+        i32.const 75
+        i32.store
+      end
+      i32.const -1
+      set_local 9
+    end
+    get_local 5
+    i32.const 176
+    i32.add
+    set_global 0
+    get_local 9)
+  (func (;114;) (type 28) (param i32 i32 i32)
+    block  ;; label = @1
+      get_local 1
+      i32.const -9
+      i32.add
+      tee_local 1
+      i32.const 15
+      i32.gt_u
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              block  ;; label = @6
+                block  ;; label = @7
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      block  ;; label = @10
+                        block  ;; label = @11
+                          block  ;; label = @12
+                            block  ;; label = @13
+                              block  ;; label = @14
+                                block  ;; label = @15
+                                  block  ;; label = @16
+                                    block  ;; label = @17
+                                      get_local 1
+                                      br_table 0 (;@17;) 1 (;@16;) 2 (;@15;) 5 (;@12;) 3 (;@14;) 4 (;@13;) 6 (;@11;) 7 (;@10;) 8 (;@9;) 9 (;@8;) 10 (;@7;) 11 (;@6;) 12 (;@5;) 13 (;@4;) 14 (;@3;) 15 (;@2;) 0 (;@17;)
+                                    end
+                                    get_local 2
+                                    get_local 2
+                                    i32.load
+                                    tee_local 1
+                                    i32.const 4
+                                    i32.add
+                                    i32.store
+                                    get_local 0
+                                    get_local 1
+                                    i32.load
+                                    i32.store
+                                    return
+                                  end
+                                  get_local 2
+                                  get_local 2
+                                  i32.load
+                                  tee_local 1
+                                  i32.const 4
+                                  i32.add
+                                  i32.store
+                                  get_local 0
+                                  get_local 1
+                                  i64.load32_s
+                                  i64.store
+                                  return
+                                end
+                                get_local 2
+                                get_local 2
+                                i32.load
+                                tee_local 1
+                                i32.const 4
+                                i32.add
+                                i32.store
+                                get_local 0
+                                get_local 1
+                                i64.load32_u
+                                i64.store
+                                return
+                              end
+                              get_local 2
+                              get_local 2
+                              i32.load
+                              tee_local 1
+                              i32.const 4
+                              i32.add
+                              i32.store
+                              get_local 0
+                              get_local 1
+                              i64.load32_s
+                              i64.store
+                              return
+                            end
+                            get_local 2
+                            get_local 2
+                            i32.load
+                            tee_local 1
+                            i32.const 4
+                            i32.add
+                            i32.store
+                            get_local 0
+                            get_local 1
+                            i64.load32_u
+                            i64.store
+                            return
+                          end
+                          get_local 2
+                          get_local 2
+                          i32.load
+                          i32.const 7
+                          i32.add
+                          i32.const -8
+                          i32.and
+                          tee_local 1
+                          i32.const 8
+                          i32.add
+                          i32.store
+                          get_local 0
+                          get_local 1
+                          i64.load
+                          i64.store
+                          return
+                        end
+                        get_local 2
+                        get_local 2
+                        i32.load
+                        tee_local 1
+                        i32.const 4
+                        i32.add
+                        i32.store
+                        get_local 0
+                        get_local 1
+                        i64.load16_s
+                        i64.store
+                        return
+                      end
+                      get_local 2
+                      get_local 2
+                      i32.load
+                      tee_local 1
+                      i32.const 4
+                      i32.add
+                      i32.store
+                      get_local 0
+                      get_local 1
+                      i64.load16_u
+                      i64.store
+                      return
+                    end
+                    get_local 2
+                    get_local 2
+                    i32.load
+                    tee_local 1
+                    i32.const 4
+                    i32.add
+                    i32.store
+                    get_local 0
+                    get_local 1
+                    i64.load8_s
+                    i64.store
+                    return
+                  end
+                  get_local 2
+                  get_local 2
+                  i32.load
+                  tee_local 1
+                  i32.const 4
+                  i32.add
+                  i32.store
+                  get_local 0
+                  get_local 1
+                  i64.load8_u
+                  i64.store
+                  return
+                end
+                get_local 2
+                get_local 2
+                i32.load
+                i32.const 7
+                i32.add
+                i32.const -8
+                i32.and
+                tee_local 1
+                i32.const 8
+                i32.add
+                i32.store
+                get_local 0
+                get_local 1
+                i64.load
+                i64.store
+                return
+              end
+              get_local 2
+              get_local 2
+              i32.load
+              tee_local 1
+              i32.const 4
+              i32.add
+              i32.store
+              get_local 0
+              get_local 1
+              i64.load32_u
+              i64.store
+              return
+            end
+            get_local 2
+            get_local 2
+            i32.load
+            i32.const 7
+            i32.add
+            i32.const -8
+            i32.and
+            tee_local 1
+            i32.const 8
+            i32.add
+            i32.store
+            get_local 0
+            get_local 1
+            i64.load
+            i64.store
+            return
+          end
+          get_local 2
+          get_local 2
+          i32.load
+          i32.const 7
+          i32.add
+          i32.const -8
+          i32.and
+          tee_local 1
+          i32.const 8
+          i32.add
+          i32.store
+          get_local 0
+          get_local 1
+          i64.load
+          i64.store
+          return
+        end
+        get_local 2
+        get_local 2
+        i32.load
+        tee_local 1
+        i32.const 4
+        i32.add
+        i32.store
+        get_local 0
+        get_local 1
+        i64.load32_s
+        i64.store
+        return
+      end
+      get_local 2
+      get_local 2
+      i32.load
+      tee_local 1
+      i32.const 4
+      i32.add
+      i32.store
+      get_local 0
+      get_local 1
+      i64.load32_u
+      i64.store
+    end)
+  (func (;115;) (type 32) (param i32 i32 i32 i32) (result i32)
+    (local i32 i32)
+    get_global 0
+    i32.const 416
+    i32.sub
+    tee_local 4
+    set_global 0
+    i32.const -1
+    set_local 5
+    get_local 4
+    get_local 1
+    i32.const -1
+    i32.add
+    i32.store offset=12
+    get_local 4
+    get_local 0
+    i32.store offset=8
+    get_local 4
+    i32.const 272
+    i32.add
+    i32.const 0
+    i32.const 144
+    call 2
+    drop
+    get_local 4
+    i32.const 256
+    i32.store offset=320
+    get_local 4
+    i32.const 6
+    i32.store offset=308
+    get_local 4
+    i32.const 255
+    i32.store8 offset=347
+    get_local 4
+    i32.const -1
+    i32.store offset=348
+    get_local 4
+    get_local 4
+    i32.const 16
+    i32.add
+    i32.store offset=316
+    get_local 4
+    get_local 4
+    i32.const 8
+    i32.add
+    i32.store offset=356
+    block  ;; label = @1
+      get_local 1
+      i32.eqz
+      br_if 0 (;@1;)
+      i32.const -1
+      set_local 5
+      block  ;; label = @2
+        get_local 1
+        i32.const -1
+        i32.gt_s
+        br_if 0 (;@2;)
+        call 36
+        i32.const 75
+        i32.store
+        br 1 (;@1;)
+      end
+      get_local 4
+      i32.const 272
+      i32.add
+      get_local 2
+      get_local 3
+      call 112
+      set_local 5
+      get_local 4
+      i32.const 272
+      i32.add
+      i32.const 0
+      i32.const 0
+      call 116
+      drop
+      get_local 5
+      i32.const -1
+      get_local 5
+      get_local 1
+      i32.lt_u
+      select
+      set_local 5
+    end
+    get_local 4
+    i32.const 416
+    i32.add
+    set_global 0
+    get_local 5)
+  (func (;116;) (type 1) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32 i32 i32)
+    get_local 0
+    i32.load offset=84
+    set_local 3
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 0
+          i32.load offset=28
+          tee_local 4
+          get_local 1
+          i32.eq
+          br_if 0 (;@3;)
+          i32.const -1
+          set_local 5
+          get_local 0
+          get_local 4
+          get_local 0
+          i32.load offset=20
+          get_local 4
+          i32.sub
+          call 116
+          i32.const -1
+          i32.eq
+          br_if 1 (;@2;)
+        end
+        get_local 3
+        i32.load
+        set_local 6
+        block  ;; label = @3
+          get_local 2
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 3
+          i32.load offset=4
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 2
+          set_local 4
+          loop  ;; label = @4
+            get_local 6
+            get_local 1
+            get_local 4
+            call 111
+            tee_local 5
+            i32.const 0
+            i32.lt_s
+            br_if 3 (;@1;)
+            get_local 3
+            get_local 3
+            i32.load offset=4
+            i32.const -1
+            i32.add
+            tee_local 7
+            i32.store offset=4
+            get_local 3
+            get_local 3
+            i32.load
+            i32.const 4
+            i32.add
+            tee_local 6
+            i32.store
+            get_local 4
+            get_local 5
+            i32.sub
+            tee_local 4
+            i32.eqz
+            br_if 1 (;@3;)
+            get_local 1
+            get_local 5
+            i32.add
+            set_local 1
+            get_local 7
+            br_if 0 (;@4;)
+          end
+        end
+        get_local 6
+        i32.const 0
+        i32.store
+        get_local 0
+        get_local 0
+        i32.load offset=44
+        tee_local 3
+        i32.store offset=28
+        get_local 0
+        get_local 3
+        i32.store offset=20
+        get_local 0
+        get_local 3
+        get_local 0
+        i32.load offset=48
+        i32.add
+        i32.store offset=16
+        get_local 2
+        set_local 5
+      end
+      get_local 5
+      return
+    end
+    get_local 3
+    i32.load
+    i32.const 0
+    i32.store
+    get_local 0
+    i32.const 0
+    i32.store offset=28
+    get_local 0
+    i64.const 0
+    i64.store offset=16
+    get_local 0
+    get_local 0
+    i32.load
+    i32.const 32
+    i32.or
+    i32.store
+    get_local 5)
+  (func (;117;) (type 32) (param i32 i32 i32 i32) (result i32)
+    (local i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 4
+    set_global 0
+    get_local 4
+    get_local 3
+    i32.store offset=12
+    get_local 0
+    get_local 1
+    get_local 2
+    get_local 3
+    call 115
+    set_local 3
+    get_local 4
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 3)
+  (func (;118;) (type 7) (param i32)
+    call 0
+    unreachable)
+  (func (;119;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32 i32)
+    get_local 0
+    i64.const 0
+    i64.store align=4
+    get_local 0
+    i32.const 8
+    i32.add
+    tee_local 2
+    i32.const 0
+    i32.store
+    block  ;; label = @1
+      get_local 1
+      i32.load8_u
+      i32.const 1
+      i32.and
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 1
+      i64.load align=4
+      i64.store align=4
+      get_local 2
+      get_local 1
+      i32.const 8
+      i32.add
+      i32.load
+      i32.store
+      get_local 0
+      return
+    end
+    block  ;; label = @1
+      get_local 1
+      i32.load offset=4
+      tee_local 2
+      i32.const -16
+      i32.ge_u
+      br_if 0 (;@1;)
+      get_local 1
+      i32.load offset=8
+      set_local 3
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 2
+            i32.const 11
+            i32.lt_u
+            br_if 0 (;@4;)
+            get_local 2
+            i32.const 16
+            i32.add
+            i32.const -16
+            i32.and
+            tee_local 4
+            call 39
+            set_local 1
+            get_local 0
+            get_local 2
+            i32.store offset=4
+            get_local 0
+            get_local 4
+            i32.const 1
+            i32.or
+            i32.store
+            get_local 0
+            get_local 1
+            i32.store offset=8
+            br 1 (;@3;)
+          end
+          get_local 0
+          get_local 2
+          i32.const 1
+          i32.shl
+          i32.store8
+          get_local 0
+          i32.const 1
+          i32.add
+          set_local 1
+          get_local 2
+          i32.eqz
+          br_if 1 (;@2;)
+        end
+        get_local 1
+        get_local 3
+        get_local 2
+        call 7
+        drop
+      end
+      get_local 1
+      get_local 2
+      i32.add
+      i32.const 0
+      i32.store8
+      get_local 0
+      return
+    end
+    call 0
+    unreachable)
+  (func (;120;) (type 30) (param i32 i32 i32 i32 i32) (result i32)
+    (local i32 i32)
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 0
+        i32.load8_u
+        tee_local 5
+        i32.const 1
+        i32.and
+        tee_local 6
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 0
+        i32.load offset=4
+        set_local 5
+        br 1 (;@1;)
+      end
+      get_local 5
+      i32.const 1
+      i32.shr_u
+      set_local 5
+    end
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 4
+        i32.const -1
+        i32.eq
+        br_if 0 (;@2;)
+        get_local 5
+        get_local 1
+        i32.lt_u
+        br_if 0 (;@2;)
+        get_local 5
+        get_local 1
+        i32.sub
+        tee_local 5
+        get_local 2
+        get_local 5
+        get_local 2
+        i32.lt_u
+        select
+        set_local 2
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 6
+            i32.eqz
+            br_if 0 (;@4;)
+            get_local 0
+            i32.load offset=8
+            set_local 0
+            br 1 (;@3;)
+          end
+          get_local 0
+          i32.const 1
+          i32.add
+          set_local 0
+        end
+        get_local 4
+        get_local 2
+        get_local 2
+        get_local 4
+        i32.gt_u
+        tee_local 6
+        select
+        tee_local 5
+        i32.eqz
+        br_if 1 (;@1;)
+        get_local 0
+        get_local 1
+        i32.add
+        get_local 3
+        get_local 5
+        call 43
+        tee_local 1
+        i32.eqz
+        br_if 1 (;@1;)
+        get_local 1
+        return
+      end
+      call 0
+      unreachable
+    end
+    i32.const -1
+    get_local 6
+    get_local 2
+    get_local 4
+    i32.lt_u
+    select)
+  (func (;121;) (type 7) (param i32)
+    call 0
+    unreachable)
+  (func (;122;) (type 6) (param i64)
+    i32.const 0
+    get_local 0
+    i64.store offset=11888)
+  (func (;123;) (type 33) (param i32 i32 i32 i64 i32 i32) (result i32)
+    (local i32 i32 i32 i32 i64)
+    i32.const 20
+    set_local 6
+    i32.const 11896
+    set_local 7
+    loop  ;; label = @1
+      get_local 7
+      get_local 7
+      get_local 6
+      i32.const 1
+      i32.shr_u
+      tee_local 8
+      i32.const 3
+      i32.shl
+      i32.add
+      tee_local 9
+      i32.const 8
+      i32.add
+      get_local 9
+      i64.load
+      get_local 3
+      i64.gt_u
+      tee_local 9
+      select
+      set_local 7
+      get_local 8
+      get_local 6
+      get_local 8
+      i32.const -1
+      i32.xor
+      i32.add
+      get_local 9
+      select
+      tee_local 6
+      br_if 0 (;@1;)
+    end
+    get_local 4
+    get_local 7
+    i32.const 11896
+    i32.sub
+    i32.const 3
+    i32.shr_u
+    tee_local 7
+    get_local 7
+    i32.const 255
+    i32.and
+    tee_local 6
+    get_local 4
+    i32.lt_u
+    select
+    i32.const 255
+    i32.and
+    set_local 7
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 6
+        get_local 4
+        i32.gt_u
+        br_if 0 (;@2;)
+        i32.const 1
+        set_local 6
+        get_local 7
+        i32.const 1
+        i32.add
+        set_local 7
+        br 1 (;@1;)
+      end
+      get_local 6
+      get_local 4
+      i32.sub
+      set_local 6
+    end
+    block  ;; label = @1
+      get_local 0
+      get_local 5
+      get_local 4
+      i32.const 0
+      i32.ne
+      i32.add
+      get_local 7
+      i32.add
+      tee_local 7
+      i32.add
+      tee_local 9
+      get_local 1
+      i32.gt_u
+      br_if 0 (;@1;)
+      get_local 2
+      br_if 0 (;@1;)
+      get_local 7
+      i32.const -1
+      i32.add
+      set_local 7
+      get_local 6
+      get_local 5
+      i32.add
+      i32.const 65535
+      i32.and
+      set_local 6
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 3
+            i64.eqz
+            br_if 0 (;@4;)
+            get_local 7
+            get_local 6
+            i32.gt_s
+            br_if 1 (;@3;)
+          end
+          get_local 3
+          set_local 10
+          br 1 (;@2;)
+        end
+        loop  ;; label = @3
+          get_local 0
+          get_local 7
+          i32.add
+          get_local 3
+          get_local 3
+          i64.const 10
+          i64.div_u
+          tee_local 10
+          i64.const 10
+          i64.mul
+          i64.sub
+          i32.wrap/i64
+          i32.const 48
+          i32.or
+          i32.store8
+          get_local 7
+          i32.const -1
+          i32.add
+          set_local 7
+          get_local 3
+          i64.const 10
+          i64.lt_u
+          br_if 1 (;@2;)
+          get_local 10
+          set_local 3
+          get_local 7
+          get_local 6
+          i32.gt_s
+          br_if 0 (;@3;)
+        end
+      end
+      block  ;; label = @2
+        get_local 7
+        get_local 6
+        i32.le_s
+        br_if 0 (;@2;)
+        loop  ;; label = @3
+          get_local 0
+          get_local 7
+          i32.add
+          i32.const 48
+          i32.store8
+          get_local 7
+          i32.const -1
+          i32.add
+          tee_local 7
+          get_local 6
+          i32.gt_s
+          br_if 0 (;@3;)
+        end
+      end
+      block  ;; label = @2
+        get_local 7
+        get_local 6
+        i32.ne
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 6
+        i32.add
+        i32.const 46
+        i32.store8
+        get_local 6
+        i32.const -1
+        i32.add
+        set_local 7
+      end
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 7
+          get_local 5
+          i32.ge_s
+          br_if 0 (;@3;)
+          get_local 7
+          set_local 8
+          br 1 (;@2;)
+        end
+        loop  ;; label = @3
+          get_local 0
+          get_local 7
+          i32.add
+          get_local 10
+          get_local 10
+          i64.const 10
+          i64.div_u
+          tee_local 3
+          i64.const 10
+          i64.mul
+          i64.sub
+          i32.wrap/i64
+          i32.const 48
+          i32.or
+          i32.store8
+          get_local 7
+          get_local 5
+          i32.gt_s
+          set_local 6
+          get_local 7
+          i32.const -1
+          i32.add
+          tee_local 8
+          set_local 7
+          get_local 3
+          set_local 10
+          get_local 6
+          br_if 0 (;@3;)
+        end
+      end
+      get_local 8
+      br_if 0 (;@1;)
+      get_local 0
+      i32.const 45
+      i32.store8
+    end
+    get_local 9)
+  (func (;124;) (type 7) (param i32))
+  (func (;125;) (type 24) (param f64) (result f64)
+    (local i64 i32 i32 i32 i32 i32 i32 i32 i32 i32)
+    block  ;; label = @1
+      get_local 0
+      i64.reinterpret/f64
+      tee_local 1
+      i64.const 32
+      i64.shr_u
+      i32.wrap/i64
+      tee_local 2
+      i32.const 2146435072
+      i32.and
+      i32.const 2146435072
+      i32.ne
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 0
+      f64.mul
+      get_local 0
+      f64.add
+      return
+    end
+    get_local 1
+    i32.wrap/i64
+    set_local 3
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 2
+        i32.const 0
+        i32.gt_s
+        br_if 0 (;@2;)
+        get_local 2
+        i32.const 2147483647
+        i32.and
+        get_local 3
+        i32.or
+        i32.eqz
+        br_if 1 (;@1;)
+        get_local 2
+        i32.const -1
+        i32.gt_s
+        br_if 0 (;@2;)
+        get_local 0
+        get_local 0
+        f64.sub
+        tee_local 0
+        get_local 0
+        f64.div
+        return
+      end
+      block  ;; label = @2
+        get_local 1
+        i64.const 52
+        i64.shr_u
+        i32.wrap/i64
+        tee_local 4
+        br_if 0 (;@2;)
+        i32.const 0
+        set_local 5
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 2
+            i32.eqz
+            br_if 0 (;@4;)
+            i32.const 0
+            set_local 4
+            get_local 3
+            set_local 6
+            br 1 (;@3;)
+          end
+          i32.const 0
+          set_local 4
+          loop  ;; label = @4
+            get_local 3
+            i32.const 11
+            i32.shr_u
+            set_local 2
+            get_local 4
+            i32.const -21
+            i32.add
+            set_local 4
+            get_local 3
+            i32.const 21
+            i32.shl
+            tee_local 6
+            set_local 3
+            get_local 2
+            i32.eqz
+            br_if 0 (;@4;)
+          end
+        end
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 2
+            i32.const 1048576
+            i32.and
+            i32.eqz
+            br_if 0 (;@4;)
+            get_local 2
+            set_local 7
+            br 1 (;@3;)
+          end
+          i32.const 0
+          set_local 5
+          loop  ;; label = @4
+            get_local 5
+            i32.const 1
+            i32.add
+            set_local 5
+            get_local 2
+            i32.const 524288
+            i32.and
+            set_local 3
+            get_local 2
+            i32.const 1
+            i32.shl
+            tee_local 7
+            set_local 2
+            get_local 3
+            i32.eqz
+            br_if 0 (;@4;)
+          end
+        end
+        get_local 6
+        get_local 5
+        i32.shl
+        set_local 3
+        get_local 4
+        get_local 5
+        i32.sub
+        i32.const 1
+        i32.add
+        set_local 4
+        get_local 6
+        i32.const 32
+        get_local 5
+        i32.sub
+        i32.shr_u
+        get_local 7
+        i32.or
+        set_local 2
+      end
+      get_local 2
+      i32.const 1048575
+      i32.and
+      i32.const 1048576
+      i32.or
+      set_local 2
+      block  ;; label = @2
+        get_local 4
+        i32.const -1023
+        i32.add
+        tee_local 7
+        i32.const 1
+        i32.and
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 31
+        i32.shr_u
+        i32.or
+        set_local 2
+        get_local 3
+        i32.const 1
+        i32.shl
+        set_local 3
+      end
+      get_local 3
+      i32.const 31
+      i32.shr_u
+      get_local 2
+      i32.const 1
+      i32.shl
+      i32.or
+      tee_local 2
+      i32.const 2097151
+      i32.gt_s
+      tee_local 5
+      i32.const 21
+      i32.shl
+      set_local 8
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        tee_local 4
+        get_local 4
+        i32.const -4194304
+        i32.add
+        get_local 2
+        i32.const 2097152
+        i32.lt_s
+        select
+        get_local 3
+        i32.const 30
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 22
+        i32.shl
+        tee_local 5
+        i32.const 1048576
+        i32.or
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 1048576
+        i32.or
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 4
+        i32.const 1048576
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 29
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 524288
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 524288
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 1048576
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 28
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 262144
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 262144
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 524288
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 27
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 131072
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 131072
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 262144
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 26
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 65536
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 65536
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 131072
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 25
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 32768
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 32768
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 65536
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 24
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 16384
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 16384
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 32768
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 23
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 8192
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 8192
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 16384
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 22
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 4096
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 4096
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 8192
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 21
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 2048
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 2048
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 4096
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 20
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 1024
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 1024
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 2048
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 19
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 512
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 512
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 1024
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 18
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 256
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 256
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 512
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 17
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 128
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 128
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 256
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 16
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 64
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 64
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 128
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 15
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 32
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 32
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 64
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 14
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 16
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 16
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 32
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 13
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 8
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 8
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 16
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 12
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 4
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 4
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 8
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 11
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 2
+        get_local 5
+        i32.const 2
+        i32.add
+        tee_local 4
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 2
+        i32.add
+        set_local 8
+        get_local 2
+        get_local 4
+        i32.sub
+        set_local 2
+        get_local 5
+        i32.const 4
+        i32.add
+        set_local 5
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.const 1
+        i32.shl
+        get_local 3
+        i32.const 10
+        i32.shr_u
+        i32.const 1
+        i32.and
+        i32.or
+        tee_local 4
+        get_local 5
+        i32.const 1
+        i32.add
+        tee_local 2
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 1
+        i32.add
+        set_local 8
+        get_local 4
+        get_local 2
+        i32.sub
+        set_local 4
+        get_local 5
+        i32.const 2
+        i32.add
+        set_local 5
+      end
+      get_local 3
+      i32.const 23
+      i32.shl
+      set_local 2
+      get_local 4
+      i32.const 1
+      i32.shl
+      get_local 3
+      i32.const 9
+      i32.shr_u
+      i32.const 1
+      i32.and
+      i32.or
+      set_local 3
+      get_local 7
+      i32.const 1
+      i32.shr_u
+      set_local 9
+      i32.const -2147483648
+      set_local 4
+      i32.const 0
+      set_local 10
+      i32.const 0
+      set_local 6
+      loop  ;; label = @2
+        get_local 6
+        get_local 4
+        i32.add
+        set_local 7
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 3
+            get_local 5
+            i32.gt_s
+            br_if 0 (;@4;)
+            get_local 3
+            get_local 5
+            i32.ne
+            br_if 1 (;@3;)
+            get_local 2
+            get_local 7
+            i32.lt_u
+            br_if 1 (;@3;)
+          end
+          get_local 3
+          get_local 5
+          i32.sub
+          get_local 2
+          get_local 7
+          i32.lt_u
+          i32.sub
+          set_local 3
+          get_local 5
+          get_local 7
+          i32.const 0
+          i32.lt_s
+          get_local 7
+          get_local 4
+          i32.add
+          tee_local 6
+          i32.const -1
+          i32.gt_s
+          i32.and
+          i32.add
+          set_local 5
+          get_local 10
+          get_local 4
+          i32.add
+          set_local 10
+          get_local 2
+          get_local 7
+          i32.sub
+          set_local 2
+        end
+        get_local 2
+        i32.const 31
+        i32.shr_u
+        get_local 3
+        i32.const 1
+        i32.shl
+        i32.or
+        set_local 3
+        get_local 2
+        i32.const 1
+        i32.shl
+        set_local 2
+        get_local 4
+        i32.const 1
+        i32.shr_u
+        tee_local 4
+        br_if 0 (;@2;)
+      end
+      block  ;; label = @2
+        get_local 2
+        get_local 3
+        i32.or
+        i32.eqz
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 10
+          i32.const -1
+          i32.ne
+          br_if 0 (;@3;)
+          get_local 8
+          i32.const 1
+          i32.add
+          set_local 8
+          i32.const 0
+          set_local 10
+          br 1 (;@2;)
+        end
+        get_local 10
+        i32.const 1
+        i32.and
+        get_local 10
+        i32.add
+        set_local 10
+      end
+      get_local 9
+      i32.const 20
+      i32.shl
+      get_local 8
+      i32.const 1
+      i32.shr_s
+      i32.add
+      i32.const 1071644672
+      i32.add
+      i64.extend_u/i32
+      i64.const 32
+      i64.shl
+      get_local 10
+      i32.const 1
+      i32.shr_u
+      get_local 8
+      i32.const 31
+      i32.shl
+      i32.or
+      i64.extend_u/i32
+      i64.or
+      f64.reinterpret/i64
+      set_local 0
+    end
+    get_local 0)
+  (func (;126;) (type 34) (param f64 f64) (result f64)
+    (local f64 i64 i32 i32 i32 i64 i32 i32 i32 i32 i32 f64 f64 f64 f64 f64 f64 f64 f64)
+    f64.const 0x1p+0 (;=1;)
+    set_local 2
+    block  ;; label = @1
+      get_local 1
+      i64.reinterpret/f64
+      tee_local 3
+      i64.const 32
+      i64.shr_u
+      i32.wrap/i64
+      tee_local 4
+      i32.const 2147483647
+      i32.and
+      tee_local 5
+      get_local 3
+      i32.wrap/i64
+      tee_local 6
+      i32.or
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 0
+      i64.reinterpret/f64
+      tee_local 7
+      i64.const 32
+      i64.shr_u
+      i32.wrap/i64
+      set_local 8
+      block  ;; label = @2
+        get_local 7
+        i32.wrap/i64
+        tee_local 9
+        br_if 0 (;@2;)
+        get_local 8
+        i32.const 1072693248
+        i32.eq
+        br_if 1 (;@1;)
+      end
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 8
+          i32.const 2147483647
+          i32.and
+          tee_local 10
+          i32.const 2146435072
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 9
+          i32.const 0
+          i32.ne
+          get_local 10
+          i32.const 2146435072
+          i32.eq
+          i32.and
+          br_if 0 (;@3;)
+          get_local 5
+          i32.const 2146435072
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 6
+          i32.eqz
+          br_if 1 (;@2;)
+          get_local 5
+          i32.const 2146435072
+          i32.ne
+          br_if 1 (;@2;)
+        end
+        get_local 0
+        get_local 1
+        f64.add
+        return
+      end
+      i32.const 0
+      set_local 11
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 8
+              i32.const -1
+              i32.gt_s
+              br_if 0 (;@5;)
+              i32.const 2
+              set_local 11
+              get_local 5
+              i32.const 1128267775
+              i32.gt_u
+              br_if 0 (;@5;)
+              i32.const 0
+              set_local 11
+              get_local 5
+              i32.const 1072693248
+              i32.lt_u
+              br_if 0 (;@5;)
+              get_local 5
+              i32.const 20
+              i32.shr_u
+              set_local 12
+              get_local 5
+              i32.const 1094713344
+              i32.lt_u
+              br_if 1 (;@4;)
+              i32.const 2
+              get_local 6
+              i32.const 1075
+              get_local 12
+              i32.sub
+              tee_local 11
+              i32.shr_u
+              tee_local 12
+              i32.const 1
+              i32.and
+              i32.sub
+              i32.const 0
+              get_local 12
+              get_local 11
+              i32.shl
+              get_local 6
+              i32.eq
+              select
+              set_local 11
+            end
+            get_local 6
+            i32.eqz
+            br_if 1 (;@3;)
+            br 2 (;@2;)
+          end
+          i32.const 0
+          set_local 11
+          get_local 6
+          br_if 1 (;@2;)
+          i32.const 2
+          get_local 5
+          i32.const 1043
+          get_local 12
+          i32.sub
+          tee_local 6
+          i32.shr_u
+          tee_local 11
+          i32.const 1
+          i32.and
+          i32.sub
+          i32.const 0
+          get_local 11
+          get_local 6
+          i32.shl
+          get_local 5
+          i32.eq
+          select
+          set_local 11
+        end
+        block  ;; label = @3
+          get_local 5
+          i32.const 2146435072
+          i32.ne
+          br_if 0 (;@3;)
+          get_local 10
+          i32.const -1072693248
+          i32.add
+          get_local 9
+          i32.or
+          i32.eqz
+          br_if 2 (;@1;)
+          block  ;; label = @4
+            get_local 10
+            i32.const 1072693248
+            i32.lt_u
+            br_if 0 (;@4;)
+            get_local 1
+            f64.const 0x0p+0 (;=0;)
+            get_local 4
+            i32.const -1
+            i32.gt_s
+            select
+            return
+          end
+          f64.const 0x0p+0 (;=0;)
+          get_local 1
+          f64.neg
+          get_local 4
+          i32.const -1
+          i32.gt_s
+          select
+          return
+        end
+        block  ;; label = @3
+          get_local 5
+          i32.const 1072693248
+          i32.ne
+          br_if 0 (;@3;)
+          block  ;; label = @4
+            get_local 4
+            i32.const -1
+            i32.le_s
+            br_if 0 (;@4;)
+            get_local 0
+            return
+          end
+          f64.const 0x1p+0 (;=1;)
+          get_local 0
+          f64.div
+          return
+        end
+        block  ;; label = @3
+          get_local 4
+          i32.const 1073741824
+          i32.ne
+          br_if 0 (;@3;)
+          get_local 0
+          get_local 0
+          f64.mul
+          return
+        end
+        get_local 8
+        i32.const 0
+        i32.lt_s
+        br_if 0 (;@2;)
+        get_local 4
+        i32.const 1071644672
+        i32.ne
+        br_if 0 (;@2;)
+        get_local 0
+        call 125
+        return
+      end
+      get_local 0
+      call 76
+      set_local 2
+      block  ;; label = @2
+        get_local 9
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 10
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 10
+          i32.const 1073741824
+          i32.or
+          i32.const 2146435072
+          i32.ne
+          br_if 1 (;@2;)
+        end
+        f64.const 0x1p+0 (;=1;)
+        get_local 2
+        f64.div
+        get_local 2
+        get_local 4
+        i32.const 0
+        i32.lt_s
+        select
+        set_local 2
+        get_local 8
+        i32.const -1
+        i32.gt_s
+        br_if 1 (;@1;)
+        block  ;; label = @3
+          get_local 11
+          get_local 10
+          i32.const -1072693248
+          i32.add
+          i32.or
+          br_if 0 (;@3;)
+          get_local 2
+          get_local 2
+          f64.sub
+          tee_local 1
+          get_local 1
+          f64.div
+          return
+        end
+        get_local 2
+        f64.neg
+        get_local 2
+        get_local 11
+        i32.const 1
+        i32.eq
+        select
+        return
+      end
+      f64.const 0x1p+0 (;=1;)
+      set_local 13
+      block  ;; label = @2
+        get_local 8
+        i32.const -1
+        i32.gt_s
+        br_if 0 (;@2;)
+        get_local 11
+        i32.const 1
+        i32.gt_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 11
+            br_table 0 (;@4;) 1 (;@3;) 0 (;@4;)
+          end
+          get_local 0
+          get_local 0
+          f64.sub
+          tee_local 1
+          get_local 1
+          f64.div
+          return
+        end
+        f64.const -0x1p+0 (;=-1;)
+        set_local 13
+      end
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 5
+          i32.const 1105199105
+          i32.lt_u
+          br_if 0 (;@3;)
+          block  ;; label = @4
+            get_local 5
+            i32.const 1139802113
+            i32.lt_u
+            br_if 0 (;@4;)
+            block  ;; label = @5
+              get_local 10
+              i32.const 1072693247
+              i32.gt_u
+              br_if 0 (;@5;)
+              f64.const inf (;=inf;)
+              f64.const 0x0p+0 (;=0;)
+              get_local 4
+              i32.const 0
+              i32.lt_s
+              select
+              return
+            end
+            f64.const inf (;=inf;)
+            f64.const 0x0p+0 (;=0;)
+            get_local 4
+            i32.const 0
+            i32.gt_s
+            select
+            return
+          end
+          block  ;; label = @4
+            get_local 10
+            i32.const 1072693246
+            i32.gt_u
+            br_if 0 (;@4;)
+            get_local 13
+            f64.const 0x1.7e43c8800759cp+996 (;=1e+300;)
+            f64.mul
+            f64.const 0x1.7e43c8800759cp+996 (;=1e+300;)
+            f64.mul
+            get_local 13
+            f64.const 0x1.56e1fc2f8f359p-997 (;=1e-300;)
+            f64.mul
+            f64.const 0x1.56e1fc2f8f359p-997 (;=1e-300;)
+            f64.mul
+            get_local 4
+            i32.const 0
+            i32.lt_s
+            select
+            return
+          end
+          block  ;; label = @4
+            get_local 10
+            i32.const 1072693249
+            i32.lt_u
+            br_if 0 (;@4;)
+            get_local 13
+            f64.const 0x1.7e43c8800759cp+996 (;=1e+300;)
+            f64.mul
+            f64.const 0x1.7e43c8800759cp+996 (;=1e+300;)
+            f64.mul
+            get_local 13
+            f64.const 0x1.56e1fc2f8f359p-997 (;=1e-300;)
+            f64.mul
+            f64.const 0x1.56e1fc2f8f359p-997 (;=1e-300;)
+            f64.mul
+            get_local 4
+            i32.const 0
+            i32.gt_s
+            select
+            return
+          end
+          get_local 2
+          f64.const -0x1p+0 (;=-1;)
+          f64.add
+          tee_local 0
+          f64.const 0x1.715476p+0 (;=1.4427;)
+          f64.mul
+          tee_local 2
+          get_local 0
+          f64.const 0x1.4ae0bf85ddf44p-26 (;=1.92596e-08;)
+          f64.mul
+          get_local 0
+          get_local 0
+          f64.mul
+          f64.const 0x1p-1 (;=0.5;)
+          get_local 0
+          get_local 0
+          f64.const -0x1p-2 (;=-0.25;)
+          f64.mul
+          f64.const 0x1.5555555555555p-2 (;=0.333333;)
+          f64.add
+          f64.mul
+          f64.sub
+          f64.mul
+          f64.const -0x1.71547652b82fep+0 (;=-1.4427;)
+          f64.mul
+          f64.add
+          tee_local 14
+          f64.add
+          i64.reinterpret/f64
+          i64.const -4294967296
+          i64.and
+          f64.reinterpret/i64
+          tee_local 0
+          get_local 2
+          f64.sub
+          set_local 15
+          br 1 (;@2;)
+        end
+        i32.const 0
+        set_local 5
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 10
+            i32.const 1048575
+            i32.le_u
+            br_if 0 (;@4;)
+            i32.const 0
+            set_local 4
+            br 1 (;@3;)
+          end
+          get_local 2
+          f64.const 0x1p+53 (;=9.0072e+15;)
+          f64.mul
+          tee_local 2
+          i64.reinterpret/f64
+          i64.const 32
+          i64.shr_u
+          i32.wrap/i64
+          set_local 10
+          i32.const -53
+          set_local 4
+        end
+        get_local 10
+        i32.const 1048575
+        i32.and
+        tee_local 6
+        i32.const 1072693248
+        i32.or
+        set_local 8
+        get_local 10
+        i32.const 20
+        i32.shr_s
+        get_local 4
+        i32.add
+        i32.const -1023
+        i32.add
+        set_local 4
+        block  ;; label = @3
+          get_local 6
+          i32.const 235663
+          i32.lt_u
+          br_if 0 (;@3;)
+          block  ;; label = @4
+            get_local 6
+            i32.const 767610
+            i32.ge_u
+            br_if 0 (;@4;)
+            i32.const 1
+            set_local 5
+            br 1 (;@3;)
+          end
+          get_local 8
+          i32.const -1048576
+          i32.add
+          set_local 8
+          get_local 4
+          i32.const 1
+          i32.add
+          set_local 4
+        end
+        get_local 5
+        i32.const 3
+        i32.shl
+        tee_local 6
+        i32.const 12096
+        i32.add
+        f64.load
+        tee_local 15
+        get_local 8
+        i64.extend_u/i32
+        i64.const 32
+        i64.shl
+        get_local 2
+        i64.reinterpret/f64
+        i64.const 4294967295
+        i64.and
+        i64.or
+        f64.reinterpret/i64
+        tee_local 16
+        get_local 6
+        i32.const 12064
+        i32.add
+        f64.load
+        tee_local 14
+        f64.sub
+        tee_local 17
+        f64.const 0x1p+0 (;=1;)
+        get_local 14
+        get_local 16
+        f64.add
+        f64.div
+        tee_local 18
+        f64.mul
+        tee_local 2
+        i64.reinterpret/f64
+        i64.const -4294967296
+        i64.and
+        f64.reinterpret/i64
+        tee_local 0
+        get_local 0
+        get_local 0
+        f64.mul
+        tee_local 19
+        f64.const 0x1.8p+1 (;=3;)
+        f64.add
+        get_local 2
+        get_local 0
+        f64.add
+        get_local 18
+        get_local 17
+        get_local 0
+        get_local 8
+        i32.const 1
+        i32.shr_s
+        i32.const 536870912
+        i32.or
+        get_local 5
+        i32.const 18
+        i32.shl
+        i32.add
+        i32.const 524288
+        i32.add
+        i64.extend_u/i32
+        i64.const 32
+        i64.shl
+        f64.reinterpret/i64
+        tee_local 20
+        f64.mul
+        f64.sub
+        get_local 0
+        get_local 16
+        get_local 20
+        get_local 14
+        f64.sub
+        f64.sub
+        f64.mul
+        f64.sub
+        f64.mul
+        tee_local 16
+        f64.mul
+        get_local 2
+        get_local 2
+        f64.mul
+        tee_local 0
+        get_local 0
+        f64.mul
+        get_local 0
+        get_local 0
+        get_local 0
+        get_local 0
+        get_local 0
+        f64.const 0x1.a7e284a454eefp-3 (;=0.206975;)
+        f64.mul
+        f64.const 0x1.d864a93c9db65p-3 (;=0.230661;)
+        f64.add
+        f64.mul
+        f64.const 0x1.17460a91d4101p-2 (;=0.272728;)
+        f64.add
+        f64.mul
+        f64.const 0x1.55555518f264dp-2 (;=0.333333;)
+        f64.add
+        f64.mul
+        f64.const 0x1.b6db6db6fabffp-2 (;=0.428571;)
+        f64.add
+        f64.mul
+        f64.const 0x1.3333333333303p-1 (;=0.6;)
+        f64.add
+        f64.mul
+        f64.add
+        tee_local 14
+        f64.add
+        i64.reinterpret/f64
+        i64.const -4294967296
+        i64.and
+        f64.reinterpret/i64
+        tee_local 0
+        f64.mul
+        tee_local 17
+        get_local 16
+        get_local 0
+        f64.mul
+        get_local 2
+        get_local 14
+        get_local 0
+        f64.const -0x1.8p+1 (;=-3;)
+        f64.add
+        get_local 19
+        f64.sub
+        f64.sub
+        f64.mul
+        f64.add
+        tee_local 2
+        f64.add
+        i64.reinterpret/f64
+        i64.const -4294967296
+        i64.and
+        f64.reinterpret/i64
+        tee_local 0
+        f64.const 0x1.ec709ep-1 (;=0.961797;)
+        f64.mul
+        tee_local 16
+        get_local 6
+        i32.const 12080
+        i32.add
+        f64.load
+        get_local 2
+        get_local 0
+        get_local 17
+        f64.sub
+        f64.sub
+        f64.const 0x1.ec709dc3a03fdp-1 (;=0.961797;)
+        f64.mul
+        get_local 0
+        f64.const -0x1.e2fe0145b01f5p-28 (;=-7.02846e-09;)
+        f64.mul
+        f64.add
+        f64.add
+        tee_local 14
+        f64.add
+        f64.add
+        get_local 4
+        f64.convert_s/i32
+        tee_local 2
+        f64.add
+        i64.reinterpret/f64
+        i64.const -4294967296
+        i64.and
+        f64.reinterpret/i64
+        tee_local 0
+        get_local 2
+        f64.sub
+        get_local 15
+        f64.sub
+        get_local 16
+        f64.sub
+        set_local 15
+      end
+      get_local 0
+      get_local 3
+      i64.const -4294967296
+      i64.and
+      f64.reinterpret/i64
+      tee_local 16
+      f64.mul
+      tee_local 2
+      get_local 14
+      get_local 15
+      f64.sub
+      get_local 1
+      f64.mul
+      get_local 1
+      get_local 16
+      f64.sub
+      get_local 0
+      f64.mul
+      f64.add
+      tee_local 1
+      f64.add
+      tee_local 0
+      i64.reinterpret/f64
+      tee_local 3
+      i32.wrap/i64
+      set_local 5
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 3
+          i64.const 32
+          i64.shr_u
+          i32.wrap/i64
+          tee_local 8
+          i32.const 1083179008
+          i32.lt_s
+          br_if 0 (;@3;)
+          block  ;; label = @4
+            get_local 8
+            i32.const -1083179008
+            i32.add
+            get_local 5
+            i32.or
+            i32.eqz
+            br_if 0 (;@4;)
+            get_local 13
+            f64.const 0x1.7e43c8800759cp+996 (;=1e+300;)
+            f64.mul
+            f64.const 0x1.7e43c8800759cp+996 (;=1e+300;)
+            f64.mul
+            return
+          end
+          get_local 1
+          f64.const 0x1.71547652b82fep-54 (;=8.00857e-17;)
+          f64.add
+          get_local 0
+          get_local 2
+          f64.sub
+          f64.gt
+          i32.const 1
+          i32.xor
+          br_if 1 (;@2;)
+          get_local 13
+          f64.const 0x1.7e43c8800759cp+996 (;=1e+300;)
+          f64.mul
+          f64.const 0x1.7e43c8800759cp+996 (;=1e+300;)
+          f64.mul
+          return
+        end
+        get_local 8
+        i32.const 2147482624
+        i32.and
+        i32.const 1083231232
+        i32.lt_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 8
+          i32.const 1064252416
+          i32.add
+          get_local 5
+          i32.or
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 13
+          f64.const 0x1.56e1fc2f8f359p-997 (;=1e-300;)
+          f64.mul
+          f64.const 0x1.56e1fc2f8f359p-997 (;=1e-300;)
+          f64.mul
+          return
+        end
+        get_local 1
+        get_local 0
+        get_local 2
+        f64.sub
+        f64.le
+        i32.const 1
+        i32.xor
+        br_if 0 (;@2;)
+        get_local 13
+        f64.const 0x1.56e1fc2f8f359p-997 (;=1e-300;)
+        f64.mul
+        f64.const 0x1.56e1fc2f8f359p-997 (;=1e-300;)
+        f64.mul
+        return
+      end
+      i32.const 0
+      set_local 5
+      block  ;; label = @2
+        get_local 8
+        i32.const 2147483647
+        i32.and
+        tee_local 6
+        i32.const 1071644673
+        i32.lt_u
+        br_if 0 (;@2;)
+        i32.const 0
+        i32.const 1048576
+        get_local 6
+        i32.const 20
+        i32.shr_u
+        i32.const -1022
+        i32.add
+        i32.shr_u
+        get_local 8
+        i32.add
+        tee_local 6
+        i32.const 1048575
+        i32.and
+        i32.const 1048576
+        i32.or
+        i32.const 1043
+        get_local 6
+        i32.const 20
+        i32.shr_u
+        i32.const 2047
+        i32.and
+        tee_local 4
+        i32.sub
+        i32.shr_u
+        tee_local 5
+        i32.sub
+        get_local 5
+        get_local 8
+        i32.const 0
+        i32.lt_s
+        select
+        set_local 5
+        get_local 1
+        get_local 2
+        i32.const -1048576
+        get_local 4
+        i32.const -1023
+        i32.add
+        i32.shr_s
+        get_local 6
+        i32.and
+        i64.extend_u/i32
+        i64.const 32
+        i64.shl
+        f64.reinterpret/i64
+        f64.sub
+        tee_local 2
+        f64.add
+        i64.reinterpret/f64
+        set_local 3
+      end
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 5
+          i32.const 20
+          i32.shl
+          get_local 3
+          i64.const -4294967296
+          i64.and
+          f64.reinterpret/i64
+          tee_local 0
+          f64.const 0x1.62e43p-1 (;=0.693147;)
+          f64.mul
+          tee_local 16
+          get_local 1
+          get_local 0
+          get_local 2
+          f64.sub
+          f64.sub
+          f64.const 0x1.62e42fefa39efp-1 (;=0.693147;)
+          f64.mul
+          get_local 0
+          f64.const -0x1.05c610ca86c39p-29 (;=-1.90465e-09;)
+          f64.mul
+          f64.add
+          tee_local 2
+          f64.add
+          tee_local 1
+          get_local 1
+          get_local 1
+          get_local 1
+          get_local 1
+          f64.mul
+          tee_local 0
+          get_local 0
+          get_local 0
+          get_local 0
+          get_local 0
+          f64.const 0x1.6376972bea4dp-25 (;=4.13814e-08;)
+          f64.mul
+          f64.const -0x1.bbd41c5d26bf1p-20 (;=-1.65339e-06;)
+          f64.add
+          f64.mul
+          f64.const 0x1.1566aaf25de2cp-14 (;=6.61376e-05;)
+          f64.add
+          f64.mul
+          f64.const -0x1.6c16c16bebd93p-9 (;=-0.00277778;)
+          f64.add
+          f64.mul
+          f64.const 0x1.555555555553ep-3 (;=0.166667;)
+          f64.add
+          f64.mul
+          f64.sub
+          tee_local 0
+          f64.mul
+          get_local 0
+          f64.const -0x1p+1 (;=-2;)
+          f64.add
+          f64.div
+          get_local 2
+          get_local 1
+          get_local 16
+          f64.sub
+          f64.sub
+          tee_local 0
+          get_local 1
+          get_local 0
+          f64.mul
+          f64.add
+          f64.sub
+          f64.sub
+          f64.const 0x1p+0 (;=1;)
+          f64.add
+          tee_local 1
+          i64.reinterpret/f64
+          tee_local 3
+          i64.const 32
+          i64.shr_u
+          i32.wrap/i64
+          i32.add
+          tee_local 8
+          i32.const 1048575
+          i32.gt_s
+          br_if 0 (;@3;)
+          get_local 1
+          get_local 5
+          call 72
+          set_local 1
+          br 1 (;@2;)
+        end
+        get_local 8
+        i64.extend_u/i32
+        i64.const 32
+        i64.shl
+        get_local 3
+        i64.const 4294967295
+        i64.and
+        i64.or
+        f64.reinterpret/i64
+        set_local 1
+      end
+      get_local 13
+      get_local 1
+      f64.mul
+      set_local 2
+    end
+    get_local 2)
+  (func (;127;) (type 7) (param i32)
+    (local i32 i64 i32 i32 i32 i32)
+    get_global 0
+    i32.const 80
+    i32.sub
+    tee_local 1
+    set_global 0
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 0
+        i64.load offset=8
+        i64.const -5046595206456016896
+        i64.ne
+        br_if 0 (;@2;)
+        get_local 1
+        get_local 0
+        i32.const 16
+        i32.add
+        call 128
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 0
+            i64.load
+            tee_local 2
+            i64.const 0
+            i64.ne
+            br_if 0 (;@4;)
+            i32.const 0
+            set_local 3
+            get_local 1
+            i32.const 72
+            i32.add
+            i32.const 0
+            i32.store
+            get_local 1
+            i64.const 0
+            i64.store offset=64
+            get_local 1
+            i32.const 64
+            i32.add
+            i32.const 1
+            i32.or
+            set_local 4
+            get_local 1
+            i32.const 64
+            i32.add
+            set_local 5
+            br 1 (;@3;)
+          end
+          i32.const 0
+          set_local 5
+          i32.const 0
+          i32.load offset=12112
+          set_local 6
+          block  ;; label = @4
+            loop  ;; label = @5
+              get_local 1
+              i32.const 24
+              i32.add
+              get_local 5
+              tee_local 4
+              i32.add
+              get_local 6
+              get_local 2
+              i64.const -576460752303423488
+              i64.and
+              i64.const 60
+              i64.const 59
+              get_local 4
+              i32.const 12
+              i32.eq
+              select
+              i64.shr_u
+              i32.wrap/i64
+              i32.add
+              i32.load8_u
+              i32.store8
+              get_local 4
+              i32.const 1
+              i32.add
+              set_local 5
+              get_local 4
+              i32.const 11
+              i32.gt_u
+              br_if 1 (;@4;)
+              get_local 2
+              i64.const 5
+              i64.shl
+              tee_local 2
+              i64.const 0
+              i64.ne
+              br_if 0 (;@5;)
+            end
+          end
+          get_local 1
+          i32.const 72
+          i32.add
+          i32.const 0
+          i32.store
+          get_local 1
+          i64.const 0
+          i64.store offset=64
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 5
+              i32.const 11
+              i32.lt_u
+              br_if 0 (;@5;)
+              get_local 5
+              i32.const 16
+              i32.add
+              i32.const -16
+              i32.and
+              tee_local 3
+              call 39
+              set_local 6
+              get_local 1
+              get_local 5
+              i32.store offset=68
+              get_local 1
+              get_local 3
+              i32.const 1
+              i32.or
+              tee_local 3
+              i32.store offset=64
+              get_local 1
+              get_local 6
+              i32.store offset=72
+              br 1 (;@4;)
+            end
+            get_local 1
+            get_local 5
+            i32.const 1
+            i32.shl
+            tee_local 3
+            i32.store8 offset=64
+            get_local 1
+            i32.const 64
+            i32.add
+            i32.const 1
+            i32.or
+            set_local 6
+          end
+          get_local 4
+          i32.const 1
+          i32.add
+          set_local 5
+          i32.const 0
+          set_local 4
+          loop  ;; label = @4
+            get_local 6
+            get_local 4
+            i32.add
+            get_local 1
+            i32.const 24
+            i32.add
+            get_local 4
+            i32.add
+            i32.load8_u
+            i32.store8
+            get_local 5
+            get_local 4
+            i32.const 1
+            i32.add
+            tee_local 4
+            i32.ne
+            br_if 0 (;@4;)
+          end
+          get_local 6
+          get_local 4
+          i32.add
+          set_local 4
+          get_local 1
+          i32.const 64
+          i32.add
+          set_local 5
+        end
+        get_local 4
+        i32.const 0
+        i32.store8
+        get_local 0
+        i64.load
+        call 4
+        i32.const 8264
+        call 5
+        get_local 1
+        i32.load offset=8
+        get_local 1
+        i32.const 1
+        i32.or
+        get_local 1
+        i32.load8_u
+        tee_local 4
+        i32.const 1
+        i32.and
+        tee_local 6
+        select
+        get_local 1
+        i32.load offset=4
+        get_local 4
+        i32.const 1
+        i32.shr_u
+        get_local 6
+        select
+        call 6
+        i32.const 11261
+        call 5
+        get_local 1
+        i32.load offset=72
+        get_local 5
+        i32.const 1
+        i32.add
+        get_local 3
+        i32.const 1
+        i32.and
+        tee_local 4
+        select
+        get_local 1
+        i32.load offset=68
+        get_local 3
+        i32.const 254
+        i32.and
+        i32.const 1
+        i32.shr_u
+        get_local 4
+        select
+        call 6
+        block  ;; label = @3
+          get_local 1
+          i32.load8_u offset=64
+          i32.const 1
+          i32.and
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 1
+          i32.load offset=72
+          call 40
+        end
+        block  ;; label = @3
+          get_local 1
+          i32.load8_u
+          i32.const 1
+          i32.and
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 1
+          i32.load offset=8
+          call 40
+        end
+        get_local 1
+        get_local 0
+        i64.load
+        i64.store
+        get_local 1
+        i32.const 8
+        i32.add
+        get_local 0
+        i32.const 32
+        i32.add
+        call 119
+        drop
+        get_local 1
+        i64.const -6030910005933244416
+        i64.store offset=32
+        get_local 1
+        i64.const -5046595206456016896
+        i64.store offset=24
+        i32.const 16
+        call 39
+        tee_local 4
+        i64.const 3617214756542218240
+        i64.store offset=8
+        get_local 4
+        i64.const -5046595206456016896
+        i64.store
+        get_local 1
+        i32.const 48
+        i32.add
+        get_local 4
+        i32.const 16
+        i32.add
+        tee_local 5
+        i32.store
+        get_local 1
+        i32.const 44
+        i32.add
+        get_local 5
+        i32.store
+        get_local 1
+        get_local 4
+        i32.store offset=40
+        get_local 1
+        i32.const 52
+        i32.add
+        get_local 1
+        call 129
+        get_local 1
+        i32.const 24
+        i32.add
+        call 130
+        block  ;; label = @3
+          get_local 1
+          i32.load offset=52
+          tee_local 4
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 1
+          i32.const 24
+          i32.add
+          i32.const 32
+          i32.add
+          get_local 4
+          i32.store
+          get_local 4
+          call 40
+        end
+        block  ;; label = @3
+          get_local 1
+          i32.load offset=40
+          tee_local 4
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 1
+          get_local 4
+          i32.store offset=44
+          get_local 4
+          call 40
+        end
+        get_local 1
+        i32.load8_u offset=8
+        i32.const 1
+        i32.and
+        i32.eqz
+        br_if 1 (;@1;)
+        get_local 1
+        i32.const 16
+        i32.add
+        i32.load
+        call 40
+        br 1 (;@1;)
+      end
+      get_local 0
+      i64.load
+      i64.const -5046595206456016896
+      i64.ne
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 0
+      i32.const 16
+      i32.add
+      call 128
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 0
+          i64.load offset=8
+          tee_local 2
+          i64.const 0
+          i64.ne
+          br_if 0 (;@3;)
+          i32.const 0
+          set_local 3
+          get_local 1
+          i32.const 72
+          i32.add
+          i32.const 0
+          i32.store
+          get_local 1
+          i64.const 0
+          i64.store offset=64
+          get_local 1
+          i32.const 64
+          i32.add
+          i32.const 1
+          i32.or
+          set_local 4
+          get_local 1
+          i32.const 64
+          i32.add
+          set_local 5
+          br 1 (;@2;)
+        end
+        i32.const 0
+        set_local 5
+        i32.const 0
+        i32.load offset=12112
+        set_local 6
+        block  ;; label = @3
+          loop  ;; label = @4
+            get_local 1
+            i32.const 24
+            i32.add
+            get_local 5
+            tee_local 4
+            i32.add
+            get_local 6
+            get_local 2
+            i64.const -576460752303423488
+            i64.and
+            i64.const 60
+            i64.const 59
+            get_local 4
+            i32.const 12
+            i32.eq
+            select
+            i64.shr_u
+            i32.wrap/i64
+            i32.add
+            i32.load8_u
+            i32.store8
+            get_local 4
+            i32.const 1
+            i32.add
+            set_local 5
+            get_local 4
+            i32.const 11
+            i32.gt_u
+            br_if 1 (;@3;)
+            get_local 2
+            i64.const 5
+            i64.shl
+            tee_local 2
+            i64.const 0
+            i64.ne
+            br_if 0 (;@4;)
+          end
+        end
+        get_local 1
+        i32.const 72
+        i32.add
+        i32.const 0
+        i32.store
+        get_local 1
+        i64.const 0
+        i64.store offset=64
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 5
+            i32.const 11
+            i32.lt_u
+            br_if 0 (;@4;)
+            get_local 5
+            i32.const 16
+            i32.add
+            i32.const -16
+            i32.and
+            tee_local 3
+            call 39
+            set_local 6
+            get_local 1
+            get_local 5
+            i32.store offset=68
+            get_local 1
+            get_local 3
+            i32.const 1
+            i32.or
+            tee_local 3
+            i32.store offset=64
+            get_local 1
+            get_local 6
+            i32.store offset=72
+            br 1 (;@3;)
+          end
+          get_local 1
+          get_local 5
+          i32.const 1
+          i32.shl
+          tee_local 3
+          i32.store8 offset=64
+          get_local 1
+          i32.const 64
+          i32.add
+          i32.const 1
+          i32.or
+          set_local 6
+        end
+        get_local 4
+        i32.const 1
+        i32.add
+        set_local 5
+        i32.const 0
+        set_local 4
+        loop  ;; label = @3
+          get_local 6
+          get_local 4
+          i32.add
+          get_local 1
+          i32.const 24
+          i32.add
+          get_local 4
+          i32.add
+          i32.load8_u
+          i32.store8
+          get_local 5
+          get_local 4
+          i32.const 1
+          i32.add
+          tee_local 4
+          i32.ne
+          br_if 0 (;@3;)
+        end
+        get_local 6
+        get_local 4
+        i32.add
+        set_local 4
+        get_local 1
+        i32.const 64
+        i32.add
+        set_local 5
+      end
+      get_local 4
+      i32.const 0
+      i32.store8
+      get_local 0
+      i64.load
+      call 4
+      i32.const 11275
+      call 5
+      get_local 1
+      i32.load offset=8
+      get_local 1
+      i32.const 1
+      i32.or
+      get_local 1
+      i32.load8_u
+      tee_local 4
+      i32.const 1
+      i32.and
+      tee_local 6
+      select
+      get_local 1
+      i32.load offset=4
+      get_local 4
+      i32.const 1
+      i32.shr_u
+      get_local 6
+      select
+      call 6
+      i32.const 11302
+      call 5
+      get_local 1
+      i32.load offset=72
+      get_local 5
+      i32.const 1
+      i32.add
+      get_local 3
+      i32.const 1
+      i32.and
+      tee_local 4
+      select
+      get_local 1
+      i32.load offset=68
+      get_local 3
+      i32.const 254
+      i32.and
+      i32.const 1
+      i32.shr_u
+      get_local 4
+      select
+      call 6
+      block  ;; label = @2
+        get_local 1
+        i32.load8_u offset=64
+        i32.const 1
+        i32.and
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 1
+        i32.load offset=72
+        call 40
+      end
+      get_local 1
+      i32.load8_u
+      i32.const 1
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      i32.load offset=8
+      call 40
+    end
+    get_local 1
+    i32.const 80
+    i32.add
+    set_global 0)
+  (func (;128;) (type 5) (param i32 i32)
+    (local i32 i32 i32 i32 i32)
+    get_global 0
+    tee_local 2
+    set_local 3
+    get_local 2
+    get_local 1
+    i32.load8_u offset=8
+    tee_local 4
+    i32.const 19
+    get_local 4
+    i32.const 19
+    i32.gt_u
+    select
+    tee_local 4
+    i32.const 26
+    i32.add
+    i32.const 496
+    i32.and
+    i32.sub
+    tee_local 2
+    set_global 0
+    block  ;; label = @1
+      get_local 1
+      get_local 2
+      get_local 4
+      get_local 2
+      i32.add
+      i32.const 11
+      i32.add
+      tee_local 5
+      i32.const 0
+      call 131
+      tee_local 4
+      get_local 5
+      i32.le_u
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 11361
+      call 1
+    end
+    get_local 0
+    i64.const 0
+    i64.store align=4
+    get_local 0
+    i32.const 8
+    i32.add
+    i32.const 0
+    i32.store
+    block  ;; label = @1
+      get_local 4
+      get_local 2
+      i32.sub
+      tee_local 5
+      i32.const -16
+      i32.ge_u
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 5
+          i32.const 10
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 0
+          get_local 5
+          i32.const 1
+          i32.shl
+          i32.store8
+          get_local 0
+          i32.const 1
+          i32.add
+          set_local 1
+          br 1 (;@2;)
+        end
+        get_local 5
+        i32.const 16
+        i32.add
+        i32.const -16
+        i32.and
+        tee_local 6
+        call 39
+        set_local 1
+        get_local 0
+        get_local 5
+        i32.store offset=4
+        get_local 0
+        get_local 6
+        i32.const 1
+        i32.or
+        i32.store
+        get_local 0
+        get_local 1
+        i32.store offset=8
+      end
+      block  ;; label = @2
+        get_local 2
+        get_local 4
+        i32.eq
+        br_if 0 (;@2;)
+        loop  ;; label = @3
+          get_local 1
+          get_local 2
+          i32.load8_u
+          i32.store8
+          get_local 1
+          i32.const 1
+          i32.add
+          set_local 1
+          get_local 4
+          get_local 2
+          i32.const 1
+          i32.add
+          tee_local 2
+          i32.ne
+          br_if 0 (;@3;)
+        end
+      end
+      get_local 1
+      i32.const 0
+      i32.store8
+      get_local 3
+      set_global 0
+      return
+    end
+    get_local 0
+    call 118
+    unreachable)
+  (func (;129;) (type 5) (param i32 i32)
+    (local i32 i32 i32 i32 i64 i32 i32 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 0
+    i32.const 0
+    i32.store offset=8
+    get_local 0
+    i64.const 0
+    i64.store align=4
+    get_local 1
+    i32.const 12
+    i32.add
+    i32.load
+    tee_local 3
+    i64.extend_u/i32
+    i64.const 0
+    get_local 1
+    i32.load8_u offset=8
+    tee_local 4
+    i32.const 1
+    i32.and
+    tee_local 5
+    select
+    set_local 6
+    get_local 1
+    i32.const 8
+    i32.add
+    set_local 7
+    i32.const -8
+    set_local 8
+    loop  ;; label = @1
+      get_local 8
+      i32.const -1
+      i32.add
+      set_local 8
+      get_local 6
+      i64.const 7
+      i64.shr_u
+      tee_local 6
+      i64.const 0
+      i64.ne
+      br_if 0 (;@1;)
+    end
+    i32.const 0
+    set_local 9
+    i32.const 0
+    set_local 10
+    block  ;; label = @1
+      get_local 3
+      get_local 4
+      i32.const 1
+      i32.shr_u
+      get_local 5
+      select
+      tee_local 3
+      get_local 8
+      i32.eq
+      br_if 0 (;@1;)
+      get_local 0
+      get_local 3
+      get_local 8
+      i32.sub
+      call 132
+      get_local 0
+      i32.load offset=4
+      set_local 9
+      get_local 0
+      i32.load
+      set_local 10
+    end
+    get_local 2
+    get_local 10
+    i32.store offset=4
+    get_local 2
+    get_local 10
+    i32.store
+    get_local 2
+    get_local 9
+    i32.store offset=8
+    block  ;; label = @1
+      get_local 9
+      get_local 10
+      i32.sub
+      i32.const 7
+      i32.gt_s
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12149
+      call 1
+    end
+    get_local 10
+    get_local 1
+    i32.const 8
+    call 7
+    drop
+    get_local 2
+    get_local 10
+    i32.const 8
+    i32.add
+    i32.store offset=4
+    get_local 2
+    get_local 7
+    call 146
+    drop
+    get_local 2
+    i32.const 16
+    i32.add
+    set_global 0)
+  (func (;130;) (type 7) (param i32)
+    (local i32 i32 i32 i32 i64 i32)
+    get_global 0
+    i32.const 32
+    i32.sub
+    tee_local 1
+    set_global 0
+    get_local 1
+    i32.const 0
+    i32.store offset=8
+    get_local 1
+    i64.const 0
+    i64.store
+    get_local 0
+    i32.const 20
+    i32.add
+    i32.load
+    tee_local 2
+    get_local 0
+    i32.load offset=16
+    tee_local 3
+    i32.sub
+    tee_local 4
+    i32.const 4
+    i32.shr_s
+    i64.extend_u/i32
+    set_local 5
+    i32.const 16
+    set_local 6
+    loop  ;; label = @1
+      get_local 6
+      i32.const 1
+      i32.add
+      set_local 6
+      get_local 5
+      i64.const 7
+      i64.shr_u
+      tee_local 5
+      i64.const 0
+      i64.ne
+      br_if 0 (;@1;)
+    end
+    block  ;; label = @1
+      get_local 3
+      get_local 2
+      i32.eq
+      br_if 0 (;@1;)
+      get_local 4
+      i32.const -16
+      i32.and
+      get_local 6
+      i32.add
+      set_local 6
+    end
+    get_local 6
+    get_local 0
+    i32.const 32
+    i32.add
+    i32.load
+    tee_local 2
+    i32.add
+    get_local 0
+    i32.load offset=28
+    tee_local 3
+    i32.sub
+    set_local 6
+    get_local 2
+    get_local 3
+    i32.sub
+    i64.extend_u/i32
+    set_local 5
+    loop  ;; label = @1
+      get_local 6
+      i32.const 1
+      i32.add
+      set_local 6
+      get_local 5
+      i64.const 7
+      i64.shr_u
+      tee_local 5
+      i64.const 0
+      i64.ne
+      br_if 0 (;@1;)
+    end
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 6
+        br_if 0 (;@2;)
+        i32.const 0
+        set_local 2
+        i32.const 0
+        set_local 6
+        br 1 (;@1;)
+      end
+      get_local 1
+      get_local 6
+      call 132
+      get_local 1
+      i32.load offset=4
+      set_local 2
+      get_local 1
+      i32.load
+      set_local 6
+    end
+    get_local 1
+    get_local 2
+    i32.store offset=24
+    get_local 1
+    get_local 6
+    i32.store offset=20
+    get_local 1
+    get_local 6
+    i32.store offset=16
+    get_local 1
+    i32.const 16
+    i32.add
+    get_local 0
+    call 133
+    drop
+    get_local 1
+    i32.load
+    tee_local 6
+    get_local 1
+    i32.load offset=4
+    get_local 6
+    i32.sub
+    call 22
+    block  ;; label = @1
+      get_local 1
+      i32.load
+      tee_local 6
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 6
+      i32.store offset=4
+      get_local 6
+      call 40
+    end
+    get_local 1
+    i32.const 32
+    i32.add
+    set_global 0)
+  (func (;131;) (type 32) (param i32 i32 i32 i32) (result i32)
+    (local i64 i64 i64 i32 i32 i32 i64)
+    get_local 0
+    i64.load
+    tee_local 4
+    get_local 4
+    i64.const 63
+    i64.shr_s
+    tee_local 5
+    i64.add
+    get_local 5
+    i64.xor
+    set_local 6
+    get_local 0
+    i32.load offset=8
+    tee_local 7
+    i32.const 255
+    i32.and
+    set_local 8
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 3
+          br_if 0 (;@3;)
+          get_local 8
+          i32.const 19
+          get_local 8
+          i32.const 19
+          i32.gt_u
+          select
+          get_local 1
+          i32.add
+          i32.const 11
+          i32.add
+          get_local 2
+          i32.le_u
+          br_if 1 (;@2;)
+        end
+        get_local 1
+        get_local 2
+        i32.const 1
+        get_local 6
+        get_local 8
+        get_local 4
+        i64.const 63
+        i64.shr_u
+        i32.wrap/i64
+        call 123
+        i32.const 1
+        i32.add
+        set_local 9
+        i32.const 0
+        set_local 8
+        block  ;; label = @3
+          get_local 0
+          i64.load offset=8
+          tee_local 5
+          i64.const 65280
+          i64.and
+          i64.eqz
+          br_if 0 (;@3;)
+          loop  ;; label = @4
+            get_local 8
+            i32.const 1
+            i32.add
+            tee_local 8
+            i32.const 7
+            i32.gt_u
+            br_if 1 (;@3;)
+            get_local 5
+            i64.const 16711680
+            i64.and
+            set_local 10
+            get_local 5
+            i64.const 8
+            i64.shr_u
+            set_local 5
+            get_local 10
+            i64.const 0
+            i64.ne
+            br_if 0 (;@4;)
+          end
+        end
+        get_local 9
+        get_local 8
+        i32.add
+        tee_local 8
+        get_local 2
+        i32.gt_u
+        br_if 1 (;@1;)
+        get_local 8
+        get_local 1
+        i32.lt_u
+        br_if 1 (;@1;)
+        get_local 3
+        br_if 1 (;@1;)
+      end
+      i32.const 0
+      set_local 8
+      get_local 1
+      get_local 2
+      i32.const 0
+      get_local 6
+      get_local 7
+      i32.const 255
+      i32.and
+      get_local 4
+      i64.const 63
+      i64.shr_u
+      i32.wrap/i64
+      call 123
+      tee_local 3
+      i32.const 32
+      i32.store8
+      get_local 3
+      i32.const 1
+      i32.add
+      set_local 1
+      get_local 0
+      i64.load offset=8
+      tee_local 10
+      i64.const 8
+      i64.shr_u
+      set_local 5
+      block  ;; label = @2
+        get_local 3
+        i32.const 8
+        i32.add
+        get_local 2
+        i32.le_u
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 10
+          i64.const 65280
+          i64.and
+          i64.eqz
+          br_if 0 (;@3;)
+          i32.const 0
+          set_local 8
+          get_local 5
+          set_local 10
+          loop  ;; label = @4
+            get_local 8
+            i32.const 1
+            i32.add
+            tee_local 8
+            i32.const 7
+            i32.gt_u
+            br_if 1 (;@3;)
+            get_local 10
+            i64.const 65280
+            i64.and
+            set_local 4
+            get_local 10
+            i64.const 8
+            i64.shr_u
+            set_local 10
+            get_local 4
+            i64.const 0
+            i64.ne
+            br_if 0 (;@4;)
+          end
+        end
+        get_local 1
+        get_local 8
+        i32.add
+        tee_local 8
+        get_local 2
+        i32.gt_u
+        br_if 1 (;@1;)
+      end
+      block  ;; label = @2
+        get_local 5
+        i64.eqz
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 1
+        return
+      end
+      i32.const 0
+      set_local 8
+      block  ;; label = @2
+        loop  ;; label = @3
+          get_local 1
+          get_local 8
+          i32.add
+          get_local 5
+          i64.store8
+          get_local 8
+          i32.const 1
+          i32.add
+          set_local 2
+          get_local 8
+          i32.const 5
+          i32.gt_u
+          br_if 1 (;@2;)
+          get_local 2
+          set_local 8
+          get_local 5
+          i64.const 8
+          i64.shr_u
+          tee_local 5
+          i64.const 0
+          i64.ne
+          br_if 0 (;@3;)
+        end
+      end
+      get_local 1
+      get_local 2
+      i32.add
+      set_local 8
+    end
+    get_local 8)
+  (func (;132;) (type 5) (param i32 i32)
+    (local i32 i32 i32 i32 i32)
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 0
+          i32.load offset=8
+          tee_local 2
+          get_local 0
+          i32.load offset=4
+          tee_local 3
+          i32.sub
+          get_local 1
+          i32.lt_u
+          br_if 0 (;@3;)
+          loop  ;; label = @4
+            get_local 3
+            i32.const 0
+            i32.store8
+            get_local 0
+            get_local 0
+            i32.load offset=4
+            i32.const 1
+            i32.add
+            tee_local 3
+            i32.store offset=4
+            get_local 1
+            i32.const -1
+            i32.add
+            tee_local 1
+            br_if 0 (;@4;)
+            br 2 (;@2;)
+          end
+        end
+        get_local 3
+        get_local 0
+        i32.load
+        tee_local 4
+        i32.sub
+        tee_local 5
+        get_local 1
+        i32.add
+        tee_local 6
+        i32.const -1
+        i32.le_s
+        br_if 1 (;@1;)
+        i32.const 2147483647
+        set_local 3
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 2
+            get_local 4
+            i32.sub
+            tee_local 2
+            i32.const 1073741822
+            i32.gt_u
+            br_if 0 (;@4;)
+            get_local 6
+            get_local 2
+            i32.const 1
+            i32.shl
+            tee_local 3
+            get_local 3
+            get_local 6
+            i32.lt_u
+            select
+            tee_local 3
+            br_if 0 (;@4;)
+            i32.const 0
+            set_local 3
+            i32.const 0
+            set_local 2
+            br 1 (;@3;)
+          end
+          get_local 3
+          call 39
+          set_local 2
+        end
+        get_local 2
+        get_local 3
+        i32.add
+        set_local 6
+        get_local 2
+        get_local 5
+        i32.add
+        tee_local 4
+        set_local 3
+        loop  ;; label = @3
+          get_local 3
+          i32.const 0
+          i32.store8
+          get_local 3
+          i32.const 1
+          i32.add
+          set_local 3
+          get_local 1
+          i32.const -1
+          i32.add
+          tee_local 1
+          br_if 0 (;@3;)
+        end
+        get_local 4
+        get_local 0
+        i32.load offset=4
+        get_local 0
+        i32.load
+        tee_local 1
+        i32.sub
+        tee_local 2
+        i32.sub
+        set_local 4
+        block  ;; label = @3
+          get_local 2
+          i32.const 1
+          i32.lt_s
+          br_if 0 (;@3;)
+          get_local 4
+          get_local 1
+          get_local 2
+          call 7
+          drop
+          get_local 0
+          i32.load
+          set_local 1
+        end
+        get_local 0
+        get_local 6
+        i32.store offset=8
+        get_local 0
+        get_local 3
+        i32.store offset=4
+        get_local 0
+        get_local 4
+        i32.store
+        get_local 1
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 1
+        call 40
+      end
+      return
+    end
+    get_local 0
+    call 121
+    unreachable)
+  (func (;133;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32)
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=8
+      get_local 0
+      i32.load offset=4
+      tee_local 2
+      i32.sub
+      i32.const 7
+      i32.gt_s
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12149
+      call 1
+      get_local 0
+      i32.load offset=4
+      set_local 2
+    end
+    get_local 2
+    get_local 1
+    i32.const 8
+    call 7
+    drop
+    get_local 0
+    get_local 0
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    tee_local 2
+    i32.store offset=4
+    get_local 1
+    i32.const 8
+    i32.add
+    set_local 3
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=8
+      get_local 2
+      i32.sub
+      i32.const 7
+      i32.gt_s
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12149
+      call 1
+      get_local 0
+      i32.load offset=4
+      set_local 2
+    end
+    get_local 2
+    get_local 3
+    i32.const 8
+    call 7
+    drop
+    get_local 0
+    get_local 0
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    i32.store offset=4
+    get_local 0
+    get_local 1
+    i32.const 16
+    i32.add
+    call 144
+    get_local 1
+    i32.const 28
+    i32.add
+    call 145)
+  (func (;134;) (type 35) (param i64 i64 i64)
+    (local i32)
+    get_global 0
+    i32.const 112
+    i32.sub
+    tee_local 3
+    set_global 0
+    get_local 0
+    call 122
+    call 31
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 1
+        get_local 0
+        i64.ne
+        br_if 0 (;@2;)
+        get_local 3
+        i32.const 11309
+        i32.store offset=104
+        get_local 3
+        i32.const 11309
+        call 41
+        i32.store offset=108
+        get_local 3
+        get_local 3
+        i64.load offset=104
+        i64.store offset=8
+        get_local 3
+        i32.const 32
+        i32.add
+        get_local 3
+        i32.const 8
+        i32.add
+        call 135
+        drop
+        block  ;; label = @3
+          get_local 2
+          i64.const -6030910005933244416
+          i64.ne
+          br_if 0 (;@3;)
+          get_local 3
+          i32.const 0
+          i32.store offset=100
+          get_local 3
+          i32.const 7
+          i32.store offset=96
+          get_local 3
+          get_local 3
+          i64.load offset=96
+          i64.store
+          get_local 1
+          get_local 1
+          get_local 3
+          call 137
+          drop
+          br 2 (;@1;)
+        end
+        i32.const 11319
+        call 5
+        br 1 (;@1;)
+      end
+      get_local 3
+      i32.const 11336
+      i32.store offset=88
+      get_local 3
+      i32.const 11336
+      call 41
+      i32.store offset=92
+      get_local 3
+      get_local 3
+      i64.load offset=88
+      i64.store offset=24
+      get_local 3
+      i32.const 32
+      i32.add
+      get_local 3
+      i32.const 24
+      i32.add
+      call 135
+      drop
+      get_local 1
+      i64.const 6138663591592764928
+      i64.ne
+      br_if 0 (;@1;)
+      get_local 3
+      i32.const 11350
+      i32.store offset=80
+      get_local 3
+      i32.const 11350
+      call 41
+      i32.store offset=84
+      get_local 3
+      get_local 3
+      i64.load offset=80
+      i64.store offset=16
+      get_local 3
+      i32.const 32
+      i32.add
+      get_local 3
+      i32.const 16
+      i32.add
+      call 135
+      drop
+      get_local 2
+      i64.const -3617168760277827584
+      i64.ne
+      br_if 0 (;@1;)
+      get_local 3
+      i32.const 32
+      i32.add
+      call 138
+      get_local 3
+      i32.const 32
+      i32.add
+      call 127
+      get_local 3
+      i32.load8_u offset=64
+      i32.const 1
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 3
+      i32.const 72
+      i32.add
+      i32.load
+      call 40
+    end
+    i32.const 0
+    call 124
+    get_local 3
+    i32.const 112
+    i32.add
+    set_global 0)
+  (func (;135;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32 i64 i32 i32 i32)
+    get_local 0
+    i64.const 0
+    i64.store
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 1
+            i32.load offset=4
+            tee_local 2
+            i32.const 14
+            i32.lt_u
+            br_if 0 (;@4;)
+            i32.const 0
+            i32.const 12192
+            call 1
+            i32.const 12
+            set_local 3
+            br 1 (;@3;)
+          end
+          get_local 2
+          i32.eqz
+          br_if 2 (;@1;)
+          get_local 2
+          i32.const 12
+          get_local 2
+          i32.const 12
+          i32.lt_u
+          select
+          tee_local 3
+          br_if 0 (;@3;)
+          get_local 0
+          i64.load
+          set_local 4
+          i32.const 0
+          set_local 3
+          br 1 (;@2;)
+        end
+        get_local 0
+        i64.load
+        set_local 4
+        get_local 1
+        i32.load
+        set_local 5
+        i32.const 0
+        set_local 6
+        loop  ;; label = @3
+          get_local 0
+          get_local 4
+          i64.const 5
+          i64.shl
+          tee_local 4
+          i64.store
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 5
+              get_local 6
+              i32.add
+              i32.load8_u
+              tee_local 7
+              i32.const 46
+              i32.ne
+              br_if 0 (;@5;)
+              i32.const 0
+              set_local 7
+              br 1 (;@4;)
+            end
+            block  ;; label = @5
+              get_local 7
+              i32.const -49
+              i32.add
+              i32.const 255
+              i32.and
+              i32.const 4
+              i32.gt_u
+              br_if 0 (;@5;)
+              get_local 7
+              i32.const -48
+              i32.add
+              set_local 7
+              br 1 (;@4;)
+            end
+            block  ;; label = @5
+              get_local 7
+              i32.const -97
+              i32.add
+              i32.const 255
+              i32.and
+              i32.const 25
+              i32.gt_u
+              br_if 0 (;@5;)
+              get_local 7
+              i32.const -91
+              i32.add
+              set_local 7
+              br 1 (;@4;)
+            end
+            i32.const 0
+            set_local 7
+            i32.const 0
+            i32.const 12297
+            call 1
+            get_local 0
+            i64.load
+            set_local 4
+          end
+          get_local 0
+          get_local 4
+          get_local 7
+          i64.extend_u/i32
+          i64.const 255
+          i64.and
+          i64.or
+          tee_local 4
+          i64.store
+          get_local 6
+          i32.const 1
+          i32.add
+          tee_local 6
+          get_local 3
+          i32.lt_u
+          br_if 0 (;@3;)
+        end
+      end
+      get_local 0
+      get_local 4
+      i32.const 12
+      get_local 3
+      i32.sub
+      i32.const 5
+      i32.mul
+      i32.const 4
+      i32.add
+      i64.extend_u/i32
+      i64.shl
+      i64.store
+      get_local 2
+      i32.const 13
+      i32.ne
+      br_if 0 (;@1;)
+      i64.const 0
+      set_local 4
+      block  ;; label = @2
+        get_local 1
+        i32.load
+        i32.load8_u offset=12
+        tee_local 6
+        i32.const 46
+        i32.eq
+        br_if 0 (;@2;)
+        block  ;; label = @3
+          get_local 6
+          i32.const -49
+          i32.add
+          i32.const 255
+          i32.and
+          i32.const 4
+          i32.gt_u
+          br_if 0 (;@3;)
+          get_local 6
+          i32.const -48
+          i32.add
+          i64.extend_u/i32
+          i64.const 255
+          i64.and
+          set_local 4
+          br 1 (;@2;)
+        end
+        block  ;; label = @3
+          get_local 6
+          i32.const -97
+          i32.add
+          i32.const 255
+          i32.and
+          i32.const 26
+          i32.lt_u
+          br_if 0 (;@3;)
+          i32.const 0
+          i32.const 12297
+          call 1
+          br 1 (;@2;)
+        end
+        get_local 6
+        i32.const -91
+        i32.add
+        tee_local 6
+        i64.extend_u/i32
+        i64.const 255
+        i64.and
+        set_local 4
+        get_local 6
+        i32.const 255
+        i32.and
+        i32.const 16
+        i32.lt_u
+        br_if 0 (;@2;)
+        i32.const 0
+        i32.const 12230
+        call 1
+      end
+      get_local 0
+      get_local 0
+      i64.load
+      get_local 4
+      i64.or
+      i64.store
+    end
+    get_local 0)
+  (func (;136;) (type 4) (param i32 i64 i32)
+    (local i32 i32 i32 i64 f64 i64 i64 i64 i64 i32 i32 i32)
+    get_global 0
+    i32.const 144
+    i32.sub
+    tee_local 3
+    set_global 0
+    i32.const 11309
+    call 5
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              i32.const 12349
+              call 41
+              tee_local 4
+              get_local 2
+              i32.load offset=4
+              get_local 2
+              i32.load8_u
+              tee_local 5
+              i32.const 1
+              i32.shr_u
+              get_local 5
+              i32.const 1
+              i32.and
+              select
+              i32.ne
+              br_if 0 (;@5;)
+              get_local 2
+              i32.const 0
+              i32.const -1
+              i32.const 12349
+              get_local 4
+              call 120
+              br_if 0 (;@5;)
+              i32.const 12349
+              call 5
+              get_local 0
+              i64.load
+              set_local 6
+              f64.const 0x1.4p+3 (;=10;)
+              f64.const 0x1p+2 (;=4;)
+              call 126
+              set_local 7
+              i32.const 12353
+              call 41
+              tee_local 2
+              i32.const 8
+              i32.lt_u
+              set_local 0
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 7
+                  get_local 7
+                  f64.add
+                  tee_local 7
+                  f64.abs
+                  f64.const 0x1p+63 (;=9.22337e+18;)
+                  f64.lt
+                  i32.eqz
+                  br_if 0 (;@7;)
+                  get_local 7
+                  i64.trunc_s/f64
+                  set_local 8
+                  br 1 (;@6;)
+                end
+                i64.const -9223372036854775808
+                set_local 8
+              end
+              block  ;; label = @6
+                get_local 0
+                br_if 0 (;@6;)
+                i32.const 0
+                i32.const 12379
+                call 1
+                br 2 (;@4;)
+              end
+              get_local 2
+              br_if 1 (;@4;)
+              i64.const 4
+              set_local 9
+              br 2 (;@3;)
+            end
+            i32.const 12365
+            call 5
+            get_local 0
+            i64.load
+            set_local 6
+            f64.const 0x1.4p+3 (;=10;)
+            f64.const 0x1p+2 (;=4;)
+            call 126
+            set_local 7
+            i32.const 12353
+            call 41
+            tee_local 2
+            i32.const 8
+            i32.lt_u
+            set_local 0
+            block  ;; label = @5
+              block  ;; label = @6
+                get_local 7
+                f64.abs
+                f64.const 0x1p+63 (;=9.22337e+18;)
+                f64.lt
+                i32.eqz
+                br_if 0 (;@6;)
+                get_local 7
+                i64.trunc_s/f64
+                set_local 8
+                br 1 (;@5;)
+              end
+              i64.const -9223372036854775808
+              set_local 8
+            end
+            block  ;; label = @5
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 0
+                  br_if 0 (;@7;)
+                  i32.const 0
+                  i32.const 12379
+                  call 1
+                  br 1 (;@6;)
+                end
+                get_local 2
+                br_if 0 (;@6;)
+                i64.const 4
+                set_local 9
+                br 1 (;@5;)
+              end
+              i64.const 0
+              set_local 10
+              loop  ;; label = @6
+                block  ;; label = @7
+                  get_local 2
+                  i32.const 12352
+                  i32.add
+                  i32.load8_u
+                  tee_local 0
+                  i32.const -65
+                  i32.add
+                  i32.const 255
+                  i32.and
+                  i32.const 26
+                  i32.lt_u
+                  br_if 0 (;@7;)
+                  i32.const 0
+                  i32.const 12424
+                  call 1
+                end
+                get_local 10
+                i64.const 8
+                i64.shl
+                get_local 0
+                i64.extend_u/i32
+                i64.const 56
+                i64.shl
+                i64.const 56
+                i64.shr_s
+                i64.or
+                set_local 10
+                get_local 2
+                i32.const -1
+                i32.add
+                tee_local 2
+                br_if 0 (;@6;)
+              end
+              get_local 10
+              i64.const 8
+              i64.shl
+              i64.const 4
+              i64.or
+              set_local 9
+            end
+            block  ;; label = @5
+              get_local 8
+              i64.const 4611686018427387903
+              i64.add
+              i64.const 9223372036854775807
+              i64.lt_u
+              br_if 0 (;@5;)
+              i32.const 0
+              i32.const 12477
+              call 1
+            end
+            get_local 9
+            i64.const 8
+            i64.shr_u
+            set_local 10
+            i32.const 0
+            set_local 2
+            block  ;; label = @5
+              block  ;; label = @6
+                loop  ;; label = @7
+                  get_local 10
+                  i32.wrap/i64
+                  i32.const 24
+                  i32.shl
+                  i32.const -1073741825
+                  i32.add
+                  i32.const 452984830
+                  i32.gt_u
+                  br_if 1 (;@6;)
+                  get_local 10
+                  i64.const 8
+                  i64.shr_u
+                  set_local 11
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      get_local 10
+                      i64.const 65280
+                      i64.and
+                      i64.const 0
+                      i64.eq
+                      br_if 0 (;@9;)
+                      get_local 11
+                      set_local 10
+                      br 1 (;@8;)
+                    end
+                    get_local 11
+                    set_local 10
+                    loop  ;; label = @9
+                      get_local 10
+                      i64.const 65280
+                      i64.and
+                      i64.const 0
+                      i64.ne
+                      br_if 3 (;@6;)
+                      get_local 10
+                      i64.const 8
+                      i64.shr_u
+                      set_local 10
+                      get_local 2
+                      i32.const 1
+                      i32.add
+                      tee_local 2
+                      i32.const 7
+                      i32.lt_s
+                      br_if 0 (;@9;)
+                    end
+                  end
+                  get_local 2
+                  i32.const 1
+                  i32.add
+                  tee_local 2
+                  i32.const 7
+                  i32.lt_s
+                  br_if 0 (;@7;)
+                  br 2 (;@5;)
+                end
+              end
+              i32.const 0
+              i32.const 12526
+              call 1
+            end
+            get_local 3
+            i32.const 16
+            i32.add
+            i32.const 0
+            i32.store
+            get_local 3
+            i64.const 0
+            i64.store offset=8
+            block  ;; label = @5
+              i32.const 12370
+              call 41
+              tee_local 2
+              i32.const -16
+              i32.ge_u
+              br_if 0 (;@5;)
+              block  ;; label = @6
+                block  ;; label = @7
+                  block  ;; label = @8
+                    get_local 2
+                    i32.const 11
+                    i32.lt_u
+                    br_if 0 (;@8;)
+                    get_local 2
+                    i32.const 16
+                    i32.add
+                    i32.const -16
+                    i32.and
+                    tee_local 5
+                    call 39
+                    set_local 0
+                    get_local 3
+                    get_local 2
+                    i32.store offset=12
+                    get_local 3
+                    get_local 5
+                    i32.const 1
+                    i32.or
+                    i32.store offset=8
+                    get_local 3
+                    get_local 0
+                    i32.store offset=16
+                    br 1 (;@7;)
+                  end
+                  get_local 3
+                  get_local 2
+                  i32.const 1
+                  i32.shl
+                  i32.store8 offset=8
+                  get_local 3
+                  i32.const 8
+                  i32.add
+                  i32.const 1
+                  i32.or
+                  set_local 0
+                  get_local 2
+                  i32.eqz
+                  br_if 1 (;@6;)
+                end
+                get_local 0
+                i32.const 12370
+                get_local 2
+                call 7
+                drop
+              end
+              get_local 0
+              get_local 2
+              i32.add
+              i32.const 0
+              i32.store8
+              get_local 3
+              i32.const 24
+              i32.add
+              i32.const 24
+              i32.add
+              get_local 9
+              i64.store
+              get_local 3
+              i32.const 16
+              i32.add
+              tee_local 2
+              i32.load
+              set_local 0
+              get_local 2
+              i32.const 0
+              i32.store
+              get_local 3
+              i32.const 64
+              i32.add
+              get_local 0
+              i32.store
+              get_local 3
+              get_local 8
+              i64.store offset=40
+              get_local 3
+              get_local 1
+              i64.store offset=32
+              get_local 3
+              get_local 6
+              i64.store offset=24
+              get_local 3
+              i64.const -3617168760277827584
+              i64.store offset=80
+              get_local 3
+              i64.const 6138663591592764928
+              i64.store offset=72
+              get_local 3
+              i64.load offset=8
+              set_local 10
+              get_local 3
+              i64.const 0
+              i64.store offset=8
+              get_local 3
+              get_local 10
+              i64.store offset=56
+              i32.const 16
+              call 39
+              tee_local 2
+              i64.const 3617214756542218240
+              i64.store offset=8
+              get_local 2
+              get_local 6
+              i64.store
+              get_local 3
+              i32.const 72
+              i32.add
+              i32.const 36
+              i32.add
+              i32.const 0
+              i32.store
+              get_local 3
+              i32.const 72
+              i32.add
+              i32.const 24
+              i32.add
+              get_local 2
+              i32.const 16
+              i32.add
+              tee_local 0
+              i32.store
+              get_local 3
+              i32.const 92
+              i32.add
+              get_local 0
+              i32.store
+              get_local 3
+              get_local 2
+              i32.store offset=88
+              get_local 3
+              i64.const 0
+              i64.store offset=100 align=4
+              get_local 3
+              i32.const 24
+              i32.add
+              i32.const 36
+              i32.add
+              i32.load
+              tee_local 4
+              i64.extend_u/i32
+              i64.const 0
+              get_local 3
+              i32.load8_u offset=56
+              tee_local 12
+              i32.const 1
+              i32.and
+              tee_local 13
+              select
+              set_local 10
+              get_local 3
+              i32.const 100
+              i32.add
+              set_local 14
+              i32.const -32
+              set_local 2
+              loop  ;; label = @6
+                get_local 2
+                i32.const -1
+                i32.add
+                set_local 2
+                get_local 10
+                i64.const 7
+                i64.shr_u
+                tee_local 10
+                i64.const 0
+                i64.ne
+                br_if 0 (;@6;)
+              end
+              i32.const 0
+              set_local 5
+              i32.const 0
+              set_local 0
+              block  ;; label = @6
+                get_local 4
+                get_local 12
+                i32.const 1
+                i32.shr_u
+                get_local 13
+                select
+                tee_local 4
+                get_local 2
+                i32.eq
+                br_if 0 (;@6;)
+                get_local 14
+                get_local 4
+                get_local 2
+                i32.sub
+                call 132
+                get_local 3
+                i32.load offset=104
+                set_local 5
+                get_local 3
+                i32.load offset=100
+                set_local 0
+              end
+              get_local 3
+              get_local 5
+              i32.store offset=120
+              get_local 3
+              get_local 0
+              i32.store offset=116
+              get_local 3
+              get_local 0
+              i32.store offset=112
+              get_local 3
+              get_local 3
+              i32.const 112
+              i32.add
+              i32.store offset=128
+              get_local 3
+              get_local 3
+              i32.const 24
+              i32.add
+              i32.store offset=136
+              get_local 3
+              i32.const 136
+              i32.add
+              get_local 3
+              i32.const 128
+              i32.add
+              call 140
+              get_local 3
+              i32.const 72
+              i32.add
+              call 130
+              block  ;; label = @6
+                get_local 3
+                i32.load offset=100
+                tee_local 2
+                i32.eqz
+                br_if 0 (;@6;)
+                get_local 3
+                get_local 2
+                i32.store offset=104
+                get_local 2
+                call 40
+              end
+              block  ;; label = @6
+                get_local 3
+                i32.load offset=88
+                tee_local 2
+                i32.eqz
+                br_if 0 (;@6;)
+                get_local 3
+                get_local 2
+                i32.store offset=92
+                get_local 2
+                call 40
+              end
+              block  ;; label = @6
+                get_local 3
+                i32.load8_u offset=56
+                i32.const 1
+                i32.and
+                i32.eqz
+                br_if 0 (;@6;)
+                get_local 3
+                i32.const 64
+                i32.add
+                i32.load
+                call 40
+              end
+              get_local 3
+              i32.load8_u offset=8
+              i32.const 1
+              i32.and
+              i32.eqz
+              br_if 3 (;@2;)
+              get_local 3
+              i32.load offset=16
+              call 40
+              br 3 (;@2;)
+            end
+            get_local 3
+            i32.const 8
+            i32.add
+            call 118
+            unreachable
+          end
+          i64.const 0
+          set_local 10
+          loop  ;; label = @4
+            block  ;; label = @5
+              get_local 2
+              i32.const 12352
+              i32.add
+              i32.load8_u
+              tee_local 0
+              i32.const -65
+              i32.add
+              i32.const 255
+              i32.and
+              i32.const 26
+              i32.lt_u
+              br_if 0 (;@5;)
+              i32.const 0
+              i32.const 12424
+              call 1
+            end
+            get_local 10
+            i64.const 8
+            i64.shl
+            get_local 0
+            i64.extend_u/i32
+            i64.const 56
+            i64.shl
+            i64.const 56
+            i64.shr_s
+            i64.or
+            set_local 10
+            get_local 2
+            i32.const -1
+            i32.add
+            tee_local 2
+            br_if 0 (;@4;)
+          end
+          get_local 10
+          i64.const 8
+          i64.shl
+          i64.const 4
+          i64.or
+          set_local 9
+        end
+        block  ;; label = @3
+          get_local 8
+          i64.const 4611686018427387903
+          i64.add
+          i64.const 9223372036854775807
+          i64.lt_u
+          br_if 0 (;@3;)
+          i32.const 0
+          i32.const 12477
+          call 1
+        end
+        get_local 9
+        i64.const 8
+        i64.shr_u
+        set_local 10
+        i32.const 0
+        set_local 2
+        block  ;; label = @3
+          block  ;; label = @4
+            loop  ;; label = @5
+              get_local 10
+              i32.wrap/i64
+              i32.const 24
+              i32.shl
+              i32.const -1073741825
+              i32.add
+              i32.const 452984830
+              i32.gt_u
+              br_if 1 (;@4;)
+              get_local 10
+              i64.const 8
+              i64.shr_u
+              set_local 11
+              block  ;; label = @6
+                block  ;; label = @7
+                  get_local 10
+                  i64.const 65280
+                  i64.and
+                  i64.const 0
+                  i64.eq
+                  br_if 0 (;@7;)
+                  get_local 11
+                  set_local 10
+                  br 1 (;@6;)
+                end
+                get_local 11
+                set_local 10
+                loop  ;; label = @7
+                  get_local 10
+                  i64.const 65280
+                  i64.and
+                  i64.const 0
+                  i64.ne
+                  br_if 3 (;@4;)
+                  get_local 10
+                  i64.const 8
+                  i64.shr_u
+                  set_local 10
+                  get_local 2
+                  i32.const 1
+                  i32.add
+                  tee_local 2
+                  i32.const 7
+                  i32.lt_s
+                  br_if 0 (;@7;)
+                end
+              end
+              get_local 2
+              i32.const 1
+              i32.add
+              tee_local 2
+              i32.const 7
+              i32.lt_s
+              br_if 0 (;@5;)
+              br 2 (;@3;)
+            end
+          end
+          i32.const 0
+          i32.const 12526
+          call 1
+        end
+        get_local 3
+        i32.const 16
+        i32.add
+        i32.const 0
+        i32.store
+        get_local 3
+        i64.const 0
+        i64.store offset=8
+        i32.const 12357
+        call 41
+        tee_local 2
+        i32.const -16
+        i32.ge_u
+        br_if 1 (;@1;)
+        block  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 2
+              i32.const 11
+              i32.lt_u
+              br_if 0 (;@5;)
+              get_local 2
+              i32.const 16
+              i32.add
+              i32.const -16
+              i32.and
+              tee_local 5
+              call 39
+              set_local 0
+              get_local 3
+              get_local 2
+              i32.store offset=12
+              get_local 3
+              get_local 5
+              i32.const 1
+              i32.or
+              i32.store offset=8
+              get_local 3
+              get_local 0
+              i32.store offset=16
+              br 1 (;@4;)
+            end
+            get_local 3
+            get_local 2
+            i32.const 1
+            i32.shl
+            i32.store8 offset=8
+            get_local 3
+            i32.const 8
+            i32.add
+            i32.const 1
+            i32.or
+            set_local 0
+            get_local 2
+            i32.eqz
+            br_if 1 (;@3;)
+          end
+          get_local 0
+          i32.const 12357
+          get_local 2
+          call 7
+          drop
+        end
+        get_local 0
+        get_local 2
+        i32.add
+        i32.const 0
+        i32.store8
+        get_local 3
+        i32.const 24
+        i32.add
+        i32.const 24
+        i32.add
+        get_local 9
+        i64.store
+        get_local 3
+        i32.const 16
+        i32.add
+        tee_local 2
+        i32.load
+        set_local 0
+        get_local 2
+        i32.const 0
+        i32.store
+        get_local 3
+        i32.const 64
+        i32.add
+        get_local 0
+        i32.store
+        get_local 3
+        get_local 8
+        i64.store offset=40
+        get_local 3
+        get_local 1
+        i64.store offset=32
+        get_local 3
+        get_local 6
+        i64.store offset=24
+        get_local 3
+        i64.const -3617168760277827584
+        i64.store offset=80
+        get_local 3
+        i64.const 6138663591592764928
+        i64.store offset=72
+        get_local 3
+        i64.load offset=8
+        set_local 10
+        get_local 3
+        i64.const 0
+        i64.store offset=8
+        get_local 3
+        get_local 10
+        i64.store offset=56
+        i32.const 16
+        call 39
+        tee_local 2
+        i64.const 3617214756542218240
+        i64.store offset=8
+        get_local 2
+        get_local 6
+        i64.store
+        get_local 3
+        i32.const 72
+        i32.add
+        i32.const 36
+        i32.add
+        i32.const 0
+        i32.store
+        get_local 3
+        i32.const 72
+        i32.add
+        i32.const 24
+        i32.add
+        get_local 2
+        i32.const 16
+        i32.add
+        tee_local 0
+        i32.store
+        get_local 3
+        i32.const 92
+        i32.add
+        get_local 0
+        i32.store
+        get_local 3
+        get_local 2
+        i32.store offset=88
+        get_local 3
+        i64.const 0
+        i64.store offset=100 align=4
+        get_local 3
+        i32.const 24
+        i32.add
+        i32.const 36
+        i32.add
+        i32.load
+        tee_local 4
+        i64.extend_u/i32
+        i64.const 0
+        get_local 3
+        i32.load8_u offset=56
+        tee_local 12
+        i32.const 1
+        i32.and
+        tee_local 13
+        select
+        set_local 10
+        get_local 3
+        i32.const 100
+        i32.add
+        set_local 14
+        i32.const -32
+        set_local 2
+        loop  ;; label = @3
+          get_local 2
+          i32.const -1
+          i32.add
+          set_local 2
+          get_local 10
+          i64.const 7
+          i64.shr_u
+          tee_local 10
+          i64.const 0
+          i64.ne
+          br_if 0 (;@3;)
+        end
+        i32.const 0
+        set_local 5
+        i32.const 0
+        set_local 0
+        block  ;; label = @3
+          get_local 4
+          get_local 12
+          i32.const 1
+          i32.shr_u
+          get_local 13
+          select
+          tee_local 4
+          get_local 2
+          i32.eq
+          br_if 0 (;@3;)
+          get_local 14
+          get_local 4
+          get_local 2
+          i32.sub
+          call 132
+          get_local 3
+          i32.load offset=104
+          set_local 5
+          get_local 3
+          i32.load offset=100
+          set_local 0
+        end
+        get_local 3
+        get_local 5
+        i32.store offset=120
+        get_local 3
+        get_local 0
+        i32.store offset=116
+        get_local 3
+        get_local 0
+        i32.store offset=112
+        get_local 3
+        get_local 3
+        i32.const 112
+        i32.add
+        i32.store offset=128
+        get_local 3
+        get_local 3
+        i32.const 24
+        i32.add
+        i32.store offset=136
+        get_local 3
+        i32.const 136
+        i32.add
+        get_local 3
+        i32.const 128
+        i32.add
+        call 140
+        get_local 3
+        i32.const 72
+        i32.add
+        call 130
+        block  ;; label = @3
+          get_local 3
+          i32.load offset=100
+          tee_local 2
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 3
+          get_local 2
+          i32.store offset=104
+          get_local 2
+          call 40
+        end
+        block  ;; label = @3
+          get_local 3
+          i32.load offset=88
+          tee_local 2
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 3
+          get_local 2
+          i32.store offset=92
+          get_local 2
+          call 40
+        end
+        block  ;; label = @3
+          get_local 3
+          i32.load8_u offset=56
+          i32.const 1
+          i32.and
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 3
+          i32.const 64
+          i32.add
+          i32.load
+          call 40
+        end
+        get_local 3
+        i32.load8_u offset=8
+        i32.const 1
+        i32.and
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 3
+        i32.load offset=16
+        call 40
+      end
+      get_local 3
+      i32.const 144
+      i32.add
+      set_global 0
+      return
+    end
+    get_local 3
+    i32.const 8
+    i32.add
+    call 118
+    unreachable)
+  (func (;137;) (type 36) (param i64 i64 i32) (result i32)
+    (local i32 i32 i32 i32 i32 i32 i64)
+    get_global 0
+    i32.const 160
+    i32.sub
+    tee_local 3
+    set_local 4
+    get_local 3
+    set_global 0
+    get_local 2
+    i32.load offset=4
+    set_local 5
+    get_local 2
+    i32.load
+    set_local 6
+    i32.const 0
+    set_local 2
+    block  ;; label = @1
+      call 28
+      tee_local 7
+      i32.eqz
+      br_if 0 (;@1;)
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 7
+          i32.const 513
+          i32.lt_u
+          br_if 0 (;@3;)
+          get_local 7
+          call 32
+          set_local 2
+          br 1 (;@2;)
+        end
+        get_local 3
+        get_local 7
+        i32.const 15
+        i32.add
+        i32.const -16
+        i32.and
+        i32.sub
+        tee_local 2
+        set_global 0
+      end
+      get_local 2
+      get_local 7
+      call 29
+      drop
+    end
+    get_local 4
+    i32.const 88
+    i32.add
+    i32.const 0
+    i32.store
+    get_local 4
+    i64.const 0
+    i64.store offset=80
+    get_local 4
+    i64.const 0
+    i64.store offset=72
+    get_local 4
+    get_local 2
+    get_local 7
+    i32.add
+    i32.store offset=64
+    get_local 4
+    get_local 2
+    i32.store offset=60
+    get_local 4
+    get_local 2
+    i32.store offset=56
+    get_local 2
+    set_local 3
+    block  ;; label = @1
+      get_local 7
+      i32.const 7
+      i32.gt_u
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12546
+      call 1
+      get_local 4
+      i32.load offset=60
+      set_local 3
+    end
+    get_local 4
+    i32.const 72
+    i32.add
+    get_local 3
+    i32.const 8
+    call 7
+    drop
+    get_local 4
+    get_local 3
+    i32.const 8
+    i32.add
+    i32.store offset=60
+    get_local 4
+    i32.const 56
+    i32.add
+    get_local 4
+    i32.const 72
+    i32.add
+    i32.const 8
+    i32.add
+    tee_local 8
+    call 139
+    drop
+    get_local 4
+    i32.const 8
+    i32.add
+    i32.const 8
+    i32.add
+    get_local 4
+    i32.const 56
+    i32.add
+    i32.const 8
+    i32.add
+    i32.load
+    tee_local 3
+    i32.store
+    get_local 4
+    i32.const 48
+    i32.add
+    get_local 3
+    i32.store
+    get_local 4
+    get_local 4
+    i64.load offset=56
+    tee_local 9
+    i64.store offset=8
+    get_local 4
+    get_local 1
+    i64.store offset=32
+    get_local 4
+    get_local 0
+    i64.store offset=24
+    get_local 4
+    get_local 9
+    i64.store offset=40
+    get_local 4
+    i32.const 24
+    i32.add
+    get_local 5
+    i32.const 1
+    i32.shr_s
+    i32.add
+    set_local 3
+    get_local 4
+    i64.load offset=72
+    set_local 0
+    get_local 4
+    i32.const 96
+    i32.add
+    get_local 8
+    call 119
+    set_local 8
+    block  ;; label = @1
+      get_local 5
+      i32.const 1
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 3
+      i32.load
+      get_local 6
+      i32.add
+      i32.load
+      set_local 6
+    end
+    get_local 3
+    get_local 0
+    get_local 4
+    i32.const 112
+    i32.add
+    get_local 8
+    call 119
+    tee_local 5
+    get_local 6
+    call_indirect (type 4)
+    block  ;; label = @1
+      get_local 4
+      i32.load8_u offset=112
+      i32.const 1
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 5
+      i32.load offset=8
+      call 40
+    end
+    block  ;; label = @1
+      get_local 4
+      i32.load8_u offset=96
+      i32.const 1
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 8
+      i32.load offset=8
+      call 40
+    end
+    block  ;; label = @1
+      get_local 7
+      i32.const 513
+      i32.lt_u
+      br_if 0 (;@1;)
+      get_local 2
+      call 34
+    end
+    block  ;; label = @1
+      get_local 4
+      i32.load8_u offset=80
+      i32.const 1
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 4
+      i32.load offset=88
+      call 40
+    end
+    get_local 4
+    i32.const 160
+    i32.add
+    set_global 0
+    i32.const 1)
+  (func (;138;) (type 7) (param i32)
+    (local i32 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 1
+    set_local 2
+    get_local 1
+    set_global 0
+    block  ;; label = @1
+      block  ;; label = @2
+        call 28
+        tee_local 3
+        i32.const 513
+        i32.lt_u
+        br_if 0 (;@2;)
+        get_local 3
+        call 32
+        set_local 1
+        br 1 (;@1;)
+      end
+      get_local 1
+      get_local 3
+      i32.const 15
+      i32.add
+      i32.const -16
+      i32.and
+      i32.sub
+      tee_local 1
+      set_global 0
+    end
+    get_local 1
+    get_local 3
+    call 29
+    drop
+    get_local 0
+    i32.const 40
+    i32.add
+    i32.const 0
+    i32.store
+    get_local 0
+    i64.const 0
+    i64.store offset=32 align=4
+    get_local 0
+    i32.const 24
+    i32.add
+    i64.const 0
+    i64.store
+    get_local 0
+    i64.const 0
+    i64.store offset=16
+    get_local 0
+    i64.const 0
+    i64.store offset=8
+    get_local 0
+    i64.const 0
+    i64.store
+    get_local 2
+    get_local 1
+    get_local 3
+    i32.add
+    i32.store offset=8
+    get_local 2
+    get_local 1
+    i32.store offset=4
+    get_local 2
+    get_local 1
+    i32.store
+    get_local 2
+    get_local 0
+    call 141
+    drop
+    get_local 2
+    i32.const 16
+    i32.add
+    set_global 0)
+  (func (;139;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32 i32 i32 i32)
+    get_global 0
+    i32.const 32
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 2
+    i32.const 0
+    i32.store offset=24
+    get_local 2
+    i64.const 0
+    i64.store offset=16
+    get_local 0
+    get_local 2
+    i32.const 16
+    i32.add
+    call 143
+    drop
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 2
+          i32.load offset=20
+          get_local 2
+          i32.load offset=16
+          tee_local 3
+          i32.sub
+          tee_local 4
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 2
+          i32.const 8
+          i32.add
+          i32.const 0
+          i32.store
+          get_local 2
+          i64.const 0
+          i64.store
+          get_local 4
+          i32.const -16
+          i32.ge_u
+          br_if 2 (;@1;)
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 4
+              i32.const 10
+              i32.gt_u
+              br_if 0 (;@5;)
+              get_local 2
+              get_local 4
+              i32.const 1
+              i32.shl
+              i32.store8
+              get_local 2
+              i32.const 1
+              i32.or
+              set_local 5
+              br 1 (;@4;)
+            end
+            get_local 4
+            i32.const 16
+            i32.add
+            i32.const -16
+            i32.and
+            tee_local 6
+            call 39
+            set_local 5
+            get_local 2
+            get_local 4
+            i32.store offset=4
+            get_local 2
+            get_local 6
+            i32.const 1
+            i32.or
+            i32.store
+            get_local 2
+            get_local 5
+            i32.store offset=8
+          end
+          loop  ;; label = @4
+            get_local 5
+            get_local 3
+            i32.load8_u
+            i32.store8
+            get_local 5
+            i32.const 1
+            i32.add
+            set_local 5
+            get_local 3
+            i32.const 1
+            i32.add
+            set_local 3
+            get_local 4
+            i32.const -1
+            i32.add
+            tee_local 4
+            br_if 0 (;@4;)
+          end
+          get_local 5
+          i32.const 0
+          i32.store8
+          block  ;; label = @4
+            block  ;; label = @5
+              get_local 1
+              i32.load8_u
+              i32.const 1
+              i32.and
+              br_if 0 (;@5;)
+              get_local 1
+              i32.const 0
+              i32.store16
+              br 1 (;@4;)
+            end
+            get_local 1
+            i32.load offset=8
+            i32.const 0
+            i32.store8
+            get_local 1
+            i32.const 0
+            i32.store offset=4
+            get_local 1
+            i32.load8_u
+            i32.const 1
+            i32.and
+            i32.eqz
+            br_if 0 (;@4;)
+            get_local 1
+            i32.load offset=8
+            call 40
+            get_local 1
+            i32.const 0
+            i32.store
+          end
+          get_local 1
+          get_local 2
+          i64.load
+          i64.store align=4
+          get_local 1
+          i32.const 8
+          i32.add
+          get_local 2
+          i32.const 8
+          i32.add
+          i32.load
+          i32.store
+          br 1 (;@2;)
+        end
+        block  ;; label = @3
+          block  ;; label = @4
+            get_local 1
+            i32.load8_u
+            i32.const 1
+            i32.and
+            br_if 0 (;@4;)
+            get_local 1
+            i32.const 0
+            i32.store16
+            br 1 (;@3;)
+          end
+          get_local 1
+          i32.load offset=8
+          i32.const 0
+          i32.store8
+          get_local 1
+          i32.const 0
+          i32.store offset=4
+          get_local 1
+          i32.load8_u
+          i32.const 1
+          i32.and
+          i32.eqz
+          br_if 0 (;@3;)
+          get_local 1
+          i32.load offset=8
+          call 40
+          get_local 1
+          i32.const 0
+          i32.store
+        end
+        get_local 1
+        i32.const 0
+        i32.store offset=8
+        get_local 1
+        i64.const 0
+        i64.store align=4
+      end
+      block  ;; label = @2
+        get_local 2
+        i32.load offset=16
+        tee_local 5
+        i32.eqz
+        br_if 0 (;@2;)
+        get_local 2
+        get_local 5
+        i32.store offset=20
+        get_local 5
+        call 40
+      end
+      get_local 2
+      i32.const 32
+      i32.add
+      set_global 0
+      get_local 0
+      return
+    end
+    get_local 2
+    call 118
+    unreachable)
+  (func (;140;) (type 5) (param i32 i32)
+    (local i32 i32 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 0
+    i32.load
+    set_local 3
+    block  ;; label = @1
+      get_local 1
+      i32.load
+      tee_local 4
+      i32.load offset=8
+      get_local 4
+      i32.load offset=4
+      tee_local 5
+      i32.sub
+      i32.const 7
+      i32.gt_s
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12149
+      call 1
+      get_local 4
+      i32.load offset=4
+      set_local 5
+    end
+    get_local 5
+    get_local 3
+    i32.const 8
+    call 7
+    drop
+    get_local 4
+    get_local 4
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    i32.store offset=4
+    get_local 0
+    i32.load
+    tee_local 0
+    i32.const 8
+    i32.add
+    set_local 3
+    block  ;; label = @1
+      get_local 1
+      i32.load
+      tee_local 4
+      i32.load offset=8
+      get_local 4
+      i32.load offset=4
+      tee_local 5
+      i32.sub
+      i32.const 7
+      i32.gt_s
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12149
+      call 1
+      get_local 4
+      i32.load offset=4
+      set_local 5
+    end
+    get_local 5
+    get_local 3
+    i32.const 8
+    call 7
+    drop
+    get_local 4
+    get_local 4
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    i32.store offset=4
+    get_local 0
+    i32.const 16
+    i32.add
+    set_local 3
+    block  ;; label = @1
+      get_local 1
+      i32.load
+      tee_local 4
+      i32.load offset=8
+      get_local 4
+      i32.load offset=4
+      tee_local 5
+      i32.sub
+      i32.const 7
+      i32.gt_s
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12149
+      call 1
+      get_local 4
+      i32.load offset=4
+      set_local 5
+    end
+    get_local 5
+    get_local 3
+    i32.const 8
+    call 7
+    drop
+    get_local 4
+    get_local 4
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    tee_local 5
+    i32.store offset=4
+    get_local 2
+    get_local 0
+    i32.const 24
+    i32.add
+    i64.load
+    i64.store offset=8
+    block  ;; label = @1
+      get_local 4
+      i32.load offset=8
+      get_local 5
+      i32.sub
+      i32.const 7
+      i32.gt_s
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12149
+      call 1
+      get_local 4
+      i32.load offset=4
+      set_local 5
+    end
+    get_local 5
+    get_local 2
+    i32.const 8
+    i32.add
+    i32.const 8
+    call 7
+    drop
+    get_local 4
+    get_local 4
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    i32.store offset=4
+    get_local 1
+    i32.load
+    get_local 0
+    i32.const 32
+    i32.add
+    call 146
+    drop
+    get_local 2
+    i32.const 16
+    i32.add
+    set_global 0)
+  (func (;141;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 2
+    set_global 0
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=8
+      get_local 0
+      i32.load offset=4
+      tee_local 3
+      i32.sub
+      i32.const 7
+      i32.gt_u
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12546
+      call 1
+      get_local 0
+      i32.load offset=4
+      set_local 3
+    end
+    get_local 1
+    get_local 3
+    i32.const 8
+    call 7
+    drop
+    get_local 0
+    get_local 0
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    tee_local 3
+    i32.store offset=4
+    get_local 1
+    i32.const 8
+    i32.add
+    set_local 4
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=8
+      get_local 3
+      i32.sub
+      i32.const 7
+      i32.gt_u
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12546
+      call 1
+      get_local 0
+      i32.load offset=4
+      set_local 3
+    end
+    get_local 4
+    get_local 3
+    i32.const 8
+    call 7
+    drop
+    get_local 0
+    get_local 0
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    tee_local 3
+    i32.store offset=4
+    get_local 1
+    i32.const 16
+    i32.add
+    set_local 4
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=8
+      get_local 3
+      i32.sub
+      i32.const 7
+      i32.gt_u
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12546
+      call 1
+      get_local 0
+      i32.load offset=4
+      set_local 3
+    end
+    get_local 4
+    get_local 3
+    i32.const 8
+    call 7
+    drop
+    get_local 0
+    get_local 0
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    tee_local 3
+    i32.store offset=4
+    get_local 2
+    i64.const 0
+    i64.store offset=8
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=8
+      get_local 3
+      i32.sub
+      i32.const 7
+      i32.gt_u
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12546
+      call 1
+      get_local 0
+      i32.load offset=4
+      set_local 3
+    end
+    get_local 2
+    i32.const 8
+    i32.add
+    get_local 3
+    i32.const 8
+    call 7
+    drop
+    get_local 1
+    i32.const 24
+    i32.add
+    get_local 2
+    i64.load offset=8
+    i64.store
+    get_local 0
+    get_local 0
+    i32.load offset=4
+    i32.const 8
+    i32.add
+    i32.store offset=4
+    get_local 0
+    get_local 1
+    i32.const 32
+    i32.add
+    call 139
+    set_local 0
+    get_local 2
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 0)
+  (func (;142;) (type 37) (param i64 i64)
+    (local i32 i32 i32 i64)
+    get_global 0
+    i32.const 144
+    i32.sub
+    tee_local 2
+    set_local 3
+    get_local 2
+    set_global 0
+    block  ;; label = @1
+      block  ;; label = @2
+        call 28
+        tee_local 4
+        br_if 0 (;@2;)
+        i32.const 0
+        set_local 2
+        br 1 (;@1;)
+      end
+      block  ;; label = @2
+        block  ;; label = @3
+          get_local 4
+          i32.const 512
+          i32.lt_u
+          br_if 0 (;@3;)
+          get_local 4
+          call 32
+          set_local 2
+          br 1 (;@2;)
+        end
+        get_local 2
+        get_local 4
+        i32.const 15
+        i32.add
+        i32.const -16
+        i32.and
+        i32.sub
+        tee_local 2
+        set_global 0
+      end
+      get_local 2
+      get_local 4
+      call 29
+      drop
+    end
+    get_local 3
+    get_local 2
+    i32.store offset=100
+    get_local 3
+    get_local 2
+    i32.store offset=96
+    get_local 3
+    get_local 2
+    get_local 4
+    i32.add
+    i32.store offset=104
+    get_local 3
+    i64.const 0
+    i64.store offset=88
+    block  ;; label = @1
+      get_local 4
+      i32.const 7
+      i32.gt_u
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12546
+      call 1
+      get_local 3
+      i32.load offset=100
+      set_local 2
+    end
+    get_local 3
+    i32.const 88
+    i32.add
+    get_local 2
+    i32.const 8
+    call 7
+    drop
+    get_local 3
+    get_local 2
+    i32.const 8
+    i32.add
+    i32.store offset=100
+    get_local 3
+    i32.const 0
+    i32.store offset=80
+    get_local 3
+    i64.const 0
+    i64.store offset=72
+    get_local 3
+    i32.const 96
+    i32.add
+    get_local 3
+    i32.const 72
+    i32.add
+    call 139
+    drop
+    get_local 3
+    i32.const 24
+    i32.add
+    i32.const 8
+    i32.add
+    get_local 3
+    i32.const 96
+    i32.add
+    i32.const 8
+    i32.add
+    i32.load
+    tee_local 2
+    i32.store
+    get_local 3
+    i32.const 64
+    i32.add
+    get_local 2
+    i32.store
+    get_local 3
+    get_local 3
+    i64.load offset=96
+    tee_local 5
+    i64.store offset=24
+    get_local 3
+    get_local 1
+    i64.store offset=48
+    get_local 3
+    get_local 0
+    i64.store offset=40
+    get_local 3
+    get_local 5
+    i64.store offset=56
+    get_local 3
+    i32.const 40
+    i32.add
+    get_local 3
+    i64.load offset=88
+    get_local 3
+    i32.const 8
+    i32.add
+    get_local 3
+    i32.const 72
+    i32.add
+    call 119
+    tee_local 2
+    call 136
+    block  ;; label = @1
+      get_local 2
+      i32.load8_u
+      i32.const 1
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 2
+      i32.load offset=8
+      call 40
+    end
+    block  ;; label = @1
+      get_local 3
+      i32.load8_u offset=72
+      i32.const 1
+      i32.and
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 3
+      i32.load offset=80
+      call 40
+    end
+    get_local 3
+    i32.const 144
+    i32.add
+    set_global 0)
+  (func (;143;) (type 14) (param i32 i32) (result i32)
+    (local i32 i64 i32 i32 i32 i32)
+    get_local 0
+    i32.load offset=4
+    set_local 2
+    i64.const 0
+    set_local 3
+    i32.const 0
+    set_local 4
+    loop  ;; label = @1
+      block  ;; label = @2
+        get_local 2
+        get_local 0
+        i32.load offset=8
+        i32.lt_u
+        br_if 0 (;@2;)
+        i32.const 0
+        i32.const 12588
+        call 1
+        get_local 0
+        i32.load offset=4
+        set_local 2
+      end
+      get_local 2
+      i32.load8_u
+      set_local 5
+      get_local 0
+      get_local 2
+      i32.const 1
+      i32.add
+      tee_local 6
+      i32.store offset=4
+      get_local 3
+      get_local 5
+      i32.const 127
+      i32.and
+      get_local 4
+      i32.const 255
+      i32.and
+      tee_local 2
+      i32.shl
+      i64.extend_u/i32
+      i64.or
+      set_local 3
+      get_local 2
+      i32.const 7
+      i32.add
+      set_local 4
+      get_local 6
+      set_local 2
+      get_local 5
+      i32.const 128
+      i32.and
+      br_if 0 (;@1;)
+    end
+    block  ;; label = @1
+      block  ;; label = @2
+        get_local 1
+        i32.load offset=4
+        tee_local 5
+        get_local 1
+        i32.load
+        tee_local 2
+        i32.sub
+        tee_local 7
+        get_local 3
+        i32.wrap/i64
+        tee_local 4
+        i32.ge_u
+        br_if 0 (;@2;)
+        get_local 1
+        get_local 4
+        get_local 7
+        i32.sub
+        call 132
+        get_local 0
+        i32.load offset=4
+        set_local 6
+        get_local 1
+        i32.load offset=4
+        set_local 5
+        get_local 1
+        i32.load
+        set_local 2
+        br 1 (;@1;)
+      end
+      get_local 7
+      get_local 4
+      i32.le_u
+      br_if 0 (;@1;)
+      get_local 1
+      get_local 2
+      get_local 4
+      i32.add
+      tee_local 5
+      i32.store offset=4
+    end
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=8
+      get_local 6
+      i32.sub
+      get_local 5
+      get_local 2
+      i32.sub
+      tee_local 5
+      i32.ge_u
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12546
+      call 1
+      get_local 0
+      i32.load offset=4
+      set_local 6
+    end
+    get_local 2
+    get_local 6
+    get_local 5
+    call 7
+    drop
+    get_local 0
+    get_local 0
+    i32.load offset=4
+    get_local 5
+    i32.add
+    i32.store offset=4
+    get_local 0)
+  (func (;144;) (type 14) (param i32 i32) (result i32)
+    (local i32 i64 i32 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 1
+    i32.load offset=4
+    get_local 1
+    i32.load
+    i32.sub
+    i32.const 4
+    i32.shr_s
+    i64.extend_u/i32
+    set_local 3
+    get_local 0
+    i32.load offset=4
+    set_local 4
+    loop  ;; label = @1
+      get_local 3
+      i32.wrap/i64
+      set_local 5
+      get_local 2
+      get_local 3
+      i64.const 7
+      i64.shr_u
+      tee_local 3
+      i64.const 0
+      i64.ne
+      tee_local 6
+      i32.const 7
+      i32.shl
+      get_local 5
+      i32.const 127
+      i32.and
+      i32.or
+      i32.store8 offset=15
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=8
+        get_local 4
+        i32.sub
+        i32.const 0
+        i32.gt_s
+        br_if 0 (;@2;)
+        i32.const 0
+        i32.const 12149
+        call 1
+        get_local 0
+        i32.load offset=4
+        set_local 4
+      end
+      get_local 4
+      get_local 2
+      i32.const 15
+      i32.add
+      i32.const 1
+      call 7
+      drop
+      get_local 0
+      get_local 0
+      i32.load offset=4
+      i32.const 1
+      i32.add
+      tee_local 4
+      i32.store offset=4
+      get_local 6
+      br_if 0 (;@1;)
+    end
+    block  ;; label = @1
+      get_local 1
+      i32.load
+      tee_local 5
+      get_local 1
+      i32.load offset=4
+      tee_local 6
+      i32.eq
+      br_if 0 (;@1;)
+      loop  ;; label = @2
+        block  ;; label = @3
+          get_local 0
+          i32.load offset=8
+          get_local 4
+          i32.sub
+          i32.const 7
+          i32.gt_s
+          br_if 0 (;@3;)
+          i32.const 0
+          i32.const 12149
+          call 1
+          get_local 0
+          i32.load offset=4
+          set_local 4
+        end
+        get_local 4
+        get_local 5
+        i32.const 8
+        call 7
+        drop
+        get_local 0
+        get_local 0
+        i32.load offset=4
+        i32.const 8
+        i32.add
+        tee_local 4
+        i32.store offset=4
+        block  ;; label = @3
+          get_local 0
+          i32.load offset=8
+          get_local 4
+          i32.sub
+          i32.const 7
+          i32.gt_s
+          br_if 0 (;@3;)
+          i32.const 0
+          i32.const 12149
+          call 1
+          get_local 0
+          i32.load offset=4
+          set_local 4
+        end
+        get_local 4
+        get_local 5
+        i32.const 8
+        i32.add
+        i32.const 8
+        call 7
+        drop
+        get_local 0
+        get_local 0
+        i32.load offset=4
+        i32.const 8
+        i32.add
+        tee_local 4
+        i32.store offset=4
+        get_local 5
+        i32.const 16
+        i32.add
+        tee_local 5
+        get_local 6
+        i32.ne
+        br_if 0 (;@2;)
+      end
+    end
+    get_local 2
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 0)
+  (func (;145;) (type 14) (param i32 i32) (result i32)
+    (local i32 i64 i32 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 1
+    i32.load offset=4
+    get_local 1
+    i32.load
+    i32.sub
+    i64.extend_u/i32
+    set_local 3
+    get_local 0
+    i32.load offset=4
+    set_local 4
+    loop  ;; label = @1
+      get_local 3
+      i32.wrap/i64
+      set_local 5
+      get_local 2
+      get_local 3
+      i64.const 7
+      i64.shr_u
+      tee_local 3
+      i64.const 0
+      i64.ne
+      tee_local 6
+      i32.const 7
+      i32.shl
+      get_local 5
+      i32.const 127
+      i32.and
+      i32.or
+      i32.store8 offset=15
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=8
+        get_local 4
+        i32.sub
+        i32.const 0
+        i32.gt_s
+        br_if 0 (;@2;)
+        i32.const 0
+        i32.const 12149
+        call 1
+        get_local 0
+        i32.load offset=4
+        set_local 4
+      end
+      get_local 4
+      get_local 2
+      i32.const 15
+      i32.add
+      i32.const 1
+      call 7
+      drop
+      get_local 0
+      get_local 0
+      i32.load offset=4
+      i32.const 1
+      i32.add
+      tee_local 4
+      i32.store offset=4
+      get_local 6
+      br_if 0 (;@1;)
+    end
+    block  ;; label = @1
+      get_local 0
+      i32.load offset=8
+      get_local 4
+      i32.sub
+      get_local 1
+      i32.load offset=4
+      get_local 1
+      i32.load
+      tee_local 6
+      i32.sub
+      tee_local 5
+      i32.ge_s
+      br_if 0 (;@1;)
+      i32.const 0
+      i32.const 12149
+      call 1
+      get_local 0
+      i32.load offset=4
+      set_local 4
+    end
+    get_local 4
+    get_local 6
+    get_local 5
+    call 7
+    drop
+    get_local 0
+    get_local 0
+    i32.load offset=4
+    get_local 5
+    i32.add
+    i32.store offset=4
+    get_local 2
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 0)
+  (func (;146;) (type 14) (param i32 i32) (result i32)
+    (local i32 i32 i64 i32 i32)
+    get_global 0
+    i32.const 16
+    i32.sub
+    tee_local 2
+    set_global 0
+    get_local 1
+    i32.load offset=4
+    get_local 1
+    i32.load8_u
+    tee_local 3
+    i32.const 1
+    i32.shr_u
+    get_local 3
+    i32.const 1
+    i32.and
+    select
+    i64.extend_u/i32
+    set_local 4
+    get_local 0
+    i32.load offset=4
+    set_local 3
+    loop  ;; label = @1
+      get_local 4
+      i32.wrap/i64
+      set_local 5
+      get_local 2
+      get_local 4
+      i64.const 7
+      i64.shr_u
+      tee_local 4
+      i64.const 0
+      i64.ne
+      tee_local 6
+      i32.const 7
+      i32.shl
+      get_local 5
+      i32.const 127
+      i32.and
+      i32.or
+      i32.store8 offset=15
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=8
+        get_local 3
+        i32.sub
+        i32.const 0
+        i32.gt_s
+        br_if 0 (;@2;)
+        i32.const 0
+        i32.const 12149
+        call 1
+        get_local 0
+        i32.load offset=4
+        set_local 3
+      end
+      get_local 3
+      get_local 2
+      i32.const 15
+      i32.add
+      i32.const 1
+      call 7
+      drop
+      get_local 0
+      get_local 0
+      i32.load offset=4
+      i32.const 1
+      i32.add
+      tee_local 3
+      i32.store offset=4
+      get_local 6
+      br_if 0 (;@1;)
+    end
+    block  ;; label = @1
+      get_local 1
+      i32.load offset=4
+      get_local 1
+      i32.load8_u
+      tee_local 5
+      i32.const 1
+      i32.shr_u
+      get_local 5
+      i32.const 1
+      i32.and
+      tee_local 6
+      select
+      tee_local 5
+      i32.eqz
+      br_if 0 (;@1;)
+      get_local 1
+      i32.load offset=8
+      get_local 1
+      i32.const 1
+      i32.add
+      get_local 6
+      select
+      set_local 6
+      block  ;; label = @2
+        get_local 0
+        i32.load offset=8
+        get_local 3
+        i32.sub
+        get_local 5
+        i32.ge_s
+        br_if 0 (;@2;)
+        i32.const 0
+        i32.const 12149
+        call 1
+        get_local 0
+        i32.load offset=4
+        set_local 3
+      end
+      get_local 3
+      get_local 6
+      get_local 5
+      call 7
+      drop
+      get_local 0
+      get_local 0
+      i32.load offset=4
+      get_local 5
+      i32.add
+      i32.store offset=4
+    end
+    get_local 2
+    i32.const 16
+    i32.add
+    set_global 0
+    get_local 0)
+  (table (;0;) 8 8 anyfunc)
+  (memory (;0;) 1)
+  (global (;0;) (mut i32) (i32.const 8192))
+  (global (;1;) i32 (i32.const 12592))
+  (global (;2;) i32 (i32.const 12592))
+  (export "apply" (func 134))
+  (elem (i32.const 1) 68 84 92 94 90 116 136)
+  (data (i32.const 8208) "failed to allocate pages\00\00\01\02\04\07\03\06\05\00\00\00@\00\00\00\00\00\00\00@\00\00\00\00\00\00\00%*s\00 received \00")
+  (data (i32.const 8320) "\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\00\01\02\03\04\05\06\07\08\09\ff\ff\ff\ff\ff\ff\ff\0a\0b\0c\0d\0e\0f\10\11\12\13\14\15\16\17\18\19\1a\1b\1c\1d\1e\1f !\22#\ff\ff\ff\ff\ff\ff\0a\0b\0c\0d\0e\0f\10\11\12\13\14\15\16\17\18\19\1a\1b\1c\1d\1e\1f !\22#\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff")
+  (data (i32.const 8592) " \00\00\00\09\00\00\00\0a\00\00\00\0d\00\00\00\0b\00\00\00\0c\00\00\00\85\00\00\00\00 \00\00\01 \00\00\02 \00\00\03 \00\00\04 \00\00\05 \00\00\06 \00\00\08 \00\00\09 \00\00\0a \00\00( \00\00) \00\00_ \00\00\000\00\00\00\00\00\00")
+  (data (i32.const 8688) "\0a\00\00\00d\00\00\00\e8\03\00\00\10'\00\00\a0\86\01\00@B\0f\00\80\96\98\00\00\e1\f5\05")
+  (data (i32.const 8720) "\18\00\00\005\00\00\00q\00\00\00")
+  (data (i32.const 8732) "k\ff\ff\ff\ce\fb\ff\ff\92\bf\ff\ff")
+  (data (i32.const 8752) "00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899")
+  (data (i32.const 8960) "\00\00\00\00\00\00\f0?\00\00\00\00\00\00$@\00\00\00\00\00\00Y@\00\00\00\00\00@\8f@\00\00\00\00\00\88\c3@\00\00\00\00\00j\f8@\00\00\00\00\80\84.A\00\00\00\00\d0\12cA\00\00\00\00\84\d7\97A\00\00\00\00e\cd\cdA")
+  (data (i32.const 9040) "\de\12\04\95\00\00\00\00\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff\ff")
+  (data (i32.const 9060) "P#\00\00\14\00\00\00C.UTF-8\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+  (data (i32.const 9120) "d#\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+  (data (i32.const 9152) "T!\22\19\0d\01\02\03\11K\1c\0c\10\04\0b\1d\12\1e'hnopqb \05\06\0f\13\14\15\1a\08\16\07($\17\18\09\0a\0e\1b\1f%#\83\82}&*+<=>?CGJMXYZ[\5c]^_`acdefgijklrstyz{|\00")
+  (data (i32.const 9248) "Illegal byte sequence\00Domain error\00Result not representable\00Not a tty\00Permission denied\00Operation not permitted\00No such file or directory\00No such process\00File exists\00Value too large for data type\00No space left on device\00Out of memory\00Resource busy\00Interrupted system call\00Resource temporarily unavailable\00Invalid seek\00Cross-device link\00Read-only file system\00Directory not empty\00Connection reset by peer\00Operation timed out\00Connection refused\00Host is down\00Host is unreachable\00Address in use\00Broken pipe\00I/O error\00No such device or address\00Block device required\00No such device\00Not a directory\00Is a directory\00Text file busy\00Exec format error\00Invalid argument\00Argument list too long\00Symbolic link loop\00Filename too long\00Too many open files in system\00No file descriptors available\00Bad file descriptor\00No child process\00Bad address\00File too large\00Too many links\00No locks available\00Resource deadlock would occur\00State not recoverable\00Previous owner died\00Operation canceled\00Function not implemented\00No message of desired type\00Identifier removed\00Device not a stream\00No data available\00Device timeout\00Out of streams resources\00Link has been severed\00Protocol error\00Bad message\00File descriptor in bad state\00Not a socket\00Destination address required\00Message too large\00Protocol wrong type for socket\00Protocol not available\00Protocol not supported\00Socket type not supported\00Not supported\00Protocol family not supported\00Address family not supported by protocol\00Address not available\00Network is down\00Network unreachable\00Connection reset by network\00Connection aborted\00No buffer space available\00Socket is connected\00Socket not connected\00Cannot send after socket shutdown\00Operation already in progress\00Operation in progress\00Stale file handle\00Remote I/O error\00Quota exceeded\00No medium found\00Wrong medium type\00No error information\00\00")
+  (data (i32.const 11056) "\02\00\00\c0\03\00\00\c0\04\00\00\c0\05\00\00\c0\06\00\00\c0\07\00\00\c0\08\00\00\c0\09\00\00\c0\0a\00\00\c0\0b\00\00\c0\0c\00\00\c0\0d\00\00\c0\0e\00\00\c0\0f\00\00\c0\10\00\00\c0\11\00\00\c0\12\00\00\c0\13\00\00\c0\14\00\00\c0\15\00\00\c0\16\00\00\c0\17\00\00\c0\18\00\00\c0\19\00\00\c0\1a\00\00\c0\1b\00\00\c0\1c\00\00\c0\1d\00\00\c0\1e\00\00\c0\1f\00\00\c0\00\00\00\b3\01\00\00\c3\02\00\00\c3\03\00\00\c3\04\00\00\c3\05\00\00\c3\06\00\00\c3\07\00\00\c3\08\00\00\c3\09\00\00\c3\0a\00\00\c3\0b\00\00\c3\0c\00\00\c3\0d\00\00\d3\0e\00\00\c3\0f\00\00\c3\00\00\0c\bb\01\00\0c\c3\02\00\0c\c3\03\00\0c\c3\04\00\0c\db")
+  (data (i32.const 11260) "\00 from \00")
+  (data (i32.const 11268) "(null)\00 sent \00")
+  (data (i32.const 11282) "%%%s%s%s%s%s*.*%c%c\00 to \00")
+  (data (i32.const 11307) "#\00playing\00")
+  (data (i32.const 11317) "+\00Unknown action\00")
+  (data (i32.const 11334) "-\00eosio.token\00")
+  (data (i32.const 11348) " \00transfer\00")
+  (data (i32.const 11359) "0\00insufficient space in buffer\00")
+  (data (i32.const 11392) "L\00\00jLLL\00j\00\00\00\00\00jj\00\00\00\00j\00\00j")
+  (data (i32.const 11424) "\19\00\0a\00\19\19\19\00\00\00\00\05\00\00\00\00\00\00\09\00\00\00\00\0b\00\00\00\00\00\00\00\00\19\00\11\0a\19\19\19\03\0a\07\00\01\1b\09\0b\18\00\00\09\06\0b\00\00\0b\00\06\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\0e\00\00\00\00\00\00\00\00\00\00\0a\0d\00\00\00\00\0d\00\00\02\00\09\0e\00\00\00\09\00\0e\00\00\0e\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\0c\00\00\00\00\00\00\00\00\00\00\00\13\00\00\00\00\13\00\00\00\00\09\0c\00\00\00\00\00\0c\00\00\0c\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\00\00\00\00\0f\00\00\00\04\0f\00\00\00\00\09\10\00\00\00\00\00\10\00\00\10\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\12\00\00\00\00\00\00\00\00\00\00\00\11\00\00\00\00\11\00\00\00\00\09\12\00\00\00\00\00\12\00\00\12\00\00\1a\00\00\00\1a\1a\1a\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\1a\00\00\00\1a\1a\1a\00\00\00\00\00\00\09\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\14\00\00\00\00\00\00\00\00\00\00\00\17\00\00\00\00\17\00\00\00\00\09\14\00\00\00\00\00\14\00\00\14\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\16\00\00\00\00\00\00\00\00\00\00\00\15\00\00\00\00\15\00\00\00\00\09\16\00\00\00\00\00\16\00\00\16\00\00")
+  (data (i32.const 11896) "\01\00\00\00\00\00\00\00\0a\00\00\00\00\00\00\00d\00\00\00\00\00\00\00\e8\03\00\00\00\00\00\00\10'\00\00\00\00\00\00\a0\86\01\00\00\00\00\00@B\0f\00\00\00\00\00\80\96\98\00\00\00\00\00\00\e1\f5\05\00\00\00\00\00\ca\9a;\00\00\00\00\00\e4\0bT\02\00\00\00\00\e8vH\17\00\00\00\00\10\a5\d4\e8\00\00\00\00\a0rN\18\09\00\00\00@z\10\f3Z\00\00\00\80\c6\a4~\8d\03\00\00\00\c1o\f2\86#\00\00\00\8a]xEc\01\00\00d\a7\b3\b6\e0\0d\00\00\e8\89\04#\c7\8a")
+  (data (i32.const 12064) "\00\00\00\00\00\00\f0?\00\00\00\00\00\00\f8?")
+  (data (i32.const 12080) "\00\00\00\00\00\00\00\00\06\d0\cfC\eb\fdL>")
+  (data (i32.const 12096) "\00\00\00\00\00\00\00\00\00\00\00@\03\b8\e2?")
+  (data (i32.const 12112) "T/\00\00")
+  (data (i32.const 12116) ".12345abcdefghijklmnopqrstuvwxyz\00")
+  (data (i32.const 12149) "datastream attempted to write past the end\00")
+  (data (i32.const 12192) "string is too long to be a valid name\00")
+  (data (i32.const 12230) "thirteenth character in name cannot be a letter that comes after j\00")
+  (data (i32.const 12297) "character is not in allowed character set for names\00")
+  (data (i32.const 12349) "win\00")
+  (data (i32.const 12353) "SYS\00")
+  (data (i32.const 12357) "you win\00")
+  (data (i32.const 12365) "lose\00")
+  (data (i32.const 12370) "you lose\00")
+  (data (i32.const 12379) "string is too long to be a valid symbol_code\00")
+  (data (i32.const 12424) "only uppercase letters allowed in symbol_code string\00")
+  (data (i32.const 12477) "magnitude of asset amount must be less than 2^62\00")
+  (data (i32.const 12526) "invalid symbol name\00")
+  (data (i32.const 12546) "datastream attempted to read past the end\00")
+  (data (i32.const 12588) "get\00")
+  (data (i32.const 0) "01\00\00"))
